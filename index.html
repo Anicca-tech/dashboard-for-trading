@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario — Trading Dashboard</title>
+<style>
+/* ═══════════════════════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0d0d0d;
+  --bg2:       #111111;
+  --bg3:       #181818;
+  --border:    #2a2a2a;
+  --text:      #d4d4d4;
+  --text-dim:  #6b6b6b;
+  --text-head: #9e9e9e;
+  --green:     #22c55e;
+  --green-dim: #166534;
+  --red:       #ef4444;
+  --red-dim:   #7f1d1d;
+  --amber:     #f59e0b;
+  --amber-dim: #78350f;
+  --blue:      #3b82f6;
+  --grade-a:   #22c55e;
+  --grade-b:   #f59e0b;
+  --grade-c:   #ef4444;
+  --grade-q:   #6b6b6b;
+  --nav-h:     36px;
+  --row-h:     28px;
+  --font:      'Courier New', Courier, monospace;
+}
+
+html { font-size: 12px; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   STICKY NAV
+═══════════════════════════════════════════════════════════ */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  height: var(--nav-h);
+  padding: 0 8px;
+  gap: 2px;
+}
+#nav a {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 2px 8px;
+  font-size: 11px;
+  letter-spacing: .04em;
+  border-radius: 2px;
+  transition: color .15s, background .15s;
+}
+#nav a:hover { color: var(--text); background: var(--bg3); }
+#clock {
+  margin-left: auto;
+  color: var(--text-dim);
+  font-size: 11px;
+  letter-spacing: .05em;
+}
+#market-status {
+  margin-left: 12px;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 2px;
+  font-weight: bold;
+  letter-spacing: .06em;
+}
+#market-status.open   { background: var(--green-dim); color: var(--green); }
+#market-status.closed { background: var(--red-dim);   color: var(--red);   }
+#market-status.pre    { background: var(--amber-dim); color: var(--amber); }
+#last-updated {
+  margin-left: 10px;
+  color: var(--text-dim);
+  font-size: 10px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SECTION WRAPPER
+═══════════════════════════════════════════════════════════ */
+.section {
+  border-bottom: 1px solid var(--border);
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  user-select: none;
+}
+.section-header:hover { background: var(--bg3); }
+.section-title {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: .08em;
+  color: var(--text-head);
+  text-transform: uppercase;
+}
+.section-toggle {
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-left: auto;
+}
+.section-body { overflow: hidden; }
+.section-body.collapsed { display: none; }
+
+/* ═══════════════════════════════════════════════════════════
+   TABLES — shared
+═══════════════════════════════════════════════════════════ */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.data-table th {
+  background: var(--bg3);
+  color: var(--text-dim);
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: .04em;
+  text-align: right;
+  padding: 2px 6px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 10;
+}
+.data-table th.left { text-align: left; }
+.data-table td {
+  font-size: 11px;
+  text-align: right;
+  padding: 1px 6px;
+  height: var(--row-h);
+  border-bottom: 1px solid #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.data-table td.left { text-align: left; }
+.data-table tr:hover td { background: #1d1d1d; }
+
+/* group separator */
+.data-table tr.group-sep td {
+  border-top: 1px solid var(--border);
+  padding-top: 2px;
+}
+.data-table tr.group-label td {
+  background: #141414;
+  color: var(--text-dim);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  height: 18px;
+  padding: 1px 6px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   COLOR CLASSES
+═══════════════════════════════════════════════════════════ */
+.up   { color: var(--green); }
+.dn   { color: var(--red);   }
+.neu  { color: var(--text-dim); }
+.amb  { color: var(--amber); }
+
+.grade-a { color: var(--grade-a); font-weight: bold; }
+.grade-b { color: var(--grade-b); font-weight: bold; }
+.grade-c { color: var(--grade-c); font-weight: bold; }
+.grade-q { color: var(--grade-q); }
+
+/* cell backgrounds for heatmap */
+.bg-up-1  { background: rgba(34,197,94,.10) !important; }
+.bg-up-2  { background: rgba(34,197,94,.22) !important; }
+.bg-up-3  { background: rgba(34,197,94,.38) !important; }
+.bg-dn-1  { background: rgba(239,68,68,.10) !important; }
+.bg-dn-2  { background: rgba(239,68,68,.22) !important; }
+.bg-dn-3  { background: rgba(239,68,68,.38) !important; }
+
+/* ═══════════════════════════════════════════════════════════
+   SPARKLINES
+═══════════════════════════════════════════════════════════ */
+.spark-cell { width: 70px; padding: 2px 4px !important; }
+canvas.spark {
+  display: block;
+  width: 64px;
+  height: 22px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SECTION 1 — column widths
+═══════════════════════════════════════════════════════════ */
+#tbl-market th:nth-child(1),
+#tbl-market td:nth-child(1) { width: 70px; text-align: left; }   /* label */
+#tbl-market th:nth-child(2),
+#tbl-market td:nth-child(2) { width: 82px; }                      /* price */
+#tbl-market th:nth-child(3),
+#tbl-market td:nth-child(3),
+#tbl-market th:nth-child(4),
+#tbl-market td:nth-child(4),
+#tbl-market th:nth-child(5),
+#tbl-market td:nth-child(5),
+#tbl-market th:nth-child(6),
+#tbl-market td:nth-child(6) { width: 56px; }
+#tbl-market th:nth-child(7),
+#tbl-market td:nth-child(7),
+#tbl-market th:nth-child(8),
+#tbl-market td:nth-child(8) { width: 52px; }
+#tbl-market th:nth-child(9),
+#tbl-market td:nth-child(9) { width: 60px; }   /* 52wk */
+#tbl-market th:nth-child(10),
+#tbl-market td:nth-child(10) { width: 74px; }  /* spark */
+#tbl-market th:nth-child(11),
+#tbl-market td:nth-child(11) { width: 32px; }  /* grade */
+
+/* ═══════════════════════════════════════════════════════════
+   NAAIM PANEL
+═══════════════════════════════════════════════════════════ */
+#naaim-panel {
+  display: flex;
+  gap: 24px;
+  padding: 6px 10px;
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+}
+#naaim-panel .naaim-label { color: var(--text-dim); margin-right: 4px; }
+#naaim-panel .naaim-val   { color: var(--text); font-weight: bold; }
+
+/* ═══════════════════════════════════════════════════════════
+   SECTION 2 — ETFs summary bar
+═══════════════════════════════════════════════════════════ */
+#etf-summary {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg3);
+}
+.etf-summary-col {
+  flex: 1;
+  padding: 4px 8px;
+  border-right: 1px solid var(--border);
+}
+.etf-summary-col:last-child { border-right: none; }
+.etf-summary-header {
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: .04em;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+.etf-summary-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.etf-chip {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: default;
+}
+.etf-chip.top { background: var(--green-dim); color: var(--green); }
+.etf-chip.bot { background: var(--red-dim);   color: var(--red);   }
+
+/* ═══════════════════════════════════════════════════════════
+   HEATMAP
+═══════════════════════════════════════════════════════════ */
+#heatmap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 8px;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+.hm-cell {
+  font-size: 10px;
+  font-weight: bold;
+  width: 68px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  cursor: default;
+  border: 1px solid transparent;
+}
+.hm-cell .hm-ticker { font-size: 11px; }
+.hm-cell .hm-pct    { font-size: 10px; margin-top: 2px; }
+
+/* ═══════════════════════════════════════════════════════════
+   LOADING / ERROR STATES
+═══════════════════════════════════════════════════════════ */
+.loading-row td { color: var(--text-dim); font-style: italic; }
+.error-msg {
+  padding: 8px 10px;
+  color: var(--red);
+  font-size: 11px;
+}
+.stale-warn {
+  padding: 3px 8px;
+  background: var(--amber-dim);
+  color: var(--amber);
+  font-size: 10px;
+  letter-spacing: .04em;
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ STICKY NAV ══ -->
+<nav id="nav">
+  <a href="#s1">MARKET</a>
+  <a href="#s2">ETFs</a>
+  <a href="#s3">WATCHLIST</a>
+  <a href="#s4">SIZER</a>
+  <a href="#s5">CALENDAR</a>
+  <a href="#s6">INTEL</a>
+  <span id="clock">--:--:-- EST</span>
+  <span id="market-status" class="closed">CLOSED</span>
+  <span id="last-updated"></span>
+</nav>
+
+<!-- ══════════════════════════════ SECTION 1 — MARKET ═══ -->
+<section class="section" id="s1">
+  <div class="section-header" onclick="toggleSection('s1-body')">
+    <span class="section-title">1 — Market Overview</span>
+    <span class="section-toggle" id="s1-tog">▲</span>
+  </div>
+  <div class="section-body" id="s1-body">
+    <table class="data-table" id="tbl-market">
+      <thead>
+        <tr>
+          <th class="left">Instrument</th>
+          <th>Price</th>
+          <th>1D%</th>
+          <th>1W%</th>
+          <th>20D%</th>
+          <th>50D%</th>
+          <th>ATR%</th>
+          <th>ADR%</th>
+          <th>52wk Hi</th>
+          <th class="left">Spark</th>
+          <th>Gr</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-market">
+        <tr class="loading-row"><td colspan="11">Loading market data…</td></tr>
+      </tbody>
+    </table>
+
+    <!-- NAAIM panel inside section 1 -->
+    <div id="naaim-panel">
+      <span><span class="naaim-label">NAAIM Current:</span><span class="naaim-val" id="naaim-cur">—</span></span>
+      <span><span class="naaim-label">Prior Week:</span><span class="naaim-val" id="naaim-prior">—</span></span>
+      <span><span class="naaim-label">Qtr Avg:</span><span class="naaim-val" id="naaim-qavg">—</span></span>
+      <span><span class="naaim-label">As of:</span><span class="naaim-val" id="naaim-date">—</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ SECTION 2 — ETFs ══════ -->
+<section class="section" id="s2">
+  <div class="section-header" onclick="toggleSection('s2-body')">
+    <span class="section-title">2 — Industry ETFs</span>
+    <span class="section-toggle" id="s2-tog">▲</span>
+  </div>
+  <div class="section-body" id="s2-body">
+
+    <!-- Top/Bottom 5 summary -->
+    <div id="etf-summary">
+      <div class="etf-summary-col">
+        <div class="etf-summary-header">Top 5</div>
+        <div class="etf-summary-items" id="etf-top5"></div>
+      </div>
+      <div class="etf-summary-col">
+        <div class="etf-summary-header">Bottom 5</div>
+        <div class="etf-summary-items" id="etf-bot5"></div>
+      </div>
+    </div>
+
+    <!-- ETF ranked table -->
+    <table class="data-table" id="tbl-etfs">
+      <thead>
+        <tr>
+          <th class="left">ETF</th>
+          <th>Price</th>
+          <th>1D%</th>
+          <th>1W%</th>
+          <th>20D%</th>
+          <th>50D%</th>
+          <th>ATR%</th>
+          <th>ADR%</th>
+          <th>52wk Hi</th>
+          <th class="left">Spark</th>
+          <th>Gr</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-etfs">
+        <tr class="loading-row"><td colspan="11">Loading ETF data…</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Heatmap -->
+    <div id="heatmap"></div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════ SECTIONS 3-6 placeholders ═ -->
+<section class="section" id="s3">
+  <div class="section-header" onclick="toggleSection('s3-body')">
+    <span class="section-title">3 — Watchlist</span>
+    <span class="section-toggle" id="s3-tog">▲</span>
+  </div>
+  <div class="section-body" id="s3-body">
+    <div style="padding:12px;color:var(--text-dim);font-size:11px;">Coming in Step 3.</div>
+  </div>
+</section>
+
+<section class="section" id="s4">
+  <div class="section-header" onclick="toggleSection('s4-body')">
+    <span class="section-title">4 — Position Sizing</span>
+    <span class="section-toggle" id="s4-tog">▲</span>
+  </div>
+  <div class="section-body" id="s4-body">
+    <div style="padding:12px;color:var(--text-dim);font-size:11px;">Coming in Step 2.</div>
+  </div>
+</section>
+
+<section class="section" id="s5">
+  <div class="section-header" onclick="toggleSection('s5-body')">
+    <span class="section-title">5 — Calendar</span>
+    <span class="section-toggle" id="s5-tog">▲</span>
+  </div>
+  <div class="section-body" id="s5-body">
+    <div style="padding:12px;color:var(--text-dim);font-size:11px;">Coming in Step 4.</div>
+  </div>
+</section>
+
+<section class="section" id="s6">
+  <div class="section-header" onclick="toggleSection('s6-body')">
+    <span class="section-title">6 — Intelligence</span>
+    <span class="section-toggle" id="s6-tog">▲</span>
+  </div>
+  <div class="section-body" id="s6-body">
+    <div style="padding:12px;color:var(--text-dim);font-size:11px;">Coming in Step 5.</div>
+  </div>
+</section>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+//  CONFIG (mirrors config.json — source of truth for paths)
+// ═══════════════════════════════════════════════════════════
+const CFG = {
+  marketFile:   "data/market.json",
+  naaimFile:    "data/naaim.json",
+  refreshMs:    300000,
+  staleMinutes: 15,
+};
+
+// ═══════════════════════════════════════════════════════════
+//  SECTION GROUPS — order matches brief
+// ═══════════════════════════════════════════════════════════
+const MARKET_GROUPS = [
+  {
+    label: "Indices & Futures",
+    symbols: ["NQ=F","^IXIC","QQQ","^NYA","ES=F","^GSPC","SPY","^DJI","IWM","RTY=F"],
+    labels:  ["NQ1","IXIC","QQQ","NYA","ES1","SPX","SPY","DJI","IWM","RTY"],
+  },
+  {
+    label: "Sentiment",
+    symbols: ["^VIX","^MMFI","^MMTH","^NYAD","^SKEW"],
+    labels:  ["VIX","MMFI","MMTH","NCFD","SKFD"],
+  },
+  {
+    label: "Yields",
+    symbols: ["FEDFUNDS","^TNX","^IRX","TLT"],
+    labels:  ["FEDFUNDS","US10Y","US02Y","TLT"],
+    // Note: ^IRX = 13wk T-bill used as US02Y proxy; FEDFUNDS from FRED
+  },
+  {
+    label: "Forex",
+    symbols: ["EURUSD=X","USDCAD=X","EURCAD=X","DX-Y.NYB"],
+    labels:  ["EURUSD","USDCAD","EURCAD","DXY"],
+  },
+  {
+    label: "Crypto",
+    symbols: ["BTCUSD","ETHUSD"],
+    labels:  ["BTCUSD","ETHUSD"],
+  },
+  {
+    label: "Commodities",
+    symbols: ["GC=F","SI=F","CL=F"],
+    labels:  ["Gold","Silver","WTI"],
+  },
+];
+
+// ═══════════════════════════════════════════════════════════
+//  CLOCK & MARKET STATUS
+// ═══════════════════════════════════════════════════════════
+function updateClock() {
+  const now = new Date();
+  const est = new Date(now.toLocaleString("en-US", { timeZone: "America/New_York" }));
+  const hh  = String(est.getHours()).padStart(2, "0");
+  const mm  = String(est.getMinutes()).padStart(2, "0");
+  const ss  = String(est.getSeconds()).padStart(2, "0");
+  document.getElementById("clock").textContent = `${hh}:${mm}:${ss} EST`;
+
+  const day = est.getDay(); // 0=Sun, 6=Sat
+  const h   = est.getHours();
+  const m   = est.getMinutes();
+  const mins = h * 60 + m;
+  const el  = document.getElementById("market-status");
+
+  if (day === 0 || day === 6) {
+    el.textContent = "CLOSED"; el.className = "closed";
+  } else if (mins >= 930 && mins < 960) {  // 9:30–16:00 regular
+    el.textContent = "OPEN";   el.className = "open";
+  } else if (mins >= 960) {
+    el.textContent = "CLOSED"; el.className = "closed";
+  } else if (mins >= 240 && mins < 930) {  // 4:00–9:30 pre
+    el.textContent = "PRE";    el.className = "pre";
+  } else {
+    el.textContent = "CLOSED"; el.className = "closed";
+  }
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ═══════════════════════════════════════════════════════════
+//  SECTION COLLAPSE
+// ═══════════════════════════════════════════════════════════
+function toggleSection(bodyId) {
+  const body = document.getElementById(bodyId);
+  const secId = bodyId.replace("-body", "");
+  const tog  = document.getElementById(secId + "-tog");
+  const collapsed = body.classList.toggle("collapsed");
+  if (tog) tog.textContent = collapsed ? "▼" : "▲";
+}
+
+// ═══════════════════════════════════════════════════════════
+//  FORMATTING HELPERS
+// ═══════════════════════════════════════════════════════════
+function fmtPrice(v, label) {
+  if (v == null) return "—";
+  // Yield instruments return as percent * 10 from Yahoo (^TNX etc)
+  const yieldLabels = ["US10Y","US02Y","FEDFUNDS"];
+  if (yieldLabels.includes(label)) return v.toFixed(2) + "%";
+  if (v >= 10000) return v.toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  if (v >= 100)   return v.toFixed(2);
+  if (v >= 1)     return v.toFixed(3);
+  return v.toFixed(4);
+}
+
+function fmtPct(v) {
+  if (v == null) return "—";
+  const s = (v > 0 ? "+" : "") + v.toFixed(2) + "%";
+  return s;
+}
+
+function pctClass(v, invert) {
+  if (v == null) return "neu";
+  const pos = invert ? v < 0 : v > 0;
+  const neg = invert ? v > 0 : v < 0;
+  if (pos) return "up";
+  if (neg) return "dn";
+  return "neu";
+}
+
+// VIX, FEDFUNDS, DXY moves: green = down is good
+const INVERT_LABELS = new Set(["VIX","FEDFUNDS","DXY","US10Y","US02Y"]);
+
+function gradeClass(g) {
+  if (g === "A") return "grade-a";
+  if (g === "B") return "grade-b";
+  if (g === "C") return "grade-c";
+  return "grade-q";
+}
+
+function amberIf52wk(v) {
+  // amber if within 5% of 52wk high (dist is negative, so > -5)
+  if (v == null) return "";
+  return v >= -5 ? " amb" : (v < 0 ? " dn" : " up");
+}
+
+// ═══════════════════════════════════════════════════════════
+//  SPARKLINE CANVAS
+// ═══════════════════════════════════════════════════════════
+function drawSparkline(canvas, data, isUp) {
+  if (!data || data.length < 2) return;
+  const ctx = canvas.getContext("2d");
+  const W = canvas.width;
+  const H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  const mn = Math.min(...data);
+  const mx = Math.max(...data);
+  const range = mx - mn || 1;
+  const pad = 2;
+
+  const pts = data.map((v, i) => ({
+    x: pad + (i / (data.length - 1)) * (W - pad * 2),
+    y: pad + (1 - (v - mn) / range) * (H - pad * 2),
+  }));
+
+  ctx.beginPath();
+  ctx.moveTo(pts[0].x, pts[0].y);
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+  ctx.strokeStyle = isUp ? "#22c55e" : "#ef4444";
+  ctx.lineWidth = 1.2;
+  ctx.stroke();
+}
+
+// ═══════════════════════════════════════════════════════════
+//  RENDER — market row
+// ═══════════════════════════════════════════════════════════
+function buildRow(d, label, inv) {
+  if (!d) {
+    return `<tr>
+      <td class="left">${label}</td>
+      <td colspan="10" style="color:var(--text-dim)">—</td>
+    </tr>`;
+  }
+  const sparkId = `spark-${label.replace(/[^a-zA-Z0-9]/g, "_")}`;
+  const isUp = (d.change_1d || 0) > 0;
+
+  return `<tr>
+    <td class="left">${label}</td>
+    <td>${fmtPrice(d.price, label)}</td>
+    <td class="${pctClass(d.change_1d, inv)}">${fmtPct(d.change_1d)}</td>
+    <td class="${pctClass(d.change_1w, inv)}">${fmtPct(d.change_1w)}</td>
+    <td class="${pctClass(d.change_20d, inv)}">${fmtPct(d.change_20d)}</td>
+    <td class="${pctClass(d.change_50d, inv)}">${fmtPct(d.change_50d)}</td>
+    <td class="neu">${d.atr_pct != null ? d.atr_pct.toFixed(2) + "%" : "—"}</td>
+    <td class="neu">${d.adr_pct != null ? d.adr_pct.toFixed(2) + "%" : "—"}</td>
+    <td class="${amberIf52wk(d.dist_52wk_high)}">${d.dist_52wk_high != null ? (d.dist_52wk_high > 0 ? "+" : "") + d.dist_52wk_high.toFixed(1) + "%" : "—"}</td>
+    <td class="spark-cell left"><canvas class="spark" id="${sparkId}" width="64" height="22"></canvas></td>
+    <td class="${gradeClass(d.grade)}">${d.grade || "?"}</td>
+  </tr>`;
+}
+
+// ═══════════════════════════════════════════════════════════
+//  RENDER — Section 1
+// ═══════════════════════════════════════════════════════════
+function renderMarket(data) {
+  const instruments = data.instruments || {};
+  let html = "";
+
+  for (const grp of MARKET_GROUPS) {
+    html += `<tr class="group-label"><td colspan="11">${grp.label}</td></tr>`;
+    for (let i = 0; i < grp.symbols.length; i++) {
+      const sym   = grp.symbols[i];
+      const lbl   = grp.labels[i];
+      const d     = instruments[sym] || instruments[lbl];
+      const inv   = INVERT_LABELS.has(lbl);
+      html += buildRow(d, lbl, inv);
+    }
+  }
+
+  document.getElementById("tbody-market").innerHTML = html;
+
+  // Draw sparklines
+  for (const grp of MARKET_GROUPS) {
+    for (let i = 0; i < grp.symbols.length; i++) {
+      const lbl = grp.labels[i];
+      const sym = grp.symbols[i];
+      const d   = instruments[sym] || instruments[lbl];
+      if (!d || !d.sparkline) continue;
+      const cvs = document.getElementById(`spark-${lbl.replace(/[^a-zA-Z0-9]/g, "_")}`);
+      if (cvs) drawSparkline(cvs, d.sparkline, (d.change_1d || 0) > 0);
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+//  RENDER — Section 2 ETFs
+// ═══════════════════════════════════════════════════════════
+function heatmapBgClass(pct) {
+  if (pct == null) return "";
+  const a = Math.abs(pct);
+  if (pct > 0) return a >= 3 ? "bg-up-3" : a >= 1.5 ? "bg-up-2" : "bg-up-1";
+  if (pct < 0) return a >= 3 ? "bg-dn-3" : a >= 1.5 ? "bg-dn-2" : "bg-dn-1";
+  return "";
+}
+
+function renderEtfs(data) {
+  const etfs = data.etfs || {};
+
+  // Sort by 1D% descending
+  const sorted = Object.values(etfs)
+    .filter(d => d != null)
+    .sort((a, b) => (b.change_1d || -99) - (a.change_1d || -99));
+
+  if (!sorted.length) {
+    document.getElementById("tbody-etfs").innerHTML =
+      `<tr class="loading-row"><td colspan="11">No ETF data available.</td></tr>`;
+    return;
+  }
+
+  // Top/bottom 5
+  const top5 = sorted.slice(0, 5);
+  const bot5 = sorted.slice(-5).reverse();
+
+  document.getElementById("etf-top5").innerHTML = top5.map(d =>
+    `<span class="etf-chip top" title="${fmtPct(d.change_1d)}">${d.label} <span style="font-weight:normal;opacity:.8">${fmtPct(d.change_1d)}</span></span>`
+  ).join("");
+
+  document.getElementById("etf-bot5").innerHTML = bot5.map(d =>
+    `<span class="etf-chip bot" title="${fmtPct(d.change_1d)}">${d.label} <span style="font-weight:normal;opacity:.8">${fmtPct(d.change_1d)}</span></span>`
+  ).join("");
+
+  // Main ETF table
+  let html = "";
+  for (const d of sorted) {
+    const lbl     = d.label || d.symbol;
+    const sparkId = `spark-etf-${lbl}`;
+    const isUp    = (d.change_1d || 0) > 0;
+    const bgCls   = heatmapBgClass(d.change_1d);
+
+    html += `<tr>
+      <td class="left">${lbl}</td>
+      <td>${fmtPrice(d.price, lbl)}</td>
+      <td class="${pctClass(d.change_1d)} ${bgCls}">${fmtPct(d.change_1d)}</td>
+      <td class="${pctClass(d.change_1w)}">${fmtPct(d.change_1w)}</td>
+      <td class="${pctClass(d.change_20d)}">${fmtPct(d.change_20d)}</td>
+      <td class="${pctClass(d.change_50d)}">${fmtPct(d.change_50d)}</td>
+      <td class="neu">${d.atr_pct != null ? d.atr_pct.toFixed(2) + "%" : "—"}</td>
+      <td class="neu">${d.adr_pct != null ? d.adr_pct.toFixed(2) + "%" : "—"}</td>
+      <td class="${amberIf52wk(d.dist_52wk_high)}">${d.dist_52wk_high != null ? (d.dist_52wk_high > 0 ? "+" : "") + d.dist_52wk_high.toFixed(1) + "%" : "—"}</td>
+      <td class="spark-cell left"><canvas class="spark" id="${sparkId}" width="64" height="22"></canvas></td>
+      <td class="${gradeClass(d.grade)}">${d.grade || "?"}</td>
+    </tr>`;
+  }
+  document.getElementById("tbody-etfs").innerHTML = html;
+
+  // Sparklines
+  for (const d of sorted) {
+    const lbl = d.label || d.symbol;
+    if (!d.sparkline) continue;
+    const cvs = document.getElementById(`spark-etf-${lbl}`);
+    if (cvs) drawSparkline(cvs, d.sparkline, (d.change_1d || 0) > 0);
+  }
+
+  // Heatmap
+  const hm = document.getElementById("heatmap");
+  hm.innerHTML = sorted.map(d => {
+    const pct = d.change_1d;
+    const bg  = heatmapBgClass(pct);
+    const cl  = pct > 0 ? "up" : pct < 0 ? "dn" : "neu";
+    return `<div class="hm-cell ${bg}">
+      <span class="hm-ticker">${d.label || d.symbol}</span>
+      <span class="hm-pct ${cl}">${fmtPct(pct)}</span>
+    </div>`;
+  }).join("");
+}
+
+// ═══════════════════════════════════════════════════════════
+//  NAAIM
+// ═══════════════════════════════════════════════════════════
+async function loadNaaim() {
+  try {
+    const resp = await fetch(`${CFG.naaimFile}?t=${Date.now()}`);
+    if (!resp.ok) return;
+    const d = await resp.json();
+    document.getElementById("naaim-cur").textContent   = d.current   != null ? d.current   : "—";
+    document.getElementById("naaim-prior").textContent = d.prior     != null ? d.prior     : "—";
+    document.getElementById("naaim-qavg").textContent  = d.quarter_avg != null ? d.quarter_avg : "—";
+    document.getElementById("naaim-date").textContent  = d.current_date || "—";
+  } catch {
+    // silently ignore — NAAIM is optional
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+//  DATA LOAD + STALE CHECK
+// ═══════════════════════════════════════════════════════════
+let lastDataTime = null;
+
+function checkStale(updatedIso) {
+  if (!updatedIso) return;
+  const updated = new Date(updatedIso);
+  const ageMin  = (Date.now() - updated.getTime()) / 60000;
+  const el = document.getElementById("last-updated");
+  el.textContent = `Updated ${Math.round(ageMin)}m ago`;
+  el.style.color = ageMin > CFG.staleMinutes ? "var(--amber)" : "var(--text-dim)";
+}
+
+async function loadMarket() {
+  try {
+    const resp = await fetch(`${CFG.marketFile}?t=${Date.now()}`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+
+    renderMarket(data);
+    renderEtfs(data);
+    checkStale(data.updated);
+    lastDataTime = data.updated;
+  } catch (err) {
+    document.getElementById("tbody-market").innerHTML =
+      `<tr><td colspan="11" class="error-msg">Failed to load market data: ${err.message}</td></tr>`;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+//  BOOT
+// ═══════════════════════════════════════════════════════════
+loadMarket();
+loadNaaim();
+setInterval(loadMarket, CFG.refreshMs);
+setInterval(loadNaaim, CFG.refreshMs * 6); // NAAIM refreshes rarely
+</script>
+</body>
+</html>

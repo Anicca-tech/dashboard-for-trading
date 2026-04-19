@@ -1,0 +1,93 @@
+{
+  "instruments": {
+    "indices": [
+      { "symbol": "NQ=F",    "label": "NQ1",  "yahoo": true },
+      { "symbol": "^IXIC",   "label": "IXIC", "yahoo": true },
+      { "symbol": "QQQ",     "label": "QQQ",  "yahoo": true },
+      { "symbol": "^NYA",    "label": "NYA",  "yahoo": true },
+      { "symbol": "ES=F",    "label": "ES1",  "yahoo": true },
+      { "symbol": "^GSPC",   "label": "SPX",  "yahoo": true },
+      { "symbol": "SPY",     "label": "SPY",  "yahoo": true },
+      { "symbol": "^DJI",    "label": "DJI",  "yahoo": true },
+      { "symbol": "IWM",     "label": "IWM",  "yahoo": true },
+      { "symbol": "RTY=F",   "label": "RTY",  "yahoo": true }
+    ],
+    "sentiment": [
+      { "symbol": "^VIX",   "label": "VIX",  "yahoo": true },
+      { "symbol": "^MMFI",  "label": "MMFI", "yahoo": true },
+      { "symbol": "^MMTH",  "label": "MMTH", "yahoo": true },
+      { "symbol": "^NYAD",  "label": "NCFD", "yahoo": true },
+      { "symbol": "^SKEW",  "label": "SKFD", "yahoo": true }
+    ],
+    "yields": [
+      { "symbol": "FEDFUNDS", "label": "FEDFUNDS", "yahoo": false, "source": "fred" },
+      { "symbol": "^TNX",     "label": "US10Y",    "yahoo": true },
+      { "symbol": "^IRX",     "label": "US02Y",    "yahoo": true },
+      { "symbol": "TLT",      "label": "TLT",      "yahoo": true }
+    ],
+    "forex": [
+      { "symbol": "EURUSD=X", "label": "EURUSD", "yahoo": true },
+      { "symbol": "USDCAD=X", "label": "USDCAD", "yahoo": true },
+      { "symbol": "EURCAD=X", "label": "EURCAD", "yahoo": true },
+      { "symbol": "DX-Y.NYB", "label": "DXY",    "yahoo": true }
+    ],
+    "crypto": [
+      { "symbol": "bitcoin",  "label": "BTCUSD", "source": "coingecko" },
+      { "symbol": "ethereum", "label": "ETHUSD", "source": "coingecko" }
+    ],
+    "commodities": [
+      { "symbol": "GC=F", "label": "Gold",   "yahoo": true },
+      { "symbol": "SI=F", "label": "Silver", "yahoo": true },
+      { "symbol": "CL=F", "label": "WTI",    "yahoo": true }
+    ]
+  },
+  "etfs": [
+    "WGMI","JETS","ITB","SLV","XPH","IBIT","GDX","ARKK","XBI","FFTY",
+    "KRE","SMH","SLX","IYT","XLI","XLK","XLRE","XLV","IPO","GLD",
+    "ITA","RSP","TAN","LIT","URNM","IGV","CIBR","XLF","URA","HYG",
+    "UFO","REMX","OIH","XLE"
+  ],
+  "naaim": {
+    "url": "https://www.naaim.org/programs/naaim-exposure-index/",
+    "cache_file": "data/naaim.json"
+  },
+  "refresh_interval_ms": 300000,
+  "alerts": {
+    "indices_move_pct": 1.0,
+    "etf_move_pct": 3.0,
+    "commodity_move_pct": 3.0,
+    "crypto_move_pct": 3.0,
+    "stock_move_pct": 5.0,
+    "stock_min_market_cap": 1000000000,
+    "stock_min_price": 7.0,
+    "stock_min_avg_volume": 500000,
+    "stock_min_atr_pct": 3.0,
+    "stock_min_adr_pct": 3.0
+  },
+  "position_sizing": {
+    "default_risk_pct": 0.4,
+    "min_risk_pct": 0.3,
+    "max_risk_pct": 0.7,
+    "min_stop_distance_pct": 3.0,
+    "max_stop_distance_pct": 6.0,
+    "default_account_equity": 100000
+  },
+  "notifications": {
+    "times_est": ["10:00", "12:30", "15:30"],
+    "after_hours_time_est": "17:00",
+    "ipo_briefing_day": "Sunday"
+  },
+  "data_files": {
+    "market": "data/market.json",
+    "etfs": "data/etfs.json",
+    "naaim": "data/naaim.json",
+    "sparklines": "data/sparklines.json",
+    "notifications": "data/notifications.json",
+    "universe": "data/universe.json"
+  },
+  "fred": {
+    "series": {
+      "FEDFUNDS": "FEDFUNDS"
+    }
+  }
+}
