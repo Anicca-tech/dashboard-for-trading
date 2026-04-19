@@ -4,7 +4,7 @@ on:
   schedule:
     # Every 5 minutes Mon-Fri 09:00-21:00 UTC (covers pre/post-market EST)
     - cron: "*/5 9-21 * * 1-5"
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 permissions:
   contents: write
