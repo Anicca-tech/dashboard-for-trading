@@ -1,1 +1,50 @@
-{"updated":null,"current":null,"current_date":null,"prior":null,"prior_date":null,"quarter_avg":null,"history":[]}
+{
+  "updated": "2026-04-24T06:23:49.645171+00:00",
+  "current": 0.0,
+  "current_date": "04/22/2026",
+  "prior": -200.0,
+  "prior_date": "04/15/2026",
+  "quarter_avg": -110.0,
+  "history": [
+    {
+      "date": "04/22/2026",
+      "exposure": 0.0
+    },
+    {
+      "date": "04/15/2026",
+      "exposure": -200.0
+    },
+    {
+      "date": "04/08/2026",
+      "exposure": 0.0
+    },
+    {
+      "date": "04/01/2026",
+      "exposure": -100.0
+    },
+    {
+      "date": "03/25/2026",
+      "exposure": 0.0
+    },
+    {
+      "date": "03/18/2026",
+      "exposure": -200.0
+    },
+    {
+      "date": "03/11/2026",
+      "exposure": -200.0
+    },
+    {
+      "date": "03/04/2026",
+      "exposure": 0.0
+    },
+    {
+      "date": "02/25/2026",
+      "exposure": -200.0
+    },
+    {
+      "date": "02/25/2026",
+      "exposure": -200.0
+    }
+  ]
+}
