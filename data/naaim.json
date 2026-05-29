@@ -1,11 +1,15 @@
 {
-  "updated": "2026-05-21T23:54:33.908276+00:00",
-  "current": -100.0,
-  "current_date": "05/20/2026",
-  "prior": -200.0,
-  "prior_date": "05/13/2026",
-  "quarter_avg": -85.0,
+  "updated": "2026-05-29T00:04:53.597099+00:00",
+  "current": 0.0,
+  "current_date": "05/27/2026",
+  "prior": -100.0,
+  "prior_date": "05/20/2026",
+  "quarter_avg": -65.0,
   "history": [
+    {
+      "date": "05/27/2026",
+      "exposure": 0.0
+    },
     {
       "date": "05/20/2026",
       "exposure": -100.0
@@ -41,10 +45,6 @@
     {
       "date": "03/25/2026",
       "exposure": 0.0
-    },
-    {
-      "date": "03/18/2026",
-      "exposure": -200.0
     }
   ]
 }
