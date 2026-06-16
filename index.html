@@ -780,7 +780,7 @@ function renderEtfs(data) {
 // ═══════════════════════════════════════════════════════════
 async function loadNaaim() {
   try {
-    const resp = await fetch(`${CFG.naaimFile}?t=${Date.now()}`);
+    const resp = await fetch(`${CFG.naaimFile}?t=${Date.now()}`, { cache: 'no-store' });
     if (!resp.ok) return;
     const d = await resp.json();
     document.getElementById("naaim-cur").textContent   = d.current   != null ? d.current   : "—";
@@ -808,7 +808,7 @@ function checkStale(updatedIso) {
 
 async function loadMarket() {
   try {
-    const resp = await fetch(`${CFG.marketFile}?t=${Date.now()}`);
+    const resp = await fetch(`${CFG.marketFile}?t=${Date.now()}`, { cache: 'no-store' });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
 
