@@ -309,6 +309,106 @@ canvas.spark {
 .hm-cell .hm-pct    { font-size: 10px; margin-top: 2px; }
 
 /* ═══════════════════════════════════════════════════════════
+   SECTION 4 — POSITION SIZER
+═══════════════════════════════════════════════════════════ */
+#sizer-wrap {
+  display: flex;
+  align-items: flex-start;
+}
+#sizer-form {
+  flex: 0 0 300px;
+  padding: 10px 14px 16px;
+  border-right: 1px solid var(--border);
+}
+#sizer-results {
+  flex: 1;
+  padding: 10px 14px;
+}
+.sizer-dir {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+.dir-btn {
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: .06em;
+  padding: 3px 14px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text-dim);
+  cursor: pointer;
+  border-radius: 2px;
+}
+.dir-btn:hover { color: var(--text); }
+.dir-btn.long.active  { background: var(--green-dim); color: var(--green); border-color: var(--green); }
+.dir-btn.short.active { background: var(--red-dim);   color: var(--red);   border-color: var(--red);   }
+.sizer-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+.sizer-label {
+  font-size: 10px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  width: 90px;
+  flex-shrink: 0;
+  text-align: right;
+}
+.sizer-field {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 2px;
+  padding: 2px 6px;
+}
+.sizer-field:focus-within { border-color: var(--blue); }
+.sizer-field span { font-size: 11px; color: var(--text-dim); }
+.sizer-field input {
+  font-family: var(--font);
+  font-size: 11px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+  width: 110px;
+  text-align: right;
+}
+.sizer-field input::-webkit-outer-spin-button,
+.sizer-field input::-webkit-inner-spin-button { -webkit-appearance: none; }
+.sizer-field input[type=number] { -moz-appearance: textfield; }
+#sizer-error {
+  font-size: 10px;
+  color: var(--red);
+  min-height: 16px;
+  margin-top: 6px;
+}
+.sizer-out-table { width: 100%; border-collapse: collapse; }
+.sizer-out-table td {
+  font-size: 11px;
+  height: 26px;
+  padding: 2px 6px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.sizer-out-table td:first-child {
+  font-size: 10px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  width: 160px;
+}
+.sizer-out-table td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* ═══════════════════════════════════════════════════════════
    LOADING / ERROR STATES
 ═══════════════════════════════════════════════════════════ */
 .loading-row td { color: var(--text-dim); font-style: italic; }
@@ -444,7 +544,57 @@ canvas.spark {
     <span class="section-toggle" id="s4-tog">▲</span>
   </div>
   <div class="section-body" id="s4-body">
-    <div style="padding:12px;color:var(--text-dim);font-size:11px;">Coming in Step 2.</div>
+    <div id="sizer-wrap">
+
+      <!-- Inputs -->
+      <div id="sizer-form">
+        <div class="sizer-dir">
+          <button class="dir-btn long active" id="btn-long"  onclick="sizerDir('long')">LONG</button>
+          <button class="dir-btn short"        id="btn-short" onclick="sizerDir('short')">SHORT</button>
+        </div>
+        <div class="sizer-row">
+          <span class="sizer-label">Equity</span>
+          <div class="sizer-field">
+            <span>$</span>
+            <input type="number" id="sz-equity" min="0" step="1000" placeholder="100000" oninput="sizerCalc()">
+          </div>
+        </div>
+        <div class="sizer-row">
+          <span class="sizer-label">Risk / Trade</span>
+          <div class="sizer-field">
+            <input type="number" id="sz-risk" min="0" max="100" step="0.1" placeholder="0.4" oninput="sizerCalc()">
+            <span>%</span>
+          </div>
+        </div>
+        <div class="sizer-row">
+          <span class="sizer-label">Entry</span>
+          <div class="sizer-field">
+            <span>$</span>
+            <input type="number" id="sz-entry" min="0" step="0.01" placeholder="0.00" oninput="sizerCalc()">
+          </div>
+        </div>
+        <div class="sizer-row">
+          <span class="sizer-label">Stop Loss</span>
+          <div class="sizer-field">
+            <span>$</span>
+            <input type="number" id="sz-stop" min="0" step="0.01" placeholder="0.00" oninput="sizerCalc()">
+          </div>
+        </div>
+        <div id="sizer-error"></div>
+      </div>
+
+      <!-- Results -->
+      <div id="sizer-results">
+        <table class="sizer-out-table">
+          <tr><td>Shares to trade</td>    <td id="sz-out-shares">—</td></tr>
+          <tr><td>Max risk (USD)</td>     <td id="sz-out-maxrisk">—</td></tr>
+          <tr><td>Position value</td>     <td id="sz-out-posval">—</td></tr>
+          <tr><td>Risk per share</td>     <td id="sz-out-rps">—</td></tr>
+          <tr><td>% of equity at risk</td><td id="sz-out-eqpct">—</td></tr>
+        </table>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -823,10 +973,88 @@ async function loadMarket() {
 }
 
 // ═══════════════════════════════════════════════════════════
+//  SECTION 4 — POSITION SIZER
+// ═══════════════════════════════════════════════════════════
+let _sizerDir = 'long';
+
+function sizerDir(dir) {
+  _sizerDir = dir;
+  document.getElementById('btn-long').className  = 'dir-btn long'  + (dir === 'long'  ? ' active' : '');
+  document.getElementById('btn-short').className = 'dir-btn short' + (dir === 'short' ? ' active' : '');
+  sizerCalc();
+}
+
+function sizerFmtUSD(v) {
+  return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function sizerClearOut() {
+  ['sz-out-shares','sz-out-maxrisk','sz-out-posval','sz-out-rps','sz-out-eqpct'].forEach(id => {
+    const el = document.getElementById(id);
+    el.textContent = '—';
+    el.className = '';
+  });
+}
+
+function sizerCalc() {
+  const equity = parseFloat(document.getElementById('sz-equity').value);
+  const risk   = parseFloat(document.getElementById('sz-risk').value);
+  const entry  = parseFloat(document.getElementById('sz-entry').value);
+  const stop   = parseFloat(document.getElementById('sz-stop').value);
+  const errEl  = document.getElementById('sizer-error');
+
+  if (!equity || !risk || !entry || !stop || equity <= 0 || risk <= 0 || entry <= 0 || stop <= 0) {
+    errEl.textContent = '';
+    sizerClearOut();
+    return;
+  }
+
+  if (_sizerDir === 'long' && stop >= entry) {
+    errEl.textContent = 'Long: stop must be below entry';
+    sizerClearOut(); return;
+  }
+  if (_sizerDir === 'short' && stop <= entry) {
+    errEl.textContent = 'Short: stop must be above entry';
+    sizerClearOut(); return;
+  }
+  errEl.textContent = '';
+
+  const maxRisk   = equity * (risk / 100);
+  const riskPerSh = Math.abs(entry - stop);
+  const shares    = Math.floor(maxRisk / riskPerSh);
+  const posVal    = shares * entry;
+  const eqPct     = (shares * riskPerSh / equity) * 100;
+  const dirClass  = _sizerDir === 'long' ? 'up' : 'dn';
+
+  document.getElementById('sz-out-shares').textContent  = shares.toLocaleString('en-US');
+  document.getElementById('sz-out-shares').className    = dirClass;
+  document.getElementById('sz-out-maxrisk').textContent = sizerFmtUSD(maxRisk);
+  document.getElementById('sz-out-posval').textContent  = sizerFmtUSD(posVal);
+  document.getElementById('sz-out-posval').className    = dirClass;
+  document.getElementById('sz-out-rps').textContent     = sizerFmtUSD(riskPerSh);
+  document.getElementById('sz-out-eqpct').textContent   = eqPct.toFixed(3) + '%';
+}
+
+async function loadConfig() {
+  try {
+    const resp = await fetch('config.json', { cache: 'no-store' });
+    if (!resp.ok) return;
+    const cfg = await resp.json();
+    const ps  = cfg.position_sizing || {};
+    document.getElementById('sz-equity').value = ps.default_account_equity ?? 100000;
+    document.getElementById('sz-risk').value   = ps.default_risk_pct       ?? 0.4;
+  } catch {
+    document.getElementById('sz-equity').value = 100000;
+    document.getElementById('sz-risk').value   = 0.4;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
 //  BOOT
 // ═══════════════════════════════════════════════════════════
 loadMarket();
 loadNaaim();
+loadConfig();
 setInterval(loadMarket, CFG.refreshMs);
 setInterval(loadNaaim, CFG.refreshMs * 6); // NAAIM refreshes rarely
 </script>
