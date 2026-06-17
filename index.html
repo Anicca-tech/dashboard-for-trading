@@ -1203,44 +1203,69 @@ function _wlAdr(H, L, C, p) {
 }
 
 // ── Fetch ─────────────────────────────────────────────────────
+function _wlFetchTimeout(url, ms) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), ms);
+  return fetch(url, { cache: 'no-store', signal: ctrl.signal }).finally(() => clearTimeout(t));
+}
+
+function _wlParseChart(json) {
+  const res = json?.chart?.result?.[0];
+  if (!res) throw new Error(json?.chart?.error?.description || 'No data');
+
+  const raw = res.indicators.quote[0];
+  const C = [], H = [], L = [], V = [];
+  for (let i = 0; i < res.timestamp.length; i++) {
+    if (raw.close[i]!=null && raw.high[i]!=null && raw.low[i]!=null && raw.volume[i]!=null) {
+      C.push(raw.close[i]); H.push(raw.high[i]);
+      L.push(raw.low[i]);   V.push(raw.volume[i]);
+    }
+  }
+  if (C.length < 22) throw new Error('Insufficient history');
+
+  const price   = C[C.length-1];
+  const past20v = V.slice(-21, -1);
+  const avgVol  = past20v.length ? past20v.reduce((a,b)=>a+b,0)/past20v.length : null;
+  return {
+    price,
+    change1d : (price - C[C.length-2]) / C[C.length-2] * 100,
+    atr_pct  : _wlAtr(H, L, C, 14) / price * 100,
+    adr_pct  : _wlAdr(H, L, C, 20),
+    ema21d   : (price - _wlEma(C, 21))  / _wlEma(C, 21)  * 100,
+    sma50d   : C.length>=50  ? (price - _wlSma(C,50))  / _wlSma(C,50)  * 100 : null,
+    sma200d  : C.length>=200 ? (price - _wlSma(C,200)) / _wlSma(C,200) * 100 : null,
+    rel_vol  : avgVol && avgVol>0 ? V[V.length-1] / avgVol : null,
+  };
+}
+
 async function wlFetch(id, ticker) {
   _wlFetched[id] = { loading: true };
   wlRenderCells(id);
-  try {
-    const url  = `${_wlChartUrl}/${encodeURIComponent(ticker)}?interval=1d&range=1y&includePrePost=false`;
-    const resp = await fetch(url, { cache: 'no-store' });
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const json = await resp.json();
-    const res  = json?.chart?.result?.[0];
-    if (!res) throw new Error(json?.chart?.error?.description || 'No data');
 
-    const raw = res.indicators.quote[0];
-    const C = [], H = [], L = [], V = [];
-    for (let i = 0; i < res.timestamp.length; i++) {
-      if (raw.close[i]!=null && raw.high[i]!=null && raw.low[i]!=null && raw.volume[i]!=null) {
-        C.push(raw.close[i]); H.push(raw.high[i]);
-        L.push(raw.low[i]);   V.push(raw.volume[i]);
-      }
-    }
-    if (C.length < 22) throw new Error('Insufficient history');
+  const direct  = `${_wlChartUrl}/${encodeURIComponent(ticker)}?interval=1d&range=1y&includePrePost=false`;
+  const encoded = encodeURIComponent(direct);
+  const sources = [
+    { url: direct,
+      parse: async r => r.json() },
+    { url: `https://corsproxy.io/?url=${encoded}`,
+      parse: async r => r.json() },
+    { url: `https://api.allorigins.win/get?url=${encoded}`,
+      parse: async r => { const w = await r.json(); return JSON.parse(w.contents); } },
+  ];
 
-    const price   = C[C.length-1];
-    const past20v = V.slice(-21, -1);
-    const avgVol  = past20v.length ? past20v.reduce((a,b)=>a+b,0)/past20v.length : null;
-
-    _wlFetched[id] = {
-      price,
-      change1d : (price - C[C.length-2]) / C[C.length-2] * 100,
-      atr_pct  : _wlAtr(H, L, C, 14) / price * 100,
-      adr_pct  : _wlAdr(H, L, C, 20),
-      ema21d   : (price - _wlEma(C, 21))  / _wlEma(C, 21)  * 100,
-      sma50d   : C.length>=50  ? (price - _wlSma(C,50))  / _wlSma(C,50)  * 100 : null,
-      sma200d  : C.length>=200 ? (price - _wlSma(C,200)) / _wlSma(C,200) * 100 : null,
-      rel_vol  : avgVol && avgVol>0 ? V[V.length-1] / avgVol : null,
-    };
-  } catch (e) {
-    _wlFetched[id] = { error: e.message };
+  let lastErr;
+  for (const src of sources) {
+    try {
+      const resp = await _wlFetchTimeout(src.url, 10000);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const json = await src.parse(resp);
+      _wlFetched[id] = _wlParseChart(json);
+      wlRenderCells(id);
+      return;
+    } catch (e) { lastErr = e; }
   }
+
+  _wlFetched[id] = { error: lastErr?.message || 'All sources failed' };
   wlRenderCells(id);
 }
 
