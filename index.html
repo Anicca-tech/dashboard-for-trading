@@ -309,6 +309,87 @@ canvas.spark {
 .hm-cell .hm-pct    { font-size: 10px; margin-top: 2px; }
 
 /* ═══════════════════════════════════════════════════════════
+   SECTION 3 — WATCHLIST
+═══════════════════════════════════════════════════════════ */
+#wl-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+}
+.wl-btn {
+  font-family: var(--font);
+  font-size: 11px;
+  padding: 2px 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 2px;
+}
+.wl-btn:hover { background: var(--bg2); }
+#tbl-wl th:nth-child(1),  #tbl-wl td:nth-child(1)  { width: 72px;  text-align: left; }
+#tbl-wl th:nth-child(2),  #tbl-wl td:nth-child(2)  { width: 76px; }
+#tbl-wl th:nth-child(3),  #tbl-wl td:nth-child(3)  { width: 54px; }
+#tbl-wl th:nth-child(4),  #tbl-wl td:nth-child(4),
+#tbl-wl th:nth-child(5),  #tbl-wl td:nth-child(5)  { width: 50px; }
+#tbl-wl th:nth-child(6),  #tbl-wl td:nth-child(6),
+#tbl-wl th:nth-child(7),  #tbl-wl td:nth-child(7),
+#tbl-wl th:nth-child(8),  #tbl-wl td:nth-child(8)  { width: 56px; }
+#tbl-wl th:nth-child(9),  #tbl-wl td:nth-child(9)  { width: 50px; }
+#tbl-wl th:nth-child(10), #tbl-wl td:nth-child(10) { width: 94px; text-align: left; }
+#tbl-wl th:nth-child(11), #tbl-wl td:nth-child(11),
+#tbl-wl th:nth-child(12), #tbl-wl td:nth-child(12) { width: 72px; }
+#tbl-wl th:nth-child(13), #tbl-wl td:nth-child(13) { width: 54px; }
+#tbl-wl th:nth-child(14), #tbl-wl td:nth-child(14) { width: 22px; }
+.wl-ticker-inp {
+  font-family: var(--font);
+  font-size: 11px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+  width: 64px;
+  text-transform: uppercase;
+}
+.wl-ticker-inp:focus { text-decoration: underline; }
+.wl-setup-sel {
+  font-family: var(--font);
+  font-size: 11px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 2px;
+  padding: 0 2px;
+  width: 90px;
+}
+.wl-num-inp {
+  font-family: var(--font);
+  font-size: 11px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+  width: 64px;
+  text-align: right;
+}
+.wl-num-inp::-webkit-outer-spin-button,
+.wl-num-inp::-webkit-inner-spin-button { -webkit-appearance: none; }
+.wl-num-inp[type=number] { -moz-appearance: textfield; }
+.wl-rm-btn {
+  font-size: 14px;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 0 2px;
+}
+.wl-rm-btn:hover { color: var(--red); }
+
+/* ═══════════════════════════════════════════════════════════
    SECTION 4 — POSITION SIZER
 ═══════════════════════════════════════════════════════════ */
 #sizer-wrap {
@@ -527,14 +608,38 @@ canvas.spark {
   </div>
 </section>
 
-<!-- ══════════════════════════ SECTIONS 3-6 placeholders ═ -->
+<!-- ══════════════════════════════════ SECTION 3 — WATCHLIST -->
 <section class="section" id="s3">
   <div class="section-header" onclick="toggleSection('s3-body')">
     <span class="section-title">3 — Watchlist</span>
     <span class="section-toggle" id="s3-tog">▲</span>
   </div>
   <div class="section-body" id="s3-body">
-    <div style="padding:12px;color:var(--text-dim);font-size:11px;">Coming in Step 3.</div>
+    <div id="wl-toolbar">
+      <button class="wl-btn" onclick="wlAdd()">+ Add</button>
+      <button class="wl-btn" onclick="wlRefreshAll()">↻ Refresh</button>
+    </div>
+    <table class="data-table" id="tbl-wl">
+      <thead>
+        <tr>
+          <th class="left">Ticker</th>
+          <th>Price</th>
+          <th>1D%</th>
+          <th>ATR%</th>
+          <th>ADR%</th>
+          <th>21EMA</th>
+          <th>50MA</th>
+          <th>200MA</th>
+          <th>AvgVol</th>
+          <th class="left">Setup</th>
+          <th>Entry</th>
+          <th>Stop</th>
+          <th>R</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbody-wl"></tbody>
+    </table>
   </div>
 </section>
 
@@ -1050,13 +1155,256 @@ async function loadConfig() {
 }
 
 // ═══════════════════════════════════════════════════════════
+//  SECTION 3 — WATCHLIST
+// ═══════════════════════════════════════════════════════════
+let _wlRows       = [];
+let _wlFetched    = {};
+let _wlNextId     = 1;
+let _wlSetupTypes = ['Breakout','Pullback','Reversal','Trend','Momentum','Other'];
+let _wlMaxRows    = 30;
+let _wlChartUrl   = 'https://query2.finance.yahoo.com/v8/finance/chart';
+const WL_STORE    = 'wl_v1';
+
+function wlSave() {
+  localStorage.setItem(WL_STORE, JSON.stringify(
+    _wlRows.map(r => ({ id: r.id, ticker: r.ticker, setup: r.setup, entry: r.entry, stop: r.stop }))
+  ));
+}
+
+function wlRestore() {
+  try {
+    const s = localStorage.getItem(WL_STORE);
+    if (!s) return;
+    _wlRows   = JSON.parse(s);
+    _wlNextId = _wlRows.reduce((m, r) => Math.max(m, r.id + 1), 1);
+  } catch { _wlRows = []; }
+}
+
+// ── Math ─────────────────────────────────────────────────────
+function _wlEma(C, p) {
+  const k = 2 / (p + 1);
+  let v = C.slice(0, p).reduce((a, b) => a + b, 0) / p;
+  for (let i = p; i < C.length; i++) v = C[i] * k + v * (1 - k);
+  return v;
+}
+function _wlSma(C, p) {
+  const s = C.slice(-p); return s.reduce((a, b) => a + b, 0) / s.length;
+}
+function _wlAtr(H, L, C, p) {
+  const tr = [];
+  for (let i = 1; i < C.length; i++)
+    tr.push(Math.max(H[i]-L[i], Math.abs(H[i]-C[i-1]), Math.abs(L[i]-C[i-1])));
+  const sl = tr.slice(-p); return sl.reduce((a, b) => a + b, 0) / sl.length;
+}
+function _wlAdr(H, L, C, p) {
+  const n = Math.min(p, C.length); let s = 0;
+  for (let i = C.length - n; i < C.length; i++) s += (H[i]-L[i]) / C[i];
+  return (s / n) * 100;
+}
+
+// ── Fetch ─────────────────────────────────────────────────────
+async function wlFetch(id, ticker) {
+  _wlFetched[id] = { loading: true };
+  wlRenderCells(id);
+  try {
+    const url  = `${_wlChartUrl}/${encodeURIComponent(ticker)}?interval=1d&range=1y&includePrePost=false`;
+    const resp = await fetch(url, { cache: 'no-store' });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const json = await resp.json();
+    const res  = json?.chart?.result?.[0];
+    if (!res) throw new Error(json?.chart?.error?.description || 'No data');
+
+    const raw = res.indicators.quote[0];
+    const C = [], H = [], L = [], V = [];
+    for (let i = 0; i < res.timestamp.length; i++) {
+      if (raw.close[i]!=null && raw.high[i]!=null && raw.low[i]!=null && raw.volume[i]!=null) {
+        C.push(raw.close[i]); H.push(raw.high[i]);
+        L.push(raw.low[i]);   V.push(raw.volume[i]);
+      }
+    }
+    if (C.length < 22) throw new Error('Insufficient history');
+
+    const price   = C[C.length-1];
+    const past20v = V.slice(-21, -1);
+    const avgVol  = past20v.length ? past20v.reduce((a,b)=>a+b,0)/past20v.length : null;
+
+    _wlFetched[id] = {
+      price,
+      change1d : (price - C[C.length-2]) / C[C.length-2] * 100,
+      atr_pct  : _wlAtr(H, L, C, 14) / price * 100,
+      adr_pct  : _wlAdr(H, L, C, 20),
+      ema21d   : (price - _wlEma(C, 21))  / _wlEma(C, 21)  * 100,
+      sma50d   : C.length>=50  ? (price - _wlSma(C,50))  / _wlSma(C,50)  * 100 : null,
+      sma200d  : C.length>=200 ? (price - _wlSma(C,200)) / _wlSma(C,200) * 100 : null,
+      rel_vol  : avgVol && avgVol>0 ? V[V.length-1] / avgVol : null,
+    };
+  } catch (e) {
+    _wlFetched[id] = { error: e.message };
+  }
+  wlRenderCells(id);
+}
+
+// ── Render cells ─────────────────────────────────────────────
+function wlCalcR(price, entry, stop) {
+  const e = parseFloat(entry), s = parseFloat(stop);
+  if (!price || !e || !s || e === s) return null;
+  return (s < e ? 1 : -1) * (price - e) / Math.abs(e - s);
+}
+
+function wlRenderCells(id) {
+  const row = _wlRows.find(r => r.id === id);
+  const d   = _wlFetched[id] || {};
+  const tr  = document.getElementById(`wl-row-${id}`);
+  if (!row || !tr) return;
+
+  const sc = (sel, txt, cls) => {
+    const el = tr.querySelector(sel);
+    if (!el) return;
+    el.textContent = txt;
+    if (cls !== undefined) el.className = sel.slice(1) + (cls ? ' '+cls : '');
+  };
+
+  if (d.loading) {
+    ['wl-price','wl-1d','wl-atr','wl-adr','wl-e21','wl-m50','wl-m200','wl-vol','wl-r']
+      .forEach(c => sc('.'+c, '…', 'neu'));
+    return;
+  }
+  if (d.error) {
+    tr.querySelector('.wl-price').innerHTML = `<span class="dn" title="${d.error}">ERR</span>`;
+    ['wl-1d','wl-atr','wl-adr','wl-e21','wl-m50','wl-m200','wl-vol','wl-r']
+      .forEach(c => sc('.'+c, '—', 'neu'));
+    return;
+  }
+  if (d.price == null) return;
+
+  const fd  = v => v==null ? '—' : (v>0?'+':'')+v.toFixed(1)+'%';
+  const cld = v => v==null ? 'neu' : v>0 ? 'up' : 'dn';
+  const rVal  = wlCalcR(d.price, row.entry, row.stop);
+  const rStr  = rVal==null ? '—' : (rVal>0?'+':'')+rVal.toFixed(2)+'R';
+  const rCls  = rVal==null ? 'neu' : rVal>=1 ? 'up' : rVal>=0 ? 'amb' : 'dn';
+  const vCls  = d.rel_vol==null ? 'neu' : d.rel_vol>=1.5 ? 'up' : d.rel_vol<0.7 ? 'dn' : 'neu';
+
+  tr.querySelector('.wl-price').textContent = fmtPrice(d.price, row.ticker);
+  sc('.wl-1d',  fmtPct(d.change1d),                              pctClass(d.change1d, false));
+  sc('.wl-atr', d.atr_pct!=null ? d.atr_pct.toFixed(2)+'%':'—', '');
+  sc('.wl-adr', d.adr_pct!=null ? d.adr_pct.toFixed(2)+'%':'—', '');
+  sc('.wl-e21', fd(d.ema21d),  cld(d.ema21d));
+  sc('.wl-m50', fd(d.sma50d),  cld(d.sma50d));
+  sc('.wl-m200',fd(d.sma200d), cld(d.sma200d));
+  sc('.wl-vol', d.rel_vol!=null ? d.rel_vol.toFixed(1)+'x':'—', vCls);
+  sc('.wl-r',   rStr, rCls);
+}
+
+// ── Row lifecycle ────────────────────────────────────────────
+function wlBuildRow(id) {
+  const row = _wlRows.find(r => r.id === id);
+  if (!row) return;
+  const emp = document.getElementById('wl-empty');
+  if (emp) emp.remove();
+
+  const opts = `<option value="">—</option>` +
+    _wlSetupTypes.map(s => `<option${row.setup===s?' selected':''}>${s}</option>`).join('');
+
+  const tr = document.createElement('tr');
+  tr.id = `wl-row-${id}`;
+  tr.innerHTML = `
+    <td class="left"><input class="wl-ticker-inp" type="text" value="${row.ticker}" placeholder="AAPL"
+      onkeydown="if(event.key==='Enter'){event.preventDefault();wlSubmitTicker(${id},this.value)}"
+      onblur="wlSubmitTicker(${id},this.value)"></td>
+    <td class="wl-price">—</td>
+    <td class="wl-1d neu">—</td>
+    <td class="wl-atr">—</td>
+    <td class="wl-adr">—</td>
+    <td class="wl-e21 neu">—</td>
+    <td class="wl-m50 neu">—</td>
+    <td class="wl-m200 neu">—</td>
+    <td class="wl-vol neu">—</td>
+    <td><select class="wl-setup-sel" onchange="wlSetField(${id},'setup',this.value)">${opts}</select></td>
+    <td><input class="wl-num-inp" type="number" min="0" step="0.01" value="${row.entry||''}" placeholder="—"
+      oninput="wlSetField(${id},'entry',this.value);wlRenderCells(${id})"></td>
+    <td><input class="wl-num-inp" type="number" min="0" step="0.01" value="${row.stop||''}" placeholder="—"
+      oninput="wlSetField(${id},'stop',this.value);wlRenderCells(${id})"></td>
+    <td class="wl-r neu">—</td>
+    <td><button class="wl-rm-btn" onclick="wlRemove(${id})">×</button></td>`;
+  document.getElementById('tbody-wl').appendChild(tr);
+}
+
+function wlSubmitTicker(id, raw) {
+  const ticker = raw.trim().toUpperCase();
+  const row = _wlRows.find(r => r.id === id);
+  if (!row) return;
+  const inp = document.querySelector(`#wl-row-${id} .wl-ticker-inp`);
+  if (inp && inp.value !== ticker) inp.value = ticker;
+  if (ticker === row.ticker && _wlFetched[id] && !_wlFetched[id].error) return;
+  row.ticker = ticker;
+  wlSave();
+  if (ticker) wlFetch(id, ticker);
+}
+
+function wlSetField(id, field, val) {
+  const row = _wlRows.find(r => r.id === id);
+  if (row) { row[field] = val; wlSave(); }
+}
+
+function wlAdd() {
+  if (_wlRows.length >= _wlMaxRows) return;
+  const id = _wlNextId++;
+  _wlRows.push({ id, ticker: '', setup: '', entry: '', stop: '' });
+  wlBuildRow(id);
+  const inp = document.querySelector(`#wl-row-${id} .wl-ticker-inp`);
+  if (inp) inp.focus();
+}
+
+function wlRemove(id) {
+  _wlRows = _wlRows.filter(r => r.id !== id);
+  delete _wlFetched[id];
+  const tr = document.getElementById(`wl-row-${id}`);
+  if (tr) tr.remove();
+  wlSave();
+  if (_wlRows.length === 0) wlShowEmpty();
+}
+
+function wlShowEmpty() {
+  if (document.getElementById('wl-empty')) return;
+  const tr = document.createElement('tr');
+  tr.id = 'wl-empty';
+  tr.innerHTML = `<td colspan="14" style="padding:10px 8px;color:var(--text-dim);font-style:italic;font-size:11px;">No tickers — click + Add to start.</td>`;
+  document.getElementById('tbody-wl').appendChild(tr);
+}
+
+function wlRefreshAll() {
+  _wlRows.forEach(r => { if (r.ticker) wlFetch(r.id, r.ticker); });
+}
+
+async function initWatchlist() {
+  try {
+    const resp = await fetch('config.json', { cache: 'no-store' });
+    if (resp.ok) {
+      const cfg = await resp.json();
+      if (cfg.watchlist?.setup_types) _wlSetupTypes = cfg.watchlist.setup_types;
+      if (cfg.watchlist?.max_rows)    _wlMaxRows    = cfg.watchlist.max_rows;
+      if (cfg.watchlist?.yahoo_chart_url) _wlChartUrl = cfg.watchlist.yahoo_chart_url;
+    }
+  } catch {}
+  wlRestore();
+  if (_wlRows.length === 0) {
+    wlShowEmpty();
+  } else {
+    _wlRows.forEach(r => wlBuildRow(r.id));
+    wlRefreshAll();
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
 //  BOOT
 // ═══════════════════════════════════════════════════════════
 loadMarket();
 loadNaaim();
 loadConfig();
+initWatchlist();
 setInterval(loadMarket, CFG.refreshMs);
 setInterval(loadNaaim, CFG.refreshMs * 6); // NAAIM refreshes rarely
+setInterval(wlRefreshAll, CFG.refreshMs);
 </script>
 </body>
 </html>
