@@ -572,6 +572,67 @@ canvas.spark {
   font-size: 10px;
   letter-spacing: .04em;
 }
+
+/* ═══════════════════════════════════════════════════════════
+   SECTION 6 — INTELLIGENCE
+═══════════════════════════════════════════════════════════ */
+.intel-panels {
+  display: flex;
+  align-items: flex-start;
+}
+.intel-panel {
+  flex: 1;
+  min-width: 0;
+  border-right: 1px solid var(--border);
+}
+.intel-panel:last-child { border-right: none; }
+.intel-panel-sub { border-bottom: 1px solid var(--border); }
+.intel-panel-sub:last-child { border-bottom: none; }
+
+/* After-hours table column widths */
+#tbl-ah th:nth-child(1), #tbl-ah td:nth-child(1) { width: 58px;  text-align: left; }
+#tbl-ah th:nth-child(2), #tbl-ah td:nth-child(2) { width: 130px; text-align: left; }
+#tbl-ah th:nth-child(3), #tbl-ah td:nth-child(3) { width: 62px; }
+#tbl-ah th:nth-child(4), #tbl-ah td:nth-child(4) { width: 66px; }
+#tbl-ah th:nth-child(5), #tbl-ah td:nth-child(5) { width: 66px; }
+#tbl-ah th:nth-child(6), #tbl-ah td:nth-child(6) { width: 62px; }
+#tbl-ah th:nth-child(7), #tbl-ah td:nth-child(7) { text-align: left; }
+
+/* IPO list items */
+.ipo-item {
+  display: flex;
+  align-items: baseline;
+  padding: 3px 8px;
+  gap: 8px;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 11px;
+}
+.ipo-item:last-child { border-bottom: none; }
+.ipo-item:hover { background: #e8e8e8; }
+.ipo-sym   { font-weight: bold; width: 56px; flex-shrink: 0; }
+.ipo-name  { flex: 1; color: var(--text-dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ipo-chg   { font-weight: bold; width: 52px; text-align: right; flex-shrink: 0; }
+.ipo-price { width: 54px; text-align: right; flex-shrink: 0; color: var(--text-dim); }
+.ipo-date  { width: 70px; text-align: right; flex-shrink: 0; color: var(--text-dim); font-size: 10px; }
+.ipo-tag {
+  font-size: 10px; padding: 1px 5px; border-radius: 2px;
+  font-weight: bold; flex-shrink: 0; font-family: var(--font);
+}
+.ipo-tag.priced    { background: var(--green-dim); color: var(--green); }
+.ipo-tag.filed     { background: #dbeafe;          color: var(--blue);  }
+.ipo-tag.delayed   { background: var(--red-dim);   color: var(--red);   }
+.ipo-tag.withdrawn { background: var(--amber-dim); color: var(--amber); }
+.intel-empty {
+  padding: 8px 8px;
+  color: var(--text-dim);
+  font-size: 11px;
+  font-style: italic;
+}
+@media (max-width: 900px) {
+  .intel-panels { flex-direction: column; }
+  .intel-panel  { border-right: none; border-bottom: 1px solid var(--border); }
+  .intel-panel:last-child { border-bottom: none; }
+}
 </style>
 </head>
 <body>
@@ -835,7 +896,66 @@ canvas.spark {
     <span class="section-toggle" id="s6-tog">▲</span>
   </div>
   <div class="section-body" id="s6-body">
-    <div style="padding:12px;color:var(--text-dim);font-size:11px;">Coming in Step 5.</div>
+  <div class="intel-panels">
+
+    <!-- ── After-Hours Movers ── -->
+    <div class="intel-panel">
+      <div class="cal-sub-header">
+        After-Hours Movers
+        <span id="ah-meta" style="font-weight:normal;font-size:10px;color:var(--text-dim)"></span>
+      </div>
+      <table class="data-table" id="tbl-ah">
+        <thead>
+          <tr>
+            <th class="left">Ticker</th>
+            <th class="left">Name</th>
+            <th>AH %</th>
+            <th>AH Price</th>
+            <th>Reg Price</th>
+            <th>Mkt Cap</th>
+            <th class="left">Catalyst</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-ah">
+          <tr><td colspan="7" style="text-align:center;padding:12px 8px;color:var(--text-dim);">Data updates at 5:05 PM ET on weekdays</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── IPO Weekly Briefing ── -->
+    <div class="intel-panel">
+
+      <div class="intel-panel-sub">
+        <div class="cal-sub-header">
+          Recently Priced
+          <span id="ipo-week-meta" style="font-weight:normal;font-size:10px;color:var(--text-dim)"></span>
+        </div>
+        <div id="ipo-recent-body"><div class="intel-empty">Data updates Sunday mornings</div></div>
+      </div>
+
+      <div class="intel-panel-sub">
+        <div class="cal-sub-header">New S-1 / F-1 Filings</div>
+        <div id="ipo-filings-body"><div class="intel-empty">—</div></div>
+      </div>
+
+      <div class="intel-panel-sub">
+        <div class="cal-sub-header">Delayed &amp; Withdrawn</div>
+        <div id="ipo-delayed-body"><div class="intel-empty">—</div></div>
+      </div>
+
+      <div class="intel-panel-sub">
+        <div class="cal-sub-header">Recent IPOs — Weekly Movers (&gt;10%)</div>
+        <div id="ipo-movers-body"><div class="intel-empty">—</div></div>
+      </div>
+
+      <div class="intel-panel-sub">
+        <div class="cal-sub-header">Sector Trends</div>
+        <div id="ipo-sectors-body"><div class="intel-empty">—</div></div>
+      </div>
+
+    </div>
+
+  </div><!-- /intel-panels -->
   </div>
 </section>
 
@@ -844,10 +964,12 @@ canvas.spark {
 //  CONFIG (mirrors config.json — source of truth for paths)
 // ═══════════════════════════════════════════════════════════
 const CFG = {
-  marketFile:   "data/market.json",
-  naaimFile:    "data/naaim.json",
-  refreshMs:    300000,
-  staleMinutes: 15,
+  marketFile:     "data/market.json",
+  naaimFile:      "data/naaim.json",
+  afterHoursFile: "data/after_hours.json",
+  ipoBriefingFile:"data/ipo_briefing.json",
+  refreshMs:      300000,
+  staleMinutes:   15,
 };
 
 // ═══════════════════════════════════════════════════════════
@@ -1780,6 +1902,126 @@ async function initWatchlist() {
 }
 
 // ═══════════════════════════════════════════════════════════
+//  SECTION 6 — INTELLIGENCE
+// ═══════════════════════════════════════════════════════════
+function _fmtCap(v) {
+  if (!v) return '—';
+  if (v >= 1e12) return '$' + (v / 1e12).toFixed(1) + 'T';
+  if (v >= 1e9)  return '$' + (v / 1e9).toFixed(1)  + 'B';
+  if (v >= 1e6)  return '$' + (v / 1e6).toFixed(1)  + 'M';
+  return '$' + v.toLocaleString();
+}
+
+async function loadAfterHours() {
+  const tbody = document.getElementById('tbody-ah');
+  const meta  = document.getElementById('ah-meta');
+  try {
+    const res = await fetch(CFG.afterHoursFile, { cache: 'no-store' });
+    if (!res.ok) throw new Error('no data');
+    const d = await res.json();
+    if (d.as_of) meta.textContent = d.as_of;
+    if (!d.movers || d.movers.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:12px 8px;color:var(--text-dim);">No movers matched filters today</td></tr>';
+      return;
+    }
+    tbody.innerHTML = d.movers.map(m => {
+      const cls  = m.ah_pct >= 0 ? 'up' : 'dn';
+      const sign = m.ah_pct >= 0 ? '+' : '';
+      return `<tr>
+        <td class="left" style="font-weight:bold">${m.ticker}</td>
+        <td class="left" style="color:var(--text-dim)">${m.name}</td>
+        <td class="${cls}">${sign}${m.ah_pct.toFixed(2)}%</td>
+        <td>$${m.ah_price.toFixed(2)}</td>
+        <td style="color:var(--text-dim)">$${m.reg_price.toFixed(2)}</td>
+        <td>${_fmtCap(m.mkt_cap)}</td>
+        <td class="left" style="color:var(--text-dim);overflow:hidden;text-overflow:ellipsis"
+            title="${m.catalyst || ''}">${m.catalyst || '—'}</td>
+      </tr>`;
+    }).join('');
+  } catch (_) {
+    meta.textContent = 'runs 5:05 PM ET weekdays';
+    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:12px 8px;color:var(--text-dim);">Data updates at market close</td></tr>';
+  }
+}
+
+function _renderIpoBlock(elId, arr, rowFn, emptyMsg) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  if (!arr || arr.length === 0) {
+    el.innerHTML = `<div class="intel-empty">${emptyMsg}</div>`;
+    return;
+  }
+  el.innerHTML = arr.map(rowFn).join('');
+}
+
+async function loadIPOBriefing() {
+  try {
+    const res = await fetch(CFG.ipoBriefingFile, { cache: 'no-store' });
+    if (!res.ok) throw new Error('no data');
+    const d = await res.json();
+    if (d.week_of) document.getElementById('ipo-week-meta').textContent = d.week_of;
+
+    _renderIpoBlock('ipo-recent-body', d.recently_priced, r => {
+      const px = r.current_price ? `<span class="ipo-price">$${(+r.current_price).toFixed(2)}</span>` : '';
+      return `<div class="ipo-item">
+        <span class="ipo-sym">${r.ticker || '—'}</span>
+        <span class="ipo-name">${r.company}</span>
+        ${px}
+        <span class="ipo-date">${r.priced_date || ''}</span>
+        <span class="ipo-tag priced">PRICED</span>
+      </div>`;
+    }, 'No new pricings this week');
+
+    _renderIpoBlock('ipo-filings-body', d.new_filings, f =>
+      `<div class="ipo-item">
+        <span class="ipo-sym">${f.ticker || '—'}</span>
+        <span class="ipo-name">${f.company}</span>
+        <span class="ipo-date">${f.filed || ''}</span>
+        <span class="ipo-tag filed">${f.form}</span>
+      </div>`,
+    'No new filings this week');
+
+    _renderIpoBlock('ipo-delayed-body', d.delayed_withdrawn, dw => {
+      const cls = dw.status === 'Withdrawn' ? 'withdrawn' : 'delayed';
+      return `<div class="ipo-item">
+        <span class="ipo-name" style="flex:1">${dw.company}</span>
+        <span class="ipo-date">${dw.filed || ''}</span>
+        <span class="ipo-tag ${cls}">${dw.status.toUpperCase()}</span>
+      </div>`;
+    }, 'None this week');
+
+    _renderIpoBlock('ipo-movers-body', d.weekly_movers, m => {
+      const cls  = m.weekly_chg >= 0 ? 'up' : 'dn';
+      const sign = m.weekly_chg >= 0 ? '+' : '';
+      const px   = m.price ? `<span class="ipo-price">$${(+m.price).toFixed(2)}</span>` : '';
+      return `<div class="ipo-item">
+        <span class="ipo-sym">${m.ticker}</span>
+        <span class="ipo-name">${m.name}</span>
+        ${px}
+        <span class="ipo-chg ${cls}">${sign}${m.weekly_chg.toFixed(1)}%</span>
+      </div>`;
+    }, 'No moves >10% this week');
+
+    _renderIpoBlock('ipo-sectors-body', d.sector_trends, s => {
+      const cls  = s.avg_weekly_chg >= 0 ? 'up' : 'dn';
+      const sign = s.avg_weekly_chg >= 0 ? '+' : '';
+      return `<div class="ipo-item">
+        <span style="flex:1">${s.sector}</span>
+        <span style="color:var(--text-dim);font-size:10px">${s.count} IPO${s.count !== 1 ? 's' : ''}</span>
+        <span class="ipo-chg ${cls}">${sign}${s.avg_weekly_chg.toFixed(1)}%</span>
+      </div>`;
+    }, 'No sector data');
+
+  } catch (_) {
+    ['ipo-recent-body','ipo-filings-body','ipo-delayed-body','ipo-movers-body','ipo-sectors-body']
+      .forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = '<div class="intel-empty">Data updates Sunday mornings</div>';
+      });
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
 //  BOOT
 // ═══════════════════════════════════════════════════════════
 loadMarket();
@@ -1787,10 +2029,13 @@ loadNaaim();
 loadConfig();
 initWatchlist();
 initCalendar();
-setInterval(loadMarket,  CFG.refreshMs);
-setInterval(loadNaaim,   CFG.refreshMs * 6);
-setInterval(wlRefreshAll, CFG.refreshMs);
-setInterval(initCalendar, CFG.refreshMs * 12); // calendar refreshes every hour
+loadAfterHours();
+loadIPOBriefing();
+setInterval(loadMarket,    CFG.refreshMs);
+setInterval(loadNaaim,     CFG.refreshMs * 6);
+setInterval(wlRefreshAll,  CFG.refreshMs);
+setInterval(initCalendar,  CFG.refreshMs * 12);
+setInterval(loadAfterHours, CFG.refreshMs);
 </script>
 </body>
 </html>

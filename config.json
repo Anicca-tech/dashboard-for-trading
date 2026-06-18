@@ -77,13 +77,36 @@
     "after_hours_time_est": "17:00",
     "ipo_briefing_day": "Sunday"
   },
+  "intelligence": {
+    "after_hours": {
+      "trigger_time_et": "17:00",
+      "min_move_pct": 6.0,
+      "min_market_cap": 1000000000,
+      "min_price": 7.0,
+      "require_catalyst": true,
+      "catalyst_window_hours": 4,
+      "max_results": 10
+    },
+    "ipo_briefing": {
+      "trigger_day": "Sunday",
+      "trigger_time_utc": "10:00",
+      "recent_ipo_months": 6,
+      "weekly_move_threshold": 10.0,
+      "max_filings": 20,
+      "max_priced": 10,
+      "max_delayed": 10,
+      "max_weekly_movers": 20
+    }
+  },
   "data_files": {
     "market": "data/market.json",
     "etfs": "data/etfs.json",
     "naaim": "data/naaim.json",
     "sparklines": "data/sparklines.json",
     "notifications": "data/notifications.json",
-    "universe": "data/universe.json"
+    "universe": "data/universe.json",
+    "after_hours": "data/after_hours.json",
+    "ipo_briefing": "data/ipo_briefing.json"
   },
   "fred": {
     "series": {
