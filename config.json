@@ -75,7 +75,35 @@
   "notifications": {
     "times_est": ["10:00", "12:30", "15:30"],
     "after_hours_time_est": "17:00",
-    "ipo_briefing_day": "Sunday"
+    "ipo_briefing_day": "Sunday",
+    "thresholds": {
+      "indices_move_pct":    1.0,
+      "etf_move_pct":        3.0,
+      "gold_move_pct":       2.0,
+      "silver_move_pct":     2.0,
+      "wti_move_pct":        2.0,
+      "brent_move_pct":      2.0,
+      "bitcoin_move_pct":    3.0,
+      "ethereum_move_pct":   3.0,
+      "stock_move_pct":      5.0,
+      "stock_min_market_cap": 1000000000,
+      "stock_min_price":     7.0,
+      "stock_min_avg_volume": 500000,
+      "stock_min_atr_pct":   3.0,
+      "stock_min_adr_pct":   3.0,
+      "wl_proximity_pct":    2.0
+    },
+    "watch_indices": ["^GSPC", "^IXIC", "^DJI", "IWM", "RTY=F"],
+    "watch_commodities": [
+      { "symbol": "GC=F",    "label": "Gold",   "threshold": 2.0 },
+      { "symbol": "SI=F",    "label": "Silver", "threshold": 2.0 },
+      { "symbol": "CL=F",    "label": "WTI",    "threshold": 2.0 },
+      { "symbol": "BZ=F",    "label": "Brent",  "threshold": 2.0 }
+    ],
+    "watch_crypto": [
+      { "symbol": "BTC-USD", "label": "BTC",    "threshold": 3.0 },
+      { "symbol": "ETH-USD", "label": "ETH",    "threshold": 3.0 }
+    ]
   },
   "intelligence": {
     "after_hours": {
@@ -105,8 +133,9 @@
     "sparklines": "data/sparklines.json",
     "notifications": "data/notifications.json",
     "universe": "data/universe.json",
-    "after_hours": "data/after_hours.json",
-    "ipo_briefing": "data/ipo_briefing.json"
+    "after_hours":    "data/after_hours.json",
+    "ipo_briefing":   "data/ipo_briefing.json",
+    "notifications":  "data/notifications.json"
   },
   "fred": {
     "series": {

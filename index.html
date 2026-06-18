@@ -633,6 +633,84 @@ canvas.spark {
   .intel-panel  { border-right: none; border-bottom: 1px solid var(--border); }
   .intel-panel:last-child { border-bottom: none; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   SECTION 7 — INTRADAY NOTIFICATIONS
+═══════════════════════════════════════════════════════════ */
+.notif-slot { border-bottom: 1px solid var(--border); }
+.notif-slot:last-child { border-bottom: none; }
+.notif-time {
+  font-weight: normal; font-size: 10px; color: var(--text-dim);
+  margin-left: 8px; letter-spacing: .02em; text-transform: none;
+}
+.notif-pending, .notif-no-alerts {
+  padding: 6px 8px; color: var(--text-dim); font-size: 11px; font-style: italic;
+}
+.notif-alerts { width: 100%; border-collapse: collapse; }
+.notif-alerts td {
+  font-size: 11px; padding: 2px 8px; height: 24px;
+  border-bottom: 1px solid #e4e4e4; vertical-align: middle;
+}
+.notif-alerts tr:last-child td { border-bottom: none; }
+.notif-alerts tr:hover td { background: #e8e8e8; }
+.notif-type-badge {
+  font-size: 9px; font-weight: bold; padding: 1px 5px;
+  border-radius: 2px; letter-spacing: .04em; font-family: var(--font);
+  text-transform: uppercase; display: inline-block; width: 68px; text-align: center;
+}
+.nb-index  { background: #e0e7ff; color: #3730a3; }
+.nb-etf    { background: var(--green-dim); color: var(--green); }
+.nb-commod { background: #fef3c7; color: #b45309; }
+.nb-crypto { background: #fce7f3; color: #9d174d; }
+.nb-stock  { background: var(--red-dim); color: var(--red); }
+.notif-sub-hdr {
+  font-size: 10px; color: var(--text-dim); text-transform: uppercase;
+  letter-spacing: .05em; padding: 3px 8px;
+  background: var(--bg2); border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.rotation-row {
+  display: flex; align-items: center; gap: 8px;
+  padding: 3px 8px; font-size: 11px; border-bottom: 1px solid #e4e4e4;
+}
+.rotation-row:last-child { border-bottom: none; }
+.rotation-row:hover { background: #e8e8e8; }
+.rotation-ticker { font-weight: bold; width: 52px; flex-shrink: 0; }
+.rotation-arrow  { font-size: 13px; flex-shrink: 0; }
+.rotation-from   { color: var(--text-dim); font-size: 10px; flex: 1; }
+.rotation-pct    { font-weight: bold; flex-shrink: 0; }
+.range-table { width: 100%; border-collapse: collapse; }
+.range-table th {
+  background: var(--bg3); color: var(--text-dim); font-size: 10px;
+  font-weight: normal; padding: 2px 8px; text-align: right;
+  border-bottom: 1px solid var(--border); letter-spacing: .04em;
+  position: sticky; top: var(--nav-h); z-index: 10;
+}
+.range-table th:first-child { text-align: left; }
+.range-table td {
+  font-size: 11px; padding: 2px 8px; height: 24px;
+  text-align: right; border-bottom: 1px solid #e4e4e4; vertical-align: middle;
+}
+.range-table td:first-child { text-align: left; font-weight: bold; }
+.range-table tr:last-child td { border-bottom: none; }
+.range-table tr:hover td { background: #e8e8e8; }
+.range-bar-wrap { display: inline-flex; align-items: center; gap: 4px; width: 90px; }
+.range-bar-track {
+  flex: 1; height: 6px; background: var(--bg3);
+  border: 1px solid var(--border); border-radius: 3px; overflow: hidden;
+}
+.range-bar-fill { height: 100%; background: var(--blue); }
+.range-bar-pct  { font-size: 10px; color: var(--text-dim); width: 26px; text-align: right; flex-shrink: 0; }
+.wl-prox-row {
+  display: flex; align-items: center; gap: 8px;
+  padding: 3px 8px; font-size: 11px; border-bottom: 1px solid #e4e4e4;
+}
+.wl-prox-row:last-child { border-bottom: none; }
+.wl-prox-row:hover { background: #e8e8e8; }
+.wl-prox-ticker { font-weight: bold; width: 52px; flex-shrink: 0; }
+.wl-prox-price  { width: 64px; text-align: right; flex-shrink: 0; }
+.wl-prox-entry  { color: var(--text-dim); font-size: 10px; flex: 1; }
+.wl-prox-dist   { font-weight: bold; flex-shrink: 0; }
 </style>
 </head>
 <body>
@@ -645,6 +723,7 @@ canvas.spark {
   <a href="#s4">SIZER</a>
   <a href="#s5">CALENDAR</a>
   <a href="#s6">INTEL</a>
+  <a href="#s7">NOTIFS</a>
   <span id="clock">--:--:-- EST</span>
   <span id="market-status" class="closed">CLOSED</span>
   <span id="last-updated"></span>
@@ -959,18 +1038,57 @@ canvas.spark {
   </div>
 </section>
 
+<section class="section" id="s7">
+  <div class="section-header" onclick="toggleSection('s7-body')">
+    <span class="section-title">7 — Intraday Notifications</span>
+    <span class="section-toggle" id="s7-tog">▲</span>
+  </div>
+  <div class="section-body" id="s7-body">
+
+    <!-- N1: 10:00 AM -->
+    <div class="notif-slot">
+      <div class="cal-sub-header">
+        10:00 AM — Market Open Scan
+        <span class="notif-time" id="notif-n1-time"></span>
+      </div>
+      <div id="notif-n1-body"><div class="notif-pending">Pending — runs at 10:05 AM ET on weekdays</div></div>
+    </div>
+
+    <!-- N2: 12:30 PM -->
+    <div class="notif-slot">
+      <div class="cal-sub-header">
+        12:30 PM — Midday Scan + Sector Rotation
+        <span class="notif-time" id="notif-n2-time"></span>
+      </div>
+      <div id="notif-n2-body"><div class="notif-pending">Pending — runs at 12:35 PM ET on weekdays</div></div>
+    </div>
+
+    <!-- N3: 3:30 PM -->
+    <div class="notif-slot">
+      <div class="cal-sub-header">
+        3:30 PM — Pre-Close Scan + Range &amp; Watchlist
+        <span class="notif-time" id="notif-n3-time"></span>
+      </div>
+      <div id="notif-n3-body"><div class="notif-pending">Pending — runs at 3:35 PM ET on weekdays</div></div>
+    </div>
+
+  </div>
+</section>
+
 <script>
 // ═══════════════════════════════════════════════════════════
 //  CONFIG (mirrors config.json — source of truth for paths)
 // ═══════════════════════════════════════════════════════════
 const CFG = {
-  marketFile:     "data/market.json",
-  naaimFile:      "data/naaim.json",
-  afterHoursFile: "data/after_hours.json",
-  ipoBriefingFile:"data/ipo_briefing.json",
-  refreshMs:      300000,
-  staleMinutes:   15,
+  marketFile:        "data/market.json",
+  naaimFile:         "data/naaim.json",
+  afterHoursFile:    "data/after_hours.json",
+  ipoBriefingFile:   "data/ipo_briefing.json",
+  notificationsFile: "data/notifications.json",
+  refreshMs:         300000,
+  staleMinutes:      15,
 };
+let _notifProxPct = 2.0; // overridden by config.json notifications.thresholds.wl_proximity_pct
 
 // ═══════════════════════════════════════════════════════════
 //  SECTION GROUPS — order matches brief
@@ -1386,6 +1504,8 @@ async function loadConfig() {
     const ps  = cfg.position_sizing || {};
     document.getElementById('sz-equity').value = ps.default_account_equity ?? 100000;
     document.getElementById('sz-risk').value   = ps.default_risk_pct       ?? 0.4;
+    const nt = cfg.notifications?.thresholds || {};
+    if (nt.wl_proximity_pct != null) _notifProxPct = nt.wl_proximity_pct;
   } catch {
     document.getElementById('sz-equity').value = 100000;
     document.getElementById('sz-risk').value   = 0.4;
@@ -2022,6 +2142,173 @@ async function loadIPOBriefing() {
 }
 
 // ═══════════════════════════════════════════════════════════
+//  SECTION 7 — INTRADAY NOTIFICATIONS
+// ═══════════════════════════════════════════════════════════
+const _NOTIF_BADGE = {
+  index:    ['nb-index',  'INDEX'],
+  etf:      ['nb-etf',    'ETF'],
+  commodity:['nb-commod', 'COMMOD'],
+  crypto:   ['nb-crypto', 'CRYPTO'],
+  stock:    ['nb-stock',  'STOCK'],
+};
+
+function _notifFmt$(v) {
+  return v == null ? '—' : '$' + (+v).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+function _notifFmtCap(v) {
+  if (!v) return '';
+  if (v >= 1e12) return ' ' + (v/1e12).toFixed(1) + 'T';
+  if (v >= 1e9)  return ' ' + (v/1e9).toFixed(1)  + 'B';
+  if (v >= 1e6)  return ' ' + (v/1e6).toFixed(1)  + 'M';
+  return '';
+}
+
+function _renderNotifAlerts(alerts) {
+  if (!alerts || alerts.length === 0) {
+    return '<div class="notif-no-alerts">No alerts — all instruments within thresholds</div>';
+  }
+  const rows = alerts.map(a => {
+    const [cls, lbl] = _NOTIF_BADGE[a.type] || ['nb-stock', (a.type || 'ASSET').toUpperCase()];
+    const col   = a.pct >= 0 ? 'up' : 'dn';
+    const sign  = a.pct >= 0 ? '+' : '';
+    const cap   = a.type === 'stock' ? `<td style="color:var(--text-dim);font-size:10px">${_notifFmtCap(a.mkt_cap)}</td>` : '<td></td>';
+    return `<tr>
+      <td><span class="notif-type-badge ${cls}">${lbl}</span></td>
+      <td style="font-weight:bold">${a.label || a.ticker}</td>
+      <td class="${col}">${sign}${a.pct.toFixed(2)}%</td>
+      <td>${_notifFmt$(a.price)}</td>
+      ${cap}
+    </tr>`;
+  }).join('');
+  return `<table class="notif-alerts">${rows}</table>`;
+}
+
+function _renderRotation(rotation) {
+  if (!rotation || rotation.length === 0) {
+    return '<div class="notif-sub-hdr">Sector Rotation</div>'
+         + '<div class="notif-no-alerts">No rotation — no ETF crossed between top 5 and bottom 5</div>';
+  }
+  const rows = rotation.map(r => {
+    const col   = r.now === 'top5' ? 'up' : 'dn';
+    const arrow = r.now === 'top5' ? '↑' : '↓';
+    const sign  = r.pct_now >= 0 ? '+' : '';
+    return `<div class="rotation-row">
+      <span class="rotation-ticker">${r.ticker}</span>
+      <span class="rotation-arrow ${col}">${arrow}</span>
+      <span class="rotation-from">${r.was} → ${r.now}</span>
+      <span class="rotation-pct ${col}">${sign}${r.pct_now.toFixed(2)}%</span>
+    </div>`;
+  }).join('');
+  return `<div class="notif-sub-hdr">Sector Rotation</div><div>${rows}</div>`;
+}
+
+function _renderIndicesRange(idxRange) {
+  if (!idxRange || idxRange.length === 0) return '';
+  const rows = idxRange.map(r => {
+    const col  = r.pct >= 0 ? 'up' : 'dn';
+    const sign = r.pct >= 0 ? '+' : '';
+    const rp   = r.range_pct != null ? Math.min(100, Math.max(0, r.range_pct)) : 50;
+    return `<tr>
+      <td>${r.label}</td>
+      <td>${_notifFmt$(r.current)}</td>
+      <td class="${col}">${sign}${r.pct.toFixed(2)}%</td>
+      <td>${_notifFmt$(r.high)}</td>
+      <td>${_notifFmt$(r.low)}</td>
+      <td><div class="range-bar-wrap">
+        <div class="range-bar-track"><div class="range-bar-fill" style="width:${rp.toFixed(0)}%"></div></div>
+        <span class="range-bar-pct">${rp.toFixed(0)}%</span>
+      </div></td>
+    </tr>`;
+  }).join('');
+  return `<div class="notif-sub-hdr">Index Day Range (0% = low, 100% = high)</div>
+    <table class="range-table">
+      <thead><tr>
+        <th>Index</th><th>Price</th><th>Day %</th><th>High</th><th>Low</th><th>Range Pos</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function _renderWLProximity(proxPct) {
+  try {
+    const raw = localStorage.getItem('wl_v1');
+    if (!raw) return '';
+    const wlData = JSON.parse(raw);
+    const rows = [];
+    for (const row of (Array.isArray(wlData) ? wlData : (wlData.rows || []))) {
+      if (!row.ticker || !row.entry) continue;
+      const entry   = parseFloat(row.entry);
+      if (isNaN(entry) || entry <= 0) continue;
+      const fetched = (_wlFetched || {})[row.id];
+      if (!fetched || !fetched.price) continue;
+      const price = fetched.price;
+      const dist  = ((price - entry) / entry) * 100;
+      if (Math.abs(dist) <= proxPct) {
+        const col  = dist >= 0 ? 'up' : 'dn';
+        const sign = dist >= 0 ? '+' : '';
+        rows.push(`<div class="wl-prox-row">
+          <span class="wl-prox-ticker">${row.ticker}</span>
+          <span class="wl-prox-price">${_notifFmt$(price)}</span>
+          <span class="wl-prox-entry">entry ${_notifFmt$(entry)}</span>
+          <span class="wl-prox-dist ${col}">${sign}${dist.toFixed(2)}%</span>
+        </div>`);
+      }
+    }
+    if (rows.length === 0) return '';
+    return `<div class="notif-sub-hdr">Watchlist Near Entry (≤${proxPct}%)</div><div>${rows.join('')}</div>`;
+  } catch (_) { return ''; }
+}
+
+function _buildSlotHtml(slot, todayStr) {
+  if (!slot) return '<div class="notif-pending">No data yet for this slot today</div>';
+  const isToday = slot.triggered_at?.startsWith(todayStr);
+  let html = '';
+  if (!isToday) {
+    const d = slot.triggered_at?.slice(0, 10) || 'unknown';
+    html += `<div class="notif-pending" style="color:var(--amber)">Data from ${d} — today's run pending</div>`;
+  }
+  html += _renderNotifAlerts(slot.alerts);
+  if (slot.slot === 'n2' || slot.sector_rotation != null) {
+    html += _renderRotation(slot.sector_rotation);
+  }
+  if (slot.indices_range) {
+    html += _renderIndicesRange(slot.indices_range);
+    html += _renderWLProximity(_notifProxPct);
+  }
+  return html;
+}
+
+async function loadNotifications() {
+  try {
+    const res = await fetch(CFG.notificationsFile, { cache: 'no-store' });
+    if (!res.ok) throw new Error('no data');
+    const d = await res.json();
+    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+    ['n1', 'n2', 'n3'].forEach(key => {
+      const slot   = d[key];
+      const bodyEl = document.getElementById(`notif-${key}-body`);
+      const timeEl = document.getElementById(`notif-${key}-time`);
+      if (!bodyEl) return;
+      if (!slot) {
+        bodyEl.innerHTML = '<div class="notif-pending">No data yet for this slot today</div>';
+        return;
+      }
+      if (timeEl && slot.triggered_at) {
+        const t = new Date(slot.triggered_at);
+        timeEl.textContent = '— ' + t.toLocaleTimeString('en-US',
+          { hour: '2-digit', minute: '2-digit', timeZone: 'America/New_York', hour12: true });
+      }
+      bodyEl.innerHTML = _buildSlotHtml(slot, today);
+    });
+  } catch (_) {
+    ['n1', 'n2', 'n3'].forEach(key => {
+      const el = document.getElementById(`notif-${key}-body`);
+      if (el) el.innerHTML = '<div class="notif-pending">data/notifications.json not found — runs on weekdays</div>';
+    });
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
 //  BOOT
 // ═══════════════════════════════════════════════════════════
 loadMarket();
@@ -2031,11 +2318,13 @@ initWatchlist();
 initCalendar();
 loadAfterHours();
 loadIPOBriefing();
-setInterval(loadMarket,    CFG.refreshMs);
-setInterval(loadNaaim,     CFG.refreshMs * 6);
-setInterval(wlRefreshAll,  CFG.refreshMs);
-setInterval(initCalendar,  CFG.refreshMs * 12);
-setInterval(loadAfterHours, CFG.refreshMs);
+loadNotifications();
+setInterval(loadMarket,        CFG.refreshMs);
+setInterval(loadNaaim,         CFG.refreshMs * 6);
+setInterval(wlRefreshAll,      CFG.refreshMs);
+setInterval(initCalendar,      CFG.refreshMs * 12);
+setInterval(loadAfterHours,    CFG.refreshMs);
+setInterval(loadNotifications, CFG.refreshMs);
 </script>
 </body>
 </html>
