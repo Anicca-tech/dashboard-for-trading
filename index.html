@@ -309,6 +309,73 @@ canvas.spark {
 .hm-cell .hm-pct    { font-size: 10px; margin-top: 2px; }
 
 /* ═══════════════════════════════════════════════════════════
+   SECTION 5 — CALENDAR
+═══════════════════════════════════════════════════════════ */
+.cal-sub-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-head);
+}
+.cal-btn {
+  font-family: var(--font);
+  font-size: 11px;
+  padding: 1px 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 2px;
+}
+.cal-btn:hover { background: var(--bg3); }
+#cal-week-label {
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: .02em;
+  font-weight: normal;
+}
+/* Earnings table */
+#tbl-earnings th:nth-child(1), #tbl-earnings td:nth-child(1) { width: 66px;  text-align: left; }
+#tbl-earnings th:nth-child(2), #tbl-earnings td:nth-child(2) { width: 180px; text-align: left; }
+#tbl-earnings th:nth-child(3), #tbl-earnings td:nth-child(3) { width: 72px; }
+#tbl-earnings th:nth-child(4), #tbl-earnings td:nth-child(4) { width: 64px; }
+#tbl-earnings th:nth-child(5), #tbl-earnings td:nth-child(5),
+#tbl-earnings th:nth-child(6), #tbl-earnings td:nth-child(6) { width: 72px; }
+#tbl-earnings th:nth-child(7), #tbl-earnings td:nth-child(7) { width: 64px; }
+.earn-wl td { background: var(--amber-dim) !important; }
+.earn-wl td.left { font-weight: bold; }
+/* Macro table */
+#tbl-macro th:nth-child(1), #tbl-macro td:nth-child(1) { width: 130px; text-align: left; }
+#tbl-macro th:nth-child(2), #tbl-macro td:nth-child(2) { width: 82px; }
+#tbl-macro th:nth-child(3), #tbl-macro td:nth-child(3) { width: 56px; }
+#tbl-macro th:nth-child(4), #tbl-macro td:nth-child(4),
+#tbl-macro th:nth-child(5), #tbl-macro td:nth-child(5),
+#tbl-macro th:nth-child(6), #tbl-macro td:nth-child(6) { width: 80px; }
+.macro-pending td { color: var(--text-dim); }
+.macro-beat    td.macro-actual { color: var(--green); font-weight: bold; }
+.macro-miss    td.macro-actual { color: var(--red);   font-weight: bold; }
+.macro-in-line td.macro-actual { color: var(--text);  font-weight: bold; }
+/* Jobless claims mini-table */
+#cal-claims-wrap {
+  padding: 6px 8px 8px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.claims-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .04em; margin-right: 4px; }
+.claims-entry { font-size: 11px; }
+.claims-date  { color: var(--text-dim); margin-left: 4px; font-size: 10px; }
+
+/* ═══════════════════════════════════════════════════════════
    SECTION 3 — WATCHLIST
 ═══════════════════════════════════════════════════════════ */
 #wl-toolbar {
@@ -709,7 +776,56 @@ canvas.spark {
     <span class="section-toggle" id="s5-tog">▲</span>
   </div>
   <div class="section-body" id="s5-body">
-    <div style="padding:12px;color:var(--text-dim);font-size:11px;">Coming in Step 4.</div>
+
+    <!-- ── Earnings ── -->
+    <div class="cal-sub-header">
+      Earnings
+      <button class="cal-btn" id="cal-prev-week" onclick="calEarningsNav(-1)">◀</button>
+      <span id="cal-week-label">loading…</span>
+      <button class="cal-btn" id="cal-next-week" onclick="calEarningsNav(+1)">▶</button>
+      <button class="cal-btn" style="margin-left:4px" onclick="calLoadEarnings()">↻</button>
+    </div>
+    <table class="data-table" id="tbl-earnings">
+      <thead>
+        <tr>
+          <th class="left">Ticker</th>
+          <th class="left">Company</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>EPS Est</th>
+          <th>EPS Actual</th>
+          <th>Surprise</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-earnings">
+        <tr class="loading-row"><td colspan="7">Loading earnings…</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Macro Events ── -->
+    <div class="cal-sub-header" style="margin-top:0">Macro Events</div>
+    <table class="data-table" id="tbl-macro">
+      <thead>
+        <tr>
+          <th class="left">Event</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Prior</th>
+          <th>Consensus</th>
+          <th>Actual</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-macro">
+        <tr class="loading-row"><td colspan="6">Loading macro data…</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Jobless Claims ── -->
+    <div id="cal-claims-wrap">
+      <span class="claims-label">Jobless Claims (wkly):</span>
+      <span id="cal-claims-items" style="color:var(--text-dim);font-size:11px;">—</span>
+    </div>
+
   </div>
 </section>
 
@@ -1155,6 +1271,249 @@ async function loadConfig() {
 }
 
 // ═══════════════════════════════════════════════════════════
+//  SECTION 5 — CALENDAR
+// ═══════════════════════════════════════════════════════════
+let _calWeekOffset   = 0;
+let _calMacroSchedule = [];
+let _calMacroPast    = 21;
+let _calMacroFuture  = 84;
+let _calEarningsPerDay = 50;
+let _calMacroData    = {};   // series key → array of {date, value}
+
+// ── Date helpers ─────────────────────────────────────────────
+function calWeekDates(offsetWeeks) {
+  const today = new Date();
+  const day   = today.getDay();
+  const mon   = new Date(today);
+  mon.setDate(today.getDate() - (day === 0 ? 6 : day - 1) + offsetWeeks * 7);
+  return Array.from({length: 5}, (_, i) => {
+    const d = new Date(mon);
+    d.setDate(mon.getDate() + i);
+    return d.toISOString().split('T')[0];
+  });
+}
+
+function calFmtDate(iso) {
+  const [y,m,d] = iso.split('-');
+  return `${m}/${d}`;
+}
+
+function calFmtDateLong(iso) {
+  const dt = new Date(iso + 'T12:00:00');
+  return dt.toLocaleDateString('en-US', {month:'short', day:'numeric'});
+}
+
+// ── Earnings ─────────────────────────────────────────────────
+async function calFetchEarningsDay(dateStr) {
+  const base    = `https://query2.finance.yahoo.com/v1/finance/earnings?date=${dateStr}&size=${_calEarningsPerDay}&offset=0`;
+  const encoded = encodeURIComponent(base);
+  const sources = [
+    { url: base,    parse: r => r.json() },
+    { url: `https://corsproxy.io/?url=${encoded}`,           parse: r => r.json() },
+    { url: `https://api.allorigins.win/get?url=${encoded}`,  parse: async r => JSON.parse((await r.json()).contents) },
+  ];
+  for (const src of sources) {
+    try {
+      const resp = await _wlFetchTimeout(src.url, 10000);
+      if (!resp.ok) continue;
+      const json = await src.parse(resp);
+      return json?.earnings?.result?.earningsDate || [];
+    } catch {}
+  }
+  return [];
+}
+
+async function calLoadEarnings() {
+  const dates  = calWeekDates(_calWeekOffset);
+  const mon    = dates[0], fri = dates[4];
+  document.getElementById('cal-week-label').textContent =
+    `${calFmtDateLong(mon)} – ${calFmtDateLong(fri)}`;
+  document.getElementById('tbody-earnings').innerHTML =
+    `<tr class="loading-row"><td colspan="7">Loading earnings…</td></tr>`;
+
+  const wlTickers = new Set(_wlRows.map(r => r.ticker).filter(Boolean));
+  const allEntries = [];
+
+  await Promise.all(dates.map(async d => {
+    const entries = await calFetchEarningsDay(d);
+    entries.forEach(e => {
+      allEntries.push({
+        ticker  : (e.ticker || e.symbol || '').toUpperCase(),
+        company : e.companyshortname || e.longName || '—',
+        date    : d,
+        type    : e.startdatetimetype || '',
+        epsEst  : e.epsestimate  ?? e.epsEstimate  ?? null,
+        epsAct  : e.epsactual    ?? e.epsActual    ?? null,
+        surprise: e.surprisepercent ?? e.surprisePercent ?? null,
+      });
+    });
+  }));
+
+  if (!allEntries.length) {
+    document.getElementById('tbody-earnings').innerHTML =
+      `<tr><td colspan="7" style="padding:10px 8px;color:var(--text-dim);font-style:italic;font-size:11px;">No earnings data for this week.</td></tr>`;
+    return;
+  }
+
+  // Sort: watchlist first, then by date then ticker
+  allEntries.sort((a, b) => {
+    const aw = wlTickers.has(a.ticker) ? 0 : 1;
+    const bw = wlTickers.has(b.ticker) ? 0 : 1;
+    if (aw !== bw) return aw - bw;
+    return a.date.localeCompare(b.date) || a.ticker.localeCompare(b.ticker);
+  });
+
+  const fmtEps = v => v == null ? '—' : v.toFixed(2);
+  const fmtSurp = v => v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(1) + '%';
+  const fmtType = t => t === 'BMO' ? 'Pre-mkt' : t === 'AMC' ? 'After' : '—';
+  const surpCls = v => v == null ? 'neu' : v > 0 ? 'up' : v < 0 ? 'dn' : 'neu';
+
+  const rows = allEntries.map(e => {
+    const isWl  = wlTickers.has(e.ticker);
+    const trCls = isWl ? 'earn-wl' : '';
+    return `<tr class="${trCls}">
+      <td class="left">${e.ticker}</td>
+      <td class="left" style="overflow:hidden;text-overflow:ellipsis">${e.company}</td>
+      <td>${calFmtDate(e.date)}</td>
+      <td class="${e.type==='BMO'?'amb':e.type==='AMC'?'neu':''}">${fmtType(e.type)}</td>
+      <td>${fmtEps(e.epsEst)}</td>
+      <td class="${e.epsAct!=null&&e.epsEst!=null ? (e.epsAct>=e.epsEst?'up':'dn') : ''}">${fmtEps(e.epsAct)}</td>
+      <td class="${surpCls(e.surprise)}">${fmtSurp(e.surprise)}</td>
+    </tr>`;
+  });
+
+  document.getElementById('tbody-earnings').innerHTML = rows.join('');
+}
+
+function calEarningsNav(dir) {
+  _calWeekOffset += dir;
+  calLoadEarnings();
+}
+
+// ── Macro ─────────────────────────────────────────────────────
+function calFmtVal(val, unit) {
+  if (val == null) return '—';
+  if (unit === 'K') return (val > 0 ? '+' : '') + val.toFixed(0) + 'K';
+  if (unit === '%') return val.toFixed(2) + '%';
+  return String(val);
+}
+
+function calFindActual(seriesKey, eventDateIso) {
+  const readings = _calMacroData[seriesKey];
+  if (!readings || !readings.length) return null;
+  const evDate = new Date(eventDateIso + 'T12:00:00');
+  // Find reading with date closest to and within 35 days before the event
+  const cutoff = new Date(evDate); cutoff.setDate(evDate.getDate() - 35);
+  const candidates = readings.filter(r => {
+    const rd = new Date(r.date + 'T12:00:00');
+    return rd <= evDate && rd >= cutoff;
+  });
+  if (!candidates.length) return null;
+  // Return the one with the most recent date
+  return candidates.sort((a, b) => b.date.localeCompare(a.date))[0];
+}
+
+function calFindPrior(seriesKey, eventDateIso) {
+  const readings = _calMacroData[seriesKey];
+  if (!readings || !readings.length) return null;
+  const evDate = new Date(eventDateIso + 'T12:00:00');
+  // Prior = the reading that would have been the "actual" one period before
+  const beforeEv = readings.filter(r => new Date(r.date + 'T12:00:00') < evDate);
+  if (beforeEv.length < 2) return beforeEv[0]?.value ?? null;
+  // Second-to-last relative to event
+  return beforeEv[beforeEv.length - 2]?.value ?? null;
+}
+
+function calRenderMacro() {
+  const today   = new Date();
+  const past    = new Date(today); past.setDate(today.getDate()    - _calMacroPast);
+  const future  = new Date(today); future.setDate(today.getDate()  + _calMacroFuture);
+
+  const events = _calMacroSchedule.filter(ev => {
+    if (ev.date === 'recurring') return false;
+    const d = new Date(ev.date + 'T12:00:00');
+    return d >= past && d <= future;
+  });
+
+  events.sort((a, b) => a.date.localeCompare(b.date) || a.time.localeCompare(b.time));
+
+  if (!events.length) {
+    document.getElementById('tbody-macro').innerHTML =
+      `<tr><td colspan="6" style="padding:10px 8px;color:var(--text-dim);font-size:11px;">No events in window.</td></tr>`;
+    return;
+  }
+
+  const rows = events.map(ev => {
+    const evDate   = new Date(ev.date + 'T12:00:00');
+    const isPast   = evDate < today;
+    const actual   = isPast && ev.series ? calFindActual(ev.series, ev.date) : null;
+    const priorVal = ev.series ? calFindPrior(ev.series, ev.date) : null;
+    const actVal   = actual?.value ?? null;
+
+    let rowCls = 'macro-pending';
+    if (actVal != null && ev.consensus != null) {
+      const beats = ev.beats_if_lower ? actVal < ev.consensus : actVal > ev.consensus;
+      const misses= ev.beats_if_lower ? actVal > ev.consensus : actVal < ev.consensus;
+      if (beats)  rowCls = 'macro-beat';
+      else if (misses) rowCls = 'macro-miss';
+      else rowCls = 'macro-in-line';
+    } else if (actVal != null) {
+      rowCls = 'macro-in-line';
+    }
+
+    const isToday = ev.date === today.toISOString().split('T')[0];
+    const dateCls = isToday ? 'amb' : '';
+
+    return `<tr class="${rowCls}">
+      <td class="left">${ev.name}</td>
+      <td class="${dateCls}">${calFmtDateLong(ev.date)}</td>
+      <td>${ev.time}</td>
+      <td>${calFmtVal(priorVal, ev.unit)}</td>
+      <td>${ev.consensus != null ? calFmtVal(ev.consensus, ev.unit) : '—'}</td>
+      <td class="macro-actual">${actVal != null ? calFmtVal(actVal, ev.unit) : (isPast ? '—' : 'Pending')}</td>
+    </tr>`;
+  });
+
+  document.getElementById('tbody-macro').innerHTML = rows.join('');
+
+  // Jobless claims strip
+  const icsa = _calMacroData['ICSA'];
+  if (icsa && icsa.length) {
+    const items = [...icsa].reverse().slice(0, 4).map(r =>
+      `<span class="claims-entry">${r.value.toFixed(0)}K<span class="claims-date">${calFmtDate(r.date)}</span></span>`
+    );
+    document.getElementById('cal-claims-items').innerHTML = items.join(' &nbsp;·&nbsp; ');
+  }
+}
+
+async function initCalendar() {
+  // Load config
+  try {
+    const resp = await fetch('config.json', { cache: 'no-store' });
+    if (resp.ok) {
+      const cfg = await resp.json();
+      const cal = cfg.calendar || {};
+      if (cal.macro_schedule)        _calMacroSchedule    = cal.macro_schedule;
+      if (cal.macro_window_days_past)   _calMacroPast     = cal.macro_window_days_past;
+      if (cal.macro_window_days_future) _calMacroFuture   = cal.macro_window_days_future;
+      if (cal.earnings_per_day)         _calEarningsPerDay= cal.earnings_per_day;
+    }
+  } catch {}
+
+  // Load macro data
+  try {
+    const resp = await fetch('data/macro.json', { cache: 'no-store' });
+    if (resp.ok) {
+      const d = await resp.json();
+      _calMacroData = d.series || {};
+    }
+  } catch {}
+
+  calRenderMacro();
+  calLoadEarnings();
+}
+
+// ═══════════════════════════════════════════════════════════
 //  SECTION 3 — WATCHLIST
 // ═══════════════════════════════════════════════════════════
 let _wlRows       = [];
@@ -1427,9 +1786,11 @@ loadMarket();
 loadNaaim();
 loadConfig();
 initWatchlist();
-setInterval(loadMarket, CFG.refreshMs);
-setInterval(loadNaaim, CFG.refreshMs * 6); // NAAIM refreshes rarely
+initCalendar();
+setInterval(loadMarket,  CFG.refreshMs);
+setInterval(loadNaaim,   CFG.refreshMs * 6);
 setInterval(wlRefreshAll, CFG.refreshMs);
+setInterval(initCalendar, CFG.refreshMs * 12); // calendar refreshes every hour
 </script>
 </body>
 </html>
