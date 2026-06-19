@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "updated_at": "2026-06-19T14:18:49.679410-04:00",
+  "updated_at": "2026-06-19T16:53:58.599225-04:00",
   "n2": {
     "slot": "n2",
     "time_label": "12:30 PM ET",
@@ -543,7 +543,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-06-19T14:18:49.679410-04:00",
+    "triggered_at": "2026-06-19T16:53:58.599225-04:00",
     "alert_count": 44,
     "alerts": [
       {
@@ -939,8 +939,8 @@
         "pct": 8.49,
         "price": 88.52,
         "mkt_cap": 11684329472,
-        "atr_pct": 6.11,
-        "adr_pct": 6.32
+        "atr_pct": NaN,
+        "adr_pct": 6.26
       },
       {
         "type": "stock",
@@ -1071,8 +1071,8 @@
         "pct": -5.08,
         "price": 84.41,
         "mkt_cap": 14142173184,
-        "atr_pct": 4.84,
-        "adr_pct": 4.73
+        "atr_pct": NaN,
+        "adr_pct": 4.63
       }
     ],
     "etf_top5": [],
