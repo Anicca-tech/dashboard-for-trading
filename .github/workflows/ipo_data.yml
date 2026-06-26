@@ -30,4 +30,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ipo_briefing.json
           git diff --cached --quiet || git commit -m "chore: update ipo_briefing.json [skip ci]"
+          git pull --rebase
           git push
