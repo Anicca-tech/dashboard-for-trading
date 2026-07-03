@@ -1088,6 +1088,7 @@ const CFG = {
   afterHoursFile:    "data/after_hours.json",
   ipoBriefingFile:   "data/ipo_briefing.json",
   notificationsFile: "data/notifications.json",
+  wlPricesFile:      "data/watchlist_prices.json",
   refreshMs:         300000,
   staleMinutes:      15,
 };
@@ -1763,6 +1764,7 @@ async function initCalendar() {
 // ═══════════════════════════════════════════════════════════
 let _wlRows       = [];
 let _wlFetched    = {};
+let _wlPrices     = {};
 let _wlNextId     = 1;
 let _wlSetupTypes = ['Breakout','Pullback','Reversal','Trend','Momentum','Other'];
 let _wlMaxRows    = 30;
@@ -1806,6 +1808,21 @@ function _wlAdr(H, L, C, p) {
   return (s / n) * 100;
 }
 
+// ── Server-side price file ────────────────────────────────────
+async function loadWatchlistPrices() {
+  try {
+    const resp = await fetch(`${CFG.wlPricesFile}?t=${Date.now()}`, { cache: 'no-store' });
+    if (!resp.ok) return;
+    const d = await resp.json();
+    _wlPrices = d.tickers || {};
+    _wlRows.forEach(r => {
+      if (!r.ticker) return;
+      const p = _wlPrices[r.ticker.toUpperCase()];
+      if (p) { _wlFetched[r.id] = p; wlRenderCells(r.id); }
+    });
+  } catch {}
+}
+
 // ── Fetch ─────────────────────────────────────────────────────
 function _wlFetchTimeout(url, ms) {
   const ctrl = new AbortController();
@@ -1843,6 +1860,9 @@ function _wlParseChart(json) {
 }
 
 async function wlFetch(id, ticker) {
+  const pre = _wlPrices[ticker.toUpperCase()];
+  if (pre) { _wlFetched[id] = pre; wlRenderCells(id); return; }
+
   _wlFetched[id] = { loading: true };
   wlRenderCells(id);
 
@@ -2001,8 +2021,9 @@ function wlShowEmpty() {
   document.getElementById('tbody-wl').appendChild(tr);
 }
 
-function wlRefreshAll() {
-  _wlRows.forEach(r => { if (r.ticker) wlFetch(r.id, r.ticker); });
+async function wlRefreshAll() {
+  await loadWatchlistPrices();
+  _wlRows.forEach(r => { if (r.ticker && !_wlFetched[r.id]?.price) wlFetch(r.id, r.ticker); });
 }
 
 async function initWatchlist() {
@@ -2020,7 +2041,8 @@ async function initWatchlist() {
     wlShowEmpty();
   } else {
     _wlRows.forEach(r => wlBuildRow(r.id));
-    wlRefreshAll();
+    await loadWatchlistPrices();
+    _wlRows.forEach(r => { if (r.ticker && !_wlFetched[r.id]?.price) wlFetch(r.id, r.ticker); });
   }
 }
 
@@ -2324,7 +2346,7 @@ loadIPOBriefing();
 loadNotifications();
 setInterval(loadMarket,        CFG.refreshMs);
 setInterval(loadNaaim,         CFG.refreshMs * 6);
-setInterval(wlRefreshAll,      CFG.refreshMs);
+setInterval(wlRefreshAll,      CFG.refreshMs); // wlRefreshAll now loads server file first
 setInterval(initCalendar,      CFG.refreshMs * 12);
 setInterval(loadAfterHours,    CFG.refreshMs);
 setInterval(loadNotifications, CFG.refreshMs);

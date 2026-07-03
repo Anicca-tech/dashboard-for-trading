@@ -143,6 +143,7 @@
     }
   },
   "watchlist": {
+    "tickers": [],
     "setup_types": ["Breakout", "Pullback", "Reversal", "Trend", "Momentum", "Other"],
     "max_rows": 30,
     "yahoo_chart_url": "https://query2.finance.yahoo.com/v8/finance/chart"

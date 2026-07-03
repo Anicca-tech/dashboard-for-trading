@@ -1,0 +1,35 @@
+name: Fetch Watchlist Data
+
+on:
+  schedule:
+    # Every 5 minutes Mon-Fri 09:00-21:00 UTC (covers pre/post-market ET)
+    - cron: "*/5 9-21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install yfinance
+
+      - name: Fetch watchlist prices
+        run: python scripts/fetch_watchlist.py
+
+      - name: Commit data file
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/watchlist_prices.json
+          git diff --cached --quiet || git commit -m "chore: refresh watchlist data [skip ci]"
+          git pull --rebase
+          git push
