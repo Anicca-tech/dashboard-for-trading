@@ -1089,6 +1089,7 @@ const CFG = {
   ipoBriefingFile:   "data/ipo_briefing.json",
   notificationsFile: "data/notifications.json",
   wlPricesFile:      "data/watchlist_prices.json",
+  earningsFile:      "data/earnings.json",
   refreshMs:         300000,
   staleMinutes:      15,
 };
@@ -1525,6 +1526,7 @@ let _calMacroPast    = 21;
 let _calMacroFuture  = 84;
 let _calEarningsPerDay = 50;
 let _calMacroData    = {};   // series key → array of {date, value}
+let _calEarnings     = {};   // date string → pre-normalized entry array
 
 // ── Date helpers ─────────────────────────────────────────────
 function calWeekDates(offsetWeeks) {
@@ -1581,6 +1583,12 @@ async function calLoadEarnings() {
   const allEntries = [];
 
   await Promise.all(dates.map(async d => {
+    // Use server-side pre-fetched data if available — avoids CORS entirely
+    if (_calEarnings[d]) {
+      _calEarnings[d].forEach(e => allEntries.push(e));
+      return;
+    }
+    // Fallback: live fetch (may fail due to CORS on some browsers/proxies)
     const entries = await calFetchEarningsDay(d);
     entries.forEach(e => {
       allEntries.push({
@@ -1752,6 +1760,15 @@ async function initCalendar() {
     if (resp.ok) {
       const d = await resp.json();
       _calMacroData = d.series || {};
+    }
+  } catch {}
+
+  // Load server-side earnings calendar
+  try {
+    const resp = await fetch(`${CFG.earningsFile}?t=${Date.now()}`, { cache: 'no-store' });
+    if (resp.ok) {
+      const d = await resp.json();
+      _calEarnings = d.weeks || {};
     }
   } catch {}
 
