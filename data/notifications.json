@@ -1,729 +1,10 @@
 {
-  "date": "2026-07-02",
-  "updated_at": "2026-07-02T16:43:22.917883-04:00",
+  "date": "2026-07-03",
+  "updated_at": "2026-07-03T11:58:56.019189-04:00",
   "n2": {
     "slot": "n2",
     "time_label": "12:30 PM ET",
-    "triggered_at": "2026-07-02T12:12:57.165457-04:00",
-    "alert_count": 59,
-    "alerts": [
-      {
-        "type": "stock",
-        "ticker": "VECO",
-        "label": "VECO",
-        "symbol": "VECO",
-        "name": "Veeco Instruments Inc.",
-        "pct": -15.9,
-        "price": 59.3,
-        "mkt_cap": 3619590912,
-        "atr_pct": 12.0,
-        "adr_pct": 9.3
-      },
-      {
-        "type": "stock",
-        "ticker": "AEHR",
-        "label": "AEHR",
-        "symbol": "AEHR",
-        "name": "Aehr Test Systems",
-        "pct": -15.7,
-        "price": 71.17,
-        "mkt_cap": 2238528000,
-        "atr_pct": 16.9,
-        "adr_pct": 12.32
-      },
-      {
-        "type": "stock",
-        "ticker": "ACLS",
-        "label": "ACLS",
-        "symbol": "ACLS",
-        "name": "Axcelis Technologies, Inc.",
-        "pct": -15.6,
-        "price": 150.51,
-        "mkt_cap": 4625758720,
-        "atr_pct": 9.43,
-        "adr_pct": 7.87
-      },
-      {
-        "type": "stock",
-        "ticker": "ACMR",
-        "label": "ACMR",
-        "symbol": "ACMR",
-        "name": "ACM Research, Inc.",
-        "pct": -15.13,
-        "price": 99.43,
-        "mkt_cap": 6871556608,
-        "atr_pct": 11.09,
-        "adr_pct": 10.32
-      },
-      {
-        "type": "stock",
-        "ticker": "AAOI",
-        "label": "AAOI",
-        "symbol": "AAOI",
-        "name": "Applied Optoelectronics, Inc.",
-        "pct": -14.79,
-        "price": 118.44,
-        "mkt_cap": 9503848448,
-        "atr_pct": 15.12,
-        "adr_pct": 13.19
-      },
-      {
-        "type": "stock",
-        "ticker": "MXL",
-        "label": "MXL",
-        "symbol": "MXL",
-        "name": "MaxLinear, Inc",
-        "pct": -14.08,
-        "price": 96.56,
-        "mkt_cap": 8647006208,
-        "atr_pct": 12.15,
-        "adr_pct": 12.3
-      },
-      {
-        "type": "stock",
-        "ticker": "OUST",
-        "label": "OUST",
-        "symbol": "OUST",
-        "name": "Ouster, Inc.",
-        "pct": -13.09,
-        "price": 52.16,
-        "mkt_cap": 3321499392,
-        "atr_pct": 13.25,
-        "adr_pct": 14.86
-      },
-      {
-        "type": "stock",
-        "ticker": "ONTO",
-        "label": "ONTO",
-        "symbol": "ONTO",
-        "name": "Onto Innovation Inc.",
-        "pct": -13.08,
-        "price": 305.4,
-        "mkt_cap": 15191685120,
-        "atr_pct": 9.58,
-        "adr_pct": 7.52
-      },
-      {
-        "type": "stock",
-        "ticker": "UCTT",
-        "label": "UCTT",
-        "symbol": "UCTT",
-        "name": "Ultra Clean Holdings, Inc.",
-        "pct": -12.78,
-        "price": 113.03,
-        "mkt_cap": 5066948608,
-        "atr_pct": 9.75,
-        "adr_pct": 9.24
-      },
-      {
-        "type": "stock",
-        "ticker": "FORM",
-        "label": "FORM",
-        "symbol": "FORM",
-        "name": "FormFactor, Inc.",
-        "pct": -12.42,
-        "price": 128.85,
-        "mkt_cap": 10044665856,
-        "atr_pct": 10.73,
-        "adr_pct": 8.67
-      },
-      {
-        "type": "stock",
-        "ticker": "AXTI",
-        "label": "AXTI",
-        "symbol": "AXTI",
-        "name": "AXT Inc",
-        "pct": -12.17,
-        "price": 57.12,
-        "mkt_cap": 3736645376,
-        "atr_pct": 20.32,
-        "adr_pct": 14.15
-      },
-      {
-        "type": "stock",
-        "ticker": "SITM",
-        "label": "SITM",
-        "symbol": "SITM",
-        "name": "SiTime Corporation",
-        "pct": -11.84,
-        "price": 620.5,
-        "mkt_cap": 16379100160,
-        "atr_pct": 9.04,
-        "adr_pct": 8.2
-      },
-      {
-        "type": "stock",
-        "ticker": "CIFR",
-        "label": "CIFR",
-        "symbol": "CIFR",
-        "name": "Cipher Digital Inc.",
-        "pct": -11.7,
-        "price": 20.17,
-        "mkt_cap": 8250522112,
-        "atr_pct": 13.24,
-        "adr_pct": 10.79
-      },
-      {
-        "type": "stock",
-        "ticker": "VICR",
-        "label": "VICR",
-        "symbol": "VICR",
-        "name": "Vicor Corporation",
-        "pct": -11.35,
-        "price": 310.47,
-        "mkt_cap": 14151659520,
-        "atr_pct": 9.89,
-        "adr_pct": 8.91
-      },
-      {
-        "type": "stock",
-        "ticker": "PENG",
-        "label": "PENG",
-        "symbol": "PENG",
-        "name": "Penguin Solutions, Inc.",
-        "pct": -11.35,
-        "price": 61.0,
-        "mkt_cap": 3206174720,
-        "atr_pct": 12.57,
-        "adr_pct": 12.34
-      },
-      {
-        "type": "stock",
-        "ticker": "TTMI",
-        "label": "TTMI",
-        "symbol": "TTMI",
-        "name": "TTM Technologies, Inc.",
-        "pct": -11.08,
-        "price": 159.78,
-        "mkt_cap": 16593681408,
-        "atr_pct": 9.5,
-        "adr_pct": 7.77
-      },
-      {
-        "type": "stock",
-        "ticker": "SNDK",
-        "label": "SNDK",
-        "symbol": "SNDK",
-        "name": "Sandisk Corporation",
-        "pct": -11.06,
-        "price": 1807.42,
-        "mkt_cap": 267660394496,
-        "atr_pct": 12.56,
-        "adr_pct": 9.27
-      },
-      {
-        "type": "stock",
-        "ticker": "NVTS",
-        "label": "NVTS",
-        "symbol": "NVTS",
-        "name": "Navitas Semiconductor Corporati",
-        "pct": -11.01,
-        "price": 14.71,
-        "mkt_cap": 3582574080,
-        "atr_pct": 14.03,
-        "adr_pct": 11.45
-      },
-      {
-        "type": "stock",
-        "ticker": "TER",
-        "label": "TER",
-        "symbol": "TER",
-        "name": "Teradyne, Inc.",
-        "pct": -10.84,
-        "price": 381.01,
-        "mkt_cap": 59644129280,
-        "atr_pct": 9.88,
-        "adr_pct": 7.81
-      },
-      {
-        "type": "stock",
-        "ticker": "PDFS",
-        "label": "PDFS",
-        "symbol": "PDFS",
-        "name": "PDF Solutions, Inc.",
-        "pct": -10.74,
-        "price": 59.7,
-        "mkt_cap": 2499293440,
-        "atr_pct": 8.1,
-        "adr_pct": 7.22
-      },
-      {
-        "type": "stock",
-        "ticker": "RIVN",
-        "label": "RIVN",
-        "symbol": "RIVN",
-        "name": "Rivian Automotive, Inc.",
-        "pct": 10.36,
-        "price": 18.96,
-        "mkt_cap": 25460746240,
-        "atr_pct": 5.57,
-        "adr_pct": 6.88
-      },
-      {
-        "type": "stock",
-        "ticker": "COHU",
-        "label": "COHU",
-        "symbol": "COHU",
-        "name": "Cohu, Inc.",
-        "pct": -10.35,
-        "price": 61.95,
-        "mkt_cap": 2922748672,
-        "atr_pct": 8.62,
-        "adr_pct": 7.45
-      },
-      {
-        "type": "stock",
-        "ticker": "ORKA",
-        "label": "ORKA",
-        "symbol": "ORKA",
-        "name": "Oruka Therapeutics, Inc.",
-        "pct": -10.3,
-        "price": 83.69,
-        "mkt_cap": 5047218176,
-        "atr_pct": 7.03,
-        "adr_pct": 7.06
-      },
-      {
-        "type": "stock",
-        "ticker": "ALGM",
-        "label": "ALGM",
-        "symbol": "ALGM",
-        "name": "Allegro MicroSystems, Inc.",
-        "pct": -10.25,
-        "price": 56.72,
-        "mkt_cap": 10567449600,
-        "atr_pct": 9.48,
-        "adr_pct": 8.48
-      },
-      {
-        "type": "stock",
-        "ticker": "KLAC",
-        "label": "KLAC",
-        "symbol": "KLAC",
-        "name": "KLA Corporation",
-        "pct": -10.07,
-        "price": 239.4,
-        "mkt_cap": 312715771904,
-        "atr_pct": 9.17,
-        "adr_pct": 7.66
-      },
-      {
-        "type": "stock",
-        "ticker": "ENTG",
-        "label": "ENTG",
-        "symbol": "ENTG",
-        "name": "Entegris, Inc.",
-        "pct": -10.05,
-        "price": 148.59,
-        "mkt_cap": 22630256640,
-        "atr_pct": 10.24,
-        "adr_pct": 8.04
-      },
-      {
-        "type": "stock",
-        "ticker": "AMKR",
-        "label": "AMKR",
-        "symbol": "AMKR",
-        "name": "Amkor Technology, Inc.",
-        "pct": -9.98,
-        "price": 72.0,
-        "mkt_cap": 17848059904,
-        "atr_pct": 10.73,
-        "adr_pct": 8.72
-      },
-      {
-        "type": "stock",
-        "ticker": "ICHR",
-        "label": "ICHR",
-        "symbol": "ICHR",
-        "name": "Ichor Holdings",
-        "pct": -9.79,
-        "price": 100.83,
-        "mkt_cap": 3515644928,
-        "atr_pct": 8.75,
-        "adr_pct": 9.4
-      },
-      {
-        "type": "stock",
-        "ticker": "TSEM",
-        "label": "TSEM",
-        "symbol": "TSEM",
-        "name": "Tower Semiconductor Ltd.",
-        "pct": -9.78,
-        "price": 221.44,
-        "mkt_cap": 26349524992,
-        "atr_pct": 10.49,
-        "adr_pct": 7.66
-      },
-      {
-        "type": "stock",
-        "ticker": "DOCN",
-        "label": "DOCN",
-        "symbol": "DOCN",
-        "name": "DigitalOcean Holdings, Inc.",
-        "pct": -9.76,
-        "price": 130.47,
-        "mkt_cap": 13616395264,
-        "atr_pct": 10.66,
-        "adr_pct": 9.14
-      },
-      {
-        "type": "stock",
-        "ticker": "BB",
-        "label": "BB",
-        "symbol": "BB",
-        "name": "BlackBerry Limited",
-        "pct": -9.72,
-        "price": 11.56,
-        "mkt_cap": 6778251264,
-        "atr_pct": 8.22,
-        "adr_pct": 9.49
-      },
-      {
-        "type": "stock",
-        "ticker": "ARIS",
-        "label": "ARIS",
-        "symbol": "ARIS",
-        "name": "Aris Mining Corporation",
-        "pct": 9.71,
-        "price": 16.04,
-        "mkt_cap": 3310656256,
-        "atr_pct": 6.79,
-        "adr_pct": 6.11
-      },
-      {
-        "type": "stock",
-        "ticker": "MKSI",
-        "label": "MKSI",
-        "symbol": "MKSI",
-        "name": "MKS Inc.",
-        "pct": -9.42,
-        "price": 372.31,
-        "mkt_cap": 25147693056,
-        "atr_pct": 7.42,
-        "adr_pct": 6.33
-      },
-      {
-        "type": "stock",
-        "ticker": "WOLF",
-        "label": "WOLF",
-        "symbol": "WOLF",
-        "name": "Wolfspeed, Inc.",
-        "pct": -9.32,
-        "price": 40.41,
-        "mkt_cap": 2099932672,
-        "atr_pct": 17.29,
-        "adr_pct": 15.72
-      },
-      {
-        "type": "stock",
-        "ticker": "WULF",
-        "label": "WULF",
-        "symbol": "WULF",
-        "name": "TeraWulf Inc.",
-        "pct": -9.1,
-        "price": 21.43,
-        "mkt_cap": 10621742080,
-        "atr_pct": 10.18,
-        "adr_pct": 8.67
-      },
-      {
-        "type": "stock",
-        "ticker": "VIAV",
-        "label": "VIAV",
-        "symbol": "VIAV",
-        "name": "Viavi Solutions Inc.",
-        "pct": -9.08,
-        "price": 42.8,
-        "mkt_cap": 10556911616,
-        "atr_pct": 9.81,
-        "adr_pct": 8.83
-      },
-      {
-        "type": "stock",
-        "ticker": "APLD",
-        "label": "APLD",
-        "symbol": "APLD",
-        "name": "Applied Digital Corporation",
-        "pct": -9.07,
-        "price": 32.3,
-        "mkt_cap": 9230098432,
-        "atr_pct": 11.31,
-        "adr_pct": 9.47
-      },
-      {
-        "type": "stock",
-        "ticker": "AEIS",
-        "label": "AEIS",
-        "symbol": "AEIS",
-        "name": "Advanced Energy Industries, Inc",
-        "pct": -8.91,
-        "price": 324.61,
-        "mkt_cap": 12987659264,
-        "atr_pct": 7.12,
-        "adr_pct": 5.88
-      },
-      {
-        "type": "stock",
-        "ticker": "ABVX",
-        "label": "ABVX",
-        "symbol": "ABVX",
-        "name": "Abivax SA",
-        "pct": 8.87,
-        "price": 144.32,
-        "mkt_cap": 11512434688,
-        "atr_pct": 7.23,
-        "adr_pct": 8.24
-      },
-      {
-        "type": "stock",
-        "ticker": "KLIC",
-        "label": "KLIC",
-        "symbol": "KLIC",
-        "name": "Kulicke and Soffa Industries, I",
-        "pct": -8.71,
-        "price": 122.16,
-        "mkt_cap": 6392722432,
-        "atr_pct": 7.55,
-        "adr_pct": 7.45
-      },
-      {
-        "type": "stock",
-        "ticker": "VSH",
-        "label": "VSH",
-        "symbol": "VSH",
-        "name": "Vishay Intertechnology, Inc.",
-        "pct": -8.59,
-        "price": 46.81,
-        "mkt_cap": 7074297344,
-        "atr_pct": 12.83,
-        "adr_pct": 10.55
-      },
-      {
-        "type": "stock",
-        "ticker": "ADEA",
-        "label": "ADEA",
-        "symbol": "ADEA",
-        "name": "Adeia Inc.",
-        "pct": -8.55,
-        "price": 29.31,
-        "mkt_cap": 3232709888,
-        "atr_pct": 6.77,
-        "adr_pct": 7.78
-      },
-      {
-        "type": "stock",
-        "ticker": "TE",
-        "label": "TE",
-        "symbol": "TE",
-        "name": "T1 Energy Inc.",
-        "pct": -8.5,
-        "price": 8.4,
-        "mkt_cap": 2345879552,
-        "atr_pct": 13.24,
-        "adr_pct": 14.17
-      },
-      {
-        "type": "stock",
-        "ticker": "GLW",
-        "label": "GLW",
-        "symbol": "GLW",
-        "name": "Corning Incorporated",
-        "pct": -8.49,
-        "price": 201.9,
-        "mkt_cap": 173762772992,
-        "atr_pct": 10.44,
-        "adr_pct": 8.47
-      },
-      {
-        "type": "stock",
-        "ticker": "RMBS",
-        "label": "RMBS",
-        "symbol": "RMBS",
-        "name": "Rambus, Inc.",
-        "pct": -8.28,
-        "price": 113.58,
-        "mkt_cap": 12281656320,
-        "atr_pct": 10.56,
-        "adr_pct": 9.43
-      },
-      {
-        "type": "stock",
-        "ticker": "COHR",
-        "label": "COHR",
-        "symbol": "COHR",
-        "name": "Coherent Corp.",
-        "pct": -8.26,
-        "price": 338.2,
-        "mkt_cap": 66165223424,
-        "atr_pct": 10.92,
-        "adr_pct": 9.96
-      },
-      {
-        "type": "stock",
-        "ticker": "MRNA",
-        "label": "MRNA",
-        "symbol": "MRNA",
-        "name": "Moderna, Inc.",
-        "pct": 7.94,
-        "price": 78.26,
-        "mkt_cap": 31052494848,
-        "atr_pct": 7.08,
-        "adr_pct": 8.54
-      },
-      {
-        "type": "stock",
-        "ticker": "THC",
-        "label": "THC",
-        "symbol": "THC",
-        "name": "Tenet Healthcare Corporation",
-        "pct": 7.45,
-        "price": 205.44,
-        "mkt_cap": 17696415744,
-        "atr_pct": 3.18,
-        "adr_pct": 3.89
-      },
-      {
-        "type": "stock",
-        "ticker": "ARX",
-        "label": "ARX",
-        "symbol": "ARX",
-        "name": "Accelerant Holdings",
-        "pct": 7.38,
-        "price": 13.79,
-        "mkt_cap": 3008538368,
-        "atr_pct": 6.5,
-        "adr_pct": 6.95
-      },
-      {
-        "type": "stock",
-        "ticker": "SLS",
-        "label": "SLS",
-        "symbol": "SLS",
-        "name": "SELLAS Life Sciences Group, Inc",
-        "pct": 7.38,
-        "price": 14.25,
-        "mkt_cap": 2801994496,
-        "atr_pct": 9.56,
-        "adr_pct": 11.62
-      },
-      {
-        "type": "stock",
-        "ticker": "ABCL",
-        "label": "ABCL",
-        "symbol": "ABCL",
-        "name": "AbCellera Biologics Inc.",
-        "pct": 7.37,
-        "price": 8.16,
-        "mkt_cap": 2491863040,
-        "atr_pct": 7.27,
-        "adr_pct": 10.24
-      },
-      {
-        "type": "stock",
-        "ticker": "AUGO",
-        "label": "AUGO",
-        "symbol": "AUGO",
-        "name": "Aura Minerals Inc.",
-        "pct": 6.87,
-        "price": 64.66,
-        "mkt_cap": 5398692352,
-        "atr_pct": 7.08,
-        "adr_pct": 6.28
-      },
-      {
-        "type": "stock",
-        "ticker": "SLDE",
-        "label": "SLDE",
-        "symbol": "SLDE",
-        "name": "Slide Insurance Holdings, Inc.",
-        "pct": 6.6,
-        "price": 21.31,
-        "mkt_cap": 2441257472,
-        "atr_pct": 3.7,
-        "adr_pct": 3.97
-      },
-      {
-        "type": "stock",
-        "ticker": "CGAU",
-        "label": "CGAU",
-        "symbol": "CGAU",
-        "name": "Centerra Gold Inc.",
-        "pct": 6.35,
-        "price": 16.53,
-        "mkt_cap": 3282200320,
-        "atr_pct": 5.1,
-        "adr_pct": 4.69
-      },
-      {
-        "type": "stock",
-        "ticker": "TRMD",
-        "label": "TRMD",
-        "symbol": "TRMD",
-        "name": "TORM plc",
-        "pct": 6.32,
-        "price": 27.91,
-        "mkt_cap": 2857066240,
-        "atr_pct": 4.9,
-        "adr_pct": 3.97
-      },
-      {
-        "type": "stock",
-        "ticker": "SSRM",
-        "label": "SSRM",
-        "symbol": "SSRM",
-        "name": "SSR Mining Inc.",
-        "pct": 6.27,
-        "price": 30.64,
-        "mkt_cap": 6357132288,
-        "atr_pct": 6.08,
-        "adr_pct": 5.3
-      },
-      {
-        "type": "stock",
-        "ticker": "CRSP",
-        "label": "CRSP",
-        "symbol": "CRSP",
-        "name": "CRISPR Therapeutics AG",
-        "pct": 6.12,
-        "price": 59.02,
-        "mkt_cap": 5813025792,
-        "atr_pct": 5.0,
-        "adr_pct": 5.89
-      },
-      {
-        "type": "stock",
-        "ticker": "DECK",
-        "label": "DECK",
-        "symbol": "DECK",
-        "name": "Deckers Outdoor Corporation",
-        "pct": 5.82,
-        "price": 106.17,
-        "mkt_cap": 14744991744,
-        "atr_pct": 3.89,
-        "adr_pct": 3.44
-      },
-      {
-        "type": "stock",
-        "ticker": "FRO",
-        "label": "FRO",
-        "symbol": "FRO",
-        "name": "Frontline Plc",
-        "pct": 5.59,
-        "price": 36.64,
-        "mkt_cap": 8156902912,
-        "atr_pct": 5.96,
-        "adr_pct": 4.9
-      }
-    ],
-    "etf_top5": [],
-    "etf_bottom5": [],
-    "sector_rotation": []
-  },
-  "n3": {
-    "slot": "n3",
-    "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-02T16:43:22.917883-04:00",
+    "triggered_at": "2026-07-03T11:58:56.019189-04:00",
     "alert_count": 67,
     "alerts": [
       {
@@ -819,7 +100,7 @@
         "pct": -16.55,
         "price": 97.77,
         "mkt_cap": 6756834304,
-        "atr_pct": 11.57,
+        "atr_pct": 11.58,
         "adr_pct": 10.57
       },
       {
@@ -842,7 +123,7 @@
         "name": "SiTime Corporation",
         "pct": -14.52,
         "price": 601.66,
-        "mkt_cap": 15881914368,
+        "mkt_cap": 18023036928,
         "atr_pct": 9.66,
         "adr_pct": 8.48
       },
@@ -939,8 +220,8 @@
         "pct": 12.92,
         "price": 132.57,
         "mkt_cap": 18443419648,
-        "atr_pct": 3.38,
-        "adr_pct": 3.49
+        "atr_pct": 3.4,
+        "adr_pct": 3.5
       },
       {
         "type": "stock",
@@ -987,8 +268,8 @@
         "pct": -12.46,
         "price": 307.58,
         "mkt_cap": 15300125696,
-        "atr_pct": 9.66,
-        "adr_pct": 7.65
+        "atr_pct": 9.67,
+        "adr_pct": 7.68
       },
       {
         "type": "stock",
@@ -1011,7 +292,7 @@
         "pct": -12.21,
         "price": 55.48,
         "mkt_cap": 10337357824,
-        "atr_pct": 10.17,
+        "atr_pct": 10.18,
         "adr_pct": 8.87
       },
       {
@@ -1023,8 +304,8 @@
         "pct": -12.12,
         "price": 98.22,
         "mkt_cap": 3424641792,
-        "atr_pct": 9.32,
-        "adr_pct": 9.67
+        "atr_pct": 9.38,
+        "adr_pct": 9.71
       },
       {
         "type": "stock",
@@ -1047,8 +328,8 @@
         "pct": -11.51,
         "price": 235.55,
         "mkt_cap": 307693125632,
-        "atr_pct": 9.66,
-        "adr_pct": 7.93
+        "atr_pct": 9.69,
+        "adr_pct": 7.95
       },
       {
         "type": "stock",
@@ -1132,7 +413,7 @@
         "price": 196.79,
         "mkt_cap": 169364914176,
         "atr_pct": 11.0,
-        "adr_pct": 8.69
+        "adr_pct": 8.7
       },
       {
         "type": "stock",
@@ -1156,7 +437,7 @@
         "price": 219.05,
         "mkt_cap": 26064545792,
         "atr_pct": 10.92,
-        "adr_pct": 7.91
+        "adr_pct": 7.92
       },
       {
         "type": "stock",
@@ -1178,7 +459,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": -10.38,
         "price": 820.16,
-        "mkt_cap": 185562923008,
+        "mkt_cap": 183903649792,
         "atr_pct": 11.4,
         "adr_pct": 8.23
       },
@@ -1202,7 +483,7 @@
         "name": "Vishay Intertechnology, Inc.",
         "pct": -10.33,
         "price": 45.92,
-        "mkt_cap": 6939792896,
+        "mkt_cap": 7043112960,
         "atr_pct": 13.3,
         "adr_pct": 10.74
       },
@@ -1227,8 +508,8 @@
         "pct": -10.19,
         "price": 351.41,
         "mkt_cap": 439463149568,
-        "atr_pct": 8.81,
-        "adr_pct": 6.92
+        "atr_pct": 8.83,
+        "adr_pct": 6.94
       },
       {
         "type": "stock",
@@ -1310,7 +591,7 @@
         "name": "Marvell Technology, Inc.",
         "pct": -9.84,
         "price": 245.29,
-        "mkt_cap": 214579691520,
+        "mkt_cap": 214764421120,
         "atr_pct": 11.43,
         "adr_pct": 10.26
       },
@@ -1346,7 +627,7 @@
         "name": "Abivax SA",
         "pct": 9.12,
         "price": 144.65,
-        "mkt_cap": 11538757632,
+        "mkt_cap": 11543166976,
         "atr_pct": 7.21,
         "adr_pct": 8.24
       },
@@ -1467,7 +748,7 @@
         "pct": 6.56,
         "price": 29.58,
         "mkt_cap": 3618002176,
-        "atr_pct": 9.2,
+        "atr_pct": 9.21,
         "adr_pct": 11.86
       },
       {
@@ -1528,11 +809,11 @@
         "price": 439.89,
         "mkt_cap": 130207440896,
         "atr_pct": 3.34,
-        "adr_pct": 3.06
+        "adr_pct": 3.07
       }
     ],
     "etf_top5": [],
     "etf_bottom5": [],
-    "indices_range": []
+    "sector_rotation": []
   }
 }
