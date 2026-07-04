@@ -111,7 +111,7 @@
       "min_move_pct": 6.0,
       "min_market_cap": 1000000000,
       "min_price": 7.0,
-      "require_catalyst": true,
+      "require_catalyst": false,
       "catalyst_window_hours": 4,
       "max_results": 10
     },

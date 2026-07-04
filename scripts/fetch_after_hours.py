@@ -64,7 +64,7 @@ def main():
     cutoff   = now_et.replace(hour=16, minute=0, second=0, microsecond=0).timestamp()
 
     quotes = []
-    for scr in ('after_hours_gainer', 'after_hours_loser'):
+    for scr in ('most_actives', 'day_gainers', 'day_losers'):
         try:
             quotes.extend(screener(scr))
         except Exception as e:
