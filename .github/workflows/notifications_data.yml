@@ -24,6 +24,8 @@ jobs:
         run: pip install requests yfinance pytz
 
       - name: Run script
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
         run: python scripts/fetch_notifications.py
 
       - name: Commit data

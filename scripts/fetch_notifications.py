@@ -297,10 +297,18 @@ def determine_slot(now_et: datetime) -> str:
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+SCHEDULE_SLOT = {
+    '5 14 * * 1-5':  'n1',
+    '35 16 * * 1-5': 'n2',
+    '35 19 * * 1-5': 'n3',
+}
+
+
 def main():
-    now_et = datetime.now(ET)
-    slot   = determine_slot(now_et)
-    today  = now_et.strftime('%Y-%m-%d')
+    now_et   = datetime.now(ET)
+    schedule = os.environ.get('SCHEDULE', '')
+    slot     = SCHEDULE_SLOT.get(schedule) or determine_slot(now_et)
+    today    = now_et.strftime('%Y-%m-%d')
     print(f'slot={slot}  time={now_et.strftime("%H:%M ET")}')
 
     all_syms = (
