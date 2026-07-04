@@ -20,7 +20,7 @@ def fetch_fred(series_id, start=START):
     resp = requests.get(url, timeout=30)
     resp.raise_for_status()
     rows = []
-    for r in csv.reader(StringIO(resp.text)):
+    for r in csv.reader(StringIO(resp.content.decode('utf-8-sig'))):
         if r[0] == "DATE" or r[1] == ".":
             continue
         rows.append((r[0], float(r[1])))
