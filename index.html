@@ -656,6 +656,11 @@ canvas.spark {
 }
 .notif-alerts tr:last-child td { border-bottom: none; }
 .notif-alerts tr:hover td { background: #e8e8e8; }
+.notif-alerts th {
+  font-size: 9px; font-weight: bold; text-transform: uppercase;
+  letter-spacing: .05em; color: var(--text-dim);
+  padding: 4px 8px 3px; text-align: left;
+}
 .notif-type-badge {
   font-size: 9px; font-weight: bold; padding: 1px 5px;
   border-radius: 2px; letter-spacing: .04em; font-family: var(--font);
@@ -2209,7 +2214,10 @@ function _renderNotifAlerts(alerts) {
   if (!alerts || alerts.length === 0) {
     return '<div class="notif-no-alerts">No alerts — all instruments within thresholds</div>';
   }
-  const rows = alerts.map(a => {
+  const nonStocks = alerts.filter(a => a.type !== 'stock');
+  const stocks    = alerts.filter(a => a.type === 'stock')
+                          .sort((a, b) => b.pct - a.pct);
+  const rows = [...nonStocks, ...stocks].map(a => {
     const [cls, lbl] = _NOTIF_BADGE[a.type] || ['nb-stock', (a.type || 'ASSET').toUpperCase()];
     const col   = a.pct >= 0 ? 'up' : 'dn';
     const sign  = a.pct >= 0 ? '+' : '';
@@ -2222,7 +2230,10 @@ function _renderNotifAlerts(alerts) {
       ${cap}
     </tr>`;
   }).join('');
-  return `<table class="notif-alerts">${rows}</table>`;
+  return `<table class="notif-alerts">
+    <thead><tr><th></th><th>Ticker</th><th>% Change</th><th>Price</th><th>Mkt Cap</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
 }
 
 function _renderRotation(rotation) {
