@@ -35,6 +35,31 @@
   --nav-h:     36px;
   --row-h:     28px;
   --font:      'Courier New', Courier, monospace;
+  --border-row: #e4e4e4;
+  --bg-hover:   #e8e8e8;
+}
+
+html.dark {
+  --bg:         #0f1117;
+  --bg2:        #161b27;
+  --bg3:        #1e2535;
+  --border:     #2a3347;
+  --border-row: #252d3d;
+  --bg-hover:   #1a2236;
+  --text:       #e2e8f0;
+  --text-dim:   #64748b;
+  --text-head:  #94a3b8;
+  --green:      #22c55e;
+  --green-dim:  rgba(34,197,94,.15);
+  --red:        #ef4444;
+  --red-dim:    rgba(239,68,68,.15);
+  --amber:      #f59e0b;
+  --amber-dim:  rgba(245,158,11,.15);
+  --blue:       #3b82f6;
+  --grade-a:    #22c55e;
+  --grade-b:    #f59e0b;
+  --grade-c:    #ef4444;
+  --grade-q:    #64748b;
 }
 
 html { font-size: 12px; }
@@ -153,13 +178,13 @@ body {
   text-align: right;
   padding: 1px 6px;
   height: var(--row-h);
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid var(--border-row);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .data-table td.left { text-align: left; }
-.data-table tr:hover td { background: #e8e8e8; }
+.data-table tr:hover td { background: var(--bg-hover); }
 
 /* group separator */
 .data-table tr.group-sep td {
@@ -167,7 +192,7 @@ body {
   padding-top: 2px;
 }
 .data-table tr.group-label td {
-  background: #e8e8e8;
+  background: var(--bg-hover);
   color: var(--text-dim);
   font-size: 10px;
   letter-spacing: .06em;
@@ -545,7 +570,7 @@ canvas.spark {
   font-size: 11px;
   height: 26px;
   padding: 2px 6px;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid var(--border-row);
 }
 .sizer-out-table td:first-child {
   font-size: 10px;
@@ -607,11 +632,11 @@ canvas.spark {
   align-items: baseline;
   padding: 3px 8px;
   gap: 8px;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid var(--border-row);
   font-size: 11px;
 }
 .ipo-item:last-child { border-bottom: none; }
-.ipo-item:hover { background: #e8e8e8; }
+.ipo-item:hover { background: var(--bg-hover); }
 .ipo-sym   { font-weight: bold; width: 56px; flex-shrink: 0; }
 .ipo-name  { flex: 1; color: var(--text-dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ipo-chg   { font-weight: bold; width: 52px; text-align: right; flex-shrink: 0; }
@@ -652,10 +677,10 @@ canvas.spark {
 .notif-alerts { width: 100%; border-collapse: collapse; }
 .notif-alerts td {
   font-size: 11px; padding: 2px 8px; height: 24px;
-  border-bottom: 1px solid #e4e4e4; vertical-align: middle;
+  border-bottom: 1px solid var(--border-row); vertical-align: middle;
 }
 .notif-alerts tr:last-child td { border-bottom: none; }
-.notif-alerts tr:hover td { background: #e8e8e8; }
+.notif-alerts tr:hover td { background: var(--bg-hover); }
 .notif-alerts th {
   font-size: 9px; font-weight: bold; text-transform: uppercase;
   letter-spacing: .05em; color: var(--text-dim);
@@ -679,10 +704,10 @@ canvas.spark {
 }
 .rotation-row {
   display: flex; align-items: center; gap: 8px;
-  padding: 3px 8px; font-size: 11px; border-bottom: 1px solid #e4e4e4;
+  padding: 3px 8px; font-size: 11px; border-bottom: 1px solid var(--border-row);
 }
 .rotation-row:last-child { border-bottom: none; }
-.rotation-row:hover { background: #e8e8e8; }
+.rotation-row:hover { background: var(--bg-hover); }
 .rotation-ticker { font-weight: bold; width: 52px; flex-shrink: 0; }
 .rotation-arrow  { font-size: 13px; flex-shrink: 0; }
 .rotation-from   { color: var(--text-dim); font-size: 10px; flex: 1; }
@@ -697,11 +722,11 @@ canvas.spark {
 .range-table th:first-child { text-align: left; }
 .range-table td {
   font-size: 11px; padding: 2px 8px; height: 24px;
-  text-align: right; border-bottom: 1px solid #e4e4e4; vertical-align: middle;
+  text-align: right; border-bottom: 1px solid var(--border-row); vertical-align: middle;
 }
 .range-table td:first-child { text-align: left; font-weight: bold; }
 .range-table tr:last-child td { border-bottom: none; }
-.range-table tr:hover td { background: #e8e8e8; }
+.range-table tr:hover td { background: var(--bg-hover); }
 .range-bar-wrap { display: inline-flex; align-items: center; gap: 4px; width: 90px; }
 .range-bar-track {
   flex: 1; height: 6px; background: var(--bg3);
@@ -711,15 +736,40 @@ canvas.spark {
 .range-bar-pct  { font-size: 10px; color: var(--text-dim); width: 26px; text-align: right; flex-shrink: 0; }
 .wl-prox-row {
   display: flex; align-items: center; gap: 8px;
-  padding: 3px 8px; font-size: 11px; border-bottom: 1px solid #e4e4e4;
+  padding: 3px 8px; font-size: 11px; border-bottom: 1px solid var(--border-row);
 }
 .wl-prox-row:last-child { border-bottom: none; }
-.wl-prox-row:hover { background: #e8e8e8; }
+.wl-prox-row:hover { background: var(--bg-hover); }
 .wl-prox-ticker { font-weight: bold; width: 52px; flex-shrink: 0; }
 .wl-prox-price  { width: 64px; text-align: right; flex-shrink: 0; }
 .wl-prox-entry  { color: var(--text-dim); font-size: 10px; flex: 1; }
 .wl-prox-dist   { font-weight: bold; flex-shrink: 0; }
+
+/* ═══════════════════════════════════════════════════════════
+   DARK THEME OVERRIDES
+═══════════════════════════════════════════════════════════ */
+html.dark .nb-index  { background: rgba(99,102,241,.2);  color: #a5b4fc; }
+html.dark .nb-commod { background: rgba(245,158,11,.2);  color: #fbbf24; }
+html.dark .nb-crypto { background: rgba(244,63,94,.2);   color: #fb7185; }
+html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
+
+/* ── Theme toggle ── */
+#theme-toggle {
+  margin-left: 8px;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 1px 7px;
+  border-radius: 2px;
+  font-size: 13px;
+  font-family: var(--font);
+  line-height: 1;
+  transition: color .15s, background .15s, border-color .15s;
+}
+#theme-toggle:hover { color: var(--text); background: var(--bg3); }
 </style>
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark');</script>
 </head>
 <body>
 
@@ -732,6 +782,7 @@ canvas.spark {
   <a href="#s5">CALENDAR</a>
   <a href="#s6">INTEL</a>
   <a href="#s7">NOTIFS</a>
+  <button id="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">&#9681;</button>
   <span id="clock">--:--:-- EST</span>
   <span id="market-status" class="closed">CLOSED</span>
   <span id="last-updated"></span>
@@ -1099,6 +1150,17 @@ const CFG = {
   staleMinutes:      15,
 };
 let _notifProxPct = 2.0; // overridden by config.json notifications.thresholds.wl_proximity_pct
+
+// ── Theme toggle ─────────────────────────────────────────
+function toggleTheme() {
+  const isDark = document.documentElement.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  document.getElementById('theme-toggle').textContent = isDark ? '☀' : '◑';
+}
+(function() {
+  if (document.documentElement.classList.contains('dark'))
+    document.getElementById('theme-toggle').textContent = '☀';
+})();
 
 // ═══════════════════════════════════════════════════════════
 //  SECTION GROUPS — order matches brief
