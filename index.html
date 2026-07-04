@@ -71,6 +71,39 @@ body {
 }
 
 /* ═══════════════════════════════════════════════════════════
+   HEADER BANNER
+═══════════════════════════════════════════════════════════ */
+#header-banner {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  height: 36px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  gap: 12px;
+}
+#banner-title {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .12em;
+  color: var(--text);
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+#banner-quote {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: .03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+  max-width: 65%;
+}
+
+/* ═══════════════════════════════════════════════════════════
    STICKY NAV
 ═══════════════════════════════════════════════════════════ */
 #nav {
@@ -773,6 +806,12 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
 </head>
 <body>
 
+<!-- ══════════════════════════════════════ HEADER BANNER ══ -->
+<div id="header-banner">
+  <span id="banner-title">Mario — Trading Cockpit</span>
+  <span id="banner-quote"></span>
+</div>
+
 <!-- ═══════════════════════════════════════ STICKY NAV ══ -->
 <nav id="nav">
   <a href="#s1">MARKET</a>
@@ -1151,7 +1190,37 @@ const CFG = {
 };
 let _notifProxPct = 2.0; // overridden by config.json notifications.thresholds.wl_proximity_pct
 
-// ── Theme toggle ─────────────────────────────────────────
+// ── Daily quote ──────────────────────────────────────────
+(function () {
+  const QUOTES = [
+    { t: 'The trend is your friend until the end.' },
+    { t: 'Cut losses short. Let winners run.' },
+    { t: 'Plan the trade. Trade the plan.' },
+    { t: 'Be fearful when others are greedy, and greedy when others are fearful.', a: 'Buffett' },
+    { t: 'The market can remain irrational longer than you can remain solvent.', a: 'Keynes' },
+    { t: "It's not whether you're right or wrong — it's how much you make when right.", a: 'Soros' },
+    { t: 'Markets are never wrong — opinions often are.', a: 'Livermore' },
+    { t: "Volatility is not risk. It's opportunity." },
+    { t: 'Cash is a position.' },
+    { t: 'Trade what you see, not what you think.' },
+    { t: 'Hope is not a strategy.' },
+    { t: 'Size your position to your conviction, not your emotion.' },
+    { t: 'Big movements take time to develop.', a: 'Livermore' },
+    { t: "The first rule: don't lose money.", a: 'Buffett' },
+    { t: 'Bulls make money. Bears make money. Pigs get slaughtered.' },
+    { t: 'Know your exit before you enter.' },
+    { t: "Don't fight the tape." },
+    { t: 'Price is what you pay. Value is what you get.', a: 'Buffett' },
+    { t: "The four most dangerous words: this time it's different.", a: 'Templeton' },
+    { t: 'The goal of a successful trader is to make the best trades. Money is secondary.', a: 'Elder' },
+  ];
+  const now = new Date();
+  const doy = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+  const q   = QUOTES[doy % QUOTES.length];
+  document.getElementById('banner-quote').textContent = q.a ? `"${q.t}" — ${q.a}` : `"${q.t}"`;
+})();
+
+// ── Theme toggle ──────────────────────────────────────────
 function toggleTheme() {
   const isDark = document.documentElement.classList.toggle('dark');
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
