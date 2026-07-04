@@ -2307,7 +2307,7 @@ function _buildSlotHtml(slot, todayStr) {
   let html = '';
   if (!isToday) {
     const d = slot.triggered_at?.slice(0, 10) || 'unknown';
-    html += `<div class="notif-pending" style="color:var(--amber)">Data from ${d} — today's run pending</div>`;
+    return `<div class="notif-pending">Last run ${d} — today's update pending</div>`;
   }
   html += _renderNotifAlerts(slot.alerts);
   if (slot.slot === 'n2' || slot.sector_rotation != null) {
