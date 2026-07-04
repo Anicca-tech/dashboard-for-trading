@@ -44,11 +44,15 @@ def sec_search(forms: list[str], days_back: int = 7) -> list:
 
 
 def parse_hit(h: dict) -> dict:
-    src = h.get('_source', {})
+    src   = h.get('_source', {})
+    names = src.get('display_names', [])
+    raw   = names[0] if names else ''
+    # display_names entries are "Company Name (CIK 0001234567)" — strip the CIK suffix
+    company = raw.split(' (CIK')[0].strip() if raw else 'Unknown'
     return {
-        'company': src.get('entity_name', 'Unknown'),
+        'company': company,
         'ticker':  src.get('ticker', ''),
-        'form':    src.get('form_type', ''),
+        'form':    src.get('type', ''),
         'filed':   src.get('file_date', ''),
     }
 
