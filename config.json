@@ -14,8 +14,8 @@
     ],
     "sentiment": [
       { "symbol": "^VIX",   "label": "VIX",  "yahoo": true },
-      { "symbol": "^MMFI",  "label": "MMFI", "yahoo": true },
-      { "symbol": "^MMTH",  "label": "MMTH", "yahoo": true },
+      { "symbol": "^NYADV", "label": "NYADV", "yahoo": true },
+      { "symbol": "^NYADR", "label": "A/DR",  "yahoo": true },
       { "symbol": "^NYAD",  "label": "NCFD", "yahoo": true },
       { "symbol": "^SKEW",  "label": "SKFD", "yahoo": true }
     ],

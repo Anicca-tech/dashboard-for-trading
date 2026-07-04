@@ -131,7 +131,7 @@ def fetch_yahoo_group(instruments):
             period="1y",
             interval="1d",
             group_by="ticker",
-            auto_adjust=True,
+            auto_adjust=False,
             progress=False,
             threads=True,
         )
