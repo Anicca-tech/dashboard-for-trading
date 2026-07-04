@@ -14,6 +14,8 @@ try:
 except ImportError:
     raise SystemExit("yfinance not installed. Run: pip install yfinance requests")
 
+from retry_utils import with_retry
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(ROOT, "config.json")
 DATA_DIR = os.path.join(ROOT, "data")
@@ -125,8 +127,7 @@ def fetch_yahoo_group(instruments):
     results = {}
 
     try:
-        # Batch download 1y daily for all symbols
-        data = yf.download(
+        data = with_retry(lambda: yf.download(
             symbols,
             period="1y",
             interval="1d",
@@ -134,7 +135,7 @@ def fetch_yahoo_group(instruments):
             auto_adjust=False,
             progress=False,
             threads=True,
-        )
+        ))
     except Exception as e:
         print(f"yfinance batch download failed: {e}")
         return results

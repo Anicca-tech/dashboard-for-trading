@@ -17,6 +17,8 @@ import yfinance as yf
 from datetime import datetime
 import pytz
 
+from retry_utils import with_retry
+
 # ── Config ───────────────────────────────────────────────────────────────────
 
 with open('config.json') as f:
@@ -61,9 +63,11 @@ def yf_quotes(symbols: list) -> dict:
         url = ('https://query2.finance.yahoo.com/v7/finance/quote?symbols='
                + ','.join(batch))
         try:
-            r = requests.get(url, headers=HEADERS, timeout=20)
-            r.raise_for_status()
-            for q in r.json().get('quoteResponse', {}).get('result', []):
+            def _get():
+                r = requests.get(url, headers=HEADERS, timeout=20)
+                r.raise_for_status()
+                return r.json().get('quoteResponse', {}).get('result', [])
+            for q in with_retry(_get, catch=requests.exceptions.RequestException):
                 out[q['symbol']] = q
         except Exception as e:
             print(f'quote batch error: {e}', file=sys.stderr)
@@ -88,9 +92,11 @@ def screen_stocks() -> list:
                 'https://query2.finance.yahoo.com/v1/finance/screener/predefined/saved'
                 f'?formatted=false&lang=en-US&region=US&scrIds={scr}&count=50'
             )
-            r = requests.get(url, headers=HEADERS, timeout=20)
-            r.raise_for_status()
-            result = r.json()['finance']['result']
+            def _get():
+                r = requests.get(url, headers=HEADERS, timeout=20)
+                r.raise_for_status()
+                return r.json()['finance']['result']
+            result = with_retry(_get, catch=requests.exceptions.RequestException)
             if result:
                 raw.extend(result[0].get('quotes', []))
         except Exception as e:
@@ -129,7 +135,7 @@ def screen_stocks() -> list:
     results = []
     for c in candidates:
         try:
-            hist = yf.Ticker(c['symbol']).history(period='25d')
+            hist = with_retry(lambda: yf.Ticker(c['symbol']).history(period='25d'))
             if len(hist) < 14:
                 continue
             h  = hist['High']

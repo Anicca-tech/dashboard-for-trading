@@ -5,6 +5,8 @@ import yfinance as yf
 from datetime import datetime, timedelta
 import pytz
 
+from retry_utils import with_retry
+
 with open('config.json') as f:
     cfg = json.load(f)['intelligence']['ipo_briefing']
 
@@ -59,7 +61,7 @@ def parse_hit(h: dict) -> dict:
 
 def weekly_change(ticker: str) -> float | None:
     try:
-        hist = yf.Ticker(ticker).history(period='5d')
+        hist = with_retry(lambda: yf.Ticker(ticker).history(period='5d'))
         if len(hist) >= 2:
             return round(((hist['Close'].iloc[-1] / hist['Close'].iloc[0]) - 1) * 100, 2)
     except Exception:
@@ -69,7 +71,7 @@ def weekly_change(ticker: str) -> float | None:
 
 def current_price(ticker: str) -> float | None:
     try:
-        p = yf.Ticker(ticker).fast_info.last_price
+        p = with_retry(lambda: yf.Ticker(ticker).fast_info.last_price)
         return round(p, 2) if p else None
     except Exception:
         return None
@@ -77,7 +79,7 @@ def current_price(ticker: str) -> float | None:
 
 def get_sector(ticker: str) -> str:
     try:
-        return yf.Ticker(ticker).info.get('sector', 'Unknown')
+        return with_retry(lambda: yf.Ticker(ticker).info.get('sector', 'Unknown'))
     except Exception:
         return 'Unknown'
 

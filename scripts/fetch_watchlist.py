@@ -13,6 +13,8 @@ try:
 except ImportError:
     raise SystemExit("yfinance not installed. Run: pip install yfinance")
 
+from retry_utils import with_retry
+
 ROOT        = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(ROOT, "config.json")
 DATA_DIR    = os.path.join(ROOT, "data")
@@ -110,7 +112,7 @@ def main():
     print(f"Fetching {len(tickers)} watchlist tickers: {', '.join(tickers)}")
 
     try:
-        raw = yf.download(
+        raw = with_retry(lambda: yf.download(
             tickers,
             period="1y",
             interval="1d",
@@ -118,7 +120,7 @@ def main():
             auto_adjust=True,
             progress=False,
             threads=True,
-        )
+        ))
     except Exception as e:
         raise SystemExit(f"yfinance download failed: {e}")
 

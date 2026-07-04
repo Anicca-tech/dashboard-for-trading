@@ -4,6 +4,8 @@ import requests
 from datetime import datetime
 import pytz
 
+from retry_utils import with_retry
+
 with open('config.json') as f:
     cfg = json.load(f)['intelligence']['after_hours']
 
@@ -26,10 +28,12 @@ def screener(scr_id: str) -> list:
         'https://query2.finance.yahoo.com/v1/finance/screener/predefined/saved'
         f'?formatted=false&lang=en-US&region=US&scrIds={scr_id}&count=50'
     )
-    r = requests.get(url, headers=HEADERS, timeout=20)
-    r.raise_for_status()
-    result = r.json()['finance']['result']
-    return result[0].get('quotes', []) if result else []
+    def _get():
+        r = requests.get(url, headers=HEADERS, timeout=20)
+        r.raise_for_status()
+        result = r.json()['finance']['result']
+        return result[0].get('quotes', []) if result else []
+    return with_retry(_get, catch=requests.exceptions.RequestException)
 
 
 def get_catalyst(ticker: str, since_ts: float) -> str | None:
@@ -39,8 +43,11 @@ def get_catalyst(ticker: str, since_ts: float) -> str | None:
         f'?q={ticker}&newsCount=5&quotesCount=0'
     )
     try:
-        r = requests.get(url, headers=HEADERS, timeout=12)
-        for n in r.json().get('news', []):
+        def _get():
+            r = requests.get(url, headers=HEADERS, timeout=12)
+            r.raise_for_status()
+            return r.json().get('news', [])
+        for n in with_retry(_get, catch=requests.exceptions.RequestException):
             if n.get('providerPublishTime', 0) >= since_ts:
                 title = n.get('title', '')
                 return title[:90] if title else None
