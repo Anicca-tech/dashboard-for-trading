@@ -32,8 +32,7 @@
   --grade-b:   #d97706;
   --grade-c:   #dc2626;
   --grade-q:   #888888;
-  --nav-h:     36px;
-  --row-h:     28px;
+  --nav-h:     44px;
   --font:      'Courier New', Courier, monospace;
   --border-row: #e4e4e4;
   --bg-hover:   #e8e8e8;
@@ -111,8 +110,7 @@ body {
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
-  height: var(--nav-h);
-  padding: 0 8px;
+  padding: 10px 8px;
   gap: 2px;
 }
 #nav a {
@@ -206,8 +204,7 @@ body {
 .data-table td {
   font-size: 14px;
   text-align: right;
-  padding: 1px 6px;
-  height: var(--row-h);
+  padding: 6px 6px;
   border-bottom: 1px solid var(--border-row);
   white-space: nowrap;
   overflow: hidden;
@@ -227,8 +224,7 @@ body {
   font-size: 14px;
   letter-spacing: .06em;
   text-transform: uppercase;
-  height: 18px;
-  padding: 1px 6px;
+  padding: 3px 6px;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -706,7 +702,7 @@ canvas.spark {
 }
 .notif-alerts { width: 100%; border-collapse: collapse; }
 .notif-alerts td {
-  font-size: 14px; padding: 2px 8px; height: 24px;
+  font-size: 14px; padding: 6px 8px;
   border-bottom: 1px solid var(--border-row); vertical-align: middle;
 }
 .notif-alerts tr:last-child td { border-bottom: none; }
@@ -751,7 +747,7 @@ canvas.spark {
 }
 .range-table th:first-child { text-align: left; }
 .range-table td {
-  font-size: 14px; padding: 2px 8px; height: 24px;
+  font-size: 14px; padding: 6px 8px;
   text-align: right; border-bottom: 1px solid var(--border-row); vertical-align: middle;
 }
 .range-table td:first-child { text-align: left; font-weight: bold; }
@@ -1226,6 +1222,12 @@ function toggleTheme() {
 (function() {
   if (document.documentElement.classList.contains('dark'))
     document.getElementById('theme-toggle').textContent = '☀';
+})();
+
+// Set --nav-h from the actual rendered nav height so sticky th offsets are always exact
+(function() {
+  var h = document.getElementById('nav').getBoundingClientRect().height;
+  if (h > 0) document.documentElement.style.setProperty('--nav-h', h + 'px');
 })();
 
 // ═══════════════════════════════════════════════════════════
