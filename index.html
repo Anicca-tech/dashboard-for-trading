@@ -1224,11 +1224,20 @@ function toggleTheme() {
     document.getElementById('theme-toggle').textContent = '☀';
 })();
 
-// Set --nav-h from the actual rendered nav height so sticky th offsets are always exact
-(function() {
+// Measure nav height → --nav-h (+ 2px sub-pixel safety margin)
+function _setNavH() {
   var h = document.getElementById('nav').getBoundingClientRect().height;
-  if (h > 0) document.documentElement.style.setProperty('--nav-h', h + 'px');
-})();
+  if (h > 0) document.documentElement.style.setProperty('--nav-h', (h + 2) + 'px');
+}
+_setNavH();                                          // immediate — layout is roughly right before first paint
+window.addEventListener('load', _setNavH);           // re-measure after all resources have loaded
+if (document.fonts && document.fonts.ready)          // re-measure after fonts have settled (if supported)
+  document.fonts.ready.then(_setNavH);
+var _navHResizeTimer;
+window.addEventListener('resize', function() {       // re-measure on resize, debounced 100ms
+  clearTimeout(_navHResizeTimer);
+  _navHResizeTimer = setTimeout(_setNavH, 100);
+});
 
 // ═══════════════════════════════════════════════════════════
 //  SECTION GROUPS — order matches brief
