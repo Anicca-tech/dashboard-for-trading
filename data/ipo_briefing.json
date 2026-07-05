@@ -1,8 +1,59 @@
 {
-  "generated_at": "2026-07-04T12:40:48.534292-04:00",
-  "week_of": "Week of July 04, 2026",
+  "generated_at": "2026-07-05T07:21:05.013265-04:00",
+  "week_of": "Week of July 05, 2026",
   "new_filings": [],
-  "recently_priced": [],
+  "recently_priced": [
+    {
+      "company": "Neutron Holdings, Inc.  (LIME)",
+      "ticker": "",
+      "priced_date": "2026-07-02"
+    },
+    {
+      "company": "Osprey Acquisition Corp. III  (OSPR, OSPRU)",
+      "ticker": "",
+      "priced_date": "2026-07-02"
+    },
+    {
+      "company": "Forgent Power Solutions, Inc.  (FPS)",
+      "ticker": "",
+      "priced_date": "2026-07-02"
+    },
+    {
+      "company": "ITG, Inc./DE/  (ITG)",
+      "ticker": "",
+      "priced_date": "2026-07-02"
+    },
+    {
+      "company": "Meridian3 Industrials Acquisition Corp  (MIAC)",
+      "ticker": "",
+      "priced_date": "2026-07-02"
+    },
+    {
+      "company": "GreenVector Holdings Ltd  (GRVT)",
+      "ticker": "",
+      "priced_date": "2026-07-01"
+    },
+    {
+      "company": "Bending Spoons S.p.A.  (BSP)",
+      "ticker": "",
+      "priced_date": "2026-07-01"
+    },
+    {
+      "company": "Tenon Medical, Inc.  (TNON, TNONW)",
+      "ticker": "",
+      "priced_date": "2026-06-30"
+    },
+    {
+      "company": "Ares Acquisition Corp III  (AAC)",
+      "ticker": "",
+      "priced_date": "2026-06-30"
+    },
+    {
+      "company": "TEN Holdings, Inc.  (XHLD)",
+      "ticker": "",
+      "priced_date": "2026-06-29"
+    }
+  ],
   "delayed_withdrawn": [],
   "weekly_movers": [],
   "sector_trends": []
