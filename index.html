@@ -1230,14 +1230,15 @@ function _setNavH() {
   if (h > 0) document.documentElement.style.setProperty('--nav-h', (h + 2) + 'px');
 }
 _setNavH();                                          // immediate — layout is roughly right before first paint
-window.addEventListener('load', _setNavH);           // re-measure after all resources have loaded
-if (document.fonts && document.fonts.ready)          // re-measure after fonts have settled (if supported)
-  document.fonts.ready.then(_setNavH);
-var _navHResizeTimer;
-window.addEventListener('resize', function() {       // re-measure on resize, debounced 100ms
-  clearTimeout(_navHResizeTimer);
-  _navHResizeTimer = setTimeout(_setNavH, 100);
-});
+if (typeof ResizeObserver !== 'undefined') {
+  new ResizeObserver(_setNavH).observe(document.getElementById('nav'));  // re-measure whenever nav's size changes for any reason
+} else {
+  var _navHResizeTimer;
+  window.addEventListener('resize', function() {     // fallback: re-measure on resize, debounced 100ms
+    clearTimeout(_navHResizeTimer);
+    _navHResizeTimer = setTimeout(_setNavH, 100);
+  });
+}
 
 // ═══════════════════════════════════════════════════════════
 //  SECTION GROUPS — order matches brief
