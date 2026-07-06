@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-04T12:00:31.743361-04:00",
-  "as_of": "Jul 04, 2026 12:00 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-07-06T18:22:32.258458-04:00",
+  "as_of": "Jul 06, 2026 06:22 PM ET",
+  "count": 2,
+  "movers": [
+    {
+      "ticker": "VCRE",
+      "name": "Vicore Pharma Holding AB American Depositary Shares",
+      "ah_pct": 120.74,
+      "ah_price": 35.87,
+      "reg_price": 16.25,
+      "mkt_cap": 4574791168,
+      "volume": 25928,
+      "catalyst": "Post-market move"
+    },
+    {
+      "ticker": "RIVN",
+      "name": "Rivian Automotive, Inc.",
+      "ah_pct": -7.49,
+      "ah_price": 18.63,
+      "reg_price": 20.14,
+      "mkt_cap": 27045328896,
+      "volume": 38884171,
+      "catalyst": "Rivian Automotive Reports Preliminary Q2 Revenue; Launches Offering of 75 Million Shares"
+    }
+  ]
 }
