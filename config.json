@@ -47,6 +47,29 @@
     "ITA","RSP","TAN","LIT","URNM","IGV","CIBR","XLF","URA","HYG",
     "UFO","REMX","OIH","XLE"
   ],
+  "tradingview_symbols": {
+    "NQ1": "CME_MINI:NQ1!",
+    "ES1": "CME_MINI:ES1!",
+    "RTY": "CME_MINI:RTY1!",
+    "SPX": "SP:SPX",
+    "IXIC": "NASDAQ:IXIC",
+    "NYA": "TVC:NYA",
+    "DJI": "TVC:DJI",
+    "VIX": "TVC:VIX",
+    "SKFD": "TVC:SKEW",
+    "FEDFUNDS": "FRED:FEDFUNDS",
+    "US10Y": "TVC:US10Y",
+    "US02Y": "TVC:US02Y",
+    "EURUSD": "FX:EURUSD",
+    "USDCAD": "FX:USDCAD",
+    "EURCAD": "FX:EURCAD",
+    "DXY": "TVC:DXY",
+    "BTCUSD": "COINBASE:BTCUSD",
+    "ETHUSD": "COINBASE:ETHUSD",
+    "Gold": "COMEX:GC1!",
+    "Silver": "COMEX:SI1!",
+    "WTI": "NYMEX:CL1!"
+  },
   "naaim": {
     "url": "https://www.naaim.org/programs/naaim-exposure-index/",
     "cache_file": "data/naaim.json"

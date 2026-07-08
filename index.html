@@ -772,6 +772,64 @@ canvas.spark {
 .wl-prox-dist   { font-weight: bold; flex-shrink: 0; }
 
 /* ═══════════════════════════════════════════════════════════
+   TRADINGVIEW CHART MODAL
+═══════════════════════════════════════════════════════════ */
+.tv-ticker { cursor: pointer; }
+.tv-ticker:hover { text-decoration: underline; }
+
+.tv-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.tv-modal-overlay.open { display: flex; }
+.tv-modal {
+  width: 80vw;
+  height: 80vh;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.tv-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.tv-modal-title {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .04em;
+  color: var(--text);
+}
+.tv-modal-close {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.tv-modal-close:hover { color: var(--text); }
+.tv-modal-body { flex: 1; min-height: 0; }
+.tv-modal-body .tradingview-widget-container,
+.tv-modal-body .tradingview-widget-container__widget {
+  width: 100%;
+  height: 100%;
+}
+
+/* ═══════════════════════════════════════════════════════════
    DARK THEME OVERRIDES
 ═══════════════════════════════════════════════════════════ */
 html.dark .nb-index  { background: rgba(99,102,241,.2);  color: #a5b4fc; }
@@ -1166,6 +1224,17 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
   </div>
 </section>
 
+<!-- ══════════════════════════════ TRADINGVIEW CHART MODAL ══ -->
+<div id="tv-modal-overlay" class="tv-modal-overlay" onclick="if(event.target===this) closeTvModal()">
+  <div class="tv-modal">
+    <div class="tv-modal-header">
+      <span class="tv-modal-title" id="tv-modal-title"></span>
+      <button class="tv-modal-close" onclick="closeTvModal()" aria-label="Close">×</button>
+    </div>
+    <div class="tv-modal-body" id="tv-modal-body"></div>
+  </div>
+</div>
+
 <script>
 // ═══════════════════════════════════════════════════════════
 //  CONFIG (mirrors config.json — source of truth for paths)
@@ -1182,6 +1251,50 @@ const CFG = {
   staleMinutes:      15,
 };
 let _notifProxPct = 2.0; // overridden by config.json notifications.thresholds.wl_proximity_pct
+let TV_SYMBOLS = {}; // dashboard label → TradingView symbol, loaded from config.json
+
+// ── TradingView chart modal ──────────────────────────────
+function openTvModal(label) {
+  const symbol = TV_SYMBOLS[label] || label;
+  document.getElementById('tv-modal-title').textContent = label;
+
+  const body = document.getElementById('tv-modal-body');
+  body.innerHTML = `<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>`;
+
+  const script = document.createElement('script');
+  script.src   = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+  script.async = true;
+  script.textContent = JSON.stringify({
+    autosize: true,
+    symbol: symbol,
+    interval: 'D',
+    timezone: 'Etc/UTC',
+    theme: 'dark',
+    style: '1',
+    locale: 'en',
+    allow_symbol_change: true,
+    support_host: 'https://www.tradingview.com',
+  });
+  body.querySelector('.tradingview-widget-container').appendChild(script);
+
+  document.getElementById('tv-modal-overlay').classList.add('open');
+  document.addEventListener('keydown', _tvModalEscHandler);
+}
+
+function closeTvModal() {
+  document.getElementById('tv-modal-overlay').classList.remove('open');
+  document.getElementById('tv-modal-body').innerHTML = ''; // tear down widget so re-opening is a clean load
+  document.removeEventListener('keydown', _tvModalEscHandler);
+}
+
+function _tvModalEscHandler(e) {
+  if (e.key === 'Escape') closeTvModal();
+}
+
+function openTvModalForWl(id) {
+  const row = _wlRows.find(r => r.id === id);
+  if (row && row.ticker) openTvModal(row.ticker);
+}
 
 // ── Daily quote ──────────────────────────────────────────
 (function () {
@@ -1407,7 +1520,7 @@ function buildRow(d, label, inv) {
   const isUp = (d.change_1d || 0) > 0;
 
   return `<tr>
-    <td class="left">${label}</td>
+    <td class="left"><span class="tv-ticker" onclick="openTvModal('${label}')">${label}</span></td>
     <td>${fmtPrice(d.price, label)}</td>
     <td class="${pctClass(d.change_1d, inv)}">${fmtPct(d.change_1d)}</td>
     <td class="${pctClass(d.change_1w, inv)}">${fmtPct(d.change_1w)}</td>
@@ -1500,7 +1613,7 @@ function renderEtfs(data) {
     const bgCls   = heatmapBgClass(d.change_1d);
 
     html += `<tr>
-      <td class="left">${lbl}</td>
+      <td class="left"><span class="tv-ticker" onclick="openTvModal('${lbl}')">${lbl}</span></td>
       <td>${fmtPrice(d.price, lbl)}</td>
       <td class="${pctClass(d.change_1d)} ${bgCls}">${fmtPct(d.change_1d)}</td>
       <td class="${pctClass(d.change_1w)}">${fmtPct(d.change_1w)}</td>
@@ -1656,6 +1769,7 @@ async function loadConfig() {
     document.getElementById('sz-risk').value   = ps.default_risk_pct       ?? 0.4;
     const nt = cfg.notifications?.thresholds || {};
     if (nt.wl_proximity_pct != null) _notifProxPct = nt.wl_proximity_pct;
+    TV_SYMBOLS = cfg.tradingview_symbols || {};
   } catch {
     document.getElementById('sz-equity').value = 100000;
     document.getElementById('sz-risk').value   = 0.4;
@@ -2122,7 +2236,7 @@ function wlBuildRow(id) {
     <td class="left"><input class="wl-ticker-inp" type="text" value="${row.ticker}" placeholder="AAPL"
       onkeydown="if(event.key==='Enter'){event.preventDefault();wlSubmitTicker(${id},this.value)}"
       onblur="wlSubmitTicker(${id},this.value)"></td>
-    <td class="wl-price">—</td>
+    <td class="wl-price tv-ticker" onclick="openTvModalForWl(${id})">—</td>
     <td class="wl-1d neu">—</td>
     <td class="wl-atr">—</td>
     <td class="wl-adr">—</td>
