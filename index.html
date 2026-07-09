@@ -772,32 +772,29 @@ canvas.spark {
 .wl-prox-dist   { font-weight: bold; flex-shrink: 0; }
 
 /* ═══════════════════════════════════════════════════════════
-   TRADINGVIEW CHART MODAL
+   TRADINGVIEW CHART PANEL (docked right, popup on narrow screens)
 ═══════════════════════════════════════════════════════════ */
 .tv-ticker { cursor: pointer; }
 .tv-ticker:hover { text-decoration: underline; }
 
-.tv-modal-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.7);
-  z-index: 1000;
-  align-items: center;
-  justify-content: center;
-}
-.tv-modal-overlay.open { display: flex; }
-.tv-modal {
-  width: 80vw;
-  height: 80vh;
+#layout-row { display: flex; align-items: flex-start; }
+#left-pane { width: 55%; }
+
+#tv-panel-backdrop { display: none; }
+
+#tv-panel {
+  position: sticky;
+  top: var(--nav-h);
+  align-self: flex-start;
+  width: 45%;
+  height: calc(100vh - var(--nav-h));
   background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  border-left: 1px solid var(--border);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  z-index: 50;
 }
-.tv-modal-header {
+#tv-panel-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -806,13 +803,14 @@ canvas.spark {
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
 }
-.tv-modal-title {
+#tv-panel-title {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: .04em;
   color: var(--text);
 }
-.tv-modal-close {
+#tv-panel-close {
+  display: none;
   background: none;
   border: none;
   color: var(--text-dim);
@@ -821,12 +819,39 @@ canvas.spark {
   cursor: pointer;
   padding: 2px 6px;
 }
-.tv-modal-close:hover { color: var(--text); }
-.tv-modal-body { flex: 1; min-height: 0; }
-.tv-modal-body .tradingview-widget-container,
-.tv-modal-body .tradingview-widget-container__widget {
+#tv-panel-close:hover { color: var(--text); }
+#tv-panel-body { flex: 1; min-height: 0; }
+#tv-panel-body .tradingview-widget-container,
+#tv-panel-body .tradingview-widget-container__widget {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1100px) {
+  #layout-row { display: block; }
+  #left-pane { width: 100%; }
+  #tv-panel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  #tv-panel.open { display: flex; }
+  #tv-panel-close { display: inline-block; }
+  #tv-panel-backdrop.open {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 999;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -878,6 +903,8 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
   <span id="last-updated"></span>
 </nav>
 
+<div id="layout-row">
+<div id="left-pane">
 <!-- ══════════════════════════════ SECTION 1 — MARKET ═══ -->
 <section class="section" id="s1">
   <div class="section-header" onclick="toggleSection('s1-body')">
@@ -1224,16 +1251,17 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
   </div>
 </section>
 
-<!-- ══════════════════════════════ TRADINGVIEW CHART MODAL ══ -->
-<div id="tv-modal-overlay" class="tv-modal-overlay" onclick="if(event.target===this) closeTvModal()">
-  <div class="tv-modal">
-    <div class="tv-modal-header">
-      <span class="tv-modal-title" id="tv-modal-title"></span>
-      <button class="tv-modal-close" onclick="closeTvModal()" aria-label="Close">×</button>
-    </div>
-    <div class="tv-modal-body" id="tv-modal-body"></div>
-  </div>
 </div>
+<!-- ══════════════════════════ TRADINGVIEW CHART PANEL ══ -->
+<aside id="tv-panel">
+  <div id="tv-panel-header">
+    <span id="tv-panel-title"></span>
+    <button id="tv-panel-close" onclick="closeTvPanel()" aria-label="Close">×</button>
+  </div>
+  <div id="tv-panel-body"></div>
+</aside>
+</div>
+<div id="tv-panel-backdrop" onclick="closeTvPanel()"></div>
 
 <script>
 // ═══════════════════════════════════════════════════════════
@@ -1253,12 +1281,12 @@ const CFG = {
 let _notifProxPct = 2.0; // overridden by config.json notifications.thresholds.wl_proximity_pct
 let TV_SYMBOLS = {}; // dashboard label → TradingView symbol, loaded from config.json
 
-// ── TradingView chart modal ──────────────────────────────
-function openTvModal(label) {
+// ── TradingView chart panel ──────────────────────────────
+function loadTvPanel(label) {
   const symbol = TV_SYMBOLS[label] || label;
-  document.getElementById('tv-modal-title').textContent = label;
+  document.getElementById('tv-panel-title').textContent = label;
 
-  const body = document.getElementById('tv-modal-body');
+  const body = document.getElementById('tv-panel-body');
   body.innerHTML = `<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>`;
 
   const script = document.createElement('script');
@@ -1276,24 +1304,28 @@ function openTvModal(label) {
     support_host: 'https://www.tradingview.com',
   });
   body.querySelector('.tradingview-widget-container').appendChild(script);
-
-  document.getElementById('tv-modal-overlay').classList.add('open');
-  document.addEventListener('keydown', _tvModalEscHandler);
 }
 
-function closeTvModal() {
-  document.getElementById('tv-modal-overlay').classList.remove('open');
-  document.getElementById('tv-modal-body').innerHTML = ''; // tear down widget so re-opening is a clean load
-  document.removeEventListener('keydown', _tvModalEscHandler);
+function openTvPanel(label) {
+  loadTvPanel(label);
+  document.getElementById('tv-panel').classList.add('open');
+  document.getElementById('tv-panel-backdrop').classList.add('open');
+  document.addEventListener('keydown', _tvPanelEscHandler);
 }
 
-function _tvModalEscHandler(e) {
-  if (e.key === 'Escape') closeTvModal();
+function closeTvPanel() {
+  document.getElementById('tv-panel').classList.remove('open');
+  document.getElementById('tv-panel-backdrop').classList.remove('open');
+  document.removeEventListener('keydown', _tvPanelEscHandler);
 }
 
-function openTvModalForWl(id) {
+function _tvPanelEscHandler(e) {
+  if (e.key === 'Escape') closeTvPanel();
+}
+
+function openTvPanelForWl(id) {
   const row = _wlRows.find(r => r.id === id);
-  if (row && row.ticker) openTvModal(row.ticker);
+  if (row && row.ticker) openTvPanel(row.ticker);
 }
 
 // ── Daily quote ──────────────────────────────────────────
@@ -1520,7 +1552,7 @@ function buildRow(d, label, inv) {
   const isUp = (d.change_1d || 0) > 0;
 
   return `<tr>
-    <td class="left"><span class="tv-ticker" onclick="openTvModal('${label}')">${label}</span></td>
+    <td class="left"><span class="tv-ticker" onclick="openTvPanel('${label}')">${label}</span></td>
     <td>${fmtPrice(d.price, label)}</td>
     <td class="${pctClass(d.change_1d, inv)}">${fmtPct(d.change_1d)}</td>
     <td class="${pctClass(d.change_1w, inv)}">${fmtPct(d.change_1w)}</td>
@@ -1613,7 +1645,7 @@ function renderEtfs(data) {
     const bgCls   = heatmapBgClass(d.change_1d);
 
     html += `<tr>
-      <td class="left"><span class="tv-ticker" onclick="openTvModal('${lbl}')">${lbl}</span></td>
+      <td class="left"><span class="tv-ticker" onclick="openTvPanel('${lbl}')">${lbl}</span></td>
       <td>${fmtPrice(d.price, lbl)}</td>
       <td class="${pctClass(d.change_1d)} ${bgCls}">${fmtPct(d.change_1d)}</td>
       <td class="${pctClass(d.change_1w)}">${fmtPct(d.change_1w)}</td>
@@ -1770,6 +1802,7 @@ async function loadConfig() {
     const nt = cfg.notifications?.thresholds || {};
     if (nt.wl_proximity_pct != null) _notifProxPct = nt.wl_proximity_pct;
     TV_SYMBOLS = cfg.tradingview_symbols || {};
+    loadTvPanel(MARKET_GROUPS[0].labels[0]);
   } catch {
     document.getElementById('sz-equity').value = 100000;
     document.getElementById('sz-risk').value   = 0.4;
@@ -2236,7 +2269,7 @@ function wlBuildRow(id) {
     <td class="left"><input class="wl-ticker-inp" type="text" value="${row.ticker}" placeholder="AAPL"
       onkeydown="if(event.key==='Enter'){event.preventDefault();wlSubmitTicker(${id},this.value)}"
       onblur="wlSubmitTicker(${id},this.value)"></td>
-    <td class="wl-price tv-ticker" onclick="openTvModalForWl(${id})">—</td>
+    <td class="wl-price tv-ticker" onclick="openTvPanelForWl(${id})">—</td>
     <td class="wl-1d neu">—</td>
     <td class="wl-atr">—</td>
     <td class="wl-adr">—</td>
