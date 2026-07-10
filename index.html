@@ -430,6 +430,33 @@ canvas.spark {
 .claims-date  { color: var(--text-dim); margin-left: 4px; font-size: 14px; }
 
 /* ═══════════════════════════════════════════════════════════
+   SECTION 1 — PORTFOLIO
+═══════════════════════════════════════════════════════════ */
+#pf-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+}
+#tbl-portfolio th:nth-child(1),  #tbl-portfolio td:nth-child(1)  { width: 72px; text-align: left; }
+#tbl-portfolio th:nth-child(2),  #tbl-portfolio td:nth-child(2)  { width: 64px; }
+#tbl-portfolio th:nth-child(3),  #tbl-portfolio td:nth-child(3)  { width: 72px; }
+#tbl-portfolio th:nth-child(4),  #tbl-portfolio td:nth-child(4)  { width: 72px; }
+#tbl-portfolio th:nth-child(5),  #tbl-portfolio td:nth-child(5)  { width: 76px; }
+#tbl-portfolio th:nth-child(6),  #tbl-portfolio td:nth-child(6)  { width: 92px; }
+#tbl-portfolio th:nth-child(7),  #tbl-portfolio td:nth-child(7)  { width: 92px; }
+#tbl-portfolio th:nth-child(8),  #tbl-portfolio td:nth-child(8)  { width: 66px; }
+#tbl-portfolio th:nth-child(9),  #tbl-portfolio td:nth-child(9)  { width: 78px; }
+#tbl-portfolio th:nth-child(10), #tbl-portfolio td:nth-child(10) { width: 22px; }
+.pf-totals-row td {
+  font-weight: bold;
+  border-top: 2px solid var(--border);
+  background: var(--bg3);
+}
+
+/* ═══════════════════════════════════════════════════════════
    SECTION 3 — WATCHLIST
 ═══════════════════════════════════════════════════════════ */
 #wl-toolbar {
@@ -892,13 +919,14 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
 
 <!-- ═══════════════════════════════════════ STICKY NAV ══ -->
 <nav id="nav">
-  <a href="#s1">MARKET</a>
-  <a href="#s2">ETFs</a>
+  <a href="#s1">PORTFOLIO</a>
+  <a href="#s2">MARKET</a>
   <a href="#s3">WATCHLIST</a>
   <a href="#s4">SIZER</a>
-  <a href="#s5">CALENDAR</a>
-  <a href="#s6">INTEL</a>
-  <a href="#s7">NOTIFS</a>
+  <a href="#s5">NOTIFS</a>
+  <a href="#s6">ETFs</a>
+  <a href="#s7">CALENDAR</a>
+  <a href="#s8">INTEL</a>
   <button id="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">&#9681;</button>
   <span id="clock">--:--:-- EST</span>
   <span id="market-status" class="closed">CLOSED</span>
@@ -907,13 +935,51 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
 
 <div id="layout-row">
 <div id="left-pane">
-<!-- ══════════════════════════════ SECTION 1 — MARKET ═══ -->
+<!-- ══════════════════════════════ SECTION 1 — PORTFOLIO ═ -->
 <section class="section" id="s1">
   <div class="section-header" onclick="toggleSection('s1-body')">
-    <span class="section-title">1 — Market Overview</span>
+    <span class="section-title">1 — Current Portfolio</span>
     <span class="section-toggle" id="s1-tog">▲</span>
   </div>
   <div class="section-body" id="s1-body">
+    <div id="pf-toolbar">
+      <button class="wl-btn" onclick="pfAdd()">+ Add</button>
+      <button class="wl-btn" onclick="pfRefreshAll()">↻ Refresh</button>
+    </div>
+    <table class="data-table" id="tbl-portfolio">
+      <thead>
+        <tr>
+          <th class="left">Ticker</th>
+          <th>Shares</th>
+          <th>Buy Price</th>
+          <th>Stop-Loss</th>
+          <th>Current</th>
+          <th>Mkt Value</th>
+          <th>P/L $</th>
+          <th>P/L %</th>
+          <th>Dist Stop</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbody-portfolio"></tbody>
+      <tfoot>
+        <tr class="pf-totals-row">
+          <td class="left" colspan="5">Total</td>
+          <td id="pf-total-mval">—</td>
+          <td id="pf-total-pl" colspan="4">—</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ SECTION 2 — MARKET ═══ -->
+<section class="section" id="s2">
+  <div class="section-header" onclick="toggleSection('s2-body')">
+    <span class="section-title">2 — Market Overview</span>
+    <span class="section-toggle" id="s2-tog">▲</span>
+  </div>
+  <div class="section-body" id="s2-body">
     <table class="data-table" id="tbl-market">
       <thead>
         <tr>
@@ -942,54 +1008,6 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
       <span><span class="naaim-label">Qtr Avg:</span><span class="naaim-val" id="naaim-qavg">—</span></span>
       <span><span class="naaim-label">As of:</span><span class="naaim-val" id="naaim-date">—</span></span>
     </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════ SECTION 2 — ETFs ══════ -->
-<section class="section" id="s2">
-  <div class="section-header" onclick="toggleSection('s2-body')">
-    <span class="section-title">2 — Industry ETFs</span>
-    <span class="section-toggle" id="s2-tog">▲</span>
-  </div>
-  <div class="section-body" id="s2-body">
-
-    <!-- Top/Bottom 5 summary -->
-    <div id="etf-summary">
-      <div class="etf-summary-col">
-        <div class="etf-summary-header">Top 5</div>
-        <div class="etf-summary-items" id="etf-top5"></div>
-      </div>
-      <div class="etf-summary-col">
-        <div class="etf-summary-header">Bottom 5</div>
-        <div class="etf-summary-items" id="etf-bot5"></div>
-      </div>
-    </div>
-
-    <!-- ETF ranked table -->
-    <table class="data-table" id="tbl-etfs">
-      <thead>
-        <tr>
-          <th class="left">ETF</th>
-          <th>Price</th>
-          <th>1D%</th>
-          <th>1W%</th>
-          <th>20D%</th>
-          <th>50D%</th>
-          <th>ATR%</th>
-          <th>ADR%</th>
-          <th>52wk Hi</th>
-          <th class="left">Spark</th>
-          <th>Gr</th>
-        </tr>
-      </thead>
-      <tbody id="tbody-etfs">
-        <tr class="loading-row"><td colspan="11">Loading ETF data…</td></tr>
-      </tbody>
-    </table>
-
-    <!-- Heatmap -->
-    <div id="heatmap"></div>
-
   </div>
 </section>
 
@@ -1090,10 +1108,96 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
 
 <section class="section" id="s5">
   <div class="section-header" onclick="toggleSection('s5-body')">
-    <span class="section-title">5 — Calendar</span>
+    <span class="section-title">5 — Intraday Notifications</span>
     <span class="section-toggle" id="s5-tog">▲</span>
   </div>
   <div class="section-body" id="s5-body">
+
+    <!-- N1: 10:00 AM -->
+    <div class="notif-slot">
+      <div class="cal-sub-header">
+        10:00 AM — Market Open Scan
+        <span class="notif-time" id="notif-n1-time"></span>
+      </div>
+      <div id="notif-n1-body"><div class="notif-pending">Pending — runs at 10:05 AM ET on weekdays</div></div>
+    </div>
+
+    <!-- N2: 12:30 PM -->
+    <div class="notif-slot">
+      <div class="cal-sub-header">
+        12:30 PM — Midday Scan + Sector Rotation
+        <span class="notif-time" id="notif-n2-time"></span>
+      </div>
+      <div id="notif-n2-body"><div class="notif-pending">Pending — runs at 12:35 PM ET on weekdays</div></div>
+    </div>
+
+    <!-- N3: 3:30 PM -->
+    <div class="notif-slot">
+      <div class="cal-sub-header">
+        3:30 PM — Pre-Close Scan + Range &amp; Watchlist
+        <span class="notif-time" id="notif-n3-time"></span>
+      </div>
+      <div id="notif-n3-body"><div class="notif-pending">Pending — runs at 3:35 PM ET on weekdays</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════ SECTION 6 — ETFs ══════ -->
+<section class="section" id="s6">
+  <div class="section-header" onclick="toggleSection('s6-body')">
+    <span class="section-title">6 — Industry ETFs</span>
+    <span class="section-toggle" id="s6-tog">▲</span>
+  </div>
+  <div class="section-body" id="s6-body">
+
+    <!-- Top/Bottom 5 summary -->
+    <div id="etf-summary">
+      <div class="etf-summary-col">
+        <div class="etf-summary-header">Top 5</div>
+        <div class="etf-summary-items" id="etf-top5"></div>
+      </div>
+      <div class="etf-summary-col">
+        <div class="etf-summary-header">Bottom 5</div>
+        <div class="etf-summary-items" id="etf-bot5"></div>
+      </div>
+    </div>
+
+    <!-- ETF ranked table -->
+    <table class="data-table" id="tbl-etfs">
+      <thead>
+        <tr>
+          <th class="left">ETF</th>
+          <th>Price</th>
+          <th>1D%</th>
+          <th>1W%</th>
+          <th>20D%</th>
+          <th>50D%</th>
+          <th>ATR%</th>
+          <th>ADR%</th>
+          <th>52wk Hi</th>
+          <th class="left">Spark</th>
+          <th>Gr</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-etfs">
+        <tr class="loading-row"><td colspan="11">Loading ETF data…</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Heatmap -->
+    <div id="heatmap"></div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════ SECTION 7 — CALENDAR ══ -->
+<section class="section" id="s7">
+  <div class="section-header" onclick="toggleSection('s7-body')">
+    <span class="section-title">7 — Calendar</span>
+    <span class="section-toggle" id="s7-tog">▲</span>
+  </div>
+  <div class="section-body" id="s7-body">
 
     <!-- ── Earnings ── -->
     <div class="cal-sub-header">
@@ -1147,12 +1251,12 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
   </div>
 </section>
 
-<section class="section" id="s6">
-  <div class="section-header" onclick="toggleSection('s6-body')">
-    <span class="section-title">6 — Intelligence</span>
-    <span class="section-toggle" id="s6-tog">▲</span>
+<section class="section" id="s8">
+  <div class="section-header" onclick="toggleSection('s8-body')">
+    <span class="section-title">8 — Intelligence</span>
+    <span class="section-toggle" id="s8-tog">▲</span>
   </div>
-  <div class="section-body" id="s6-body">
+  <div class="section-body" id="s8-body">
   <div class="intel-panels">
 
     <!-- ── After-Hours Movers ── -->
@@ -1213,43 +1317,6 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
     </div>
 
   </div><!-- /intel-panels -->
-  </div>
-</section>
-
-<section class="section" id="s7">
-  <div class="section-header" onclick="toggleSection('s7-body')">
-    <span class="section-title">7 — Intraday Notifications</span>
-    <span class="section-toggle" id="s7-tog">▲</span>
-  </div>
-  <div class="section-body" id="s7-body">
-
-    <!-- N1: 10:00 AM -->
-    <div class="notif-slot">
-      <div class="cal-sub-header">
-        10:00 AM — Market Open Scan
-        <span class="notif-time" id="notif-n1-time"></span>
-      </div>
-      <div id="notif-n1-body"><div class="notif-pending">Pending — runs at 10:05 AM ET on weekdays</div></div>
-    </div>
-
-    <!-- N2: 12:30 PM -->
-    <div class="notif-slot">
-      <div class="cal-sub-header">
-        12:30 PM — Midday Scan + Sector Rotation
-        <span class="notif-time" id="notif-n2-time"></span>
-      </div>
-      <div id="notif-n2-body"><div class="notif-pending">Pending — runs at 12:35 PM ET on weekdays</div></div>
-    </div>
-
-    <!-- N3: 3:30 PM -->
-    <div class="notif-slot">
-      <div class="cal-sub-header">
-        3:30 PM — Pre-Close Scan + Range &amp; Watchlist
-        <span class="notif-time" id="notif-n3-time"></span>
-      </div>
-      <div id="notif-n3-body"><div class="notif-pending">Pending — runs at 3:35 PM ET on weekdays</div></div>
-    </div>
-
   </div>
 </section>
 
@@ -2170,13 +2237,8 @@ function _wlParseChart(json) {
   };
 }
 
-async function wlFetch(id, ticker) {
-  const pre = _wlPrices[ticker.toUpperCase()];
-  if (pre) { _wlFetched[id] = pre; wlRenderCells(id); return; }
-
-  _wlFetched[id] = { loading: true };
-  wlRenderCells(id);
-
+// ── Shared live price fetch — used by Watchlist AND Portfolio ──
+async function fetchLivePrice(ticker) {
   const direct  = `${_wlChartUrl}/${encodeURIComponent(ticker)}?interval=1d&range=1y&includePrePost=false`;
   const encoded = encodeURIComponent(direct);
   const sources = [
@@ -2187,21 +2249,38 @@ async function wlFetch(id, ticker) {
     { url: `https://api.allorigins.win/get?url=${encoded}`,
       parse: async r => { const w = await r.json(); return JSON.parse(w.contents); } },
   ];
-
   for (const src of sources) {
     try {
       const resp = await _wlFetchTimeout(src.url, 10000);
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const json = await src.parse(resp);
-      _wlFetched[id] = _wlParseChart(json);
-      wlRenderCells(id);
-      return;
+      return _wlParseChart(json);
     } catch {}
   }
+  return null;
+}
 
+// Looks up a cached price for a ticker without triggering a new fetch —
+// lets Portfolio reuse a price the Watchlist already has.
+function _wlPriceForTicker(ticker) {
+  const t = ticker.toUpperCase();
+  if (_wlPrices[t]) return _wlPrices[t];
+  const row = _wlRows.find(r => r.ticker === t);
+  if (row && _wlFetched[row.id] && _wlFetched[row.id].price != null) return _wlFetched[row.id];
+  return null;
+}
+
+async function wlFetch(id, ticker) {
+  const pre = _wlPrices[ticker.toUpperCase()];
+  if (pre) { _wlFetched[id] = pre; wlRenderCells(id); return; }
+
+  _wlFetched[id] = { loading: true };
+  wlRenderCells(id);
+
+  const data = await fetchLivePrice(ticker);
   // No entry in watchlist_prices.json and the live fallback fetch also came up empty —
   // this is expected until the next server-side refresh, not a genuine failure.
-  _wlFetched[id] = { pending: true };
+  _wlFetched[id] = data || { pending: true };
   wlRenderCells(id);
 }
 
@@ -2369,6 +2448,213 @@ async function initWatchlist() {
     _wlRows.forEach(r => wlBuildRow(r.id));
     await loadWatchlistPrices();
     _wlRows.forEach(r => { if (r.ticker && !_wlFetched[r.id]?.price) wlFetch(r.id, r.ticker); });
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+//  SECTION 1 — PORTFOLIO
+// ═══════════════════════════════════════════════════════════
+// Persistence — currently backed by localStorage, which is laptop-only
+// and does NOT sync across devices/browsers. Swap the bodies of
+// loadPortfolio()/savePortfolio() to talk to a backend later; nothing
+// else in the Portfolio code needs to change.
+const PF_STORE = 'portfolio_v1';
+function savePortfolio() {
+  localStorage.setItem(PF_STORE, JSON.stringify(
+    _pfRows.map(r => ({ id: r.id, ticker: r.ticker, shares: r.shares, buyPrice: r.buyPrice, stopLoss: r.stopLoss }))
+  ));
+}
+function loadPortfolio() {
+  try {
+    const s = localStorage.getItem(PF_STORE);
+    return s ? JSON.parse(s) : [];
+  } catch { return []; }
+}
+
+let _pfRows    = [];
+let _pfFetched = {};
+let _pfNextId  = 1;
+
+function pfRestore() {
+  _pfRows   = loadPortfolio();
+  _pfNextId = _pfRows.reduce((m, r) => Math.max(m, r.id + 1), 1);
+}
+
+function _pfFmtUSD(v) {
+  if (v == null) return '—';
+  const sign = v < 0 ? '-' : '';
+  return sign + '$' + Math.abs(v).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+async function pfFetch(id, ticker) {
+  const cached = _wlPriceForTicker(ticker);
+  if (cached) { _pfFetched[id] = cached; pfRenderCells(id); return; }
+
+  _pfFetched[id] = { loading: true };
+  pfRenderCells(id);
+
+  const data = await fetchLivePrice(ticker);
+  _pfFetched[id] = data || { pending: true };
+  pfRenderCells(id);
+}
+
+function pfUpdateTotals() {
+  let mvalSum = 0, plSum = 0, any = false;
+  for (const row of _pfRows) {
+    const d = _pfFetched[row.id];
+    if (!d || d.price == null) continue;
+    const shares = parseFloat(row.shares);
+    const buy    = parseFloat(row.buyPrice);
+    if (shares > 0) { mvalSum += shares * d.price; any = true; }
+    if (shares > 0 && buy > 0) plSum += (d.price - buy) * shares;
+  }
+  document.getElementById('pf-total-mval').textContent = any ? _pfFmtUSD(mvalSum) : '—';
+  const plEl = document.getElementById('pf-total-pl');
+  plEl.textContent = any ? (plSum >= 0 ? '+' : '') + _pfFmtUSD(plSum) : '—';
+  plEl.className = !any ? '' : plSum >= 0 ? 'up' : 'dn';
+}
+
+function pfRenderCells(id) {
+  const row = _pfRows.find(r => r.id === id);
+  const d   = _pfFetched[id] || {};
+  const tr  = document.getElementById(`pf-row-${id}`);
+  if (!row || !tr) return;
+
+  const sc = (sel, txt, cls) => {
+    const el = tr.querySelector(sel);
+    if (!el) return;
+    el.textContent = txt;
+    if (cls !== undefined) el.className = sel.slice(1) + (cls ? ' '+cls : '');
+  };
+
+  if (d.loading) {
+    ['pf-price','pf-mval','pf-pl','pf-plpct','pf-dist'].forEach(c => sc('.'+c, '…', 'neu'));
+    pfUpdateTotals();
+    return;
+  }
+  if (d.pending) {
+    tr.querySelector('.pf-price').innerHTML = `<span class="neu" title="No data yet — waiting for next refresh">pending</span>`;
+    ['pf-mval','pf-pl','pf-plpct','pf-dist'].forEach(c => sc('.'+c, '—', 'neu'));
+    pfUpdateTotals();
+    return;
+  }
+  if (d.price == null) { pfUpdateTotals(); return; }
+
+  const shares = parseFloat(row.shares);
+  const buy    = parseFloat(row.buyPrice);
+  const stop   = parseFloat(row.stopLoss);
+  const price  = d.price;
+
+  tr.querySelector('.pf-price').textContent = fmtPrice(price, row.ticker);
+
+  const mval = shares > 0 ? shares * price : null;
+  sc('.pf-mval', mval != null ? _pfFmtUSD(mval) : '—', 'neu');
+
+  const pl    = (shares > 0 && buy > 0) ? (price - buy) * shares : null;
+  const plPct = buy > 0 ? (price - buy) / buy * 100 : null;
+  sc('.pf-pl',    pl    != null ? (pl>=0?'+':'')    + _pfFmtUSD(pl)         : '—', pl    == null ? 'neu' : pl    >= 0 ? 'up' : 'dn');
+  sc('.pf-plpct', plPct != null ? (plPct>=0?'+':'') + plPct.toFixed(2)+'%' : '—', plPct == null ? 'neu' : plPct >= 0 ? 'up' : 'dn');
+
+  const dist = stop > 0 ? (price - stop) / stop * 100 : null;
+  sc('.pf-dist', dist != null ? (dist>=0?'+':'') + dist.toFixed(2)+'%' : '—', dist == null ? 'neu' : dist >= 0 ? 'up' : 'dn');
+
+  pfUpdateTotals();
+}
+
+function pfBuildRow(id) {
+  const row = _pfRows.find(r => r.id === id);
+  if (!row) return;
+  const emp = document.getElementById('pf-empty');
+  if (emp) emp.remove();
+
+  const tr = document.createElement('tr');
+  tr.id = `pf-row-${id}`;
+  tr.innerHTML = `
+    <td class="left"><input class="wl-ticker-inp" type="text" value="${row.ticker}" placeholder="AAPL"
+      ${row.ticker ? 'readonly' : ''} title="Click to view chart · double-click to edit"
+      onclick="openTvPanelForPf(${id})"
+      ondblclick="wlTickerEdit(this)"
+      onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur()}"
+      onblur="pfTickerBlur(${id},this)"></td>
+    <td><input class="wl-num-inp" type="number" min="0" step="1" value="${row.shares||''}" placeholder="—"
+      oninput="pfSetField(${id},'shares',this.value);pfRenderCells(${id})"></td>
+    <td><input class="wl-num-inp" type="number" min="0" step="0.01" value="${row.buyPrice||''}" placeholder="—"
+      oninput="pfSetField(${id},'buyPrice',this.value);pfRenderCells(${id})"></td>
+    <td><input class="wl-num-inp" type="number" min="0" step="0.01" value="${row.stopLoss||''}" placeholder="—"
+      oninput="pfSetField(${id},'stopLoss',this.value);pfRenderCells(${id})"></td>
+    <td class="pf-price tv-ticker" onclick="openTvPanelForPf(${id})">—</td>
+    <td class="pf-mval neu">—</td>
+    <td class="pf-pl neu">—</td>
+    <td class="pf-plpct neu">—</td>
+    <td class="pf-dist neu">—</td>
+    <td><button class="wl-rm-btn" onclick="pfRemove(${id})">×</button></td>`;
+  document.getElementById('tbody-portfolio').appendChild(tr);
+}
+
+function pfSubmitTicker(id, raw) {
+  const ticker = raw.trim().toUpperCase();
+  const row = _pfRows.find(r => r.id === id);
+  if (!row) return;
+  const inp = document.querySelector(`#pf-row-${id} .wl-ticker-inp`);
+  if (inp && inp.value !== ticker) inp.value = ticker;
+  if (ticker === row.ticker && _pfFetched[id] && !_pfFetched[id].pending) return;
+  row.ticker = ticker;
+  savePortfolio();
+  if (ticker) pfFetch(id, ticker);
+}
+
+function pfTickerBlur(id, el) {
+  pfSubmitTicker(id, el.value);
+  el.readOnly = !!el.value.trim();
+}
+
+function pfSetField(id, field, val) {
+  const row = _pfRows.find(r => r.id === id);
+  if (row) { row[field] = val; savePortfolio(); }
+}
+
+function pfAdd() {
+  const id = _pfNextId++;
+  _pfRows.push({ id, ticker: '', shares: '', buyPrice: '', stopLoss: '' });
+  pfBuildRow(id);
+  const inp = document.querySelector(`#pf-row-${id} .wl-ticker-inp`);
+  if (inp) inp.focus();
+}
+
+function pfRemove(id) {
+  _pfRows = _pfRows.filter(r => r.id !== id);
+  delete _pfFetched[id];
+  const tr = document.getElementById(`pf-row-${id}`);
+  if (tr) tr.remove();
+  savePortfolio();
+  if (_pfRows.length === 0) pfShowEmpty();
+  pfUpdateTotals();
+}
+
+function pfShowEmpty() {
+  if (document.getElementById('pf-empty')) return;
+  const tr = document.createElement('tr');
+  tr.id = 'pf-empty';
+  tr.innerHTML = `<td colspan="10" style="padding:10px 8px;color:var(--text-dim);font-style:italic;font-size:11px;">No positions — click + Add to start.</td>`;
+  document.getElementById('tbody-portfolio').appendChild(tr);
+}
+
+async function pfRefreshAll() {
+  _pfRows.forEach(r => { if (r.ticker) pfFetch(r.id, r.ticker); });
+}
+
+function openTvPanelForPf(id) {
+  const row = _pfRows.find(r => r.id === id);
+  if (row && row.ticker) openTvPanel(row.ticker);
+}
+
+function initPortfolio() {
+  pfRestore();
+  if (_pfRows.length === 0) {
+    pfShowEmpty();
+  } else {
+    _pfRows.forEach(r => pfBuildRow(r.id));
+    _pfRows.forEach(r => { if (r.ticker) pfFetch(r.id, r.ticker); });
   }
 }
 
@@ -2673,6 +2959,7 @@ loadMarket();
 loadNaaim();
 loadConfig();
 initWatchlist();
+initPortfolio();
 initCalendar();
 loadAfterHours();
 loadIPOBriefing();
@@ -2680,6 +2967,7 @@ loadNotifications();
 setInterval(loadMarket,        CFG.refreshMs);
 setInterval(loadNaaim,         CFG.refreshMs * 6);
 setInterval(wlRefreshAll,      CFG.refreshMs); // wlRefreshAll now loads server file first
+setInterval(pfRefreshAll,      CFG.refreshMs);
 setInterval(initCalendar,      CFG.refreshMs * 12);
 setInterval(loadAfterHours,    CFG.refreshMs);
 setInterval(loadNotifications, CFG.refreshMs);
