@@ -476,6 +476,8 @@ canvas.spark {
   text-transform: uppercase;
 }
 .wl-ticker-inp:focus { text-decoration: underline; }
+.wl-ticker-inp[readonly] { cursor: pointer; }
+.wl-ticker-inp[readonly]:hover { text-decoration: underline; }
 .wl-setup-sel {
   font-family: var(--font);
   font-size: 14px;
@@ -1441,11 +1443,11 @@ function updateClock() {
 
   if (day === 0 || day === 6) {
     el.textContent = "CLOSED"; el.className = "closed";
-  } else if (mins >= 930 && mins < 960) {  // 9:30–16:00 regular
+  } else if (mins >= 570 && mins < 960) {  // 9:30–16:00 regular
     el.textContent = "OPEN";   el.className = "open";
   } else if (mins >= 960) {
     el.textContent = "CLOSED"; el.className = "closed";
-  } else if (mins >= 240 && mins < 930) {  // 4:00–9:30 pre
+  } else if (mins >= 240 && mins < 570) {  // 4:00–9:30 pre
     el.textContent = "PRE";    el.className = "pre";
   } else {
     el.textContent = "CLOSED"; el.className = "closed";
@@ -2268,8 +2270,11 @@ function wlBuildRow(id) {
   tr.id = `wl-row-${id}`;
   tr.innerHTML = `
     <td class="left"><input class="wl-ticker-inp" type="text" value="${row.ticker}" placeholder="AAPL"
-      onkeydown="if(event.key==='Enter'){event.preventDefault();wlSubmitTicker(${id},this.value)}"
-      onblur="wlSubmitTicker(${id},this.value)"></td>
+      ${row.ticker ? 'readonly' : ''} title="Click to view chart · double-click to edit"
+      onclick="openTvPanelForWl(${id})"
+      ondblclick="wlTickerEdit(this)"
+      onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur()}"
+      onblur="wlTickerBlur(${id},this)"></td>
     <td class="wl-price tv-ticker" onclick="openTvPanelForWl(${id})">—</td>
     <td class="wl-1d neu">—</td>
     <td class="wl-atr">—</td>
@@ -2298,6 +2303,17 @@ function wlSubmitTicker(id, raw) {
   row.ticker = ticker;
   wlSave();
   if (ticker) wlFetch(id, ticker);
+}
+
+function wlTickerEdit(el) {
+  el.readOnly = false;
+  el.focus();
+  el.select();
+}
+
+function wlTickerBlur(id, el) {
+  wlSubmitTicker(id, el.value);
+  el.readOnly = !!el.value.trim();
 }
 
 function wlSetField(id, field, val) {
@@ -2510,9 +2526,10 @@ function _renderNotifAlerts(alerts) {
     const col   = a.pct >= 0 ? 'up' : 'dn';
     const sign  = a.pct >= 0 ? '+' : '';
     const cap   = a.type === 'stock' ? `<td style="color:var(--text-dim);font-size:10px">${_notifFmtCap(a.mkt_cap)}</td>` : '<td></td>';
+    const tkr = a.label || a.ticker;
     return `<tr>
       <td><span class="notif-type-badge ${cls}">${lbl}</span></td>
-      <td style="font-weight:bold">${a.label || a.ticker}</td>
+      <td style="font-weight:bold"><span class="tv-ticker" onclick="openTvPanel('${tkr}')">${tkr}</span></td>
       <td class="${col}">${sign}${a.pct.toFixed(2)}%</td>
       <td>${_notifFmt$(a.price)}</td>
       ${cap}
@@ -2534,7 +2551,7 @@ function _renderRotation(rotation) {
     const arrow = r.now === 'top5' ? '↑' : '↓';
     const sign  = r.pct_now >= 0 ? '+' : '';
     return `<div class="rotation-row">
-      <span class="rotation-ticker">${r.ticker}</span>
+      <span class="rotation-ticker tv-ticker" onclick="openTvPanel('${r.ticker}')">${r.ticker}</span>
       <span class="rotation-arrow ${col}">${arrow}</span>
       <span class="rotation-from">${r.was} → ${r.now}</span>
       <span class="rotation-pct ${col}">${sign}${r.pct_now.toFixed(2)}%</span>
@@ -2550,7 +2567,7 @@ function _renderIndicesRange(idxRange) {
     const sign = r.pct >= 0 ? '+' : '';
     const rp   = r.range_pct != null ? Math.min(100, Math.max(0, r.range_pct)) : 50;
     return `<tr>
-      <td>${r.label}</td>
+      <td><span class="tv-ticker" onclick="openTvPanel('${r.label}')">${r.label}</span></td>
       <td>${_notifFmt$(r.current)}</td>
       <td class="${col}">${sign}${r.pct.toFixed(2)}%</td>
       <td>${_notifFmt$(r.high)}</td>
@@ -2588,7 +2605,7 @@ function _renderWLProximity(proxPct) {
         const col  = dist >= 0 ? 'up' : 'dn';
         const sign = dist >= 0 ? '+' : '';
         rows.push(`<div class="wl-prox-row">
-          <span class="wl-prox-ticker">${row.ticker}</span>
+          <span class="wl-prox-ticker tv-ticker" onclick="openTvPanel('${row.ticker}')">${row.ticker}</span>
           <span class="wl-prox-price">${_notifFmt$(price)}</span>
           <span class="wl-prox-entry">entry ${_notifFmt$(entry)}</span>
           <span class="wl-prox-dist ${col}">${sign}${dist.toFixed(2)}%</span>
