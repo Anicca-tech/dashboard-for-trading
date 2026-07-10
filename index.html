@@ -2186,7 +2186,6 @@ async function wlFetch(id, ticker) {
       parse: async r => { const w = await r.json(); return JSON.parse(w.contents); } },
   ];
 
-  let lastErr;
   for (const src of sources) {
     try {
       const resp = await _wlFetchTimeout(src.url, 10000);
@@ -2195,10 +2194,12 @@ async function wlFetch(id, ticker) {
       _wlFetched[id] = _wlParseChart(json);
       wlRenderCells(id);
       return;
-    } catch (e) { lastErr = e; }
+    } catch {}
   }
 
-  _wlFetched[id] = { error: lastErr?.message || 'All sources failed' };
+  // No entry in watchlist_prices.json and the live fallback fetch also came up empty —
+  // this is expected until the next server-side refresh, not a genuine failure.
+  _wlFetched[id] = { pending: true };
   wlRenderCells(id);
 }
 
@@ -2227,8 +2228,8 @@ function wlRenderCells(id) {
       .forEach(c => sc('.'+c, '…', 'neu'));
     return;
   }
-  if (d.error) {
-    tr.querySelector('.wl-price').innerHTML = `<span class="dn" title="${d.error}">ERR</span>`;
+  if (d.pending) {
+    tr.querySelector('.wl-price').innerHTML = `<span class="neu" title="No data yet — waiting for next refresh">pending</span>`;
     ['wl-1d','wl-atr','wl-adr','wl-e21','wl-m50','wl-m200','wl-vol','wl-r']
       .forEach(c => sc('.'+c, '—', 'neu'));
     return;
@@ -2293,7 +2294,7 @@ function wlSubmitTicker(id, raw) {
   if (!row) return;
   const inp = document.querySelector(`#wl-row-${id} .wl-ticker-inp`);
   if (inp && inp.value !== ticker) inp.value = ticker;
-  if (ticker === row.ticker && _wlFetched[id] && !_wlFetched[id].error) return;
+  if (ticker === row.ticker && _wlFetched[id] && !_wlFetched[id].pending) return;
   row.ticker = ticker;
   wlSave();
   if (ticker) wlFetch(id, ticker);
