@@ -2260,26 +2260,36 @@ async function fetchLivePrice(ticker) {
   return null;
 }
 
-// Looks up a cached price for a ticker without triggering a new fetch —
-// lets Portfolio reuse a price the Watchlist already has.
-function _wlPriceForTicker(ticker) {
+// Quote priority: live browser fetch to Yahoo (freshest) → last snapshot
+// from data/watchlist_prices.json (written by scripts/fetch_watchlist.py,
+// may be a few minutes stale) → null, which callers render as "pending".
+// This never throws — fetchLivePrice already swallows its own errors.
+const _quoteCache   = {};      // ticker -> {data, ts} — avoids duplicate near-simultaneous
+                                // fetches when the same ticker is tracked in both Watchlist and Portfolio
+const QUOTE_CACHE_MS = 30000;
+
+async function fetchQuote(ticker, force = false) {
   const t = ticker.toUpperCase();
-  if (_wlPrices[t]) return _wlPrices[t];
-  const row = _wlRows.find(r => r.ticker === t);
-  if (row && _wlFetched[row.id] && _wlFetched[row.id].price != null) return _wlFetched[row.id];
-  return null;
+  if (!force) {
+    const hit = _quoteCache[t];
+    if (hit && Date.now() - hit.ts < QUOTE_CACHE_MS) return hit.data;
+  }
+
+  let data = null;
+  try { data = await fetchLivePrice(t); } catch {}
+  if (!data) data = _wlPrices[t] || null; // live fetch failed/blocked (CORS, rate limit) — fall back to server snapshot
+
+  _quoteCache[t] = { data, ts: Date.now() };
+  return data;
 }
 
-async function wlFetch(id, ticker) {
-  const pre = _wlPrices[ticker.toUpperCase()];
-  if (pre) { _wlFetched[id] = pre; wlRenderCells(id); return; }
-
+async function wlFetch(id, ticker, force = false) {
   _wlFetched[id] = { loading: true };
   wlRenderCells(id);
 
-  const data = await fetchLivePrice(ticker);
-  // No entry in watchlist_prices.json and the live fallback fetch also came up empty —
-  // this is expected until the next server-side refresh, not a genuine failure.
+  const data = await fetchQuote(ticker, force);
+  // Live fetch failed/blocked and there's no server-side snapshot either —
+  // this is expected for a brand-new ticker, not a genuine failure.
   _wlFetched[id] = data || { pending: true };
   wlRenderCells(id);
 }
@@ -2428,7 +2438,7 @@ function wlShowEmpty() {
 
 async function wlRefreshAll() {
   await loadWatchlistPrices();
-  _wlRows.forEach(r => { if (r.ticker && !_wlFetched[r.id]?.price) wlFetch(r.id, r.ticker); });
+  _wlRows.forEach(r => { if (r.ticker) wlFetch(r.id, r.ticker, true); });
 }
 
 async function initWatchlist() {
@@ -2446,8 +2456,8 @@ async function initWatchlist() {
     wlShowEmpty();
   } else {
     _wlRows.forEach(r => wlBuildRow(r.id));
-    await loadWatchlistPrices();
-    _wlRows.forEach(r => { if (r.ticker && !_wlFetched[r.id]?.price) wlFetch(r.id, r.ticker); });
+    await loadWatchlistPrices();      // instant paint from the last server snapshot, if any
+    _wlRows.forEach(r => { if (r.ticker) wlFetch(r.id, r.ticker); }); // then always refresh live
   }
 }
 
@@ -2486,14 +2496,11 @@ function _pfFmtUSD(v) {
   return sign + '$' + Math.abs(v).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
-async function pfFetch(id, ticker) {
-  const cached = _wlPriceForTicker(ticker);
-  if (cached) { _pfFetched[id] = cached; pfRenderCells(id); return; }
-
+async function pfFetch(id, ticker, force = false) {
   _pfFetched[id] = { loading: true };
   pfRenderCells(id);
 
-  const data = await fetchLivePrice(ticker);
+  const data = await fetchQuote(ticker, force);
   _pfFetched[id] = data || { pending: true };
   pfRenderCells(id);
 }
@@ -2640,7 +2647,7 @@ function pfShowEmpty() {
 }
 
 async function pfRefreshAll() {
-  _pfRows.forEach(r => { if (r.ticker) pfFetch(r.id, r.ticker); });
+  _pfRows.forEach(r => { if (r.ticker) pfFetch(r.id, r.ticker, true); });
 }
 
 function openTvPanelForPf(id) {
