@@ -1,57 +1,178 @@
 {
-  "generated_at": "2026-07-05T07:21:05.013265-04:00",
-  "week_of": "Week of July 05, 2026",
-  "new_filings": [],
+  "generated_at": "2026-07-12T07:05:03.142121-04:00",
+  "week_of": "Week of July 12, 2026",
+  "new_filings": [
+    {
+      "company": "Bravalo Corp",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Pelican Acquisition II Corp  (PLCI)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "iPower Inc.  (IPW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Laser Photonics Corp  (LASE)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Sin Lian Seng Construction",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "SMITH MICRO SOFTWARE, INC.  (SMSI)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Mingteng International Corp Inc.  (MTEN)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Healthcare Triangle, Inc.  (HCTI)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Neuro Spectrum Insights, Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Corvex, Inc.  (MOVE)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Tailored Brands, Inc. / DE",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Market Technology Acquisition Corp  (MTAK)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Holtec Nuclear Corp",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Scribe Therapeutics, Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Decoy Therapeutics Inc.  (DCOY)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Apnimed, Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Timwood Holdings Ltd",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "UNIVERSAL SAFETY PRODUCTS, INC.  (UUU)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Avalanche Treasury Corp  (AVAT)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-10"
+    },
+    {
+      "company": "Southern Cross Acquisition II Corp.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-07-09"
+    }
+  ],
   "recently_priced": [
     {
-      "company": "Neutron Holdings, Inc.  (LIME)",
+      "company": "Mercator Acquisition Corp.",
       "ticker": "",
-      "priced_date": "2026-07-02"
+      "priced_date": "2026-07-10"
     },
     {
-      "company": "Osprey Acquisition Corp. III  (OSPR, OSPRU)",
+      "company": "SK hynix Inc.  (SKHY)",
       "ticker": "",
-      "priced_date": "2026-07-02"
+      "priced_date": "2026-07-10"
     },
     {
-      "company": "Forgent Power Solutions, Inc.  (FPS)",
+      "company": "Gloo Holdings, Inc.  (GLOO)",
       "ticker": "",
-      "priced_date": "2026-07-02"
+      "priced_date": "2026-07-09"
     },
     {
-      "company": "ITG, Inc./DE/  (ITG)",
+      "company": "Columbus Circle Capital Corp III  (CCCT)",
       "ticker": "",
-      "priced_date": "2026-07-02"
+      "priced_date": "2026-07-09"
     },
     {
-      "company": "Meridian3 Industrials Acquisition Corp  (MIAC)",
+      "company": "Freedom Metals Acquisition Corp.  (FDMM)",
       "ticker": "",
-      "priced_date": "2026-07-02"
+      "priced_date": "2026-07-08"
     },
     {
-      "company": "GreenVector Holdings Ltd  (GRVT)",
+      "company": "Intercont (Cayman) Ltd  (NCT)",
       "ticker": "",
-      "priced_date": "2026-07-01"
+      "priced_date": "2026-07-07"
     },
     {
-      "company": "Bending Spoons S.p.A.  (BSP)",
+      "company": "Bleichroeder Acquisition Corp. III  (BCCQ)",
       "ticker": "",
-      "priced_date": "2026-07-01"
+      "priced_date": "2026-07-07"
     },
     {
-      "company": "Tenon Medical, Inc.  (TNON, TNONW)",
+      "company": "Phoenix Energy One, LLC  (PHXE-P)",
       "ticker": "",
-      "priced_date": "2026-06-30"
+      "priced_date": "2026-07-07"
     },
     {
-      "company": "Ares Acquisition Corp III  (AAC)",
+      "company": "Idaho Copper Corp  (COPR, COPR-WT)",
       "ticker": "",
-      "priced_date": "2026-06-30"
+      "priced_date": "2026-07-06"
     },
     {
-      "company": "TEN Holdings, Inc.  (XHLD)",
+      "company": "Viking Acquisition Corp. II  (VII, VII-UN)",
       "ticker": "",
-      "priced_date": "2026-06-29"
+      "priced_date": "2026-07-06"
     }
   ],
   "delayed_withdrawn": [],
