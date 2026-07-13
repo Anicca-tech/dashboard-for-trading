@@ -2482,10 +2482,15 @@ function pfUpdateTotals() {
     if (!d || d.price == null) continue;
     const shares = parseFloat(row.shares);
     const buy    = parseFloat(row.buyPrice);
-    // Negative shares = a short position; shares*price and (price-buy)*shares
-    // are already sign-correct for shorts, so just require a real nonzero value.
-    if (shares) { mvalSum += shares * d.price; any = true; }
-    if (shares && buy > 0) plSum += (d.price - buy) * shares;
+    if (!shares) continue;
+    const isShort = shares < 0;
+    // Market value: negative for a short (the liability) — that's expected
+    // and must still be summed in, not skipped.
+    mvalSum += shares * d.price;
+    any = true;
+    if (buy > 0) {
+      plSum += isShort ? (buy - d.price) * Math.abs(shares) : (d.price - buy) * shares;
+    }
   }
   document.getElementById('pf-total-mval').textContent = any ? _pfFmtUSD(mvalSum) : '—';
   const plEl = document.getElementById('pf-total-pl');
@@ -2523,22 +2528,32 @@ function pfRenderCells(id) {
   const buy    = parseFloat(row.buyPrice);
   const stop   = parseFloat(row.stopLoss);
   const price  = d.price;
-  // Negative shares = a short position. $ P/L's sign already comes out
-  // correct from (price-buy)*shares; % P/L and distance-to-stop need an
-  // explicit flip so "profit" and "safe" still read as positive/green.
-  const dir    = shares > 0 ? 1 : shares < 0 ? -1 : 0;
+  const isShort   = shares < 0;
+  const absShares = Math.abs(shares);
 
   tr.querySelector('.pf-price').textContent = fmtPrice(price, row.ticker);
 
-  const mval = dir !== 0 ? shares * price : null;
+  // Market value: shares * price. Negative for a short — that's the
+  // liability, not a display bug.
+  const mval = shares ? shares * price : null;
   sc('.pf-mval', mval != null ? _pfFmtUSD(mval) : '—', 'neu');
 
-  const pl    = (dir !== 0 && buy > 0) ? (price - buy) * shares : null;
-  const plPct = (dir !== 0 && buy > 0) ? (price - buy) / buy * 100 * dir : null;
+  // P/L $: long = (price-buy)*shares; short = (buy-price)*abs(shares).
+  const pl = (shares && buy > 0)
+    ? (isShort ? (buy - price) * absShares : (price - buy) * shares)
+    : null;
+  const plPct = (shares && buy > 0)
+    ? (isShort ? (buy - price) / buy * 100 : (price - buy) / buy * 100)
+    : null;
   sc('.pf-pl',    pl    != null ? (pl>=0?'+':'')    + _pfFmtUSD(pl)         : '—', pl    == null ? 'neu' : pl    >= 0 ? 'up' : 'dn');
   sc('.pf-plpct', plPct != null ? (plPct>=0?'+':'') + plPct.toFixed(2)+'%' : '—', plPct == null ? 'neu' : plPct >= 0 ? 'up' : 'dn');
 
-  const dist = (dir !== 0 && stop > 0) ? (price - stop) / stop * 100 * dir : null;
+  // Distance to stop: a long is in danger as price falls toward the stop
+  // from above; a short is in danger as price rises toward the stop from
+  // below. Flip so "safe" reads positive/green either way.
+  const dist = (shares && stop > 0)
+    ? (isShort ? (stop - price) / stop * 100 : (price - stop) / stop * 100)
+    : null;
   sc('.pf-dist', dist != null ? (dist>=0?'+':'') + dist.toFixed(2)+'%' : '—', dist == null ? 'neu' : dist >= 0 ? 'up' : 'dn');
 
   pfUpdateTotals();
