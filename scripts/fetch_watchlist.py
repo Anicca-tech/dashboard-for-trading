@@ -1,7 +1,11 @@
 """
-Fetches price/indicator data for watchlist tickers listed in config.json
-and writes data/watchlist_prices.json. Field names match wlParseChart in
-index.html so the browser can consume the file without any transformation.
+Fetches price/indicator data for the union of config.json's
+watchlist.tickers and every ticker in portfolio.json, and writes
+data/watchlist_prices.json. portfolio.json is the source of truth for
+positions (see the "Sync line for Claude Code" box in the dashboard's
+Portfolio section for how it gets updated). Field names match what
+index.html's wlFetch/pfFetch expect, so the browser can consume the file
+without any transformation.
 """
 
 import json
@@ -15,12 +19,27 @@ except ImportError:
 
 from retry_utils import with_retry
 
-ROOT        = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CONFIG_PATH = os.path.join(ROOT, "config.json")
-DATA_DIR    = os.path.join(ROOT, "data")
+ROOT           = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CONFIG_PATH    = os.path.join(ROOT, "config.json")
+PORTFOLIO_PATH = os.path.join(ROOT, "portfolio.json")
+DATA_DIR       = os.path.join(ROOT, "data")
 
 with open(CONFIG_PATH) as f:
     CONFIG = json.load(f)
+
+
+def load_portfolio_tickers():
+    """Tickers from portfolio.json's positions list. Missing/malformed
+    file is not an error — it just means no portfolio tickers to add."""
+    try:
+        with open(PORTFOLIO_PATH) as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+    return [
+        p["ticker"] for p in data.get("positions", [])
+        if p.get("ticker")
+    ]
 
 
 def _ema(closes, period):
@@ -98,18 +117,33 @@ def build_entry(sym, hist):
     }
 
 
+def build_ticker_union(wl_tickers, pf_tickers):
+    """Union of both lists, case-insensitive de-dup, first-seen order kept."""
+    seen    = set()
+    tickers = []
+    for sym in wl_tickers + pf_tickers:
+        key = sym.upper()
+        if key not in seen:
+            seen.add(key)
+            tickers.append(sym)
+    return tickers
+
+
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    tickers = CONFIG.get("watchlist", {}).get("tickers", [])
+    wl_tickers = CONFIG.get("watchlist", {}).get("tickers", [])
+    pf_tickers = load_portfolio_tickers()
+    tickers    = build_ticker_union(wl_tickers, pf_tickers)
+
     if not tickers:
-        print("No tickers in config.json watchlist.tickers — writing empty file.")
+        print("No tickers in config.json watchlist.tickers or portfolio.json — writing empty file.")
         out = {"updated": datetime.now(timezone.utc).isoformat(), "tickers": {}}
         with open(os.path.join(DATA_DIR, "watchlist_prices.json"), "w") as f:
             json.dump(out, f, separators=(",", ":"))
         return
 
-    print(f"Fetching {len(tickers)} watchlist tickers: {', '.join(tickers)}")
+    print(f"Fetching {len(tickers)} tickers (watchlist + portfolio, deduped): {', '.join(tickers)}")
 
     try:
         raw = with_retry(lambda: yf.download(

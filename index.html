@@ -455,6 +455,27 @@ canvas.spark {
   border-top: 2px solid var(--border);
   background: var(--bg3);
 }
+#pf-sync-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: var(--bg3);
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+}
+#pf-sync-label { color: var(--text-dim); flex-shrink: 0; }
+#pf-sync-line {
+  flex: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: var(--font);
+  color: var(--text);
+  padding: 2px 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+}
 
 /* ═══════════════════════════════════════════════════════════
    SECTION 3 — WATCHLIST
@@ -970,6 +991,11 @@ html.dark .ipo-tag.filed { background: rgba(59,130,246,.2); }
         </tr>
       </tfoot>
     </table>
+    <div id="pf-sync-box">
+      <span id="pf-sync-label">Sync line for Claude Code:</span>
+      <code id="pf-sync-line">(no complete positions yet)</code>
+      <button class="wl-btn" onclick="pfCopySyncLine()">Copy</button>
+    </div>
   </div>
 </section>
 
@@ -2146,7 +2172,6 @@ let _wlPrices     = {};
 let _wlNextId     = 1;
 let _wlSetupTypes = ['Breakout','Pullback','Reversal','Trend','Momentum','Other'];
 let _wlMaxRows    = 30;
-let _wlChartUrl   = 'https://query2.finance.yahoo.com/v8/finance/chart';
 const WL_STORE    = 'wl_v1';
 
 function wlSave() {
@@ -2162,28 +2187,6 @@ function wlRestore() {
     _wlRows   = JSON.parse(s);
     _wlNextId = _wlRows.reduce((m, r) => Math.max(m, r.id + 1), 1);
   } catch { _wlRows = []; }
-}
-
-// ── Math ─────────────────────────────────────────────────────
-function _wlEma(C, p) {
-  const k = 2 / (p + 1);
-  let v = C.slice(0, p).reduce((a, b) => a + b, 0) / p;
-  for (let i = p; i < C.length; i++) v = C[i] * k + v * (1 - k);
-  return v;
-}
-function _wlSma(C, p) {
-  const s = C.slice(-p); return s.reduce((a, b) => a + b, 0) / s.length;
-}
-function _wlAtr(H, L, C, p) {
-  const tr = [];
-  for (let i = 1; i < C.length; i++)
-    tr.push(Math.max(H[i]-L[i], Math.abs(H[i]-C[i-1]), Math.abs(L[i]-C[i-1])));
-  const sl = tr.slice(-p); return sl.reduce((a, b) => a + b, 0) / sl.length;
-}
-function _wlAdr(H, L, C, p) {
-  const n = Math.min(p, C.length); let s = 0;
-  for (let i = C.length - n; i < C.length; i++) s += (H[i]-L[i]) / C[i];
-  return (s / n) * 100;
 }
 
 // ── Server-side price file ────────────────────────────────────
@@ -2208,89 +2211,15 @@ function _wlFetchTimeout(url, ms) {
   return fetch(url, { cache: 'no-store', signal: ctrl.signal }).finally(() => clearTimeout(t));
 }
 
-function _wlParseChart(json) {
-  const res = json?.chart?.result?.[0];
-  if (!res) throw new Error(json?.chart?.error?.description || 'No data');
-
-  const raw = res.indicators.quote[0];
-  const C = [], H = [], L = [], V = [];
-  for (let i = 0; i < res.timestamp.length; i++) {
-    if (raw.close[i]!=null && raw.high[i]!=null && raw.low[i]!=null && raw.volume[i]!=null) {
-      C.push(raw.close[i]); H.push(raw.high[i]);
-      L.push(raw.low[i]);   V.push(raw.volume[i]);
-    }
-  }
-  if (C.length < 22) throw new Error('Insufficient history');
-
-  const price   = C[C.length-1];
-  const past20v = V.slice(-21, -1);
-  const avgVol  = past20v.length ? past20v.reduce((a,b)=>a+b,0)/past20v.length : null;
-  return {
-    price,
-    change1d : (price - C[C.length-2]) / C[C.length-2] * 100,
-    atr_pct  : _wlAtr(H, L, C, 14) / price * 100,
-    adr_pct  : _wlAdr(H, L, C, 20),
-    ema21d   : (price - _wlEma(C, 21))  / _wlEma(C, 21)  * 100,
-    sma50d   : C.length>=50  ? (price - _wlSma(C,50))  / _wlSma(C,50)  * 100 : null,
-    sma200d  : C.length>=200 ? (price - _wlSma(C,200)) / _wlSma(C,200) * 100 : null,
-    rel_vol  : avgVol && avgVol>0 ? V[V.length-1] / avgVol : null,
-  };
-}
-
-// ── Shared live price fetch — used by Watchlist AND Portfolio ──
-async function fetchLivePrice(ticker) {
-  const direct  = `${_wlChartUrl}/${encodeURIComponent(ticker)}?interval=1d&range=1y&includePrePost=false`;
-  const encoded = encodeURIComponent(direct);
-  const sources = [
-    { url: direct,
-      parse: async r => r.json() },
-    { url: `https://corsproxy.io/?url=${encoded}`,
-      parse: async r => r.json() },
-    { url: `https://api.allorigins.win/get?url=${encoded}`,
-      parse: async r => { const w = await r.json(); return JSON.parse(w.contents); } },
-  ];
-  for (const src of sources) {
-    try {
-      const resp = await _wlFetchTimeout(src.url, 10000);
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const json = await src.parse(resp);
-      return _wlParseChart(json);
-    } catch {}
-  }
-  return null;
-}
-
-// Quote priority: live browser fetch to Yahoo (freshest) → last snapshot
-// from data/watchlist_prices.json (written by scripts/fetch_watchlist.py,
-// may be a few minutes stale) → null, which callers render as "pending".
-// This never throws — fetchLivePrice already swallows its own errors.
-const _quoteCache   = {};      // ticker -> {data, ts} — avoids duplicate near-simultaneous
-                                // fetches when the same ticker is tracked in both Watchlist and Portfolio
-const QUOTE_CACHE_MS = 30000;
-
-async function fetchQuote(ticker, force = false) {
-  const t = ticker.toUpperCase();
-  if (!force) {
-    const hit = _quoteCache[t];
-    if (hit && Date.now() - hit.ts < QUOTE_CACHE_MS) return hit.data;
-  }
-
-  let data = null;
-  try { data = await fetchLivePrice(t); } catch {}
-  if (!data) data = _wlPrices[t] || null; // live fetch failed/blocked (CORS, rate limit) — fall back to server snapshot
-
-  _quoteCache[t] = { data, ts: Date.now() };
-  return data;
-}
-
-async function wlFetch(id, ticker, force = false) {
-  _wlFetched[id] = { loading: true };
-  wlRenderCells(id);
-
-  const data = await fetchQuote(ticker, force);
-  // Live fetch failed/blocked and there's no server-side snapshot either —
-  // this is expected for a brand-new ticker, not a genuine failure.
-  _wlFetched[id] = data || { pending: true };
+// Prices come from data/watchlist_prices.json, generated server-side by
+// scripts/fetch_watchlist.py (via yfinance, which isn't subject to CORS).
+// We deliberately do NOT fetch Yahoo directly from the browser — Yahoo's
+// chart endpoint blocks cross-origin requests, so a client-side fetch
+// reliably fails; keeping it around would just mask missing data behind
+// a call that can never succeed. Watchlist and Portfolio share this file.
+function wlFetch(id, ticker) {
+  const p = _wlPrices[ticker.toUpperCase()];
+  _wlFetched[id] = p || { pending: true };
   wlRenderCells(id);
 }
 
@@ -2438,7 +2367,7 @@ function wlShowEmpty() {
 
 async function wlRefreshAll() {
   await loadWatchlistPrices();
-  _wlRows.forEach(r => { if (r.ticker) wlFetch(r.id, r.ticker, true); });
+  _wlRows.forEach(r => { if (r.ticker) wlFetch(r.id, r.ticker); });
 }
 
 async function initWatchlist() {
@@ -2448,7 +2377,6 @@ async function initWatchlist() {
       const cfg = await resp.json();
       if (cfg.watchlist?.setup_types) _wlSetupTypes = cfg.watchlist.setup_types;
       if (cfg.watchlist?.max_rows)    _wlMaxRows    = cfg.watchlist.max_rows;
-      if (cfg.watchlist?.yahoo_chart_url) _wlChartUrl = cfg.watchlist.yahoo_chart_url;
     }
   } catch {}
   wlRestore();
@@ -2456,8 +2384,8 @@ async function initWatchlist() {
     wlShowEmpty();
   } else {
     _wlRows.forEach(r => wlBuildRow(r.id));
-    await loadWatchlistPrices();      // instant paint from the last server snapshot, if any
-    _wlRows.forEach(r => { if (r.ticker) wlFetch(r.id, r.ticker); }); // then always refresh live
+    await loadWatchlistPrices();
+    _wlRows.forEach(r => { if (r.ticker) wlFetch(r.id, r.ticker); });
   }
 }
 
@@ -2473,6 +2401,7 @@ function savePortfolio() {
   localStorage.setItem(PF_STORE, JSON.stringify(
     _pfRows.map(r => ({ id: r.id, ticker: r.ticker, shares: r.shares, buyPrice: r.buyPrice, stopLoss: r.stopLoss }))
   ));
+  pfUpdateSyncLine();
 }
 function loadPortfolio() {
   try {
@@ -2481,12 +2410,36 @@ function loadPortfolio() {
   } catch { return []; }
 }
 
+// portfolio.json (repo root) is the checked-in source of truth for
+// positions. It seeds the browser the first time there's no local state
+// yet; after that, edits made via +Add/typing live in localStorage for
+// instant local use. Use the "Sync line for Claude Code" box below the
+// table to hand your current in-browser positions back to Claude Code so
+// it can update portfolio.json to match.
+async function loadPortfolioFile() {
+  try {
+    const resp = await fetch(`portfolio.json?t=${Date.now()}`, { cache: 'no-store' });
+    if (!resp.ok) return [];
+    const d = await resp.json();
+    return (d.positions || []).map(p => ({
+      ticker:   (p.ticker || '').toUpperCase(),
+      shares:   p.shares    != null ? String(p.shares)    : '',
+      buyPrice: p.buy_price != null ? String(p.buy_price) : '',
+      stopLoss: p.stop_loss != null ? String(p.stop_loss) : '',
+    }));
+  } catch { return []; }
+}
+
 let _pfRows    = [];
 let _pfFetched = {};
 let _pfNextId  = 1;
 
-function pfRestore() {
-  _pfRows   = loadPortfolio();
+async function pfRestore() {
+  _pfRows = loadPortfolio();
+  if (_pfRows.length === 0) {
+    const seed = await loadPortfolioFile();
+    _pfRows = seed.map((p, i) => ({ id: i + 1, ...p }));
+  }
   _pfNextId = _pfRows.reduce((m, r) => Math.max(m, r.id + 1), 1);
 }
 
@@ -2496,13 +2449,30 @@ function _pfFmtUSD(v) {
   return sign + '$' + Math.abs(v).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
-async function pfFetch(id, ticker, force = false) {
-  _pfFetched[id] = { loading: true };
+// Same data/watchlist_prices.json snapshot as wlFetch — the Python pipeline
+// fetches every portfolio.json ticker into it too (see fetch_watchlist.py).
+function pfFetch(id, ticker) {
+  const p = _wlPrices[ticker.toUpperCase()];
+  _pfFetched[id] = p || { pending: true };
   pfRenderCells(id);
+}
 
-  const data = await fetchQuote(ticker, force);
-  _pfFetched[id] = data || { pending: true };
-  pfRenderCells(id);
+// Regenerates the copy-pasteable "set portfolio to: ..." line from
+// whatever's currently in _pfRows. Only fully-specified positions
+// (ticker + shares + buy price + stop loss all present) are included.
+function pfUpdateSyncLine() {
+  const el = document.getElementById('pf-sync-line');
+  if (!el) return;
+  const parts = _pfRows
+    .filter(r => r.ticker && r.shares && r.buyPrice && r.stopLoss)
+    .map(r => `${r.ticker} ${r.shares} @ ${r.buyPrice} stop ${r.stopLoss}`);
+  el.textContent = parts.length ? `set portfolio to: ${parts.join('; ')}` : '(no complete positions yet)';
+}
+
+function pfCopySyncLine() {
+  const el = document.getElementById('pf-sync-line');
+  if (!el) return;
+  navigator.clipboard?.writeText(el.textContent).catch(() => {});
 }
 
 function pfUpdateTotals() {
@@ -2647,7 +2617,8 @@ function pfShowEmpty() {
 }
 
 async function pfRefreshAll() {
-  _pfRows.forEach(r => { if (r.ticker) pfFetch(r.id, r.ticker, true); });
+  await loadWatchlistPrices();
+  _pfRows.forEach(r => { if (r.ticker) pfFetch(r.id, r.ticker); });
 }
 
 function openTvPanelForPf(id) {
@@ -2655,12 +2626,14 @@ function openTvPanelForPf(id) {
   if (row && row.ticker) openTvPanel(row.ticker);
 }
 
-function initPortfolio() {
-  pfRestore();
+async function initPortfolio() {
+  await pfRestore();
   if (_pfRows.length === 0) {
     pfShowEmpty();
   } else {
     _pfRows.forEach(r => pfBuildRow(r.id));
+    savePortfolio(); // persist a portfolio.json seed to localStorage + refresh the sync line
+    await loadWatchlistPrices();
     _pfRows.forEach(r => { if (r.ticker) pfFetch(r.id, r.ticker); });
   }
 }
