@@ -1,6 +1,6 @@
 {
   "date": "2026-07-13",
-  "updated_at": "2026-07-13T16:40:39.312768-04:00",
+  "updated_at": "2026-07-13T19:35:24.641865-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -709,9 +709,21 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-13T16:40:39.312768-04:00",
-    "alert_count": 21,
+    "triggered_at": "2026-07-13T19:35:24.641865-04:00",
+    "alert_count": 33,
     "alerts": [
+      {
+        "type": "stock",
+        "ticker": "ALAB",
+        "label": "ALAB",
+        "symbol": "ALAB",
+        "name": "Astera Labs, Inc.",
+        "pct": -12.33,
+        "price": 362.05,
+        "mkt_cap": 62058242048,
+        "atr_pct": 13.15,
+        "adr_pct": 9.98
+      },
       {
         "type": "stock",
         "ticker": "AXTI",
@@ -723,6 +735,30 @@
         "mkt_cap": 3301253888,
         "atr_pct": 18.24,
         "adr_pct": 13.97
+      },
+      {
+        "type": "stock",
+        "ticker": "SEZL",
+        "label": "SEZL",
+        "symbol": "SEZL",
+        "name": "Sezzle Inc.",
+        "pct": -10.66,
+        "price": 160.25,
+        "mkt_cap": 5388729856,
+        "atr_pct": 7.27,
+        "adr_pct": 6.85
+      },
+      {
+        "type": "stock",
+        "ticker": "ICHR",
+        "label": "ICHR",
+        "symbol": "ICHR",
+        "name": "Ichor Holdings",
+        "pct": -9.86,
+        "price": 90.41,
+        "mkt_cap": 3152330240,
+        "atr_pct": 11.71,
+        "adr_pct": 8.69
       },
       {
         "type": "stock",
@@ -738,6 +774,42 @@
       },
       {
         "type": "stock",
+        "ticker": "ALM",
+        "label": "ALM",
+        "symbol": "ALM",
+        "name": "Almonty Industries Inc.",
+        "pct": -9.6,
+        "price": 15.02,
+        "mkt_cap": 4260384000,
+        "atr_pct": 8.88,
+        "adr_pct": 7.58
+      },
+      {
+        "type": "stock",
+        "ticker": "CIFR",
+        "label": "CIFR",
+        "symbol": "CIFR",
+        "name": "Cipher Digital Inc.",
+        "pct": -9.16,
+        "price": 20.09,
+        "mkt_cap": 8215752704,
+        "atr_pct": 12.93,
+        "adr_pct": 9.95
+      },
+      {
+        "type": "stock",
+        "ticker": "VG",
+        "label": "VG",
+        "symbol": "VG",
+        "name": "Venture Global, Inc.",
+        "pct": 9.15,
+        "price": 13.36,
+        "mkt_cap": 33191024640,
+        "atr_pct": 4.59,
+        "adr_pct": 5.01
+      },
+      {
+        "type": "stock",
         "ticker": "EWTX",
         "label": "EWTX",
         "symbol": "EWTX",
@@ -750,39 +822,27 @@
       },
       {
         "type": "stock",
-        "ticker": "MRCY",
-        "label": "MRCY",
-        "symbol": "MRCY",
-        "name": "Mercury Systems Inc",
-        "pct": -9.0,
-        "price": 98.26,
-        "mkt_cap": 5899853312,
-        "atr_pct": 7.0,
-        "adr_pct": 5.93
+        "ticker": "ACMR",
+        "label": "ACMR",
+        "symbol": "ACMR",
+        "name": "ACM Research, Inc.",
+        "pct": -8.66,
+        "price": 94.08,
+        "mkt_cap": 6501820928,
+        "atr_pct": 11.3,
+        "adr_pct": 8.95
       },
       {
         "type": "stock",
-        "ticker": "SHAZ",
-        "label": "SHAZ",
-        "symbol": "SHAZ",
-        "name": "SharonAI Holdings, Inc.",
-        "pct": -8.52,
-        "price": 68.26,
-        "mkt_cap": 2133125888,
-        "atr_pct": 15.18,
-        "adr_pct": 13.73
-      },
-      {
-        "type": "stock",
-        "ticker": "CVI",
-        "label": "CVI",
-        "symbol": "CVI",
-        "name": "CVR Energy Inc.",
-        "pct": 8.04,
-        "price": 33.46,
-        "mkt_cap": 3363753728,
-        "atr_pct": 4.85,
-        "adr_pct": 4.67
+        "ticker": "SIMO",
+        "label": "SIMO",
+        "symbol": "SIMO",
+        "name": "Silicon Motion Technology Corpo",
+        "pct": -8.22,
+        "price": 299.51,
+        "mkt_cap": 10155736064,
+        "atr_pct": 9.23,
+        "adr_pct": 7.89
       },
       {
         "type": "stock",
@@ -798,6 +858,18 @@
       },
       {
         "type": "stock",
+        "ticker": "MANE",
+        "label": "MANE",
+        "symbol": "MANE",
+        "name": "Veradermics, Incorporated",
+        "pct": -7.88,
+        "price": 110.18,
+        "mkt_cap": 4603175936,
+        "atr_pct": 8.01,
+        "adr_pct": 7.58
+      },
+      {
+        "type": "stock",
         "ticker": "PARR",
         "label": "PARR",
         "symbol": "PARR",
@@ -807,6 +879,18 @@
         "mkt_cap": 3556231936,
         "atr_pct": 4.5,
         "adr_pct": 4.49
+      },
+      {
+        "type": "stock",
+        "ticker": "ARM",
+        "label": "ARM",
+        "symbol": "ARM",
+        "name": "Arm Holdings plc",
+        "pct": -7.55,
+        "price": 298.99,
+        "mkt_cap": 319344869376,
+        "atr_pct": 10.08,
+        "adr_pct": 8.48
       },
       {
         "type": "stock",
@@ -822,6 +906,18 @@
       },
       {
         "type": "stock",
+        "ticker": "KYMR",
+        "label": "KYMR",
+        "symbol": "KYMR",
+        "name": "Kymera Therapeutics, Inc.",
+        "pct": -7.5,
+        "price": 110.4,
+        "mkt_cap": 9081237504,
+        "atr_pct": 7.73,
+        "adr_pct": 7.02
+      },
+      {
+        "type": "stock",
         "ticker": "SM",
         "label": "SM",
         "symbol": "SM",
@@ -834,6 +930,54 @@
       },
       {
         "type": "stock",
+        "ticker": "TRVI",
+        "label": "TRVI",
+        "symbol": "TRVI",
+        "name": "Trevi Therapeutics, Inc.",
+        "pct": -7.4,
+        "price": 16.52,
+        "mkt_cap": 2345505024,
+        "atr_pct": 6.18,
+        "adr_pct": 6.31
+      },
+      {
+        "type": "stock",
+        "ticker": "ALGM",
+        "label": "ALGM",
+        "symbol": "ALGM",
+        "name": "Allegro MicroSystems, Inc.",
+        "pct": -7.32,
+        "price": 50.85,
+        "mkt_cap": 9474747392,
+        "atr_pct": 11.73,
+        "adr_pct": 8.23
+      },
+      {
+        "type": "stock",
+        "ticker": "GFS",
+        "label": "GFS",
+        "symbol": "GFS",
+        "name": "GlobalFoundries Inc.",
+        "pct": -7.29,
+        "price": 63.94,
+        "mkt_cap": 35083931648,
+        "atr_pct": 7.98,
+        "adr_pct": 5.23
+      },
+      {
+        "type": "stock",
+        "ticker": "DFTX",
+        "label": "DFTX",
+        "symbol": "DFTX",
+        "name": "Definium Therapeutics, Inc.",
+        "pct": -7.27,
+        "price": 43.65,
+        "mkt_cap": 5794243072,
+        "atr_pct": 8.36,
+        "adr_pct": 7.4
+      },
+      {
+        "type": "stock",
         "ticker": "CBZ",
         "label": "CBZ",
         "symbol": "CBZ",
@@ -843,6 +987,30 @@
         "mkt_cap": 2171164160,
         "atr_pct": 4.63,
         "adr_pct": 5.64
+      },
+      {
+        "type": "stock",
+        "ticker": "TTMI",
+        "label": "TTMI",
+        "symbol": "TTMI",
+        "name": "TTM Technologies, Inc.",
+        "pct": -6.9,
+        "price": 136.34,
+        "mkt_cap": 14158916608,
+        "atr_pct": 10.66,
+        "adr_pct": 6.85
+      },
+      {
+        "type": "stock",
+        "ticker": "FPS",
+        "label": "FPS",
+        "symbol": "FPS",
+        "name": "Forgent Power Solutions, Inc.",
+        "pct": -6.89,
+        "price": 42.6,
+        "mkt_cap": 12968670208,
+        "atr_pct": 9.37,
+        "adr_pct": 6.92
       },
       {
         "type": "stock",
@@ -930,18 +1098,6 @@
       },
       {
         "type": "stock",
-        "ticker": "IBRX",
-        "label": "IBRX",
-        "symbol": "IBRX",
-        "name": "ImmunityBio, Inc.",
-        "pct": -5.23,
-        "price": 7.79,
-        "mkt_cap": 8158887424,
-        "atr_pct": 8.65,
-        "adr_pct": 7.56
-      },
-      {
-        "type": "stock",
         "ticker": "ANAB",
         "label": "ANAB",
         "symbol": "ANAB",
@@ -951,18 +1107,6 @@
         "mkt_cap": 2066967936,
         "atr_pct": 5.77,
         "adr_pct": 6.14
-      },
-      {
-        "type": "stock",
-        "ticker": "BEAM",
-        "label": "BEAM",
-        "symbol": "BEAM",
-        "name": "Beam Therapeutics Inc.",
-        "pct": -5.14,
-        "price": 31.0,
-        "mkt_cap": 3189255680,
-        "atr_pct": 9.39,
-        "adr_pct": 7.88
       }
     ],
     "etf_top5": [],
