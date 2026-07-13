@@ -2482,8 +2482,10 @@ function pfUpdateTotals() {
     if (!d || d.price == null) continue;
     const shares = parseFloat(row.shares);
     const buy    = parseFloat(row.buyPrice);
-    if (shares > 0) { mvalSum += shares * d.price; any = true; }
-    if (shares > 0 && buy > 0) plSum += (d.price - buy) * shares;
+    // Negative shares = a short position; shares*price and (price-buy)*shares
+    // are already sign-correct for shorts, so just require a real nonzero value.
+    if (shares) { mvalSum += shares * d.price; any = true; }
+    if (shares && buy > 0) plSum += (d.price - buy) * shares;
   }
   document.getElementById('pf-total-mval').textContent = any ? _pfFmtUSD(mvalSum) : '—';
   const plEl = document.getElementById('pf-total-pl');
@@ -2521,18 +2523,22 @@ function pfRenderCells(id) {
   const buy    = parseFloat(row.buyPrice);
   const stop   = parseFloat(row.stopLoss);
   const price  = d.price;
+  // Negative shares = a short position. $ P/L's sign already comes out
+  // correct from (price-buy)*shares; % P/L and distance-to-stop need an
+  // explicit flip so "profit" and "safe" still read as positive/green.
+  const dir    = shares > 0 ? 1 : shares < 0 ? -1 : 0;
 
   tr.querySelector('.pf-price').textContent = fmtPrice(price, row.ticker);
 
-  const mval = shares > 0 ? shares * price : null;
+  const mval = dir !== 0 ? shares * price : null;
   sc('.pf-mval', mval != null ? _pfFmtUSD(mval) : '—', 'neu');
 
-  const pl    = (shares > 0 && buy > 0) ? (price - buy) * shares : null;
-  const plPct = buy > 0 ? (price - buy) / buy * 100 : null;
+  const pl    = (dir !== 0 && buy > 0) ? (price - buy) * shares : null;
+  const plPct = (dir !== 0 && buy > 0) ? (price - buy) / buy * 100 * dir : null;
   sc('.pf-pl',    pl    != null ? (pl>=0?'+':'')    + _pfFmtUSD(pl)         : '—', pl    == null ? 'neu' : pl    >= 0 ? 'up' : 'dn');
   sc('.pf-plpct', plPct != null ? (plPct>=0?'+':'') + plPct.toFixed(2)+'%' : '—', plPct == null ? 'neu' : plPct >= 0 ? 'up' : 'dn');
 
-  const dist = stop > 0 ? (price - stop) / stop * 100 : null;
+  const dist = (dir !== 0 && stop > 0) ? (price - stop) / stop * 100 * dir : null;
   sc('.pf-dist', dist != null ? (dist>=0?'+':'') + dist.toFixed(2)+'%' : '—', dist == null ? 'neu' : dist >= 0 ? 'up' : 'dn');
 
   pfUpdateTotals();
@@ -2553,7 +2559,7 @@ function pfBuildRow(id) {
       ondblclick="wlTickerEdit(this)"
       onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur()}"
       onblur="pfTickerBlur(${id},this)"></td>
-    <td><input class="wl-num-inp" type="number" min="0" step="1" value="${row.shares||''}" placeholder="—"
+    <td><input class="wl-num-inp" type="number" step="1" value="${row.shares||''}" placeholder="—" title="Negative = short position"
       oninput="pfSetField(${id},'shares',this.value);pfRenderCells(${id})"></td>
     <td><input class="wl-num-inp" type="number" min="0" step="0.01" value="${row.buyPrice||''}" placeholder="—"
       oninput="pfSetField(${id},'buyPrice',this.value);pfRenderCells(${id})"></td>
