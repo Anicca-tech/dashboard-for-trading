@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-07-13T18:04:04.681331-04:00",
-  "as_of": "Jul 13, 2026 06:04 PM ET",
-  "count": 1,
-  "movers": [
-    {
-      "ticker": "MBX",
-      "name": "MBX Biosciences, Inc.",
-      "ah_pct": -7.25,
-      "ah_price": 55.69,
-      "reg_price": 60.04,
-      "mkt_cap": 2857756160,
-      "volume": 632139,
-      "catalyst": "MBX Biosciences Appoints Steve Hoerter as CEO; Kent Hawryluk Steps Down"
-    }
-  ]
+  "generated_at": "2026-07-14T18:08:24.526381-04:00",
+  "as_of": "Jul 14, 2026 06:08 PM ET",
+  "count": 0,
+  "movers": []
 }
