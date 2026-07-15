@@ -1,6 +1,17 @@
 {
-  "generated_at": "2026-07-14T18:08:24.526381-04:00",
-  "as_of": "Jul 14, 2026 06:08 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-07-15T18:10:00.112219-04:00",
+  "as_of": "Jul 15, 2026 06:10 PM ET",
+  "count": 1,
+  "movers": [
+    {
+      "ticker": "CHRN",
+      "name": "ChronoScale Holdings Corporatio",
+      "ah_pct": -8.88,
+      "ah_price": 27.0,
+      "reg_price": 29.63,
+      "mkt_cap": 4302715392,
+      "volume": 858955,
+      "catalyst": "Post-market move"
+    }
+  ]
 }
