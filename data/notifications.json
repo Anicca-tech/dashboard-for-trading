@@ -1,6 +1,6 @@
 {
   "date": "2026-07-15",
-  "updated_at": "2026-07-15T16:36:51.178753-04:00",
+  "updated_at": "2026-07-15T19:35:24.796344-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1201,8 +1201,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-15T16:36:51.178753-04:00",
-    "alert_count": 45,
+    "triggered_at": "2026-07-15T19:35:24.796344-04:00",
+    "alert_count": 50,
     "alerts": [
       {
         "type": "stock",
@@ -1518,6 +1518,18 @@
       },
       {
         "type": "stock",
+        "ticker": "ADPT",
+        "label": "ADPT",
+        "symbol": "ADPT",
+        "name": "Adaptive Biotechnologies Corpor",
+        "pct": 6.86,
+        "price": 22.9,
+        "mkt_cap": 3665016320,
+        "atr_pct": 5.19,
+        "adr_pct": 6.01
+      },
+      {
+        "type": "stock",
         "ticker": "FLYW",
         "label": "FLYW",
         "symbol": "FLYW",
@@ -1704,9 +1716,21 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": -5.69,
         "price": 828.3,
-        "mkt_cap": 185728876544,
+        "mkt_cap": 187404615680,
         "atr_pct": 10.34,
         "adr_pct": 7.97
+      },
+      {
+        "type": "stock",
+        "ticker": "ALMS",
+        "label": "ALMS",
+        "symbol": "ALMS",
+        "name": "Alumis Inc.",
+        "pct": 5.61,
+        "price": 28.81,
+        "mkt_cap": 3673043968,
+        "atr_pct": 6.55,
+        "adr_pct": 6.87
       },
       {
         "type": "stock",
@@ -1734,6 +1758,18 @@
       },
       {
         "type": "stock",
+        "ticker": "SLDE",
+        "label": "SLDE",
+        "symbol": "SLDE",
+        "name": "Slide Insurance Holdings, Inc.",
+        "pct": -5.46,
+        "price": 19.74,
+        "mkt_cap": 2261399552,
+        "atr_pct": 4.57,
+        "adr_pct": 4.44
+      },
+      {
+        "type": "stock",
         "ticker": "POWL",
         "label": "POWL",
         "symbol": "POWL",
@@ -1743,6 +1779,30 @@
         "mkt_cap": 8998981632,
         "atr_pct": 6.84,
         "adr_pct": 5.65
+      },
+      {
+        "type": "stock",
+        "ticker": "VCYT",
+        "label": "VCYT",
+        "symbol": "VCYT",
+        "name": "Veracyte, Inc.",
+        "pct": 5.1,
+        "price": 59.51,
+        "mkt_cap": 4748460544,
+        "atr_pct": 4.89,
+        "adr_pct": 4.91
+      },
+      {
+        "type": "stock",
+        "ticker": "SGRY",
+        "label": "SGRY",
+        "symbol": "SGRY",
+        "name": "Surgery Partners, Inc.",
+        "pct": 5.09,
+        "price": 15.89,
+        "mkt_cap": 2078223872,
+        "atr_pct": 4.53,
+        "adr_pct": 4.55
       }
     ],
     "etf_top5": [],
