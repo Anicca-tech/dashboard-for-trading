@@ -1,6 +1,6 @@
 {
   "date": "2026-07-16",
-  "updated_at": "2026-07-16T16:29:36.417775-04:00",
+  "updated_at": "2026-07-16T16:35:27.696557-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1093,9 +1093,21 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-16T16:29:36.417775-04:00",
-    "alert_count": 49,
+    "triggered_at": "2026-07-16T16:35:27.696557-04:00",
+    "alert_count": 46,
     "alerts": [
+      {
+        "type": "stock",
+        "ticker": "CDNA",
+        "label": "CDNA",
+        "symbol": "CDNA",
+        "name": "CareDx, Inc.",
+        "pct": 35.6,
+        "price": 40.34,
+        "mkt_cap": 2083943424,
+        "atr_pct": 4.66,
+        "adr_pct": 5.31
+      },
       {
         "type": "stock",
         "ticker": "ATAI",
@@ -1290,6 +1302,18 @@
       },
       {
         "type": "stock",
+        "ticker": "STX",
+        "label": "STX",
+        "symbol": "STX",
+        "name": "Seagate Technology Holdings PLC",
+        "pct": -10.0,
+        "price": 745.49,
+        "mkt_cap": 168668692480,
+        "atr_pct": 11.21,
+        "adr_pct": 7.95
+      },
+      {
+        "type": "stock",
         "ticker": "VSH",
         "label": "VSH",
         "symbol": "VSH",
@@ -1434,54 +1458,6 @@
       },
       {
         "type": "stock",
-        "ticker": "CRDO",
-        "label": "CRDO",
-        "symbol": "CRDO",
-        "name": "Credo Technology Group Holding ",
-        "pct": -8.28,
-        "price": 207.97,
-        "mkt_cap": 38781808640,
-        "atr_pct": 12.64,
-        "adr_pct": 9.66
-      },
-      {
-        "type": "stock",
-        "ticker": "HOOD",
-        "label": "HOOD",
-        "symbol": "HOOD",
-        "name": "Robinhood Markets, Inc.",
-        "pct": -8.24,
-        "price": 106.02,
-        "mkt_cap": 95471550464,
-        "atr_pct": 6.31,
-        "adr_pct": 6.64
-      },
-      {
-        "type": "stock",
-        "ticker": "SLS",
-        "label": "SLS",
-        "symbol": "SLS",
-        "name": "SELLAS Life Sciences Group, Inc",
-        "pct": -8.13,
-        "price": 11.75,
-        "mkt_cap": 2310432768,
-        "atr_pct": 14.98,
-        "adr_pct": 12.34
-      },
-      {
-        "type": "stock",
-        "ticker": "AAOI",
-        "label": "AAOI",
-        "symbol": "AAOI",
-        "name": "Applied Optoelectronics, Inc.",
-        "pct": -8.11,
-        "price": 100.24,
-        "mkt_cap": 8043534848,
-        "atr_pct": 14.07,
-        "adr_pct": 11.03
-      },
-      {
-        "type": "stock",
         "ticker": "SMG",
         "label": "SMG",
         "symbol": "SMG",
@@ -1503,18 +1479,6 @@
         "mkt_cap": 28139825152,
         "atr_pct": 3.29,
         "adr_pct": 3.23
-      },
-      {
-        "type": "stock",
-        "ticker": "BEAM",
-        "label": "BEAM",
-        "symbol": "BEAM",
-        "name": "Beam Therapeutics Inc.",
-        "pct": -7.94,
-        "price": 28.39,
-        "mkt_cap": 2920740864,
-        "atr_pct": 9.43,
-        "adr_pct": 7.83
       },
       {
         "type": "stock",
@@ -1602,6 +1566,18 @@
       },
       {
         "type": "stock",
+        "ticker": "AVNT",
+        "label": "AVNT",
+        "symbol": "AVNT",
+        "name": "Avient Corporation",
+        "pct": 6.16,
+        "price": 38.07,
+        "mkt_cap": 3491406080,
+        "atr_pct": 3.61,
+        "adr_pct": 3.53
+      },
+      {
+        "type": "stock",
         "ticker": "BIIB",
         "label": "BIIB",
         "symbol": "BIIB",
@@ -1633,8 +1609,8 @@
         "pct": 5.84,
         "price": 7.25,
         "mkt_cap": 3090855424,
-        "atr_pct": 4.7,
-        "adr_pct": 5.34
+        "atr_pct": 4.67,
+        "adr_pct": 5.32
       },
       {
         "type": "stock",
@@ -1645,8 +1621,8 @@
         "pct": 5.82,
         "price": 7.09,
         "mkt_cap": 3022643456,
-        "atr_pct": 4.51,
-        "adr_pct": 5.01
+        "atr_pct": 4.49,
+        "adr_pct": 4.97
       },
       {
         "type": "stock",
@@ -1671,18 +1647,6 @@
         "mkt_cap": 6740534784,
         "atr_pct": 3.31,
         "adr_pct": 3.29
-      },
-      {
-        "type": "stock",
-        "ticker": "WERN",
-        "label": "WERN",
-        "symbol": "WERN",
-        "name": "Werner Enterprises, Inc.",
-        "pct": 5.46,
-        "price": 45.99,
-        "mkt_cap": 2757105920,
-        "atr_pct": 3.36,
-        "adr_pct": 3.33
       }
     ],
     "etf_top5": [],
