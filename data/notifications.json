@@ -1,6 +1,6 @@
 {
   "date": "2026-07-16",
-  "updated_at": "2026-07-16T16:35:27.696557-04:00",
+  "updated_at": "2026-07-16T19:35:27.052095-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1093,8 +1093,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-16T16:35:27.696557-04:00",
-    "alert_count": 46,
+    "triggered_at": "2026-07-16T19:35:27.052095-04:00",
+    "alert_count": 47,
     "alerts": [
       {
         "type": "stock",
@@ -1179,18 +1179,6 @@
         "mkt_cap": 5368679936,
         "atr_pct": 10.8,
         "adr_pct": 9.1
-      },
-      {
-        "type": "stock",
-        "ticker": "NBIS",
-        "label": "NBIS",
-        "symbol": "NBIS",
-        "name": "Nebius Group N.V.",
-        "pct": -13.9,
-        "price": 171.77,
-        "mkt_cap": 43612094464,
-        "atr_pct": 14.73,
-        "adr_pct": 10.63
       },
       {
         "type": "stock",
@@ -1308,7 +1296,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": -10.0,
         "price": 745.49,
-        "mkt_cap": 168668692480,
+        "mkt_cap": 167160463360,
         "atr_pct": 11.21,
         "adr_pct": 7.95
       },
@@ -1410,18 +1398,6 @@
       },
       {
         "type": "stock",
-        "ticker": "MRVL",
-        "label": "MRVL",
-        "symbol": "MRVL",
-        "name": "Marvell Technology, Inc.",
-        "pct": -8.71,
-        "price": 188.3,
-        "mkt_cap": 169007628288,
-        "atr_pct": 11.28,
-        "adr_pct": 7.54
-      },
-      {
-        "type": "stock",
         "ticker": "TNGX",
         "label": "TNGX",
         "symbol": "TNGX",
@@ -1455,6 +1431,30 @@
         "mkt_cap": 5898218496,
         "atr_pct": 8.8,
         "adr_pct": 7.11
+      },
+      {
+        "type": "stock",
+        "ticker": "CRDO",
+        "label": "CRDO",
+        "symbol": "CRDO",
+        "name": "Credo Technology Group Holding ",
+        "pct": -8.28,
+        "price": 207.97,
+        "mkt_cap": 38781808640,
+        "atr_pct": 12.64,
+        "adr_pct": 9.66
+      },
+      {
+        "type": "stock",
+        "ticker": "SLS",
+        "label": "SLS",
+        "symbol": "SLS",
+        "name": "SELLAS Life Sciences Group, Inc",
+        "pct": -8.13,
+        "price": 11.75,
+        "mkt_cap": 2310432768,
+        "atr_pct": 14.98,
+        "adr_pct": 12.34
       },
       {
         "type": "stock",
@@ -1647,6 +1647,18 @@
         "mkt_cap": 6740534784,
         "atr_pct": 3.31,
         "adr_pct": 3.29
+      },
+      {
+        "type": "stock",
+        "ticker": "WERN",
+        "label": "WERN",
+        "symbol": "WERN",
+        "name": "Werner Enterprises, Inc.",
+        "pct": 5.46,
+        "price": 45.99,
+        "mkt_cap": 2757105920,
+        "atr_pct": 3.36,
+        "adr_pct": 3.33
       }
     ],
     "etf_top5": [],
