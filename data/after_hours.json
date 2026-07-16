@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-15T18:10:00.112219-04:00",
-  "as_of": "Jul 15, 2026 06:10 PM ET",
+  "generated_at": "2026-07-16T18:12:03.951178-04:00",
+  "as_of": "Jul 16, 2026 06:12 PM ET",
   "count": 1,
   "movers": [
     {
-      "ticker": "CHRN",
-      "name": "ChronoScale Holdings Corporatio",
-      "ah_pct": -8.88,
-      "ah_price": 27.0,
-      "reg_price": 29.63,
-      "mkt_cap": 4302715392,
-      "volume": 858955,
-      "catalyst": "Post-market move"
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "ah_pct": -8.28,
+      "ah_price": 68.19,
+      "reg_price": 74.35,
+      "mkt_cap": 313072877568,
+      "volume": 64570712,
+      "catalyst": "Earnings AH (Jul 16)"
     }
   ]
 }
