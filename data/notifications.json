@@ -1,6 +1,6 @@
 {
   "date": "2026-07-20",
-  "updated_at": "2026-07-20T11:59:15.975021-04:00",
+  "updated_at": "2026-07-20T14:05:26.526483-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -190,5 +190,148 @@
     ],
     "etf_top5": [],
     "etf_bottom5": []
+  },
+  "n3": {
+    "slot": "n3",
+    "time_label": "3:30 PM ET",
+    "triggered_at": "2026-07-20T14:05:26.526483-04:00",
+    "alert_count": 11,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "SNEX",
+        "label": "SNEX",
+        "symbol": "SNEX",
+        "name": "StoneX Group Inc.",
+        "pct": -31.89,
+        "price": 70.15,
+        "mkt_cap": 8339238912,
+        "atr_pct": 10.97,
+        "adr_pct": 5.33
+      },
+      {
+        "type": "stock",
+        "ticker": "PENG",
+        "label": "PENG",
+        "symbol": "PENG",
+        "name": "Penguin Solutions, Inc.",
+        "pct": -11.55,
+        "price": 53.43,
+        "mkt_cap": 2737897472,
+        "atr_pct": 18.68,
+        "adr_pct": 13.43
+      },
+      {
+        "type": "stock",
+        "ticker": "TRVI",
+        "label": "TRVI",
+        "symbol": "TRVI",
+        "name": "Trevi Therapeutics, Inc.",
+        "pct": -7.55,
+        "price": 17.63,
+        "mkt_cap": 2503102208,
+        "atr_pct": 7.75,
+        "adr_pct": 6.89
+      },
+      {
+        "type": "stock",
+        "ticker": "AAON",
+        "label": "AAON",
+        "symbol": "AAON",
+        "name": "AAON, Inc.",
+        "pct": -7.2,
+        "price": 103.4,
+        "mkt_cap": 8469670912,
+        "atr_pct": 7.0,
+        "adr_pct": 5.94
+      },
+      {
+        "type": "stock",
+        "ticker": "SEDG",
+        "label": "SEDG",
+        "symbol": "SEDG",
+        "name": "SolarEdge Technologies, Inc.",
+        "pct": -6.96,
+        "price": 49.75,
+        "mkt_cap": 3025705472,
+        "atr_pct": 9.95,
+        "adr_pct": 8.85
+      },
+      {
+        "type": "stock",
+        "ticker": "TTAN",
+        "label": "TTAN",
+        "symbol": "TTAN",
+        "name": "ServiceTitan, Inc.",
+        "pct": 6.67,
+        "price": 81.07,
+        "mkt_cap": 7733881344,
+        "atr_pct": 5.79,
+        "adr_pct": 6.09
+      },
+      {
+        "type": "stock",
+        "ticker": "WRBY",
+        "label": "WRBY",
+        "symbol": "WRBY",
+        "name": "Warby Parker Inc.",
+        "pct": -6.55,
+        "price": 24.68,
+        "mkt_cap": 3028611840,
+        "atr_pct": 6.86,
+        "adr_pct": 6.56
+      },
+      {
+        "type": "stock",
+        "ticker": "AXTI",
+        "label": "AXTI",
+        "symbol": "AXTI",
+        "name": "AXT Inc",
+        "pct": 6.33,
+        "price": 48.77,
+        "mkt_cap": 3190361600,
+        "atr_pct": 16.78,
+        "adr_pct": 13.39
+      },
+      {
+        "type": "stock",
+        "ticker": "SNDK",
+        "label": "SNDK",
+        "symbol": "SNDK",
+        "name": "Sandisk Corporation",
+        "pct": 5.76,
+        "price": 1432.86,
+        "mkt_cap": 212191166464,
+        "atr_pct": 14.86,
+        "adr_pct": 9.8
+      },
+      {
+        "type": "stock",
+        "ticker": "SLS",
+        "label": "SLS",
+        "symbol": "SLS",
+        "name": "SELLAS Life Sciences Group, Inc",
+        "pct": -5.65,
+        "price": 12.45,
+        "mkt_cap": 2447092224,
+        "atr_pct": 13.26,
+        "adr_pct": 13.28
+      },
+      {
+        "type": "stock",
+        "ticker": "COHR",
+        "label": "COHR",
+        "symbol": "COHR",
+        "name": "Coherent Corp.",
+        "pct": 5.31,
+        "price": 292.35,
+        "mkt_cap": 57195159552,
+        "atr_pct": 8.77,
+        "adr_pct": 8.26
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": [],
+    "indices_range": []
   }
 }
