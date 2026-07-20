@@ -1,6 +1,6 @@
 {
   "date": "2026-07-20",
-  "updated_at": "2026-07-20T16:50:32.540313-04:00",
+  "updated_at": "2026-07-20T19:35:28.463816-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -194,8 +194,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-20T16:50:32.540313-04:00",
-    "alert_count": 25,
+    "triggered_at": "2026-07-20T19:35:28.463816-04:00",
+    "alert_count": 17,
     "alerts": [
       {
         "type": "stock",
@@ -207,7 +207,7 @@
         "price": 70.71,
         "mkt_cap": 8405810176,
         "atr_pct": 10.88,
-        "adr_pct": 5.33
+        "adr_pct": 5.35
       },
       {
         "type": "stock",
@@ -220,18 +220,6 @@
         "mkt_cap": 8401870848,
         "atr_pct": 11.28,
         "adr_pct": 10.56
-      },
-      {
-        "type": "stock",
-        "ticker": "TRVI",
-        "label": "TRVI",
-        "symbol": "TRVI",
-        "name": "Trevi Therapeutics, Inc.",
-        "pct": -12.06,
-        "price": 16.77,
-        "mkt_cap": 2380999936,
-        "atr_pct": 8.53,
-        "adr_pct": 7.19
       },
       {
         "type": "stock",
@@ -355,18 +343,6 @@
       },
       {
         "type": "stock",
-        "ticker": "TWST",
-        "label": "TWST",
-        "symbol": "TWST",
-        "name": "Twist Bioscience Corporation",
-        "pct": -6.82,
-        "price": 87.45,
-        "mkt_cap": 5445625856,
-        "atr_pct": 7.68,
-        "adr_pct": 7.32
-      },
-      {
-        "type": "stock",
         "ticker": "AAON",
         "label": "AAON",
         "symbol": "AAON",
@@ -403,30 +379,6 @@
       },
       {
         "type": "stock",
-        "ticker": "OUST",
-        "label": "OUST",
-        "symbol": "OUST",
-        "name": "Ouster, Inc.",
-        "pct": -6.13,
-        "price": 34.77,
-        "mkt_cap": 2339841024,
-        "atr_pct": 16.64,
-        "adr_pct": 13.45
-      },
-      {
-        "type": "stock",
-        "ticker": "UTI",
-        "label": "UTI",
-        "symbol": "UTI",
-        "name": "Universal Technical Institute I",
-        "pct": -5.95,
-        "price": 37.91,
-        "mkt_cap": 2087376896,
-        "atr_pct": 7.69,
-        "adr_pct": 5.91
-      },
-      {
-        "type": "stock",
         "ticker": "GPN",
         "label": "GPN",
         "symbol": "GPN",
@@ -448,54 +400,6 @@
         "mkt_cap": 7915836416,
         "atr_pct": 3.87,
         "adr_pct": 4.06
-      },
-      {
-        "type": "stock",
-        "ticker": "SLS",
-        "label": "SLS",
-        "symbol": "SLS",
-        "name": "SELLAS Life Sciences Group, Inc",
-        "pct": -5.42,
-        "price": 12.47,
-        "mkt_cap": 2452991488,
-        "atr_pct": 13.22,
-        "adr_pct": 13.28
-      },
-      {
-        "type": "stock",
-        "ticker": "TENB",
-        "label": "TENB",
-        "symbol": "TENB",
-        "name": "Tenable Holdings, Inc.",
-        "pct": -5.32,
-        "price": 37.76,
-        "mkt_cap": 4163869696,
-        "atr_pct": 7.57,
-        "adr_pct": 7.39
-      },
-      {
-        "type": "stock",
-        "ticker": "NKTR",
-        "label": "NKTR",
-        "symbol": "NKTR",
-        "name": "Nektar Therapeutics",
-        "pct": -5.01,
-        "price": 64.84,
-        "mkt_cap": 2190686208,
-        "atr_pct": 6.64,
-        "adr_pct": 6.16
-      },
-      {
-        "type": "stock",
-        "ticker": "GH",
-        "label": "GH",
-        "symbol": "GH",
-        "name": "Guardant Health, Inc.",
-        "pct": -5.0,
-        "price": 148.07,
-        "mkt_cap": 19634071552,
-        "atr_pct": 5.96,
-        "adr_pct": 5.28
       }
     ],
     "etf_top5": [],
