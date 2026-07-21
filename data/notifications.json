@@ -1,6 +1,6 @@
 {
   "date": "2026-07-21",
-  "updated_at": "2026-07-21T16:46:51.310854-04:00",
+  "updated_at": "2026-07-21T19:35:27.619969-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -961,7 +961,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-21T16:46:51.310854-04:00",
+    "triggered_at": "2026-07-21T19:35:27.619969-04:00",
     "alert_count": 41,
     "alerts": [
       {
@@ -1116,7 +1116,7 @@
         "name": "SharonAI Holdings, Inc.",
         "pct": 13.89,
         "price": 71.0,
-        "mkt_cap": 2218750976,
+        "mkt_cap": 2523437056,
         "atr_pct": 13.11,
         "adr_pct": 12.41
       },
@@ -1200,7 +1200,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": 11.14,
         "price": 891.83,
-        "mkt_cap": 199974141952,
+        "mkt_cap": 201778429952,
         "atr_pct": 8.87,
         "adr_pct": 8.31
       },
