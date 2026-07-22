@@ -1,6 +1,6 @@
 {
   "date": "2026-07-22",
-  "updated_at": "2026-07-22T16:41:37.273137-04:00",
+  "updated_at": "2026-07-22T19:35:25.839904-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -445,7 +445,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-22T16:41:37.273137-04:00",
+    "triggered_at": "2026-07-22T19:35:25.839904-04:00",
     "alert_count": 24,
     "alerts": [
       {
@@ -654,18 +654,6 @@
       },
       {
         "type": "stock",
-        "ticker": "AXTI",
-        "label": "AXTI",
-        "symbol": "AXTI",
-        "name": "AXT Inc",
-        "pct": -6.25,
-        "price": 52.98,
-        "mkt_cap": 3466120192,
-        "atr_pct": 15.37,
-        "adr_pct": 12.88
-      },
-      {
-        "type": "stock",
         "ticker": "HNGE",
         "label": "HNGE",
         "symbol": "HNGE",
@@ -675,6 +663,18 @@
         "mkt_cap": 6119220736,
         "atr_pct": 5.06,
         "adr_pct": 5.15
+      },
+      {
+        "type": "stock",
+        "ticker": "AXTI",
+        "label": "AXTI",
+        "symbol": "AXTI",
+        "name": "AXT Inc",
+        "pct": -6.25,
+        "price": 52.98,
+        "mkt_cap": 3466120192,
+        "atr_pct": 15.37,
+        "adr_pct": 12.88
       },
       {
         "type": "stock",
