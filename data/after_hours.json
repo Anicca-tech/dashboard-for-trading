@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-07-21T18:09:24.810812-04:00",
-  "as_of": "Jul 21, 2026 06:09 PM ET",
-  "count": 1,
-  "movers": [
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
-      "ah_pct": 17.45,
-      "ah_price": 29.95,
-      "reg_price": 25.5,
-      "mkt_cap": 16495261696,
-      "volume": 26859226,
-      "catalyst": "Dow Jones Futures: S&P 500 Regains 50-Day As Sandisk, Micron Soar; Google, Tesla Earnings "
-    }
-  ]
+  "generated_at": "2026-07-22T18:13:20.456151-04:00",
+  "as_of": "Jul 22, 2026 06:13 PM ET",
+  "count": 0,
+  "movers": []
 }
