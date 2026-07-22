@@ -1,6 +1,6 @@
 {
   "date": "2026-07-22",
-  "updated_at": "2026-07-22T11:49:21.482358-04:00",
+  "updated_at": "2026-07-22T13:49:35.545088-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -226,5 +226,220 @@
     ],
     "etf_top5": [],
     "etf_bottom5": []
+  },
+  "n2": {
+    "slot": "n2",
+    "time_label": "12:30 PM ET",
+    "triggered_at": "2026-07-22T13:49:35.545088-04:00",
+    "alert_count": 17,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "ARWR",
+        "label": "ARWR",
+        "symbol": "ARWR",
+        "name": "Arrowhead Pharmaceuticals, Inc.",
+        "pct": 23.43,
+        "price": 91.98,
+        "mkt_cap": 12956029952,
+        "atr_pct": 5.75,
+        "adr_pct": 5.57
+      },
+      {
+        "type": "stock",
+        "ticker": "NAVN",
+        "label": "NAVN",
+        "symbol": "NAVN",
+        "name": "Navan, Inc.",
+        "pct": -10.35,
+        "price": 23.86,
+        "mkt_cap": 6069615616,
+        "atr_pct": 7.21,
+        "adr_pct": 6.42
+      },
+      {
+        "type": "stock",
+        "ticker": "DELL",
+        "label": "DELL",
+        "symbol": "DELL",
+        "name": "Dell Technologies Inc.",
+        "pct": 9.63,
+        "price": 443.06,
+        "mkt_cap": 286279860224,
+        "atr_pct": 7.61,
+        "adr_pct": 7.33
+      },
+      {
+        "type": "stock",
+        "ticker": "RIOT",
+        "label": "RIOT",
+        "symbol": "RIOT",
+        "name": "Riot Platforms, Inc.",
+        "pct": 9.03,
+        "price": 23.43,
+        "mkt_cap": 8859894784,
+        "atr_pct": 7.89,
+        "adr_pct": 8.86
+      },
+      {
+        "type": "stock",
+        "ticker": "GEV",
+        "label": "GEV",
+        "symbol": "GEV",
+        "name": "GE Vernova Inc.",
+        "pct": -8.41,
+        "price": 988.05,
+        "mkt_cap": 265510141952,
+        "atr_pct": 6.77,
+        "adr_pct": 5.38
+      },
+      {
+        "type": "stock",
+        "ticker": "AVPT",
+        "label": "AVPT",
+        "symbol": "AVPT",
+        "name": "AvePoint, Inc.",
+        "pct": -7.34,
+        "price": 12.05,
+        "mkt_cap": 2555867392,
+        "atr_pct": 4.62,
+        "adr_pct": 4.18
+      },
+      {
+        "type": "stock",
+        "ticker": "AAOI",
+        "label": "AAOI",
+        "symbol": "AAOI",
+        "name": "Applied Optoelectronics, Inc.",
+        "pct": -7.12,
+        "price": 110.77,
+        "mkt_cap": 8888491008,
+        "atr_pct": 12.22,
+        "adr_pct": 10.88
+      },
+      {
+        "type": "stock",
+        "ticker": "WFRD",
+        "label": "WFRD",
+        "symbol": "WFRD",
+        "name": "Weatherford International plc",
+        "pct": 7.08,
+        "price": 89.22,
+        "mkt_cap": 6400107008,
+        "atr_pct": 3.8,
+        "adr_pct": 3.68
+      },
+      {
+        "type": "stock",
+        "ticker": "BAND",
+        "label": "BAND",
+        "symbol": "BAND",
+        "name": "Bandwidth Inc.",
+        "pct": -7.01,
+        "price": 65.43,
+        "mkt_cap": 2094892416,
+        "atr_pct": 8.97,
+        "adr_pct": 8.24
+      },
+      {
+        "type": "stock",
+        "ticker": "SLS",
+        "label": "SLS",
+        "symbol": "SLS",
+        "name": "SELLAS Life Sciences Group, Inc",
+        "pct": -6.82,
+        "price": 12.02,
+        "mkt_cap": 2363523584,
+        "atr_pct": 12.23,
+        "adr_pct": 13.21
+      },
+      {
+        "type": "stock",
+        "ticker": "AXTI",
+        "label": "AXTI",
+        "symbol": "AXTI",
+        "name": "AXT Inc",
+        "pct": -6.79,
+        "price": 52.67,
+        "mkt_cap": 3446166272,
+        "atr_pct": 15.46,
+        "adr_pct": 12.87
+      },
+      {
+        "type": "stock",
+        "ticker": "RSI",
+        "label": "RSI",
+        "symbol": "RSI",
+        "name": "Rush Street Interactive, Inc.",
+        "pct": -6.72,
+        "price": 31.39,
+        "mkt_cap": 7269115904,
+        "atr_pct": 4.1,
+        "adr_pct": 4.11
+      },
+      {
+        "type": "stock",
+        "ticker": "FROG",
+        "label": "FROG",
+        "symbol": "FROG",
+        "name": "JFrog Ltd.",
+        "pct": -6.68,
+        "price": 80.78,
+        "mkt_cap": 9784051712,
+        "atr_pct": 7.28,
+        "adr_pct": 6.44
+      },
+      {
+        "type": "stock",
+        "ticker": "HNGE",
+        "label": "HNGE",
+        "symbol": "HNGE",
+        "name": "Hinge Health, Inc.",
+        "pct": -6.35,
+        "price": 78.99,
+        "mkt_cap": 6112256000,
+        "atr_pct": 5.06,
+        "adr_pct": 5.15
+      },
+      {
+        "type": "stock",
+        "ticker": "SKM",
+        "label": "SKM",
+        "symbol": "SKM",
+        "name": "SK Telecom Co., Ltd.",
+        "pct": 6.07,
+        "price": 33.89,
+        "mkt_cap": 13009968128,
+        "atr_pct": 4.3,
+        "adr_pct": 3.52
+      },
+      {
+        "type": "stock",
+        "ticker": "TWLO",
+        "label": "TWLO",
+        "symbol": "TWLO",
+        "name": "Twilio Inc.",
+        "pct": -5.93,
+        "price": 184.59,
+        "mkt_cap": 28015935488,
+        "atr_pct": 5.98,
+        "adr_pct": 5.27
+      },
+      {
+        "type": "stock",
+        "ticker": "VG",
+        "label": "VG",
+        "symbol": "VG",
+        "name": "Venture Global, Inc.",
+        "pct": 5.1,
+        "price": 14.78,
+        "mkt_cap": 36710117376,
+        "atr_pct": 5.17,
+        "adr_pct": 5.13
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": [],
+    "sector_rotation": []
   }
 }
