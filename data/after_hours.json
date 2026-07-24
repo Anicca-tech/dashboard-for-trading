@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-07-23T18:11:00.495821-04:00",
-  "as_of": "Jul 23, 2026 06:11 PM ET",
-  "count": 1,
-  "movers": [
-    {
-      "ticker": "MXL",
-      "name": "MaxLinear, Inc",
-      "ah_pct": -11.91,
-      "ah_price": 80.38,
-      "reg_price": 91.24,
-      "mkt_cap": 8170173440,
-      "volume": 6354178,
-      "catalyst": "Earnings AH (Jul 23)"
-    }
-  ]
+  "generated_at": "2026-07-24T18:14:13.577102-04:00",
+  "as_of": "Jul 24, 2026 06:14 PM ET",
+  "count": 0,
+  "movers": []
 }
