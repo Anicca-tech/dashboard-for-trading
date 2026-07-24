@@ -1,6 +1,6 @@
 {
   "date": "2026-07-24",
-  "updated_at": "2026-07-24T16:48:26.805078-04:00",
+  "updated_at": "2026-07-24T19:35:26.573242-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -829,7 +829,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-24T16:48:26.805078-04:00",
+    "triggered_at": "2026-07-24T19:35:26.573242-04:00",
     "alert_count": 37,
     "alerts": [
       {
@@ -1230,15 +1230,15 @@
       },
       {
         "type": "stock",
-        "ticker": "STRL",
-        "label": "STRL",
-        "symbol": "STRL",
-        "name": "Sterling Infrastructure, Inc.",
-        "pct": -7.86,
-        "price": 660.93,
-        "mkt_cap": 20281421824,
-        "atr_pct": 7.16,
-        "adr_pct": 6.52
+        "ticker": "INTC",
+        "label": "INTC",
+        "symbol": "INTC",
+        "name": "Intel Corporation",
+        "pct": -7.89,
+        "price": 92.32,
+        "mkt_cap": 464000319488,
+        "atr_pct": 8.34,
+        "adr_pct": 6.77
       },
       {
         "type": "stock",
