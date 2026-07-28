@@ -1,6 +1,6 @@
 {
   "date": "2026-07-28",
-  "updated_at": "2026-07-28T16:46:18.499305-04:00",
+  "updated_at": "2026-07-28T19:35:28.016313-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1069,8 +1069,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-07-28T16:46:18.499305-04:00",
-    "alert_count": 51,
+    "triggered_at": "2026-07-28T19:35:28.016313-04:00",
+    "alert_count": 50,
     "alerts": [
       {
         "type": "stock",
@@ -1081,8 +1081,8 @@
         "pct": 26.23,
         "price": 107.02,
         "mkt_cap": 4745197056,
-        "atr_pct": 3.56,
-        "adr_pct": 3.9
+        "atr_pct": 3.55,
+        "adr_pct": 3.96
       },
       {
         "type": "stock",
@@ -1093,8 +1093,8 @@
         "pct": 25.03,
         "price": 79.44,
         "mkt_cap": 6111955968,
-        "atr_pct": 4.33,
-        "adr_pct": 4.82
+        "atr_pct": 4.61,
+        "adr_pct": 5.13
       },
       {
         "type": "stock",
@@ -1105,8 +1105,8 @@
         "pct": -19.7,
         "price": 120.02,
         "mkt_cap": 4971430912,
-        "atr_pct": 6.46,
-        "adr_pct": 4.2
+        "atr_pct": 6.89,
+        "adr_pct": 4.24
       },
       {
         "type": "stock",
@@ -1141,8 +1141,8 @@
         "pct": 13.94,
         "price": 242.94,
         "mkt_cap": 40546684928,
-        "atr_pct": 3.44,
-        "adr_pct": 3.14
+        "atr_pct": 3.55,
+        "adr_pct": 3.18
       },
       {
         "type": "stock",
@@ -1177,8 +1177,8 @@
         "pct": -12.45,
         "price": 59.21,
         "mkt_cap": 9725087744,
-        "atr_pct": 8.04,
-        "adr_pct": 7.07
+        "atr_pct": 8.03,
+        "adr_pct": 7.0
       },
       {
         "type": "stock",
@@ -1213,8 +1213,8 @@
         "pct": 10.9,
         "price": 145.34,
         "mkt_cap": 8198300672,
-        "atr_pct": 5.58,
-        "adr_pct": 4.77
+        "atr_pct": 5.71,
+        "adr_pct": 4.86
       },
       {
         "type": "stock",
@@ -1225,8 +1225,8 @@
         "pct": -10.89,
         "price": 77.5,
         "mkt_cap": 3474197248,
-        "atr_pct": 13.68,
-        "adr_pct": 11.01
+        "atr_pct": 14.6,
+        "adr_pct": 11.29
       },
       {
         "type": "stock",
@@ -1261,8 +1261,8 @@
         "pct": -9.94,
         "price": 72.02,
         "mkt_cap": 4977265152,
-        "atr_pct": 12.09,
-        "adr_pct": 8.79
+        "atr_pct": 12.34,
+        "adr_pct": 8.94
       },
       {
         "type": "stock",
@@ -1273,8 +1273,8 @@
         "pct": -9.7,
         "price": 208.06,
         "mkt_cap": 11049480192,
-        "atr_pct": 7.39,
-        "adr_pct": 6.39
+        "atr_pct": 7.56,
+        "adr_pct": 6.42
       },
       {
         "type": "stock",
@@ -1333,8 +1333,8 @@
         "pct": -9.42,
         "price": 221.42,
         "mkt_cap": 7507872768,
-        "atr_pct": 11.58,
-        "adr_pct": 8.02
+        "atr_pct": 12.04,
+        "adr_pct": 8.4
       },
       {
         "type": "stock",
@@ -1345,8 +1345,8 @@
         "pct": 9.3,
         "price": 129.93,
         "mkt_cap": 25957695488,
-        "atr_pct": 3.12,
-        "adr_pct": 3.18
+        "atr_pct": 3.15,
+        "adr_pct": 3.19
       },
       {
         "type": "stock",
@@ -1381,8 +1381,8 @@
         "pct": -8.9,
         "price": 63.16,
         "mkt_cap": 52459458560,
-        "atr_pct": 3.71,
-        "adr_pct": 3.34
+        "atr_pct": 3.84,
+        "adr_pct": 3.31
       },
       {
         "type": "stock",
@@ -1404,7 +1404,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": -8.53,
         "price": 747.3,
-        "mkt_cap": 169078194176,
+        "mkt_cap": 167566327808,
         "atr_pct": 10.37,
         "adr_pct": 7.87
       },
@@ -1417,8 +1417,8 @@
         "pct": -8.53,
         "price": 67.48,
         "mkt_cap": 3941036800,
-        "atr_pct": 6.85,
-        "adr_pct": 5.74
+        "atr_pct": 6.86,
+        "adr_pct": 5.6
       },
       {
         "type": "stock",
@@ -1429,8 +1429,8 @@
         "pct": 8.49,
         "price": 83.8,
         "mkt_cap": 16156640256,
-        "atr_pct": 4.17,
-        "adr_pct": 4.03
+        "atr_pct": 4.24,
+        "adr_pct": 3.99
       },
       {
         "type": "stock",
@@ -1441,8 +1441,8 @@
         "pct": 8.45,
         "price": 34.14,
         "mkt_cap": 4294447872,
-        "atr_pct": 3.89,
-        "adr_pct": 4.39
+        "atr_pct": 4.01,
+        "adr_pct": 4.53
       },
       {
         "type": "stock",
@@ -1506,18 +1506,6 @@
       },
       {
         "type": "stock",
-        "ticker": "DELL",
-        "label": "DELL",
-        "symbol": "DELL",
-        "name": "Dell Technologies Inc.",
-        "pct": -8.15,
-        "price": 392.1,
-        "mkt_cap": 253352443904,
-        "atr_pct": 8.63,
-        "adr_pct": 7.55
-      },
-      {
-        "type": "stock",
         "ticker": "THC",
         "label": "THC",
         "symbol": "THC",
@@ -1525,8 +1513,8 @@
         "pct": 7.92,
         "price": 262.63,
         "mkt_cap": 22622160896,
-        "atr_pct": 4.73,
-        "adr_pct": 4.25
+        "atr_pct": 4.54,
+        "adr_pct": 3.96
       },
       {
         "type": "stock",
@@ -1537,8 +1525,8 @@
         "pct": 7.67,
         "price": 23.01,
         "mkt_cap": 2650082816,
-        "atr_pct": 3.73,
-        "adr_pct": 4.08
+        "atr_pct": 4.0,
+        "adr_pct": 4.1
       },
       {
         "type": "stock",
@@ -1549,8 +1537,8 @@
         "pct": 7.49,
         "price": 284.4,
         "mkt_cap": 13546936320,
-        "atr_pct": 3.74,
-        "adr_pct": 4.06
+        "atr_pct": 3.8,
+        "adr_pct": 4.03
       },
       {
         "type": "stock",
@@ -1561,8 +1549,8 @@
         "pct": 7.28,
         "price": 16.8,
         "mkt_cap": 2001361536,
-        "atr_pct": 4.85,
-        "adr_pct": 4.96
+        "atr_pct": 4.93,
+        "adr_pct": 5.04
       },
       {
         "type": "stock",
@@ -1585,8 +1573,8 @@
         "pct": 7.19,
         "price": 240.43,
         "mkt_cap": 11580966912,
-        "atr_pct": 3.92,
-        "adr_pct": 3.67
+        "atr_pct": 4.07,
+        "adr_pct": 3.78
       },
       {
         "type": "stock",
@@ -1597,8 +1585,8 @@
         "pct": 6.89,
         "price": 161.72,
         "mkt_cap": 7540534272,
-        "atr_pct": 4.54,
-        "adr_pct": 4.26
+        "atr_pct": 4.81,
+        "adr_pct": 4.32
       },
       {
         "type": "stock",
@@ -1609,8 +1597,8 @@
         "pct": 6.81,
         "price": 25.11,
         "mkt_cap": 2828181248,
-        "atr_pct": 6.99,
-        "adr_pct": 6.18
+        "atr_pct": 7.07,
+        "adr_pct": 6.19
       },
       {
         "type": "stock",
@@ -1621,8 +1609,8 @@
         "pct": 6.79,
         "price": 180.24,
         "mkt_cap": 13904683008,
-        "atr_pct": 4.03,
-        "adr_pct": 3.96
+        "atr_pct": 3.98,
+        "adr_pct": 3.89
       },
       {
         "type": "stock",
@@ -1633,8 +1621,8 @@
         "pct": 6.76,
         "price": 283.87,
         "mkt_cap": 10095990784,
-        "atr_pct": 4.34,
-        "adr_pct": 4.68
+        "atr_pct": 4.58,
+        "adr_pct": 4.66
       },
       {
         "type": "stock",
@@ -1645,8 +1633,8 @@
         "pct": 6.75,
         "price": 102.92,
         "mkt_cap": 13627621376,
-        "atr_pct": 4.19,
-        "adr_pct": 4.06
+        "atr_pct": 4.35,
+        "adr_pct": 3.92
       },
       {
         "type": "stock",
@@ -1657,8 +1645,8 @@
         "pct": 6.7,
         "price": 199.31,
         "mkt_cap": 154441023488,
-        "atr_pct": 3.28,
-        "adr_pct": 3.36
+        "atr_pct": 3.51,
+        "adr_pct": 3.33
       },
       {
         "type": "stock",
@@ -1669,8 +1657,8 @@
         "pct": 6.6,
         "price": 18.25,
         "mkt_cap": 7160333312,
-        "atr_pct": 3.48,
-        "adr_pct": 3.69
+        "atr_pct": 3.68,
+        "adr_pct": 3.72
       },
       {
         "type": "stock",
@@ -1681,8 +1669,8 @@
         "pct": 6.58,
         "price": 17.0,
         "mkt_cap": 2220667392,
-        "atr_pct": 5.26,
-        "adr_pct": 5.76
+        "atr_pct": 5.91,
+        "adr_pct": 5.85
       }
     ],
     "etf_top5": [],
