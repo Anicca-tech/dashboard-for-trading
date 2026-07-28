@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-27T18:13:48.508228-04:00",
-  "as_of": "Jul 27, 2026 06:13 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-07-28T18:13:38.269046-04:00",
+  "as_of": "Jul 28, 2026 06:13 PM ET",
+  "count": 2,
+  "movers": [
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corporation",
+      "ah_pct": 12.34,
+      "ah_price": 187.43,
+      "reg_price": 166.84,
+      "mkt_cap": 47456616448,
+      "volume": 23548093,
+      "catalyst": "Earnings AH (Jul 28)"
+    },
+    {
+      "ticker": "INCY",
+      "name": "Incyte Corporation",
+      "ah_pct": -7.64,
+      "ah_price": 120.0,
+      "reg_price": 129.93,
+      "mkt_cap": 25957695488,
+      "volume": 5838894,
+      "catalyst": "Post-market move"
+    }
+  ]
 }
