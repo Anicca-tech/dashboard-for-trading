@@ -1,47 +1,67 @@
 {
-  "generated_at": "2026-07-29T18:08:00.747920-04:00",
-  "as_of": "Jul 29, 2026 06:08 PM ET",
-  "count": 4,
+  "generated_at": "2026-07-30T18:15:27.338119-04:00",
+  "as_of": "Jul 30, 2026 06:15 PM ET",
+  "count": 6,
   "movers": [
     {
-      "ticker": "GKOS",
-      "name": "Glaukos Corporation",
-      "ah_pct": 9.49,
-      "ah_price": 177.0,
-      "reg_price": 161.66,
-      "mkt_cap": 9494924288,
-      "volume": 3105009,
-      "catalyst": "Earnings AH (Jul 29)"
+      "ticker": "AXTI",
+      "name": "AXT Inc",
+      "ah_pct": 24.76,
+      "ah_price": 58.56,
+      "reg_price": 46.94,
+      "mkt_cap": 3070964224,
+      "volume": 15365666,
+      "catalyst": "Earnings AH (Jul 30)"
     },
     {
-      "ticker": "ASH",
-      "name": "Ashland Inc.",
-      "ah_pct": -7.96,
-      "ah_price": 67.04,
-      "reg_price": 72.84,
-      "mkt_cap": 3335181312,
-      "volume": 2830947,
-      "catalyst": "Ashland Inc (ASH) Q3 2026 Earnings Call Highlights: Strong Sales Growth Amidst Profitabili"
+      "ticker": "COHU",
+      "name": "Cohu, Inc.",
+      "ah_pct": 16.88,
+      "ah_price": 54.29,
+      "reg_price": 46.45,
+      "mkt_cap": 2191294976,
+      "volume": 2205226,
+      "catalyst": "Earnings AH (Jul 30)"
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "ah_pct": 7.61,
-      "ah_price": 420.27,
-      "reg_price": 390.54,
-      "mkt_cap": 2901100986368,
-      "volume": 42418496,
-      "catalyst": "Earnings AH (Jul 29)"
-    },
-    {
-      "ticker": "SAH",
-      "name": "Sonic Automotive, Inc.",
-      "ah_pct": -7.36,
-      "ah_price": 104.37,
-      "reg_price": 112.66,
-      "mkt_cap": 3560518400,
-      "volume": 470898,
+      "ticker": "ACMR",
+      "name": "ACM Research, Inc.",
+      "ah_pct": 11.17,
+      "ah_price": 87.44,
+      "reg_price": 78.65,
+      "mkt_cap": 5435461120,
+      "volume": 1589043,
       "catalyst": "Post-market move"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "ah_pct": 9.73,
+      "ah_price": 258.42,
+      "reg_price": 235.5,
+      "mkt_cap": 2533299322880,
+      "volume": 78755052,
+      "catalyst": "Earnings AH (Jul 30)"
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "ah_pct": 7.44,
+      "ah_price": 322.0,
+      "reg_price": 299.69,
+      "mkt_cap": 51369246720,
+      "volume": 6227529,
+      "catalyst": "Astera Labs vs. CoreWeave: Which Technology Stock Is a Better Buy in 2026?"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "ah_pct": -6.69,
+      "ah_price": 311.12,
+      "reg_price": 333.43,
+      "mkt_cap": 4897204862976,
+      "volume": 55501839,
+      "catalyst": "Earnings AH (Jul 30)"
     }
   ]
 }
