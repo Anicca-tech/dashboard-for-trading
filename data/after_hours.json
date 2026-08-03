@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-31T18:12:56.411851-04:00",
-  "as_of": "Jul 31, 2026 06:12 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-08-03T18:14:45.345922-04:00",
+  "as_of": "Aug 03, 2026 06:14 PM ET",
+  "count": 2,
+  "movers": [
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "ah_pct": 13.04,
+      "ah_price": 142.04,
+      "reg_price": 125.65,
+      "mkt_cap": 301222264832,
+      "volume": 67056359,
+      "catalyst": "Earnings AH (Aug 03)"
+    },
+    {
+      "ticker": "DORM",
+      "name": "Dorman Products, Inc.",
+      "ah_pct": 7.99,
+      "ah_price": 137.89,
+      "reg_price": 127.68,
+      "mkt_cap": 3815434496,
+      "volume": 775525,
+      "catalyst": "Earnings AH (Aug 03)"
+    }
+  ]
 }
