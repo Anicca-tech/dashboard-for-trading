@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-03T18:14:45.345922-04:00",
-  "as_of": "Aug 03, 2026 06:14 PM ET",
+  "generated_at": "2026-08-04T18:18:59.175586-04:00",
+  "as_of": "Aug 04, 2026 06:18 PM ET",
   "count": 2,
   "movers": [
     {
-      "ticker": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "ah_pct": 13.04,
-      "ah_price": 142.04,
-      "reg_price": 125.65,
-      "mkt_cap": 301222264832,
-      "volume": 67056359,
-      "catalyst": "Earnings AH (Aug 03)"
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "ah_pct": -8.8,
+      "ah_price": 472.96,
+      "reg_price": 518.58,
+      "mkt_cap": 845596852224,
+      "volume": 37266340,
+      "catalyst": "Earnings AH (Aug 04)"
     },
     {
-      "ticker": "DORM",
-      "name": "Dorman Products, Inc.",
-      "ah_pct": 7.99,
-      "ah_price": 137.89,
-      "reg_price": 127.68,
-      "mkt_cap": 3815434496,
-      "volume": 775525,
-      "catalyst": "Earnings AH (Aug 03)"
+      "ticker": "SPCX",
+      "name": "Space Exploration Technologies ",
+      "ah_pct": -7.04,
+      "ah_price": 116.51,
+      "reg_price": 125.33,
+      "mkt_cap": 1651120930816,
+      "volume": 113631645,
+      "catalyst": "Earnings AH (Aug 04)"
     }
   ]
 }
