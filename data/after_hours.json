@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-04T18:18:59.175586-04:00",
-  "as_of": "Aug 04, 2026 06:18 PM ET",
+  "generated_at": "2026-08-05T18:17:05.248351-04:00",
+  "as_of": "Aug 05, 2026 06:17 PM ET",
   "count": 2,
   "movers": [
     {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "ah_pct": -8.8,
-      "ah_price": 472.96,
-      "reg_price": 518.58,
-      "mkt_cap": 845596852224,
-      "volume": 37266340,
-      "catalyst": "Earnings AH (Aug 04)"
+      "ticker": "SITM",
+      "name": "SiTime Corporation",
+      "ah_pct": 31.1,
+      "ah_price": 712.01,
+      "reg_price": 543.12,
+      "mkt_cap": 16269442048,
+      "volume": 600067,
+      "catalyst": "Earnings AH (Aug 05)"
     },
     {
-      "ticker": "SPCX",
-      "name": "Space Exploration Technologies ",
-      "ah_pct": -7.04,
-      "ah_price": 116.51,
-      "reg_price": 125.33,
-      "mkt_cap": 1651120930816,
-      "volume": 113631645,
-      "catalyst": "Earnings AH (Aug 04)"
+      "ticker": "FIG",
+      "name": "Figma, Inc.",
+      "ah_pct": -16.17,
+      "ah_price": 23.6,
+      "reg_price": 28.15,
+      "mkt_cap": 14873800704,
+      "volume": 37824051,
+      "catalyst": "Earnings AH (Aug 05)"
     }
   ]
 }
