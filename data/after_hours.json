@@ -1,37 +1,6 @@
 {
-  "generated_at": "2026-08-06T21:01:51.778798-04:00",
-  "as_of": "Aug 06, 2026 09:01 PM ET",
-  "count": 3,
-  "movers": [
-    {
-      "ticker": "TTD",
-      "name": "The Trade Desk, Inc.",
-      "ah_pct": -24.28,
-      "ah_price": 13.38,
-      "reg_price": 17.67,
-      "mkt_cap": 8306814464,
-      "volume": 49485821,
-      "catalyst": "Earnings AH (Aug 06)"
-    },
-    {
-      "ticker": "GOLF",
-      "name": "Acushnet Holdings Corp.",
-      "ah_pct": 11.88,
-      "ah_price": 105.0,
-      "reg_price": 93.85,
-      "mkt_cap": 5495297536,
-      "volume": 1109469,
-      "catalyst": "Acushnet Holdings Corp (GOLF) (Q2 2026) Earnings Call Highlights: Strong Q2 Results and Ra"
-    },
-    {
-      "ticker": "CHRN",
-      "name": "ChronoScale Holdings Corporatio",
-      "ah_pct": 6.17,
-      "ah_price": 21.5,
-      "reg_price": 20.25,
-      "mkt_cap": 2940600320,
-      "volume": 159614,
-      "catalyst": "Post-market move"
-    }
-  ]
+  "generated_at": "2026-08-07T17:50:38.599101-04:00",
+  "as_of": "Aug 07, 2026 05:50 PM ET",
+  "count": 0,
+  "movers": []
 }
