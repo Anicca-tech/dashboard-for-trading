@@ -1,6 +1,6 @@
 {
   "date": "2026-08-07",
-  "updated_at": "2026-08-07T16:09:15.782658-04:00",
+  "updated_at": "2026-08-07T16:35:31.305536-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1141,8 +1141,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-07T16:09:15.782658-04:00",
-    "alert_count": 49,
+    "triggered_at": "2026-08-07T16:35:31.305536-04:00",
+    "alert_count": 48,
     "alerts": [
       {
         "type": "stock",
@@ -1198,10 +1198,10 @@
         "label": "TWLO",
         "symbol": "TWLO",
         "name": "Twilio Inc.",
-        "pct": 24.94,
-        "price": 241.38,
-        "mkt_cap": 36635172864,
-        "atr_pct": 5.31,
+        "pct": 24.89,
+        "price": 241.28,
+        "mkt_cap": 36619997184,
+        "atr_pct": 5.32,
         "adr_pct": 5.24
       },
       {
@@ -1270,10 +1270,10 @@
         "label": "FLR",
         "symbol": "FLR",
         "name": "Fluor Corporation",
-        "pct": 17.11,
-        "price": 57.09,
-        "mkt_cap": 7973753856,
-        "atr_pct": 4.79,
+        "pct": 16.92,
+        "price": 57.0,
+        "mkt_cap": 7961183744,
+        "atr_pct": 4.8,
         "adr_pct": 4.01
       },
       {
@@ -1290,18 +1290,6 @@
       },
       {
         "type": "stock",
-        "ticker": "ONTO",
-        "label": "ONTO",
-        "symbol": "ONTO",
-        "name": "Onto Innovation Inc.",
-        "pct": 14.91,
-        "price": 308.75,
-        "mkt_cap": 15358326784,
-        "atr_pct": 8.3,
-        "adr_pct": 7.46
-      },
-      {
-        "type": "stock",
         "ticker": "RDW",
         "label": "RDW",
         "symbol": "RDW",
@@ -1314,13 +1302,25 @@
       },
       {
         "type": "stock",
+        "ticker": "ONTO",
+        "label": "ONTO",
+        "symbol": "ONTO",
+        "name": "Onto Innovation Inc.",
+        "pct": 14.74,
+        "price": 308.3,
+        "mkt_cap": 15335941120,
+        "atr_pct": 8.31,
+        "adr_pct": 7.46
+      },
+      {
+        "type": "stock",
         "ticker": "IAG",
         "label": "IAG",
         "symbol": "IAG",
         "name": "Iamgold Corporation",
-        "pct": 14.35,
-        "price": 18.33,
-        "mkt_cap": 10594740224,
+        "pct": 14.29,
+        "price": 18.32,
+        "mkt_cap": 10588959744,
         "atr_pct": 4.74,
         "adr_pct": 4.26
       },
@@ -1368,7 +1368,7 @@
         "name": "Caris Life Sciences, Inc.",
         "pct": 13.7,
         "price": 22.74,
-        "mkt_cap": 6426214912,
+        "mkt_cap": 6428158976,
         "atr_pct": 4.85,
         "adr_pct": 5.86
       },
@@ -1378,23 +1378,11 @@
         "label": "COHR",
         "symbol": "COHR",
         "name": "Coherent Corp.",
-        "pct": 13.34,
-        "price": 378.8,
-        "mkt_cap": 74108174336,
-        "atr_pct": 9.07,
+        "pct": 13.44,
+        "price": 379.13,
+        "mkt_cap": 74172735488,
+        "atr_pct": 9.06,
         "adr_pct": 9.0
-      },
-      {
-        "type": "stock",
-        "ticker": "DV",
-        "label": "DV",
-        "symbol": "DV",
-        "name": "DoubleVerify Holdings, Inc.",
-        "pct": 12.98,
-        "price": 13.23,
-        "mkt_cap": 2030331136,
-        "atr_pct": 4.48,
-        "adr_pct": 3.69
       },
       {
         "type": "stock",
@@ -1419,6 +1407,18 @@
         "mkt_cap": 6189854720,
         "atr_pct": 5.32,
         "adr_pct": 5.82
+      },
+      {
+        "type": "stock",
+        "ticker": "DV",
+        "label": "DV",
+        "symbol": "DV",
+        "name": "DoubleVerify Holdings, Inc.",
+        "pct": 12.81,
+        "price": 13.21,
+        "mkt_cap": 2027261952,
+        "atr_pct": 4.49,
+        "adr_pct": 3.69
       },
       {
         "type": "stock",
@@ -1458,27 +1458,27 @@
       },
       {
         "type": "stock",
-        "ticker": "CON",
-        "label": "CON",
-        "symbol": "CON",
-        "name": "Concentra Group Holdings Parent",
-        "pct": 11.66,
-        "price": 34.1,
-        "mkt_cap": 4363496448,
-        "atr_pct": 3.48,
-        "adr_pct": 3.13
-      },
-      {
-        "type": "stock",
         "ticker": "HNGE",
         "label": "HNGE",
         "symbol": "HNGE",
         "name": "Hinge Health, Inc.",
-        "pct": 11.58,
-        "price": 89.35,
-        "mkt_cap": 6913914368,
+        "pct": 11.55,
+        "price": 89.33,
+        "mkt_cap": 6912367104,
         "atr_pct": 5.76,
         "adr_pct": 5.85
+      },
+      {
+        "type": "stock",
+        "ticker": "CON",
+        "label": "CON",
+        "symbol": "CON",
+        "name": "Concentra Group Holdings Parent",
+        "pct": 11.53,
+        "price": 34.06,
+        "mkt_cap": 4358378496,
+        "atr_pct": 3.49,
+        "adr_pct": 3.13
       },
       {
         "type": "stock",
@@ -1524,7 +1524,7 @@
         "name": "SSR Mining Inc.",
         "pct": 10.46,
         "price": 31.78,
-        "mkt_cap": 6594066432,
+        "mkt_cap": 6480238080,
         "atr_pct": 5.58,
         "adr_pct": 5.17
       },
@@ -1542,18 +1542,6 @@
       },
       {
         "type": "stock",
-        "ticker": "NTSK",
-        "label": "NTSK",
-        "symbol": "NTSK",
-        "name": "Netskope, Inc.",
-        "pct": 10.31,
-        "price": 14.87,
-        "mkt_cap": 6006344704,
-        "atr_pct": 5.75,
-        "adr_pct": 7.51
-      },
-      {
-        "type": "stock",
         "ticker": "ARW",
         "label": "ARW",
         "symbol": "ARW",
@@ -1563,18 +1551,6 @@
         "mkt_cap": 10406268928,
         "atr_pct": 4.93,
         "adr_pct": 3.68
-      },
-      {
-        "type": "stock",
-        "ticker": "DPC",
-        "label": "DPC",
-        "symbol": "DPC",
-        "name": "DPC Holdings PLC",
-        "pct": -8.26,
-        "price": 52.15,
-        "mkt_cap": 7568940032,
-        "atr_pct": 7.35,
-        "adr_pct": 8.32
       },
       {
         "type": "stock",
@@ -1590,6 +1566,18 @@
       },
       {
         "type": "stock",
+        "ticker": "DPC",
+        "label": "DPC",
+        "symbol": "DPC",
+        "name": "DPC Holdings PLC",
+        "pct": -7.74,
+        "price": 52.44,
+        "mkt_cap": 7611759616,
+        "atr_pct": 7.3,
+        "adr_pct": 8.32
+      },
+      {
+        "type": "stock",
         "ticker": "PGNY",
         "label": "PGNY",
         "symbol": "PGNY",
@@ -1602,6 +1590,18 @@
       },
       {
         "type": "stock",
+        "ticker": "TIGO",
+        "label": "TIGO",
+        "symbol": "TIGO",
+        "name": "Millicom International Cellular",
+        "pct": -6.91,
+        "price": 97.1,
+        "mkt_cap": 16284640256,
+        "atr_pct": 4.42,
+        "adr_pct": 3.93
+      },
+      {
+        "type": "stock",
         "ticker": "CHYM",
         "label": "CHYM",
         "symbol": "CHYM",
@@ -1611,18 +1611,6 @@
         "mkt_cap": 11087656960,
         "atr_pct": 5.74,
         "adr_pct": 5.96
-      },
-      {
-        "type": "stock",
-        "ticker": "TIGO",
-        "label": "TIGO",
-        "symbol": "TIGO",
-        "name": "Millicom International Cellular",
-        "pct": -6.87,
-        "price": 97.14,
-        "mkt_cap": 16291349504,
-        "atr_pct": 4.42,
-        "adr_pct": 3.93
       },
       {
         "type": "stock",
