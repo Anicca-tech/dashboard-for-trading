@@ -1,27 +1,37 @@
 {
-  "generated_at": "2026-08-05T18:17:05.248351-04:00",
-  "as_of": "Aug 05, 2026 06:17 PM ET",
-  "count": 2,
+  "generated_at": "2026-08-06T21:01:51.778798-04:00",
+  "as_of": "Aug 06, 2026 09:01 PM ET",
+  "count": 3,
   "movers": [
     {
-      "ticker": "SITM",
-      "name": "SiTime Corporation",
-      "ah_pct": 31.1,
-      "ah_price": 712.01,
-      "reg_price": 543.12,
-      "mkt_cap": 16269442048,
-      "volume": 600067,
-      "catalyst": "Earnings AH (Aug 05)"
+      "ticker": "TTD",
+      "name": "The Trade Desk, Inc.",
+      "ah_pct": -24.28,
+      "ah_price": 13.38,
+      "reg_price": 17.67,
+      "mkt_cap": 8306814464,
+      "volume": 49485821,
+      "catalyst": "Earnings AH (Aug 06)"
     },
     {
-      "ticker": "FIG",
-      "name": "Figma, Inc.",
-      "ah_pct": -16.17,
-      "ah_price": 23.6,
-      "reg_price": 28.15,
-      "mkt_cap": 14873800704,
-      "volume": 37824051,
-      "catalyst": "Earnings AH (Aug 05)"
+      "ticker": "GOLF",
+      "name": "Acushnet Holdings Corp.",
+      "ah_pct": 11.88,
+      "ah_price": 105.0,
+      "reg_price": 93.85,
+      "mkt_cap": 5495297536,
+      "volume": 1109469,
+      "catalyst": "Acushnet Holdings Corp (GOLF) (Q2 2026) Earnings Call Highlights: Strong Q2 Results and Ra"
+    },
+    {
+      "ticker": "CHRN",
+      "name": "ChronoScale Holdings Corporatio",
+      "ah_pct": 6.17,
+      "ah_price": 21.5,
+      "reg_price": 20.25,
+      "mkt_cap": 2940600320,
+      "volume": 159614,
+      "catalyst": "Post-market move"
     }
   ]
 }
