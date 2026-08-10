@@ -1,6 +1,6 @@
 {
   "date": "2026-08-10",
-  "updated_at": "2026-08-10T16:35:27.818181-04:00",
+  "updated_at": "2026-08-10T19:35:32.376469-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1153,8 +1153,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-10T16:35:27.818181-04:00",
-    "alert_count": 55,
+    "triggered_at": "2026-08-10T19:35:32.376469-04:00",
+    "alert_count": 54,
     "alerts": [
       {
         "type": "stock",
@@ -1284,7 +1284,7 @@
         "name": "Patterson-UTI Energy, Inc.",
         "pct": 11.35,
         "price": 10.99,
-        "mkt_cap": 4191419648,
+        "mkt_cap": 4171997952,
         "atr_pct": 5.41,
         "adr_pct": 5.0
       },
@@ -1572,7 +1572,7 @@
         "name": "Marathon Petroleum Corporation",
         "pct": 7.42,
         "price": 320.32,
-        "mkt_cap": 89953787904,
+        "mkt_cap": 93513146368,
         "atr_pct": 3.64,
         "adr_pct": 3.29
       },
@@ -1692,7 +1692,7 @@
         "name": "Veeco Instruments Inc.",
         "pct": -6.53,
         "price": 49.34,
-        "mkt_cap": 3011392000,
+        "mkt_cap": 3016136448,
         "atr_pct": 8.69,
         "adr_pct": 7.44
       },
@@ -1707,18 +1707,6 @@
         "mkt_cap": 3811218176,
         "atr_pct": 4.31,
         "adr_pct": 4.74
-      },
-      {
-        "type": "stock",
-        "ticker": "FTI",
-        "label": "FTI",
-        "symbol": "FTI",
-        "name": "TechnipFMC plc",
-        "pct": 6.48,
-        "price": 74.13,
-        "mkt_cap": 29071144960,
-        "atr_pct": 3.75,
-        "adr_pct": 3.54
       },
       {
         "type": "stock",
