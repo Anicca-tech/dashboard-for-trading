@@ -1,6 +1,37 @@
 {
-  "generated_at": "2026-08-07T17:50:38.599101-04:00",
-  "as_of": "Aug 07, 2026 05:50 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-08-10T17:52:21.304578-04:00",
+  "as_of": "Aug 10, 2026 05:52 PM ET",
+  "count": 3,
+  "movers": [
+    {
+      "ticker": "P",
+      "name": "Everpure, Inc.",
+      "ah_pct": 7.68,
+      "ah_price": 105.5,
+      "reg_price": 97.98,
+      "mkt_cap": 32569036800,
+      "volume": 4367124,
+      "catalyst": "Memory Price Surge Accelerating IT Hardware Spending, Morgan Stanley Says"
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "ah_pct": -7.27,
+      "ah_price": 74.22,
+      "reg_price": 80.04,
+      "mkt_cap": 50010492928,
+      "volume": 27605592,
+      "catalyst": "Earnings AH (Aug 10)"
+    },
+    {
+      "ticker": "BSP",
+      "name": "Bending Spoons S.p.A.",
+      "ah_pct": 6.36,
+      "ah_price": 54.7,
+      "reg_price": 51.43,
+      "mkt_cap": 32669329408,
+      "volume": 6893714,
+      "catalyst": "Post-market move"
+    }
+  ]
 }
