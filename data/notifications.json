@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "updated_at": "2026-08-11T16:18:30.718684-04:00",
+  "updated_at": "2026-08-11T16:35:26.465820-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -637,7 +637,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-11T16:18:30.718684-04:00",
+    "triggered_at": "2026-08-11T16:35:26.465820-04:00",
     "alert_count": 36,
     "alerts": [
       {
@@ -1002,6 +1002,18 @@
       },
       {
         "type": "stock",
+        "ticker": "MDB",
+        "label": "MDB",
+        "symbol": "MDB",
+        "name": "MongoDB, Inc.",
+        "pct": 5.4,
+        "price": 439.16,
+        "mkt_cap": 35322486784,
+        "atr_pct": 4.54,
+        "adr_pct": 5.52
+      },
+      {
+        "type": "stock",
         "ticker": "FIVN",
         "label": "FIVN",
         "symbol": "FIVN",
@@ -1059,18 +1071,6 @@
         "mkt_cap": 3095145728,
         "atr_pct": 6.94,
         "adr_pct": 6.28
-      },
-      {
-        "type": "stock",
-        "ticker": "DK",
-        "label": "DK",
-        "symbol": "DK",
-        "name": "Delek US Holdings, Inc.",
-        "pct": 5.15,
-        "price": 63.94,
-        "mkt_cap": 3915185152,
-        "atr_pct": 5.65,
-        "adr_pct": 5.15
       }
     ],
     "etf_top5": [],
