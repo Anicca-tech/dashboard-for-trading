@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "updated_at": "2026-08-11T16:35:26.465820-04:00",
+  "updated_at": "2026-08-11T19:35:29.931416-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -637,8 +637,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-11T16:35:26.465820-04:00",
-    "alert_count": 36,
+    "triggered_at": "2026-08-11T19:35:29.931416-04:00",
+    "alert_count": 39,
     "alerts": [
       {
         "type": "stock",
@@ -663,6 +663,30 @@
         "mkt_cap": 2432670720,
         "atr_pct": 7.34,
         "adr_pct": 9.78
+      },
+      {
+        "type": "stock",
+        "ticker": "SE",
+        "label": "SE",
+        "symbol": "SE",
+        "name": "Sea Limited",
+        "pct": 14.56,
+        "price": 131.51,
+        "mkt_cap": 80547840000,
+        "atr_pct": 3.68,
+        "adr_pct": 3.62
+      },
+      {
+        "type": "stock",
+        "ticker": "P",
+        "label": "P",
+        "symbol": "P",
+        "name": "Everpure, Inc.",
+        "pct": 11.63,
+        "price": 109.38,
+        "mkt_cap": 36358451200,
+        "atr_pct": 5.21,
+        "adr_pct": 6.17
       },
       {
         "type": "stock",
@@ -768,7 +792,7 @@
         "name": "FormFactor, Inc.",
         "pct": 7.65,
         "price": 121.07,
-        "mkt_cap": 9458076672,
+        "mkt_cap": 9437983744,
         "atr_pct": 8.41,
         "adr_pct": 7.84
       },
@@ -804,7 +828,7 @@
         "name": "PACS Group, Inc.",
         "pct": -7.22,
         "price": 44.95,
-        "mkt_cap": 7117186048,
+        "mkt_cap": 7114343936,
         "atr_pct": 5.81,
         "adr_pct": 5.53
       },
@@ -840,7 +864,7 @@
         "name": "DigitalOcean Holdings, Inc.",
         "pct": -6.84,
         "price": 120.86,
-        "mkt_cap": 14210664448,
+        "mkt_cap": 14129512448,
         "atr_pct": 10.0,
         "adr_pct": 9.43
       },
@@ -888,7 +912,7 @@
         "name": "Via Transportation, Inc.",
         "pct": 6.65,
         "price": 24.86,
-        "mkt_cap": 2116631552,
+        "mkt_cap": 2026229632,
         "atr_pct": 6.06,
         "adr_pct": 7.2
       },
@@ -900,7 +924,7 @@
         "name": "Apollo Global Management, Inc. ",
         "pct": 6.26,
         "price": 140.28,
-        "mkt_cap": 80797319168,
+        "mkt_cap": 80873873408,
         "atr_pct": 3.6,
         "adr_pct": 3.82
       },
@@ -918,18 +942,6 @@
       },
       {
         "type": "stock",
-        "ticker": "PTRN",
-        "label": "PTRN",
-        "symbol": "PTRN",
-        "name": "Pattern Group Inc. - Series A",
-        "pct": 5.87,
-        "price": 22.36,
-        "mkt_cap": 4451911680,
-        "atr_pct": 7.99,
-        "adr_pct": 6.92
-      },
-      {
-        "type": "stock",
         "ticker": "FRPT",
         "label": "FRPT",
         "symbol": "FRPT",
@@ -942,13 +954,25 @@
       },
       {
         "type": "stock",
+        "ticker": "PTRN",
+        "label": "PTRN",
+        "symbol": "PTRN",
+        "name": "Pattern Group Inc. - Series A",
+        "pct": 5.87,
+        "price": 22.36,
+        "mkt_cap": 4451911680,
+        "atr_pct": 7.99,
+        "adr_pct": 6.92
+      },
+      {
+        "type": "stock",
         "ticker": "ZETA",
         "label": "ZETA",
         "symbol": "ZETA",
         "name": "Zeta Global Holdings Corp.",
         "pct": 5.85,
         "price": 29.15,
-        "mkt_cap": 7265859584,
+        "mkt_cap": 7317046272,
         "atr_pct": 5.78,
         "adr_pct": 6.54
       },
@@ -1002,6 +1026,18 @@
       },
       {
         "type": "stock",
+        "ticker": "TEO",
+        "label": "TEO",
+        "symbol": "TEO",
+        "name": "Telecom Argentina SA",
+        "pct": -5.59,
+        "price": 13.5,
+        "mkt_cap": 5814957568,
+        "atr_pct": 4.42,
+        "adr_pct": 4.13
+      },
+      {
+        "type": "stock",
         "ticker": "MDB",
         "label": "MDB",
         "symbol": "MDB",
@@ -1014,18 +1050,6 @@
       },
       {
         "type": "stock",
-        "ticker": "FIVN",
-        "label": "FIVN",
-        "symbol": "FIVN",
-        "name": "Five9, Inc.",
-        "pct": -5.37,
-        "price": 32.63,
-        "mkt_cap": 2438228736,
-        "atr_pct": 6.66,
-        "adr_pct": 7.37
-      },
-      {
-        "type": "stock",
         "ticker": "DDOG",
         "label": "DDOG",
         "symbol": "DDOG",
@@ -1035,6 +1059,18 @@
         "mkt_cap": 88612528128,
         "atr_pct": 7.31,
         "adr_pct": 5.59
+      },
+      {
+        "type": "stock",
+        "ticker": "FIVN",
+        "label": "FIVN",
+        "symbol": "FIVN",
+        "name": "Five9, Inc.",
+        "pct": -5.37,
+        "price": 32.63,
+        "mkt_cap": 2438228736,
+        "atr_pct": 6.66,
+        "adr_pct": 7.37
       },
       {
         "type": "stock",
