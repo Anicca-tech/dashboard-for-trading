@@ -1,6 +1,6 @@
 {
   "date": "2026-08-12",
-  "updated_at": "2026-08-12T16:18:20.835322-04:00",
+  "updated_at": "2026-08-12T16:35:26.715624-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1165,7 +1165,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-12T16:18:20.835322-04:00",
+    "triggered_at": "2026-08-12T16:35:26.715624-04:00",
     "alert_count": 46,
     "alerts": [
       {
@@ -1249,8 +1249,8 @@
         "pct": 18.69,
         "price": 71.13,
         "mkt_cap": 5116442624,
-        "atr_pct": 4.57,
-        "adr_pct": 4.81
+        "atr_pct": 4.79,
+        "adr_pct": 4.72
       },
       {
         "type": "stock",
@@ -1261,8 +1261,8 @@
         "pct": 17.33,
         "price": 87.89,
         "mkt_cap": 4337231360,
-        "atr_pct": 5.23,
-        "adr_pct": 5.36
+        "atr_pct": 5.53,
+        "adr_pct": 5.34
       },
       {
         "type": "stock",
@@ -1345,8 +1345,8 @@
         "pct": 11.07,
         "price": 245.89,
         "mkt_cap": 10545679360,
-        "atr_pct": 4.14,
-        "adr_pct": 4.37
+        "atr_pct": 4.46,
+        "adr_pct": 4.52
       },
       {
         "type": "stock",
@@ -1368,7 +1368,7 @@
         "name": "DigitalOcean Holdings, Inc.",
         "pct": 10.35,
         "price": 133.37,
-        "mkt_cap": 15592032256,
+        "mkt_cap": 15681584128,
         "atr_pct": 9.2,
         "adr_pct": 8.98
       },
@@ -1391,8 +1391,8 @@
         "symbol": "DELL",
         "name": "Dell Technologies Inc.",
         "pct": 9.87,
-        "price": 484.49,
-        "mkt_cap": 313049513984,
+        "price": 484.5,
+        "mkt_cap": 313056002048,
         "atr_pct": 7.6,
         "adr_pct": 7.34
       },
@@ -1404,21 +1404,9 @@
         "name": "Space Exploration Technologies ",
         "pct": 9.65,
         "price": 146.15,
-        "mkt_cap": 1925407309824,
+        "mkt_cap": 1926517096448,
         "atr_pct": 7.36,
         "adr_pct": 8.11
-      },
-      {
-        "type": "stock",
-        "ticker": "NOK",
-        "label": "NOK",
-        "symbol": "NOK",
-        "name": "Nokia Corporation Sponsored",
-        "pct": 9.43,
-        "price": 10.33,
-        "mkt_cap": 57667575808,
-        "atr_pct": 5.75,
-        "adr_pct": 4.77
       },
       {
         "type": "stock",
@@ -1431,6 +1419,18 @@
         "mkt_cap": 42809679872,
         "atr_pct": 8.69,
         "adr_pct": 7.5
+      },
+      {
+        "type": "stock",
+        "ticker": "NOK",
+        "label": "NOK",
+        "symbol": "NOK",
+        "name": "Nokia Corporation Sponsored",
+        "pct": 9.32,
+        "price": 10.32,
+        "mkt_cap": 57611751424,
+        "atr_pct": 5.76,
+        "adr_pct": 4.77
       },
       {
         "type": "stock",
@@ -1465,7 +1465,7 @@
         "pct": 8.86,
         "price": 81.6,
         "mkt_cap": 4510224384,
-        "atr_pct": 3.94,
+        "atr_pct": 4.06,
         "adr_pct": 3.81
       },
       {
@@ -1477,8 +1477,8 @@
         "pct": 8.75,
         "price": 571.88,
         "mkt_cap": 20490311680,
-        "atr_pct": 7.69,
-        "adr_pct": 6.66
+        "atr_pct": 7.7,
+        "adr_pct": 6.62
       },
       {
         "type": "stock",
@@ -1489,8 +1489,8 @@
         "pct": 8.71,
         "price": 13.61,
         "mkt_cap": 2969720320,
-        "atr_pct": 6.63,
-        "adr_pct": 6.73
+        "atr_pct": 6.42,
+        "adr_pct": 6.7
       },
       {
         "type": "stock",
@@ -1501,8 +1501,8 @@
         "pct": -8.35,
         "price": 48.98,
         "mkt_cap": 31113041920,
-        "atr_pct": 9.2,
-        "adr_pct": 9.72
+        "atr_pct": 9.16,
+        "adr_pct": 10.01
       },
       {
         "type": "stock",
@@ -1561,8 +1561,8 @@
         "pct": -7.88,
         "price": 48.17,
         "mkt_cap": 4768506880,
-        "atr_pct": 6.11,
-        "adr_pct": 5.27
+        "atr_pct": 6.47,
+        "adr_pct": 5.48
       },
       {
         "type": "stock",
@@ -1585,8 +1585,8 @@
         "pct": 7.83,
         "price": 175.09,
         "mkt_cap": 6288113664,
-        "atr_pct": 5.08,
-        "adr_pct": 5.76
+        "atr_pct": 4.9,
+        "adr_pct": 5.72
       },
       {
         "type": "stock",
@@ -1597,7 +1597,7 @@
         "pct": 7.73,
         "price": 241.31,
         "mkt_cap": 8182279680,
-        "atr_pct": 12.01,
+        "atr_pct": 12.0,
         "adr_pct": 9.71
       },
       {
@@ -1620,7 +1620,7 @@
         "name": "Entegris, Inc.",
         "pct": 7.24,
         "price": 161.08,
-        "mkt_cap": 24532484096,
+        "mkt_cap": 24613023744,
         "atr_pct": 6.73,
         "adr_pct": 6.43
       },
@@ -1644,7 +1644,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": 7.03,
         "price": 878.21,
-        "mkt_cap": 199353679872,
+        "mkt_cap": 199041482752,
         "atr_pct": 8.98,
         "adr_pct": 8.25
       },
@@ -1686,15 +1686,15 @@
       },
       {
         "type": "stock",
-        "ticker": "AXTI",
-        "label": "AXTI",
-        "symbol": "AXTI",
-        "name": "AXT Inc",
-        "pct": 6.36,
-        "price": 78.47,
-        "mkt_cap": 5133757440,
-        "atr_pct": 14.5,
-        "adr_pct": 15.75
+        "ticker": "ANET",
+        "label": "ANET",
+        "symbol": "ANET",
+        "name": "Arista Networks, Inc.",
+        "pct": 6.39,
+        "price": 210.5,
+        "mkt_cap": 265487794176,
+        "atr_pct": 5.56,
+        "adr_pct": 5.35
       },
       {
         "type": "stock",
@@ -1705,8 +1705,8 @@
         "pct": -5.74,
         "price": 599.78,
         "mkt_cap": 48724578304,
-        "atr_pct": 6.89,
-        "adr_pct": 6.42
+        "atr_pct": 7.23,
+        "adr_pct": 6.67
       },
       {
         "type": "stock",
