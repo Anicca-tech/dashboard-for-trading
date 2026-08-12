@@ -1,6 +1,6 @@
 {
   "date": "2026-08-12",
-  "updated_at": "2026-08-12T16:35:26.715624-04:00",
+  "updated_at": "2026-08-12T19:35:28.167031-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1165,7 +1165,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-12T16:35:26.715624-04:00",
+    "triggered_at": "2026-08-12T19:35:28.167031-04:00",
     "alert_count": 46,
     "alerts": [
       {
@@ -1261,8 +1261,8 @@
         "pct": 17.33,
         "price": 87.89,
         "mkt_cap": 4337231360,
-        "atr_pct": 5.53,
-        "adr_pct": 5.34
+        "atr_pct": 5.23,
+        "adr_pct": 5.36
       },
       {
         "type": "stock",
@@ -1345,8 +1345,8 @@
         "pct": 11.07,
         "price": 245.89,
         "mkt_cap": 10545679360,
-        "atr_pct": 4.46,
-        "adr_pct": 4.52
+        "atr_pct": 4.14,
+        "adr_pct": 4.37
       },
       {
         "type": "stock",
@@ -1477,8 +1477,8 @@
         "pct": 8.75,
         "price": 571.88,
         "mkt_cap": 20490311680,
-        "atr_pct": 7.7,
-        "adr_pct": 6.62
+        "atr_pct": 7.69,
+        "adr_pct": 6.66
       },
       {
         "type": "stock",
@@ -1501,8 +1501,8 @@
         "pct": -8.35,
         "price": 48.98,
         "mkt_cap": 31113041920,
-        "atr_pct": 9.16,
-        "adr_pct": 10.01
+        "atr_pct": 9.2,
+        "adr_pct": 9.72
       },
       {
         "type": "stock",
@@ -1561,8 +1561,8 @@
         "pct": -7.88,
         "price": 48.17,
         "mkt_cap": 4768506880,
-        "atr_pct": 6.47,
-        "adr_pct": 5.48
+        "atr_pct": 6.11,
+        "adr_pct": 5.27
       },
       {
         "type": "stock",
@@ -1573,8 +1573,8 @@
         "pct": 7.85,
         "price": 19.23,
         "mkt_cap": 2623682304,
-        "atr_pct": 7.53,
-        "adr_pct": 9.7
+        "atr_pct": 7.42,
+        "adr_pct": 9.95
       },
       {
         "type": "stock",
@@ -1585,8 +1585,8 @@
         "pct": 7.83,
         "price": 175.09,
         "mkt_cap": 6288113664,
-        "atr_pct": 4.9,
-        "adr_pct": 5.72
+        "atr_pct": 4.96,
+        "adr_pct": 5.67
       },
       {
         "type": "stock",
@@ -1597,7 +1597,7 @@
         "pct": 7.73,
         "price": 241.31,
         "mkt_cap": 8182279680,
-        "atr_pct": 12.0,
+        "atr_pct": 12.01,
         "adr_pct": 9.71
       },
       {
@@ -1669,8 +1669,8 @@
         "pct": 6.63,
         "price": 27.99,
         "mkt_cap": 3169878528,
-        "atr_pct": 4.73,
-        "adr_pct": 5.39
+        "atr_pct": 4.63,
+        "adr_pct": 5.33
       },
       {
         "type": "stock",
@@ -1705,8 +1705,8 @@
         "pct": -5.74,
         "price": 599.78,
         "mkt_cap": 48724578304,
-        "atr_pct": 7.23,
-        "adr_pct": 6.67
+        "atr_pct": 6.89,
+        "adr_pct": 6.42
       },
       {
         "type": "stock",
