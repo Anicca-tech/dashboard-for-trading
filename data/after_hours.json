@@ -1,27 +1,17 @@
 {
-  "generated_at": "2026-08-11T17:58:02.552179-04:00",
-  "as_of": "Aug 11, 2026 05:58 PM ET",
-  "count": 2,
+  "generated_at": "2026-08-12T17:56:17.144180-04:00",
+  "as_of": "Aug 12, 2026 05:56 PM ET",
+  "count": 1,
   "movers": [
     {
-      "ticker": "EROC",
-      "name": "ERock, Inc.",
-      "ah_pct": 14.11,
-      "ah_price": 12.84,
-      "reg_price": 11.25,
-      "mkt_cap": 3074631936,
-      "volume": 3034434,
-      "catalyst": "Earnings AH (Aug 11)"
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "ah_pct": 13.13,
-      "ah_price": 102.18,
-      "reg_price": 90.32,
-      "mkt_cap": 49275916288,
-      "volume": 29581984,
-      "catalyst": "Earnings AH (Aug 11)"
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "ah_pct": -15.44,
+      "ah_price": 221.61,
+      "reg_price": 262.06,
+      "mkt_cap": 58400219136,
+      "volume": 8133629,
+      "catalyst": "Earnings AH (Aug 12)"
     }
   ]
 }
