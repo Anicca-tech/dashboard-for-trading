@@ -1,6 +1,6 @@
 {
   "date": "2026-08-13",
-  "updated_at": "2026-08-13T16:06:58.783863-04:00",
+  "updated_at": "2026-08-13T16:35:32.377497-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -805,8 +805,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-13T16:06:58.783863-04:00",
-    "alert_count": 51,
+    "triggered_at": "2026-08-13T16:35:32.377497-04:00",
+    "alert_count": 50,
     "alerts": [
       {
         "type": "stock",
@@ -814,11 +814,11 @@
         "label": "ARX",
         "symbol": "ARX",
         "name": "Accelerant Holdings",
-        "pct": 43.42,
-        "price": 19.52,
-        "mkt_cap": 4259290368,
-        "atr_pct": 6.45,
-        "adr_pct": 6.35
+        "pct": 43.35,
+        "price": 19.51,
+        "mkt_cap": 4257108224,
+        "atr_pct": 6.59,
+        "adr_pct": 6.52
       },
       {
         "type": "stock",
@@ -829,8 +829,8 @@
         "pct": 24.75,
         "price": 11.29,
         "mkt_cap": 2458456320,
-        "atr_pct": 4.34,
-        "adr_pct": 4.5
+        "atr_pct": 4.47,
+        "adr_pct": 4.31
       },
       {
         "type": "stock",
@@ -850,11 +850,11 @@
         "label": "MH",
         "symbol": "MH",
         "name": "McGraw Hill, Inc.",
-        "pct": 16.81,
-        "price": 13.55,
-        "mkt_cap": 2591792128,
-        "atr_pct": 5.11,
-        "adr_pct": 5.81
+        "pct": 16.98,
+        "price": 13.57,
+        "mkt_cap": 2595617536,
+        "atr_pct": 5.01,
+        "adr_pct": 5.51
       },
       {
         "type": "stock",
@@ -865,8 +865,8 @@
         "pct": -16.46,
         "price": 40.92,
         "mkt_cap": 25993172992,
-        "atr_pct": 12.4,
-        "adr_pct": 10.58
+        "atr_pct": 12.42,
+        "adr_pct": 10.15
       },
       {
         "type": "stock",
@@ -877,8 +877,8 @@
         "pct": 16.45,
         "price": 80.06,
         "mkt_cap": 3350471936,
-        "atr_pct": 6.79,
-        "adr_pct": 7.55
+        "atr_pct": 6.93,
+        "adr_pct": 7.54
       },
       {
         "type": "stock",
@@ -886,11 +886,11 @@
         "label": "TBBB",
         "symbol": "TBBB",
         "name": "BBB Foods Inc.",
-        "pct": 16.22,
-        "price": 49.16,
-        "mkt_cap": 5926865920,
-        "atr_pct": 4.35,
-        "adr_pct": 4.44
+        "pct": 16.31,
+        "price": 49.2,
+        "mkt_cap": 5931688448,
+        "atr_pct": 4.32,
+        "adr_pct": 4.39
       },
       {
         "type": "stock",
@@ -910,11 +910,11 @@
         "label": "EROC",
         "symbol": "EROC",
         "name": "ERock, Inc.",
-        "pct": 13.01,
-        "price": 15.62,
-        "mkt_cap": 4269501952,
-        "atr_pct": 8.85,
-        "adr_pct": 11.66
+        "pct": 13.31,
+        "price": 15.66,
+        "mkt_cap": 4279887360,
+        "atr_pct": 8.83,
+        "adr_pct": 11.29
       },
       {
         "type": "stock",
@@ -946,11 +946,11 @@
         "label": "BIRK",
         "symbol": "BIRK",
         "name": "Birkenstock Holding plc",
-        "pct": 11.59,
+        "pct": 11.6,
         "price": 41.0,
         "mkt_cap": 7540148224,
-        "atr_pct": 5.11,
-        "adr_pct": 4.44
+        "atr_pct": 5.44,
+        "adr_pct": 4.46
       },
       {
         "type": "stock",
@@ -960,9 +960,9 @@
         "name": "Elastic N.V.",
         "pct": 11.5,
         "price": 86.03,
-        "mkt_cap": 8943478784,
-        "atr_pct": 4.5,
-        "adr_pct": 4.94
+        "mkt_cap": 9011769344,
+        "atr_pct": 4.43,
+        "adr_pct": 4.96
       },
       {
         "type": "stock",
@@ -974,7 +974,7 @@
         "price": 95.15,
         "mkt_cap": 11524542464,
         "atr_pct": 6.29,
-        "adr_pct": 6.94
+        "adr_pct": 7.12
       },
       {
         "type": "stock",
@@ -982,11 +982,11 @@
         "label": "YETI",
         "symbol": "YETI",
         "name": "YETI Holdings, Inc.",
-        "pct": -10.57,
+        "pct": -10.56,
         "price": 45.47,
-        "mkt_cap": 3444352000,
-        "atr_pct": 4.62,
-        "adr_pct": 3.83
+        "mkt_cap": 3444730880,
+        "atr_pct": 4.7,
+        "adr_pct": 3.55
       },
       {
         "type": "stock",
@@ -996,9 +996,9 @@
         "name": "Beta Technologies, Inc.",
         "pct": 10.34,
         "price": 26.24,
-        "mkt_cap": 6361692160,
-        "atr_pct": 7.02,
-        "adr_pct": 8.25
+        "mkt_cap": 6278116864,
+        "atr_pct": 6.88,
+        "adr_pct": 8.43
       },
       {
         "type": "stock",
@@ -1009,8 +1009,8 @@
         "pct": 10.31,
         "price": 64.09,
         "mkt_cap": 12237639680,
-        "atr_pct": 4.93,
-        "adr_pct": 4.92
+        "atr_pct": 4.78,
+        "adr_pct": 4.93
       },
       {
         "type": "stock",
@@ -1020,9 +1020,9 @@
         "name": "Asana, Inc.",
         "pct": 9.79,
         "price": 9.87,
-        "mkt_cap": 2275131904,
-        "atr_pct": 6.77,
-        "adr_pct": 6.99
+        "mkt_cap": 2342775808,
+        "atr_pct": 6.65,
+        "adr_pct": 7.3
       },
       {
         "type": "stock",
@@ -1030,11 +1030,11 @@
         "label": "GDDY",
         "symbol": "GDDY",
         "name": "GoDaddy Inc.",
-        "pct": 9.41,
-        "price": 100.46,
-        "mkt_cap": 12723027968,
-        "atr_pct": 6.23,
-        "adr_pct": 5.09
+        "pct": 9.45,
+        "price": 100.5,
+        "mkt_cap": 12728094720,
+        "atr_pct": 6.51,
+        "adr_pct": 5.2
       },
       {
         "type": "stock",
@@ -1042,9 +1042,9 @@
         "label": "PATH",
         "symbol": "PATH",
         "name": "UiPath, Inc.",
-        "pct": 9.34,
+        "pct": 9.31,
         "price": 16.68,
-        "mkt_cap": 8644836352,
+        "mkt_cap": 8642245632,
         "atr_pct": 5.33,
         "adr_pct": 6.78
       },
@@ -1057,8 +1057,8 @@
         "pct": 9.28,
         "price": 45.82,
         "mkt_cap": 5262907392,
-        "atr_pct": 5.15,
-        "adr_pct": 5.32
+        "atr_pct": 5.26,
+        "adr_pct": 5.02
       },
       {
         "type": "stock",
@@ -1070,7 +1070,7 @@
         "price": 97.19,
         "mkt_cap": 4475765248,
         "atr_pct": 7.5,
-        "adr_pct": 6.36
+        "adr_pct": 6.3
       },
       {
         "type": "stock",
@@ -1081,8 +1081,8 @@
         "pct": 8.89,
         "price": 12.68,
         "mkt_cap": 3505185536,
-        "atr_pct": 5.2,
-        "adr_pct": 4.93
+        "atr_pct": 5.19,
+        "adr_pct": 5.21
       },
       {
         "type": "stock",
@@ -1093,8 +1093,8 @@
         "pct": 8.77,
         "price": 32.73,
         "mkt_cap": 6899105792,
-        "atr_pct": 6.45,
-        "adr_pct": 6.57
+        "atr_pct": 6.5,
+        "adr_pct": 6.32
       },
       {
         "type": "stock",
@@ -1105,8 +1105,8 @@
         "pct": 8.74,
         "price": 20.66,
         "mkt_cap": 2263364096,
-        "atr_pct": 4.34,
-        "adr_pct": 4.18
+        "atr_pct": 4.31,
+        "adr_pct": 4.35
       },
       {
         "type": "stock",
@@ -1114,11 +1114,11 @@
         "label": "RBRK",
         "symbol": "RBRK",
         "name": "Rubrik, Inc.",
-        "pct": 8.62,
-        "price": 105.07,
-        "mkt_cap": 21626097664,
-        "atr_pct": 4.67,
-        "adr_pct": 5.09
+        "pct": 8.64,
+        "price": 105.09,
+        "mkt_cap": 21630523392,
+        "atr_pct": 4.7,
+        "adr_pct": 5.15
       },
       {
         "type": "stock",
@@ -1129,7 +1129,7 @@
         "pct": -8.62,
         "price": 82.95,
         "mkt_cap": 10224372736,
-        "atr_pct": 13.53,
+        "atr_pct": 13.54,
         "adr_pct": 10.37
       },
       {
@@ -1141,8 +1141,8 @@
         "pct": 8.51,
         "price": 55.21,
         "mkt_cap": 21217884160,
-        "atr_pct": 4.02,
-        "adr_pct": 4.18
+        "atr_pct": 3.8,
+        "adr_pct": 3.99
       },
       {
         "type": "stock",
@@ -1154,7 +1154,7 @@
         "price": 72.1,
         "mkt_cap": 6453590528,
         "atr_pct": 7.43,
-        "adr_pct": 7.08
+        "adr_pct": 6.76
       },
       {
         "type": "stock",
@@ -1162,11 +1162,11 @@
         "label": "WK",
         "symbol": "WK",
         "name": "Workiva Inc.",
-        "pct": 8.4,
-        "price": 73.79,
-        "mkt_cap": 4015392768,
-        "atr_pct": 4.9,
-        "adr_pct": 5.08
+        "pct": 8.34,
+        "price": 73.75,
+        "mkt_cap": 4138801152,
+        "atr_pct": 4.75,
+        "adr_pct": 5.28
       },
       {
         "type": "stock",
@@ -1188,9 +1188,9 @@
         "name": "Tenable Holdings, Inc.",
         "pct": 8.19,
         "price": 40.03,
-        "mkt_cap": 4408903680,
-        "atr_pct": 5.59,
-        "adr_pct": 6.9
+        "mkt_cap": 4414187008,
+        "atr_pct": 5.58,
+        "adr_pct": 6.99
       },
       {
         "type": "stock",
@@ -1211,8 +1211,8 @@
         "symbol": "COHR",
         "name": "Coherent Corp.",
         "pct": -7.99,
-        "price": 327.24,
-        "mkt_cap": 64020033536,
+        "price": 327.23,
+        "mkt_cap": 64019058688,
         "atr_pct": 11.52,
         "adr_pct": 9.69
       },
@@ -1225,8 +1225,8 @@
         "pct": -7.92,
         "price": 63.24,
         "mkt_cap": 10387005440,
-        "atr_pct": 8.34,
-        "adr_pct": 7.01
+        "atr_pct": 8.53,
+        "adr_pct": 7.13
       },
       {
         "type": "stock",
@@ -1237,8 +1237,8 @@
         "pct": 7.91,
         "price": 29.87,
         "mkt_cap": 3364308224,
-        "atr_pct": 5.77,
-        "adr_pct": 6.1
+        "atr_pct": 5.82,
+        "adr_pct": 6.25
       },
       {
         "type": "stock",
@@ -1249,8 +1249,8 @@
         "pct": -7.9,
         "price": 39.98,
         "mkt_cap": 2501885952,
-        "atr_pct": 7.11,
-        "adr_pct": 7.22
+        "atr_pct": 6.98,
+        "adr_pct": 6.83
       },
       {
         "type": "stock",
@@ -1270,11 +1270,11 @@
         "label": "RNG",
         "symbol": "RNG",
         "name": "Ringcentral, Inc.",
-        "pct": 7.7,
-        "price": 67.72,
-        "mkt_cap": 5655037440,
-        "atr_pct": 5.11,
-        "adr_pct": 6.38
+        "pct": 7.79,
+        "price": 67.78,
+        "mkt_cap": 5660047360,
+        "atr_pct": 6.13,
+        "adr_pct": 6.46
       },
       {
         "type": "stock",
@@ -1285,20 +1285,8 @@
         "pct": -7.37,
         "price": 9.81,
         "mkt_cap": 2506799360,
-        "atr_pct": 5.24,
-        "adr_pct": 4.94
-      },
-      {
-        "type": "stock",
-        "ticker": "PCOR",
-        "label": "PCOR",
-        "symbol": "PCOR",
-        "name": "Procore Technologies, Inc.",
-        "pct": 7.31,
-        "price": 62.22,
-        "mkt_cap": 9454661632,
-        "atr_pct": 4.76,
-        "adr_pct": 5.35
+        "atr_pct": 5.22,
+        "adr_pct": 4.69
       },
       {
         "type": "stock",
@@ -1306,10 +1294,10 @@
         "label": "BFLY",
         "symbol": "BFLY",
         "name": "Butterfly Network, Inc.",
-        "pct": -6.56,
-        "price": 8.83,
-        "mkt_cap": 2351298048,
-        "atr_pct": 8.8,
+        "pct": -6.24,
+        "price": 8.86,
+        "mkt_cap": 2359286528,
+        "atr_pct": 8.77,
         "adr_pct": 8.65
       },
       {
@@ -1318,11 +1306,11 @@
         "label": "CXW",
         "symbol": "CXW",
         "name": "CoreCivic, Inc.",
-        "pct": -5.92,
-        "price": 31.61,
-        "mkt_cap": 3126023168,
-        "atr_pct": 5.41,
-        "adr_pct": 4.67
+        "pct": -5.95,
+        "price": 31.6,
+        "mkt_cap": 3125034240,
+        "atr_pct": 5.35,
+        "adr_pct": 4.79
       },
       {
         "type": "stock",
@@ -1345,8 +1333,8 @@
         "pct": -5.61,
         "price": 26.42,
         "mkt_cap": 3000721152,
-        "atr_pct": 5.3,
-        "adr_pct": 5.56
+        "atr_pct": 5.41,
+        "adr_pct": 5.4
       },
       {
         "type": "stock",
@@ -1378,9 +1366,9 @@
         "label": "GLW",
         "symbol": "GLW",
         "name": "Corning Incorporated",
-        "pct": -5.31,
-        "price": 158.55,
-        "mkt_cap": 136573124608,
+        "pct": -5.32,
+        "price": 158.54,
+        "mkt_cap": 136286978048,
         "atr_pct": 7.8,
         "adr_pct": 6.52
       },
@@ -1393,20 +1381,8 @@
         "pct": -5.18,
         "price": 10.26,
         "mkt_cap": 2334206976,
-        "atr_pct": 5.93,
-        "adr_pct": 5.18
-      },
-      {
-        "type": "stock",
-        "ticker": "HBM",
-        "label": "HBM",
-        "symbol": "HBM",
-        "name": "Hudbay Minerals Inc.",
-        "pct": -5.08,
-        "price": 26.45,
-        "mkt_cap": 11749850112,
-        "atr_pct": 5.09,
-        "adr_pct": 4.65
+        "atr_pct": 5.99,
+        "adr_pct": 5.24
       },
       {
         "type": "stock",
@@ -1417,8 +1393,20 @@
         "pct": -5.04,
         "price": 42.61,
         "mkt_cap": 3346143488,
-        "atr_pct": 3.84,
-        "adr_pct": 4.43
+        "atr_pct": 3.92,
+        "adr_pct": 4.46
+      },
+      {
+        "type": "stock",
+        "ticker": "HBM",
+        "label": "HBM",
+        "symbol": "HBM",
+        "name": "Hudbay Minerals Inc.",
+        "pct": -5.02,
+        "price": 26.47,
+        "mkt_cap": 11756511232,
+        "atr_pct": 5.09,
+        "adr_pct": 4.65
       }
     ],
     "etf_top5": [],
