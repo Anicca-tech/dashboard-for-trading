@@ -1,6 +1,6 @@
 {
   "date": "2026-08-14",
-  "updated_at": "2026-08-14T16:05:17.834598-04:00",
+  "updated_at": "2026-08-14T16:35:24.398106-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -865,8 +865,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-14T16:05:17.834598-04:00",
-    "alert_count": 41,
+    "triggered_at": "2026-08-14T16:35:24.398106-04:00",
+    "alert_count": 42,
     "alerts": [
       {
         "type": "stock",
@@ -877,8 +877,8 @@
         "pct": 35.7,
         "price": 42.08,
         "mkt_cap": 3629014272,
-        "atr_pct": 5.37,
-        "adr_pct": 6.18
+        "atr_pct": 5.24,
+        "adr_pct": 6.08
       },
       {
         "type": "stock",
@@ -891,6 +891,18 @@
         "mkt_cap": 12709065728,
         "atr_pct": 11.37,
         "adr_pct": 12.31
+      },
+      {
+        "type": "stock",
+        "ticker": "RDDT",
+        "label": "RDDT",
+        "symbol": "RDDT",
+        "name": "Reddit, Inc.",
+        "pct": 12.63,
+        "price": 178.09,
+        "mkt_cap": 34263894016,
+        "atr_pct": 6.88,
+        "adr_pct": 5.86
       },
       {
         "type": "stock",
@@ -910,11 +922,23 @@
         "label": "STDN",
         "symbol": "STDN",
         "name": "Standard Nuclear, Inc.",
-        "pct": 10.42,
-        "price": 13.35,
-        "mkt_cap": 2144991744,
-        "atr_pct": 8.5,
+        "pct": 10.09,
+        "price": 13.31,
+        "mkt_cap": 2138564864,
+        "atr_pct": 8.52,
         "adr_pct": 12.91
+      },
+      {
+        "type": "stock",
+        "ticker": "NU",
+        "label": "NU",
+        "symbol": "NU",
+        "name": "Nu Holdings Ltd.",
+        "pct": 9.33,
+        "price": 15.23,
+        "mkt_cap": 73568272384,
+        "atr_pct": 3.82,
+        "adr_pct": 3.56
       },
       {
         "type": "stock",
@@ -925,8 +949,8 @@
         "pct": 9.12,
         "price": 12.32,
         "mkt_cap": 2682744064,
-        "atr_pct": 4.45,
-        "adr_pct": 4.6
+        "atr_pct": 4.51,
+        "adr_pct": 4.8
       },
       {
         "type": "stock",
@@ -936,7 +960,7 @@
         "name": "Almonty Industries Inc.",
         "pct": 8.95,
         "price": 15.09,
-        "mkt_cap": 4281664768,
+        "mkt_cap": 4353174528,
         "atr_pct": 8.13,
         "adr_pct": 8.51
       },
@@ -948,7 +972,7 @@
         "name": "Nebius Group N.V.",
         "pct": 8.88,
         "price": 277.68,
-        "mkt_cap": 70502449152,
+        "mkt_cap": 75488755712,
         "atr_pct": 9.97,
         "adr_pct": 11.84
       },
@@ -972,7 +996,7 @@
         "name": "Ultra Clean Holdings, Inc.",
         "pct": -8.59,
         "price": 84.93,
-        "mkt_cap": 3807271936,
+        "mkt_cap": 3845378048,
         "atr_pct": 10.85,
         "adr_pct": 9.46
       },
@@ -1018,11 +1042,11 @@
         "label": "VIK",
         "symbol": "VIK",
         "name": "Viking Holdings Ltd",
-        "pct": -7.64,
-        "price": 98.0,
-        "mkt_cap": 43723399168,
-        "atr_pct": 3.66,
-        "adr_pct": 3.15
+        "pct": -7.65,
+        "price": 97.99,
+        "mkt_cap": 43718934528,
+        "atr_pct": 3.79,
+        "adr_pct": 3.23
       },
       {
         "type": "stock",
@@ -1032,7 +1056,7 @@
         "name": "USA Rare Earth, Inc.",
         "pct": 7.47,
         "price": 20.0,
-        "mkt_cap": 4893422592,
+        "mkt_cap": 4894402048,
         "atr_pct": 7.15,
         "adr_pct": 7.46
       },
@@ -1044,7 +1068,7 @@
         "name": "Asana, Inc.",
         "pct": -7.4,
         "price": 9.14,
-        "mkt_cap": 2169500672,
+        "mkt_cap": 2106859904,
         "atr_pct": 6.94,
         "adr_pct": 7.4
       },
@@ -1078,10 +1102,10 @@
         "label": "EROC",
         "symbol": "EROC",
         "name": "ERock, Inc.",
-        "pct": 6.64,
-        "price": 16.7,
-        "mkt_cap": 4564120576,
-        "atr_pct": 8.32,
+        "pct": 6.77,
+        "price": 16.72,
+        "mkt_cap": 4569586176,
+        "atr_pct": 8.31,
         "adr_pct": 11.29
       },
       {
@@ -1188,21 +1212,9 @@
         "name": "Dianthus Therapeutics, Inc.",
         "pct": 5.8,
         "price": 115.96,
-        "mkt_cap": 6339096064,
-        "atr_pct": 5.14,
-        "adr_pct": 6.05
-      },
-      {
-        "type": "stock",
-        "ticker": "MFP",
-        "label": "MFP",
-        "symbol": "MFP",
-        "name": "Midera Food Processing, Inc.",
-        "pct": 5.78,
-        "price": 45.57,
-        "mkt_cap": 2060428800,
-        "atr_pct": 6.56,
-        "adr_pct": 7.16
+        "mkt_cap": 6486150144,
+        "atr_pct": 5.17,
+        "adr_pct": 5.43
       },
       {
         "type": "stock",
@@ -1218,15 +1230,27 @@
       },
       {
         "type": "stock",
+        "ticker": "MFP",
+        "label": "MFP",
+        "symbol": "MFP",
+        "name": "Midera Food Processing, Inc.",
+        "pct": 5.78,
+        "price": 45.57,
+        "mkt_cap": 2060428800,
+        "atr_pct": 6.46,
+        "adr_pct": 6.81
+      },
+      {
+        "type": "stock",
         "ticker": "SEI",
         "label": "SEI",
         "symbol": "SEI",
         "name": "Solaris Energy Infrastructure, ",
-        "pct": 5.65,
-        "price": 63.28,
-        "mkt_cap": 6368139264,
-        "atr_pct": 8.03,
-        "adr_pct": 8.52
+        "pct": 5.68,
+        "price": 63.3,
+        "mkt_cap": 6369648640,
+        "atr_pct": 7.72,
+        "adr_pct": 8.25
       },
       {
         "type": "stock",
@@ -1236,7 +1260,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": 5.65,
         "price": 973.44,
-        "mkt_cap": 220970876928,
+        "mkt_cap": 220624830464,
         "atr_pct": 7.93,
         "adr_pct": 7.88
       },
@@ -1258,11 +1282,23 @@
         "label": "MP",
         "symbol": "MP",
         "name": "MP Materials Corp.",
-        "pct": 5.52,
-        "price": 58.73,
-        "mkt_cap": 10460796928,
+        "pct": 5.53,
+        "price": 58.74,
+        "mkt_cap": 10461687808,
         "atr_pct": 5.91,
         "adr_pct": 6.35
+      },
+      {
+        "type": "stock",
+        "ticker": "FOXA",
+        "label": "FOXA",
+        "symbol": "FOXA",
+        "name": "Fox Corporation",
+        "pct": 5.49,
+        "price": 69.04,
+        "mkt_cap": 28972646400,
+        "atr_pct": 3.08,
+        "adr_pct": 3.0
       },
       {
         "type": "stock",
@@ -1285,8 +1321,8 @@
         "pct": -5.36,
         "price": 118.57,
         "mkt_cap": 7435219456,
-        "atr_pct": 7.46,
-        "adr_pct": 8.55
+        "atr_pct": 7.14,
+        "adr_pct": 8.23
       },
       {
         "type": "stock",
@@ -1294,35 +1330,11 @@
         "label": "VSH",
         "symbol": "VSH",
         "name": "Vishay Intertechnology, Inc.",
-        "pct": 5.25,
-        "price": 35.07,
-        "mkt_cap": 5379007488,
-        "atr_pct": 9.21,
+        "pct": 5.28,
+        "price": 35.08,
+        "mkt_cap": 5380541440,
+        "atr_pct": 9.2,
         "adr_pct": 8.02
-      },
-      {
-        "type": "stock",
-        "ticker": "LITE",
-        "label": "LITE",
-        "symbol": "LITE",
-        "name": "Lumentum Holdings Inc.",
-        "pct": 5.19,
-        "price": 926.14,
-        "mkt_cap": 82056003584,
-        "atr_pct": 9.62,
-        "adr_pct": 9.52
-      },
-      {
-        "type": "stock",
-        "ticker": "ELAN",
-        "label": "ELAN",
-        "symbol": "ELAN",
-        "name": "Elanco Animal Health Incorporat",
-        "pct": 5.18,
-        "price": 23.68,
-        "mkt_cap": 11828546560,
-        "atr_pct": 5.32,
-        "adr_pct": 4.5
       },
       {
         "type": "stock",
@@ -1330,10 +1342,10 @@
         "label": "BETA",
         "symbol": "BETA",
         "name": "Beta Technologies, Inc.",
-        "pct": -5.14,
-        "price": 24.89,
-        "mkt_cap": 5955119104,
-        "atr_pct": 7.51,
+        "pct": -5.26,
+        "price": 24.86,
+        "mkt_cap": 6027121664,
+        "atr_pct": 7.52,
         "adr_pct": 8.54
       },
       {
@@ -1356,9 +1368,9 @@
         "name": "Qualys, Inc.",
         "pct": -5.02,
         "price": 186.05,
-        "mkt_cap": 6552124416,
-        "atr_pct": 5.94,
-        "adr_pct": 5.92
+        "mkt_cap": 6436399616,
+        "atr_pct": 6.07,
+        "adr_pct": 5.96
       }
     ],
     "etf_top5": [],
