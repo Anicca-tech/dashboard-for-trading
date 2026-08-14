@@ -1,36 +1,16 @@
 {
-  "generated_at": "2026-08-13T17:56:18.615726-04:00",
-  "as_of": "Aug 13, 2026 05:56 PM ET",
-  "count": 3,
+  "generated_at": "2026-08-14T17:34:42.614869-04:00",
+  "as_of": "Aug 14, 2026 05:34 PM ET",
+  "count": 1,
   "movers": [
     {
-      "ticker": "NU",
-      "name": "Nu Holdings Ltd.",
-      "ah_pct": 7.61,
-      "ah_price": 14.99,
-      "reg_price": 13.93,
-      "mkt_cap": 67288649728,
-      "volume": 60887729,
-      "catalyst": "Earnings AH (Aug 13)"
-    },
-    {
-      "ticker": "DIOD",
-      "name": "Diodes Incorporated",
-      "ah_pct": -6.98,
-      "ah_price": 90.4,
-      "reg_price": 97.19,
-      "mkt_cap": 4475765248,
-      "volume": 1532452,
-      "catalyst": "Post-market move"
-    },
-    {
-      "ticker": "VERX",
-      "name": "Vertex, Inc.",
-      "ah_pct": -6.06,
-      "ah_price": 12.45,
-      "reg_price": 13.25,
-      "mkt_cap": 2144074240,
-      "volume": 2207000,
+      "ticker": "ASTH",
+      "name": "Astrana Health Inc.",
+      "ah_pct": -9.09,
+      "ah_price": 37.1,
+      "reg_price": 40.81,
+      "mkt_cap": 2024354304,
+      "volume": 539473,
       "catalyst": "Post-market move"
     }
   ]
