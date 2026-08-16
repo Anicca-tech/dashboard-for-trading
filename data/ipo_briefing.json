@@ -1,178 +1,173 @@
 {
-  "generated_at": "2026-08-09T06:19:04.137742-04:00",
-  "week_of": "Week of August 09, 2026",
+  "generated_at": "2026-08-16T06:09:37.843465-04:00",
+  "week_of": "Week of August 16, 2026",
   "new_filings": [
-    {
-      "company": "Southern Cross Acquisition II Corp.  (SCAT)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "SPLASH BEVERAGE GROUP, INC.  (SBEV)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Veradermics, Inc  (MANE)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Prenetics Global Ltd  (PRE, PRENW)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Fast Track Group  (FTRK)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "DataMeds AI, Inc.  (MEDS)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Aptera Motors Corp  (SEV)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "First Breach, Inc.  (FBDT)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Zensitive Holding Ltd",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "My Size, Inc.  (MYSZ)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Ionetix Corp / DE /",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Change Agents Corporation.  (CHGA)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "BioStem Technologies, Inc.  (BSEM)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "PRESIDIO PRODUCTION Co  (FTW, FTW-WT)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "KiNRG, Inc.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Lucens Capital Acquisition Corp I",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Danneskjold & Galt Acquisition Co",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Southport Acquisition Corp. II",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
-    {
-      "company": "Silexion Therapeutics Corp  (SLXN, SLXNW)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-08-07"
-    },
     {
       "company": "BIOVIE INC.  (BIVI, BIVIW)",
       "ticker": "",
       "form": "",
-      "filed": "2026-08-06"
+      "filed": "2026-08-14"
+    },
+    {
+      "company": "IMC Rare Earths Ltd  (IMC)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-14"
+    },
+    {
+      "company": "Fitness Fanatics Ltd",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-14"
+    },
+    {
+      "company": "BayFirst Financial Corp.  (BAFN)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-13"
+    },
+    {
+      "company": "ARC Group Securities Acquisition II",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-13"
+    },
+    {
+      "company": "Advance JV Group Ltd",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-13"
+    },
+    {
+      "company": "RUI Holdings Inc  (RUIH)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-13"
+    },
+    {
+      "company": "Student Living EduVation (Holdings) Corp",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-13"
+    },
+    {
+      "company": "Verdera Energy Corp.  (VUECF)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-13"
+    },
+    {
+      "company": "SharonAI Holdings Inc.  (SHAZ, SHAZW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-12"
+    },
+    {
+      "company": "BirchBioMed Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-12"
+    },
+    {
+      "company": "Fast Finance Pay Corp.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-12"
+    },
+    {
+      "company": "SPECTRAL CAPITAL Corp  (FCCN)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-12"
+    },
+    {
+      "company": "Onconetix, Inc.  (ONCO)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-12"
+    },
+    {
+      "company": "Lyntris Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-12"
+    },
+    {
+      "company": "GX Acquisition Corp. III/Cayman",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-12"
+    },
+    {
+      "company": "Karman Line Acquisition Corp.  (XTER)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-11"
+    },
+    {
+      "company": "Aura Consolidated Group, Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-11"
+    },
+    {
+      "company": "PHAOS TECHNOLOGY HOLDINGS (CAYMAN) Ltd  (POAS)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-11"
+    },
+    {
+      "company": "AMERICAN BATTERY MATERIALS, INC.  (BLTH)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-08-11"
     }
   ],
   "recently_priced": [
     {
-      "company": "OceanLight Acquisition Corp  (OCLT)",
+      "company": "Londian Wason New Energy Tech Inc.",
       "ticker": "",
-      "priced_date": "2026-08-07"
+      "priced_date": "2026-08-14"
     },
     {
-      "company": "Pinnacle Acquisition Corp  (PNAQ)",
+      "company": "Professional Diversity Network, Inc.  (IPDN)",
       "ticker": "",
-      "priced_date": "2026-08-07"
+      "priced_date": "2026-08-13"
     },
     {
-      "company": "Ticketplus Ltd.  (TP)",
+      "company": "Thunder Bridge Capital Partners V, Ltd.  (TBCV)",
       "ticker": "",
-      "priced_date": "2026-08-07"
+      "priced_date": "2026-08-13"
     },
     {
-      "company": "iSpecimen Inc.  (ISPC)",
+      "company": "SunScout Holding Ltd  (SNSC)",
       "ticker": "",
-      "priced_date": "2026-08-07"
+      "priced_date": "2026-08-13"
     },
     {
-      "company": "Latigo Biotherapeutics, Inc.  (LTGO)",
+      "company": "Silexion Therapeutics Corp  (SLXN, SLXNW)",
       "ticker": "",
-      "priced_date": "2026-08-07"
+      "priced_date": "2026-08-13"
     },
     {
-      "company": "BlossomHill Therapeutics, Inc.  (BLSM)",
+      "company": "CURIS INC  (CRIS)",
       "ticker": "",
-      "priced_date": "2026-08-07"
+      "priced_date": "2026-08-13"
     },
     {
-      "company": "Braveheart Bio, Inc.  (BRVE)",
+      "company": "Advasa Holdings, Inc.  (ADBT)",
       "ticker": "",
-      "priced_date": "2026-08-06"
+      "priced_date": "2026-08-12"
     },
     {
-      "company": "TCGX Acquisition Corp.",
+      "company": "Vogenx, Inc.  (VOGX)",
       "ticker": "",
-      "priced_date": "2026-08-06"
+      "priced_date": "2026-08-12"
     },
     {
-      "company": "ARC Group Securities Acquisition I",
+      "company": "Janus Living, Inc.  (JAN)",
       "ticker": "",
-      "priced_date": "2026-08-05"
-    },
-    {
-      "company": "Attovia Therapeutics, Inc.  (ATTO)",
-      "ticker": "",
-      "priced_date": "2026-08-05"
+      "priced_date": "2026-08-11"
     }
   ],
   "delayed_withdrawn": [],
