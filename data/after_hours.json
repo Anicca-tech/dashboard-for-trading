@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-14T17:34:42.614869-04:00",
-  "as_of": "Aug 14, 2026 05:34 PM ET",
+  "generated_at": "2026-08-17T17:34:39.263450-04:00",
+  "as_of": "Aug 17, 2026 05:34 PM ET",
   "count": 1,
   "movers": [
     {
-      "ticker": "ASTH",
-      "name": "Astrana Health Inc.",
-      "ah_pct": -9.09,
-      "ah_price": 37.1,
-      "reg_price": 40.81,
-      "mkt_cap": 2024354304,
-      "volume": 539473,
-      "catalyst": "Post-market move"
+      "ticker": "FN",
+      "name": "Fabrinet",
+      "ah_pct": -6.76,
+      "ah_price": 558.13,
+      "reg_price": 598.58,
+      "mkt_cap": 21446967296,
+      "volume": 1473675,
+      "catalyst": "Earnings AH (Aug 17)"
     }
   ]
 }
