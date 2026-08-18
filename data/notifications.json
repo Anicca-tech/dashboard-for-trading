@@ -1,6 +1,6 @@
 {
   "date": "2026-08-18",
-  "updated_at": "2026-08-18T16:35:37.601938-04:00",
+  "updated_at": "2026-08-18T19:35:29.448156-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -1069,7 +1069,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-18T16:35:37.601938-04:00",
+    "triggered_at": "2026-08-18T19:35:29.448156-04:00",
     "alert_count": 44,
     "alerts": [
       {
@@ -1081,8 +1081,8 @@
         "pct": 63.84,
         "price": 35.11,
         "mkt_cap": 3912063232,
-        "atr_pct": 6.83,
-        "adr_pct": 7.88
+        "atr_pct": 6.78,
+        "adr_pct": 7.8
       },
       {
         "type": "stock",
@@ -1093,8 +1093,8 @@
         "pct": 15.93,
         "price": 104.65,
         "mkt_cap": 4761266688,
-        "atr_pct": 3.83,
-        "adr_pct": 3.53
+        "atr_pct": 3.96,
+        "adr_pct": 3.45
       },
       {
         "type": "stock",
@@ -1178,7 +1178,7 @@
         "price": 15.22,
         "mkt_cap": 4159635200,
         "atr_pct": 9.77,
-        "adr_pct": 11.0
+        "adr_pct": 11.31
       },
       {
         "type": "stock",
@@ -1214,7 +1214,7 @@
         "price": 39.39,
         "mkt_cap": 7342376448,
         "atr_pct": 7.3,
-        "adr_pct": 6.83
+        "adr_pct": 6.77
       },
       {
         "type": "stock",
@@ -1249,8 +1249,8 @@
         "pct": -10.58,
         "price": 292.88,
         "mkt_cap": 22367135744,
-        "atr_pct": 7.53,
-        "adr_pct": 6.3
+        "atr_pct": 7.25,
+        "adr_pct": 6.07
       },
       {
         "type": "stock",
@@ -1296,7 +1296,7 @@
         "name": "FormFactor, Inc.",
         "pct": -10.0,
         "price": 124.34,
-        "mkt_cap": 9692895232,
+        "mkt_cap": 9713530880,
         "atr_pct": 8.46,
         "adr_pct": 7.35
       },
@@ -1320,9 +1320,9 @@
         "name": "Everus Construction Group, Inc.",
         "pct": -9.91,
         "price": 129.19,
-        "mkt_cap": 6596937216,
-        "atr_pct": 7.31,
-        "adr_pct": 5.83
+        "mkt_cap": 6594065408,
+        "atr_pct": 6.88,
+        "adr_pct": 5.79
       },
       {
         "type": "stock",
@@ -1346,7 +1346,7 @@
         "price": 314.43,
         "mkt_cap": 12593059840,
         "atr_pct": 7.2,
-        "adr_pct": 6.01
+        "adr_pct": 6.07
       },
       {
         "type": "stock",
@@ -1381,8 +1381,8 @@
         "pct": -9.29,
         "price": 155.84,
         "mkt_cap": 7272768512,
-        "atr_pct": 7.7,
-        "adr_pct": 6.74
+        "atr_pct": 7.72,
+        "adr_pct": 6.41
       },
       {
         "type": "stock",
@@ -1392,9 +1392,9 @@
         "name": "SiTime Corporation",
         "pct": -9.26,
         "price": 680.06,
-        "mkt_cap": 20450109440,
-        "atr_pct": 8.39,
-        "adr_pct": 6.86
+        "mkt_cap": 20371550208,
+        "atr_pct": 8.37,
+        "adr_pct": 7.02
       },
       {
         "type": "stock",
@@ -1428,7 +1428,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": -9.16,
         "price": 903.68,
-        "mkt_cap": 205135364096,
+        "mkt_cap": 204814106624,
         "atr_pct": 8.15,
         "adr_pct": 7.87
       },
@@ -1441,8 +1441,8 @@
         "pct": -9.11,
         "price": 63.66,
         "mkt_cap": 12442733568,
-        "atr_pct": 7.79,
-        "adr_pct": 7.27
+        "atr_pct": 7.18,
+        "adr_pct": 7.06
       },
       {
         "type": "stock",
@@ -1537,8 +1537,8 @@
         "pct": 7.84,
         "price": 45.23,
         "mkt_cap": 3932912384,
-        "atr_pct": 5.61,
-        "adr_pct": 6.57
+        "atr_pct": 5.56,
+        "adr_pct": 6.47
       },
       {
         "type": "stock",
@@ -1548,9 +1548,9 @@
         "name": "Duolingo, Inc.",
         "pct": 7.28,
         "price": 139.64,
-        "mkt_cap": 6533234688,
-        "atr_pct": 6.81,
-        "adr_pct": 6.69
+        "mkt_cap": 6506262528,
+        "atr_pct": 6.82,
+        "adr_pct": 6.68
       },
       {
         "type": "stock",
@@ -1561,8 +1561,8 @@
         "pct": 6.73,
         "price": 7.14,
         "mkt_cap": 4205422080,
-        "atr_pct": 5.55,
-        "adr_pct": 5.6
+        "atr_pct": 5.23,
+        "adr_pct": 5.33
       },
       {
         "type": "stock",
@@ -1573,8 +1573,8 @@
         "pct": 5.72,
         "price": 39.35,
         "mkt_cap": 4812994560,
-        "atr_pct": 6.59,
-        "adr_pct": 7.87
+        "atr_pct": 6.39,
+        "adr_pct": 7.93
       },
       {
         "type": "stock",
@@ -1585,8 +1585,8 @@
         "pct": 5.13,
         "price": 54.72,
         "mkt_cap": 6664090624,
-        "atr_pct": 4.35,
-        "adr_pct": 4.67
+        "atr_pct": 4.47,
+        "adr_pct": 4.71
       },
       {
         "type": "stock",
@@ -1597,8 +1597,8 @@
         "pct": 5.09,
         "price": 50.81,
         "mkt_cap": 4466109440,
-        "atr_pct": 4.78,
-        "adr_pct": 5.05
+        "atr_pct": 4.76,
+        "adr_pct": 5.18
       }
     ],
     "etf_top5": [],
