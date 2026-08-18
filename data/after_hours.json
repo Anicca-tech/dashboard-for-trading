@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-08-17T17:34:39.263450-04:00",
-  "as_of": "Aug 17, 2026 05:34 PM ET",
-  "count": 1,
-  "movers": [
-    {
-      "ticker": "FN",
-      "name": "Fabrinet",
-      "ah_pct": -6.76,
-      "ah_price": 558.13,
-      "reg_price": 598.58,
-      "mkt_cap": 21446967296,
-      "volume": 1473675,
-      "catalyst": "Earnings AH (Aug 17)"
-    }
-  ]
+  "generated_at": "2026-08-18T17:33:01.687148-04:00",
+  "as_of": "Aug 18, 2026 05:33 PM ET",
+  "count": 0,
+  "movers": []
 }
