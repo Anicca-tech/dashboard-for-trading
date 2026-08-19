@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-08-18T17:33:01.687148-04:00",
-  "as_of": "Aug 18, 2026 05:33 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-08-19T17:34:41.704543-04:00",
+  "as_of": "Aug 19, 2026 05:34 PM ET",
+  "count": 2,
+  "movers": [
+    {
+      "ticker": "BULL",
+      "name": "Webull Corporation",
+      "ah_pct": 13.66,
+      "ah_price": 9.82,
+      "reg_price": 8.64,
+      "mkt_cap": 4594913280,
+      "volume": 27830868,
+      "catalyst": "Earnings AH (Aug 19)"
+    },
+    {
+      "ticker": "BMNR",
+      "name": "BitMine Immersion Technologies,",
+      "ah_pct": 7.95,
+      "ah_price": 21.85,
+      "reg_price": 20.24,
+      "mkt_cap": 12209301504,
+      "volume": 70708418,
+      "catalyst": "Post-market move"
+    }
+  ]
 }
