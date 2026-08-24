@@ -1,6 +1,6 @@
 {
   "date": "2026-08-24",
-  "updated_at": "2026-08-24T16:35:29.605422-04:00",
+  "updated_at": "2026-08-24T19:35:24.774651-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -841,8 +841,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-24T16:35:29.605422-04:00",
-    "alert_count": 32,
+    "triggered_at": "2026-08-24T19:35:24.774651-04:00",
+    "alert_count": 31,
     "alerts": [
       {
         "type": "stock",
@@ -978,18 +978,6 @@
       },
       {
         "type": "stock",
-        "ticker": "P",
-        "label": "P",
-        "symbol": "P",
-        "name": "Everpure, Inc.",
-        "pct": -7.47,
-        "price": 100.44,
-        "mkt_cap": 33386752000,
-        "atr_pct": 6.05,
-        "adr_pct": 5.87
-      },
-      {
-        "type": "stock",
         "ticker": "ETSY",
         "label": "ETSY",
         "symbol": "ETSY",
@@ -1056,7 +1044,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": -6.51,
         "price": 794.65,
-        "mkt_cap": 180385562624,
+        "mkt_cap": 180103069696,
         "atr_pct": 8.29,
         "adr_pct": 7.61
       },
@@ -1146,18 +1134,6 @@
       },
       {
         "type": "stock",
-        "ticker": "MU",
-        "label": "MU",
-        "symbol": "MU",
-        "name": "Micron Technology, Inc.",
-        "pct": -5.83,
-        "price": 910.43,
-        "mkt_cap": 1028233428992,
-        "atr_pct": 6.22,
-        "adr_pct": 6.8
-      },
-      {
-        "type": "stock",
         "ticker": "MXL",
         "label": "MXL",
         "symbol": "MXL",
@@ -1188,7 +1164,7 @@
         "name": "J.B. Hunt Transport Services, I",
         "pct": -5.65,
         "price": 259.88,
-        "mkt_cap": 24402733056,
+        "mkt_cap": 24406614016,
         "atr_pct": 3.29,
         "adr_pct": 3.16
       },
@@ -1206,13 +1182,25 @@
       },
       {
         "type": "stock",
+        "ticker": "RXO",
+        "label": "RXO",
+        "symbol": "RXO",
+        "name": "RXO, Inc.",
+        "pct": -5.59,
+        "price": 21.28,
+        "mkt_cap": 3509628160,
+        "atr_pct": 5.97,
+        "adr_pct": 6.37
+      },
+      {
+        "type": "stock",
         "ticker": "EXPE",
         "label": "EXPE",
         "symbol": "EXPE",
         "name": "Expedia Group, Inc.",
         "pct": 5.44,
         "price": 339.12,
-        "mkt_cap": 40701558784,
+        "mkt_cap": 40702488576,
         "atr_pct": 3.8,
         "adr_pct": 4.26
       },
