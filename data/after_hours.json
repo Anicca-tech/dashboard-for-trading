@@ -1,6 +1,17 @@
 {
-  "generated_at": "2026-08-24T17:38:02.281211-04:00",
-  "as_of": "Aug 24, 2026 05:38 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-08-25T17:37:20.626102-04:00",
+  "as_of": "Aug 25, 2026 05:37 PM ET",
+  "count": 1,
+  "movers": [
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "ah_pct": -8.86,
+      "ah_price": 325.8,
+      "reg_price": 357.46,
+      "mkt_cap": 97778532352,
+      "volume": 6649959,
+      "catalyst": "Earnings AH (Aug 25)"
+    }
+  ]
 }
