@@ -1,6 +1,6 @@
 {
   "date": "2026-08-25",
-  "updated_at": "2026-08-25T16:35:32.028719-04:00",
+  "updated_at": "2026-08-25T19:35:27.302087-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -601,8 +601,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-25T16:35:32.028719-04:00",
-    "alert_count": 32,
+    "triggered_at": "2026-08-25T19:35:27.302087-04:00",
+    "alert_count": 31,
     "alerts": [
       {
         "type": "stock",
@@ -792,7 +792,7 @@
         "name": "Beta Technologies, Inc.",
         "pct": -7.26,
         "price": 22.11,
-        "mkt_cap": 5360404992,
+        "mkt_cap": 5289983488,
         "atr_pct": 8.73,
         "adr_pct": 8.01
       },
@@ -804,7 +804,7 @@
         "name": "Caris Life Sciences, Inc.",
         "pct": 7.19,
         "price": 28.01,
-        "mkt_cap": 7917886464,
+        "mkt_cap": 7915491840,
         "atr_pct": 5.8,
         "adr_pct": 5.93
       },
@@ -894,6 +894,18 @@
       },
       {
         "type": "stock",
+        "ticker": "SE",
+        "label": "SE",
+        "symbol": "SE",
+        "name": "Sea Limited",
+        "pct": 6.48,
+        "price": 123.18,
+        "mkt_cap": 75445846016,
+        "atr_pct": 4.29,
+        "adr_pct": 3.27
+      },
+      {
+        "type": "stock",
         "ticker": "FIGR",
         "label": "FIGR",
         "symbol": "FIGR",
@@ -924,7 +936,7 @@
         "name": "USA Rare Earth, Inc.",
         "pct": 6.12,
         "price": 19.41,
-        "mkt_cap": 4750017024,
+        "mkt_cap": 4749066752,
         "atr_pct": 7.48,
         "adr_pct": 7.68
       },
@@ -942,18 +954,6 @@
       },
       {
         "type": "stock",
-        "ticker": "SA",
-        "label": "SA",
-        "symbol": "SA",
-        "name": "Seabridge Gold, Inc.",
-        "pct": 6.06,
-        "price": 35.03,
-        "mkt_cap": 3778728448,
-        "atr_pct": 5.82,
-        "adr_pct": 5.42
-      },
-      {
-        "type": "stock",
         "ticker": "RBRK",
         "label": "RBRK",
         "symbol": "RBRK",
@@ -963,18 +963,6 @@
         "mkt_cap": 19070015488,
         "atr_pct": 5.93,
         "adr_pct": 5.38
-      },
-      {
-        "type": "stock",
-        "ticker": "SMTC",
-        "label": "SMTC",
-        "symbol": "SMTC",
-        "name": "Semtech Corporation",
-        "pct": 5.47,
-        "price": 127.52,
-        "mkt_cap": 11878636544,
-        "atr_pct": 8.88,
-        "adr_pct": 7.48
       },
       {
         "type": "stock",
