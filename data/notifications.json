@@ -1,6 +1,6 @@
 {
   "date": "2026-08-26",
-  "updated_at": "2026-08-26T18:26:57.803299-04:00",
+  "updated_at": "2026-08-26T19:35:24.469734-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -230,8 +230,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-08-26T18:26:57.803299-04:00",
-    "alert_count": 31,
+    "triggered_at": "2026-08-26T19:35:24.469734-04:00",
+    "alert_count": 29,
     "alerts": [
       {
         "type": "stock",
@@ -289,7 +289,7 @@
         "name": "Spyre Therapeutics, Inc.",
         "pct": -12.81,
         "price": 93.61,
-        "mkt_cap": 8128776192,
+        "mkt_cap": 8253505024,
         "atr_pct": 5.96,
         "adr_pct": 5.17
       },
@@ -451,18 +451,6 @@
       },
       {
         "type": "stock",
-        "ticker": "P",
-        "label": "P",
-        "symbol": "P",
-        "name": "Everpure, Inc.",
-        "pct": 5.92,
-        "price": 108.9,
-        "mkt_cap": 36198895616,
-        "atr_pct": 5.81,
-        "adr_pct": 5.77
-      },
-      {
-        "type": "stock",
         "ticker": "ANET",
         "label": "ANET",
         "symbol": "ANET",
@@ -556,18 +544,6 @@
         "mkt_cap": 4264495872,
         "atr_pct": 5.2,
         "adr_pct": 4.95
-      },
-      {
-        "type": "stock",
-        "ticker": "PVH",
-        "label": "PVH",
-        "symbol": "PVH",
-        "name": "PVH Corp.",
-        "pct": 5.35,
-        "price": 78.51,
-        "mkt_cap": 3619946496,
-        "atr_pct": 3.93,
-        "adr_pct": 3.6
       },
       {
         "type": "stock",
