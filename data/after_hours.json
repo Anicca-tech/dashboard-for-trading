@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-25T17:37:20.626102-04:00",
-  "as_of": "Aug 25, 2026 05:37 PM ET",
+  "generated_at": "2026-08-26T20:39:33.773754-04:00",
+  "as_of": "Aug 26, 2026 08:39 PM ET",
   "count": 1,
   "movers": [
     {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "ah_pct": -8.86,
-      "ah_price": 325.8,
-      "reg_price": 357.46,
-      "mkt_cap": 97778532352,
-      "volume": 6649959,
-      "catalyst": "Earnings AH (Aug 25)"
+      "ticker": "AEHR",
+      "name": "Aehr Test Systems",
+      "ah_pct": 6.42,
+      "ah_price": 96.97,
+      "reg_price": 91.12,
+      "mkt_cap": 2972375552,
+      "volume": 1645684,
+      "catalyst": "Post-market move"
     }
   ]
 }
