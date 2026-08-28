@@ -1,16 +1,36 @@
 {
-  "generated_at": "2026-08-26T20:39:33.773754-04:00",
-  "as_of": "Aug 26, 2026 08:39 PM ET",
-  "count": 1,
+  "generated_at": "2026-08-28T01:18:27.487878-04:00",
+  "as_of": "Aug 28, 2026 01:18 AM ET",
+  "count": 3,
   "movers": [
     {
-      "ticker": "AEHR",
-      "name": "Aehr Test Systems",
-      "ah_pct": 6.42,
-      "ah_price": 96.97,
-      "reg_price": 91.12,
-      "mkt_cap": 2972375552,
-      "volume": 1645684,
+      "ticker": "IREN",
+      "name": "IREN LIMITED",
+      "ah_pct": -8.45,
+      "ah_price": 37.11,
+      "reg_price": 40.53,
+      "mkt_cap": 14484557824,
+      "volume": 42523265,
+      "catalyst": "Post-market move"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "ah_pct": -7.8,
+      "ah_price": 222.62,
+      "reg_price": 241.45,
+      "mkt_cap": 216992235520,
+      "volume": 35613507,
+      "catalyst": "Post-market move"
+    },
+    {
+      "ticker": "RBRK",
+      "name": "Rubrik, Inc.",
+      "ah_pct": -7.01,
+      "ah_price": 99.52,
+      "reg_price": 107.02,
+      "mkt_cap": 22027771904,
+      "volume": 7884656,
       "catalyst": "Post-market move"
     }
   ]
