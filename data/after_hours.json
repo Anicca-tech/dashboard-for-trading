@@ -1,27 +1,17 @@
 {
-  "generated_at": "2026-09-01T19:14:57.978847-04:00",
-  "as_of": "Sep 01, 2026 07:14 PM ET",
-  "count": 2,
+  "generated_at": "2026-09-02T19:15:45.095907-04:00",
+  "as_of": "Sep 02, 2026 07:15 PM ET",
+  "count": 1,
   "movers": [
     {
-      "ticker": "CRDO",
-      "name": "Credo Technology Group Holding ",
-      "ah_pct": -10.57,
-      "ah_price": 184.78,
-      "reg_price": 206.63,
-      "mkt_cap": 38832943104,
-      "volume": 8616382,
-      "catalyst": "Earnings AH (Sep 01)"
-    },
-    {
-      "ticker": "DELL",
-      "name": "Dell Technologies Inc.",
-      "ah_pct": 6.84,
-      "ah_price": 454.09,
-      "reg_price": 425.0,
-      "mkt_cap": 274610520064,
-      "volume": 14731371,
-      "catalyst": "Earnings AH (Sep 01)"
+      "ticker": "NTSK",
+      "name": "Netskope, Inc.",
+      "ah_pct": 13.02,
+      "ah_price": 15.54,
+      "reg_price": 13.75,
+      "mkt_cap": 5553950208,
+      "volume": 8448756,
+      "catalyst": "Earnings AH (Sep 02)"
     }
   ]
 }
