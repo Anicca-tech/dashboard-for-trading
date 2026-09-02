@@ -1,6 +1,6 @@
 {
   "date": "2026-09-02",
-  "updated_at": "2026-09-02T13:51:19.582096-04:00",
+  "updated_at": "2026-09-02T14:05:29.400535-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -130,5 +130,136 @@
     ],
     "etf_top5": [],
     "etf_bottom5": []
+  },
+  "n3": {
+    "slot": "n3",
+    "time_label": "3:30 PM ET",
+    "triggered_at": "2026-09-02T14:05:29.400535-04:00",
+    "alert_count": 10,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "DELL",
+        "label": "DELL",
+        "symbol": "DELL",
+        "name": "Dell Technologies Inc.",
+        "pct": 9.48,
+        "price": 465.3,
+        "mkt_cap": 300650037248,
+        "atr_pct": 5.65,
+        "adr_pct": 5.93
+      },
+      {
+        "type": "stock",
+        "ticker": "MMED",
+        "label": "MMED",
+        "symbol": "MMED",
+        "name": "MiniMed Group, Inc.",
+        "pct": 7.76,
+        "price": 24.16,
+        "mkt_cap": 6797413888,
+        "atr_pct": 4.76,
+        "adr_pct": 5.45
+      },
+      {
+        "type": "stock",
+        "ticker": "CNH",
+        "label": "CNH",
+        "symbol": "CNH",
+        "name": "CNH Industrial N.V.",
+        "pct": 7.56,
+        "price": 13.45,
+        "mkt_cap": 21621694464,
+        "atr_pct": 4.06,
+        "adr_pct": 4.28
+      },
+      {
+        "type": "stock",
+        "ticker": "BFLY",
+        "label": "BFLY",
+        "symbol": "BFLY",
+        "name": "Butterfly Network, Inc.",
+        "pct": -7.28,
+        "price": 7.58,
+        "mkt_cap": 2019773184,
+        "atr_pct": 8.97,
+        "adr_pct": 7.33
+      },
+      {
+        "type": "stock",
+        "ticker": "AFRM",
+        "label": "AFRM",
+        "symbol": "AFRM",
+        "name": "Affirm Holdings, Inc.",
+        "pct": 6.28,
+        "price": 74.33,
+        "mkt_cap": 25082208256,
+        "atr_pct": 5.82,
+        "adr_pct": 5.32
+      },
+      {
+        "type": "stock",
+        "ticker": "SAIL",
+        "label": "SAIL",
+        "symbol": "SAIL",
+        "name": "SailPoint, Inc.",
+        "pct": -5.98,
+        "price": 18.08,
+        "mkt_cap": 10254667776,
+        "atr_pct": 6.32,
+        "adr_pct": 5.01
+      },
+      {
+        "type": "stock",
+        "ticker": "CRWD",
+        "label": "CRWD",
+        "symbol": "CRWD",
+        "name": "CrowdStrike Holdings, Inc.",
+        "pct": -5.85,
+        "price": 202.48,
+        "mkt_cap": 207326330880,
+        "atr_pct": 6.81,
+        "adr_pct": 5.36
+      },
+      {
+        "type": "stock",
+        "ticker": "TENB",
+        "label": "TENB",
+        "symbol": "TENB",
+        "name": "Tenable Holdings, Inc.",
+        "pct": -5.58,
+        "price": 33.49,
+        "mkt_cap": 3688588288,
+        "atr_pct": 6.93,
+        "adr_pct": 5.83
+      },
+      {
+        "type": "stock",
+        "ticker": "ERAS",
+        "label": "ERAS",
+        "symbol": "ERAS",
+        "name": "Erasca, Inc.",
+        "pct": -5.49,
+        "price": 15.84,
+        "mkt_cap": 5540230656,
+        "atr_pct": 8.29,
+        "adr_pct": 6.28
+      },
+      {
+        "type": "stock",
+        "ticker": "NET",
+        "label": "NET",
+        "symbol": "NET",
+        "name": "Cloudflare, Inc.",
+        "pct": -5.1,
+        "price": 270.95,
+        "mkt_cap": 96479838208,
+        "atr_pct": 6.13,
+        "adr_pct": 5.67
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": [],
+    "indices_range": []
   }
 }
