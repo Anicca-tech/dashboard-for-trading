@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "updated_at": "2026-09-03T17:51:31.801438-04:00",
+  "updated_at": "2026-09-03T19:35:35.216112-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -398,7 +398,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-03T17:51:31.801438-04:00",
+    "triggered_at": "2026-09-03T19:35:35.216112-04:00",
     "alert_count": 36,
     "alerts": [
       {
@@ -517,7 +517,7 @@
         "name": "Webull Corporation",
         "pct": 11.11,
         "price": 10.0,
-        "mkt_cap": 5297644032,
+        "mkt_cap": 5396204032,
         "atr_pct": 6.32,
         "adr_pct": 6.11
       },
@@ -565,7 +565,7 @@
         "name": "Strive, Inc.",
         "pct": 10.28,
         "price": 26.82,
-        "mkt_cap": 2405309440,
+        "mkt_cap": 2501302016,
         "atr_pct": 7.92,
         "adr_pct": 8.43
       },
@@ -625,7 +625,7 @@
         "name": "Zeta Global Holdings Corp.",
         "pct": 7.36,
         "price": 32.68,
-        "mkt_cap": 8203124736,
+        "mkt_cap": 8145738752,
         "atr_pct": 4.29,
         "adr_pct": 5.03
       },
@@ -685,7 +685,7 @@
         "name": "Space Exploration Technologies ",
         "pct": 6.42,
         "price": 149.74,
-        "mkt_cap": 1972702806016,
+        "mkt_cap": 1973839855616,
         "atr_pct": 4.28,
         "adr_pct": 5.78
       },
@@ -697,7 +697,7 @@
         "name": "Wix.com Ltd.",
         "pct": -6.33,
         "price": 81.2,
-        "mkt_cap": 4735109120,
+        "mkt_cap": 3398180352,
         "atr_pct": 6.01,
         "adr_pct": 6.76
       },
