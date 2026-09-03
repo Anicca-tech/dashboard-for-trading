@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-02T19:15:45.095907-04:00",
-  "as_of": "Sep 02, 2026 07:15 PM ET",
+  "generated_at": "2026-09-03T19:14:03.395813-04:00",
+  "as_of": "Sep 03, 2026 07:14 PM ET",
   "count": 1,
   "movers": [
     {
-      "ticker": "NTSK",
-      "name": "Netskope, Inc.",
-      "ah_pct": 13.02,
-      "ah_price": 15.54,
-      "reg_price": 13.75,
-      "mkt_cap": 5553950208,
-      "volume": 8448756,
-      "catalyst": "Earnings AH (Sep 02)"
+      "ticker": "PATH",
+      "name": "UiPath, Inc.",
+      "ah_pct": -7.24,
+      "ah_price": 16.9,
+      "reg_price": 18.22,
+      "mkt_cap": 9440150528,
+      "volume": 60306189,
+      "catalyst": "Earnings AH (Sep 03)"
     }
   ]
 }
