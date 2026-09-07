@@ -1,10 +1,10 @@
 {
   "date": "2026-09-07",
-  "updated_at": "2026-09-07T16:35:30.317125-04:00",
+  "updated_at": "2026-09-07T18:13:52.180019-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-07T16:35:30.317125-04:00",
+    "triggered_at": "2026-09-07T18:13:52.180019-04:00",
     "alert_count": 49,
     "alerts": [
       {
@@ -135,7 +135,7 @@
         "name": "Ultra Clean Holdings, Inc.",
         "pct": 8.77,
         "price": 72.43,
-        "mkt_cap": 3279415040,
+        "mkt_cap": 3246917632,
         "atr_pct": 6.74,
         "adr_pct": 6.14
       },
@@ -183,7 +183,7 @@
         "name": "Nebius Group N.V.",
         "pct": 7.48,
         "price": 226.39,
-        "mkt_cap": 61545304064,
+        "mkt_cap": 57480011776,
         "atr_pct": 6.84,
         "adr_pct": 7.26
       },
@@ -195,7 +195,7 @@
         "name": "FormFactor, Inc.",
         "pct": 7.38,
         "price": 103.9,
-        "mkt_cap": 8116743680,
+        "mkt_cap": 8099500544,
         "atr_pct": 7.16,
         "adr_pct": 5.9
       },
@@ -291,7 +291,7 @@
         "name": "Beta Technologies, Inc.",
         "pct": 6.68,
         "price": 22.2,
-        "mkt_cap": 5382224896,
+        "mkt_cap": 5311516672,
         "atr_pct": 6.99,
         "adr_pct": 7.82
       },
@@ -315,7 +315,7 @@
         "name": "SiTime Corporation",
         "pct": 6.55,
         "price": 612.09,
-        "mkt_cap": 18335475712,
+        "mkt_cap": 18406180864,
         "atr_pct": 6.17,
         "adr_pct": 5.61
       },
@@ -339,7 +339,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": 6.34,
         "price": 849.28,
-        "mkt_cap": 192484655104,
+        "mkt_cap": 192786563072,
         "atr_pct": 5.82,
         "adr_pct": 5.5
       },
@@ -375,7 +375,7 @@
         "name": "Entegris, Inc.",
         "pct": 6.15,
         "price": 138.74,
-        "mkt_cap": 21199472640,
+        "mkt_cap": 21130102784,
         "atr_pct": 5.14,
         "adr_pct": 4.47
       },
@@ -387,7 +387,7 @@
         "name": "Wix.com Ltd.",
         "pct": -6.15,
         "price": 76.21,
-        "mkt_cap": 3189351168,
+        "mkt_cap": 4444121600,
         "atr_pct": 6.66,
         "adr_pct": 6.68
       },
@@ -471,7 +471,7 @@
         "name": "Corning Incorporated",
         "pct": 5.68,
         "price": 154.3,
-        "mkt_cap": 132912226304,
+        "mkt_cap": 132642119680,
         "atr_pct": 4.56,
         "adr_pct": 4.47
       },
