@@ -1,6 +1,6 @@
 {
   "date": "2026-09-08",
-  "updated_at": "2026-09-08T16:35:29.665423-04:00",
+  "updated_at": "2026-09-08T17:59:10.183677-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -674,7 +674,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-08T16:35:29.665423-04:00",
+    "triggered_at": "2026-09-08T17:59:10.183677-04:00",
     "alert_count": 52,
     "alerts": [
       {
@@ -733,7 +733,7 @@
         "name": "DigitalOcean Holdings, Inc.",
         "pct": 12.64,
         "price": 126.69,
-        "mkt_cap": 14811086848,
+        "mkt_cap": 14896153600,
         "atr_pct": 6.08,
         "adr_pct": 6.99
       },
@@ -781,7 +781,7 @@
         "name": "Mineralys Therapeutics, Inc.",
         "pct": 10.32,
         "price": 31.12,
-        "mkt_cap": 2743492096,
+        "mkt_cap": 2751222528,
         "atr_pct": 4.67,
         "adr_pct": 5.24
       },
@@ -865,7 +865,7 @@
         "name": "Almonty Industries Inc.",
         "pct": 8.82,
         "price": 19.12,
-        "mkt_cap": 5425144320,
+        "mkt_cap": 5515751936,
         "atr_pct": 6.24,
         "adr_pct": 7.17
       },
@@ -901,7 +901,7 @@
         "name": "Robert Half Inc.",
         "pct": -7.91,
         "price": 39.21,
-        "mkt_cap": 4010931712,
+        "mkt_cap": 4013606912,
         "atr_pct": 4.27,
         "adr_pct": 3.68
       },
@@ -913,7 +913,7 @@
         "name": "Expedia Group, Inc.",
         "pct": -7.88,
         "price": 274.55,
-        "mkt_cap": 32951310336,
+        "mkt_cap": 32952059904,
         "atr_pct": 4.63,
         "adr_pct": 3.88
       },
@@ -949,7 +949,7 @@
         "name": "Nebius Group N.V.",
         "pct": 7.73,
         "price": 243.88,
-        "mkt_cap": 61920694272,
+        "mkt_cap": 66300055552,
         "atr_pct": 6.3,
         "adr_pct": 7.34
       },
@@ -985,7 +985,7 @@
         "name": "Shopify Inc.",
         "pct": -7.57,
         "price": 134.1,
-        "mkt_cap": 172538970112,
+        "mkt_cap": 174015496192,
         "atr_pct": 4.13,
         "adr_pct": 3.47
       },
@@ -997,7 +997,7 @@
         "name": "Corning Incorporated",
         "pct": 7.56,
         "price": 165.96,
-        "mkt_cap": 142665498624,
+        "mkt_cap": 142956019712,
         "atr_pct": 4.24,
         "adr_pct": 4.49
       },
@@ -1117,7 +1117,7 @@
         "name": "Seagate Technology Holdings PLC",
         "pct": 6.49,
         "price": 904.38,
-        "mkt_cap": 205294256128,
+        "mkt_cap": 204972769280,
         "atr_pct": 5.31,
         "adr_pct": 5.62
       },
@@ -1189,7 +1189,7 @@
         "name": "Via Transportation, Inc.",
         "pct": -6.19,
         "price": 26.39,
-        "mkt_cap": 2150933248,
+        "mkt_cap": 2246898688,
         "atr_pct": 4.6,
         "adr_pct": 4.88
       },
@@ -1297,7 +1297,7 @@
         "name": "Paylocity Holding Corporation",
         "pct": -5.73,
         "price": 143.53,
-        "mkt_cap": 7615265792,
+        "mkt_cap": 7946681856,
         "atr_pct": 3.45,
         "adr_pct": 3.34
       }
