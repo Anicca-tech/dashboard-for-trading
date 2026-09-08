@@ -1,16 +1,26 @@
 {
-  "generated_at": "2026-09-07T19:26:33.441052-04:00",
-  "as_of": "Sep 07, 2026 07:26 PM ET",
-  "count": 1,
+  "generated_at": "2026-09-08T19:19:55.640757-04:00",
+  "as_of": "Sep 08, 2026 07:19 PM ET",
+  "count": 2,
   "movers": [
     {
-      "ticker": "VSNT",
-      "name": "Versant Media Group, Inc.",
-      "ah_pct": 7.1,
-      "ah_price": 41.35,
-      "reg_price": 38.61,
-      "mkt_cap": 5373357056,
-      "volume": 1387570,
+      "ticker": "TTAN",
+      "name": "ServiceTitan, Inc.",
+      "ah_pct": -19.95,
+      "ah_price": 65.31,
+      "reg_price": 81.58,
+      "mkt_cap": 7782534656,
+      "volume": 4506981,
+      "catalyst": "Earnings AH (Sep 08)"
+    },
+    {
+      "ticker": "BVC",
+      "name": "BitVentures Limited",
+      "ah_pct": 6.97,
+      "ah_price": 17.96,
+      "reg_price": 16.79,
+      "mkt_cap": 2820736768,
+      "volume": 21360,
       "catalyst": "Post-market move"
     }
   ]
