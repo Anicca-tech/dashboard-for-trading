@@ -1,6 +1,6 @@
 {
   "date": "2026-09-10",
-  "updated_at": "2026-09-10T14:05:28.620854-04:00",
+  "updated_at": "2026-09-10T15:12:07.300795-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -345,5 +345,64 @@
     "etf_top5": [],
     "etf_bottom5": [],
     "indices_range": []
+  },
+  "n2": {
+    "slot": "n2",
+    "time_label": "12:30 PM ET",
+    "triggered_at": "2026-09-10T15:12:07.300795-04:00",
+    "alert_count": 4,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "CMPS",
+        "label": "CMPS",
+        "symbol": "CMPS",
+        "name": "COMPASS Pathways Plc - American",
+        "pct": -7.45,
+        "price": 14.04,
+        "mkt_cap": 1944214528,
+        "atr_pct": 5.78,
+        "adr_pct": 5.45
+      },
+      {
+        "type": "stock",
+        "ticker": "SRPT",
+        "label": "SRPT",
+        "symbol": "SRPT",
+        "name": "Sarepta Therapeutics, Inc.",
+        "pct": -7.02,
+        "price": 20.48,
+        "mkt_cap": 2162713344,
+        "atr_pct": 8.17,
+        "adr_pct": 6.76
+      },
+      {
+        "type": "stock",
+        "ticker": "HPE",
+        "label": "HPE",
+        "symbol": "HPE",
+        "name": "Hewlett Packard Enterprise Comp",
+        "pct": -5.58,
+        "price": 55.62,
+        "mkt_cap": 73826959360,
+        "atr_pct": 5.59,
+        "adr_pct": 5.58
+      },
+      {
+        "type": "stock",
+        "ticker": "CHYM",
+        "label": "CHYM",
+        "symbol": "CHYM",
+        "name": "Chime Financial, Inc.",
+        "pct": -5.41,
+        "price": 32.68,
+        "mkt_cap": 12372161536,
+        "atr_pct": 4.33,
+        "adr_pct": 4.0
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": [],
+    "sector_rotation": []
   }
 }
