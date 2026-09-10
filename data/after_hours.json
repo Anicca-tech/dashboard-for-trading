@@ -1,27 +1,6 @@
 {
-  "generated_at": "2026-09-09T19:09:13.422880-04:00",
-  "as_of": "Sep 09, 2026 07:09 PM ET",
-  "count": 2,
-  "movers": [
-    {
-      "ticker": "RML",
-      "name": "Resolution Minerals Ltd American Depositary Shares",
-      "ah_pct": -19.05,
-      "ah_price": 9.39,
-      "reg_price": 11.6,
-      "mkt_cap": 25979951104,
-      "volume": 1579797,
-      "catalyst": "Post-market move"
-    },
-    {
-      "ticker": "COO",
-      "name": "The Cooper Companies, Inc.",
-      "ah_pct": -15.56,
-      "ah_price": 53.6,
-      "reg_price": 63.48,
-      "mkt_cap": 12380544000,
-      "volume": 9064610,
-      "catalyst": "Earnings AH (Sep 09)"
-    }
-  ]
+  "generated_at": "2026-09-10T19:05:25.537521-04:00",
+  "as_of": "Sep 10, 2026 07:05 PM ET",
+  "count": 0,
+  "movers": []
 }
