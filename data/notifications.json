@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "updated_at": "2026-09-11T16:35:29.576524-04:00",
+  "updated_at": "2026-09-11T17:52:36.478520-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -446,7 +446,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-11T16:35:29.576524-04:00",
+    "triggered_at": "2026-09-11T17:52:36.478520-04:00",
     "alert_count": 35,
     "alerts": [
       {
@@ -601,7 +601,7 @@
         "name": "Super Micro Computer, Inc.",
         "pct": 7.28,
         "price": 40.1,
-        "mkt_cap": 25939607552,
+        "mkt_cap": 26344310784,
         "atr_pct": 5.54,
         "adr_pct": 5.58
       },
@@ -673,7 +673,7 @@
         "name": "Qualys, Inc.",
         "pct": -6.99,
         "price": 150.28,
-        "mkt_cap": 5292411904,
+        "mkt_cap": 5198936576,
         "atr_pct": 5.67,
         "adr_pct": 4.59
       },
@@ -745,7 +745,7 @@
         "name": "Almonty Industries Inc.",
         "pct": -6.52,
         "price": 15.49,
-        "mkt_cap": 4395161088,
+        "mkt_cap": 4468566528,
         "atr_pct": 8.13,
         "adr_pct": 7.25
       },
@@ -757,7 +757,7 @@
         "name": "Beta Technologies, Inc.",
         "pct": 6.44,
         "price": 21.17,
-        "mkt_cap": 5065081344,
+        "mkt_cap": 5132508672,
         "atr_pct": 7.33,
         "adr_pct": 7.17
       },
@@ -781,7 +781,7 @@
         "name": "DigitalOcean Holdings, Inc.",
         "pct": -6.18,
         "price": 122.95,
-        "mkt_cap": 14373850112,
+        "mkt_cap": 14456406016,
         "atr_pct": 6.62,
         "adr_pct": 7.04
       },
@@ -817,7 +817,7 @@
         "name": "Tenable Holdings, Inc.",
         "pct": -5.99,
         "price": 30.11,
-        "mkt_cap": 3320289280,
+        "mkt_cap": 3316314880,
         "atr_pct": 7.15,
         "adr_pct": 5.73
       },
@@ -853,7 +853,7 @@
         "name": "SiTime Corporation",
         "pct": 5.54,
         "price": 635.66,
-        "mkt_cap": 19114954752,
+        "mkt_cap": 19041525760,
         "atr_pct": 5.37,
         "adr_pct": 5.79
       },
