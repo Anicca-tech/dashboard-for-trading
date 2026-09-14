@@ -1,10 +1,10 @@
 {
   "date": "2026-09-14",
-  "updated_at": "2026-09-14T16:35:28.385536-04:00",
+  "updated_at": "2026-09-14T18:42:42.119192-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-14T16:35:28.385536-04:00",
+    "triggered_at": "2026-09-14T18:42:42.119192-04:00",
     "alert_count": 66,
     "alerts": [
       {
@@ -39,7 +39,7 @@
         "name": "Tenable Holdings, Inc.",
         "pct": 16.51,
         "price": 35.08,
-        "mkt_cap": 3868340992,
+        "mkt_cap": 3863710720,
         "atr_pct": 6.81,
         "adr_pct": 6.14
       },
@@ -87,7 +87,7 @@
         "name": "Qualys, Inc.",
         "pct": 15.06,
         "price": 172.91,
-        "mkt_cap": 6089373184,
+        "mkt_cap": 5981821440,
         "atr_pct": 5.66,
         "adr_pct": 5.02
       },
@@ -171,7 +171,7 @@
         "name": "SiTime Corporation",
         "pct": -12.16,
         "price": 558.35,
-        "mkt_cap": 16790162432,
+        "mkt_cap": 16725663744,
         "atr_pct": 6.61,
         "adr_pct": 5.94
       },
@@ -315,7 +315,7 @@
         "name": "Skyworks Solutions, Inc.",
         "pct": -10.29,
         "price": 79.26,
-        "mkt_cap": 11921177600,
+        "mkt_cap": 11926472704,
         "atr_pct": 5.75,
         "adr_pct": 5.5
       },
@@ -351,7 +351,7 @@
         "name": "PBF Energy Inc.",
         "pct": -10.09,
         "price": 70.4,
-        "mkt_cap": 8344993792,
+        "mkt_cap": 8344994304,
         "atr_pct": 5.99,
         "adr_pct": 5.69
       },
@@ -495,7 +495,7 @@
         "name": "Wix.com Ltd.",
         "pct": 8.81,
         "price": 83.33,
-        "mkt_cap": 4859318272,
+        "mkt_cap": 3487319808,
         "atr_pct": 6.3,
         "adr_pct": 5.91
       },
@@ -519,7 +519,7 @@
         "name": "NICE Ltd",
         "pct": 8.67,
         "price": 106.69,
-        "mkt_cap": 6235282432,
+        "mkt_cap": 6251734016,
         "atr_pct": 3.69,
         "adr_pct": 3.14
       },
@@ -531,7 +531,7 @@
         "name": "Entegris, Inc.",
         "pct": -8.44,
         "price": 128.52,
-        "mkt_cap": 19573596160,
+        "mkt_cap": 19637856256,
         "atr_pct": 4.86,
         "adr_pct": 3.91
       },
@@ -543,7 +543,7 @@
         "name": "Super Micro Computer, Inc.",
         "pct": -8.38,
         "price": 36.74,
-        "mkt_cap": 23766116352,
+        "mkt_cap": 24136908800,
         "atr_pct": 6.16,
         "adr_pct": 5.57
       },
@@ -687,7 +687,7 @@
         "name": "Caris Life Sciences, Inc.",
         "pct": 7.03,
         "price": 26.05,
-        "mkt_cap": 7361604608,
+        "mkt_cap": 7363832320,
         "atr_pct": 5.13,
         "adr_pct": 5.52
       },
@@ -723,7 +723,7 @@
         "name": "Cognizant Technology Solutions ",
         "pct": 6.83,
         "price": 64.1,
-        "mkt_cap": 30319298560,
+        "mkt_cap": 28873474048,
         "atr_pct": 3.35,
         "adr_pct": 3.23
       },
