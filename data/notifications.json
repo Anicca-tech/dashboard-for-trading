@@ -1,10 +1,10 @@
 {
   "date": "2026-09-15",
-  "updated_at": "2026-09-15T16:35:27.504558-04:00",
+  "updated_at": "2026-09-15T18:24:51.221421-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-15T16:35:27.504558-04:00",
+    "triggered_at": "2026-09-15T18:24:51.221421-04:00",
     "alert_count": 37,
     "alerts": [
       {
@@ -15,7 +15,7 @@
         "name": "Skyworks Solutions, Inc.",
         "pct": 13.55,
         "price": 90.0,
-        "mkt_cap": 13542550528,
+        "mkt_cap": 13536537600,
         "atr_pct": 5.63,
         "adr_pct": 5.99
       },
@@ -63,7 +63,7 @@
         "name": "Caris Life Sciences, Inc.",
         "pct": 9.4,
         "price": 28.5,
-        "mkt_cap": 8056399872,
+        "mkt_cap": 8053963264,
         "atr_pct": 4.79,
         "adr_pct": 5.93
       },
@@ -75,7 +75,7 @@
         "name": "Qorvo, Inc.",
         "pct": 9.34,
         "price": 118.06,
-        "mkt_cap": 10415446016,
+        "mkt_cap": 10415017984,
         "atr_pct": 4.03,
         "adr_pct": 3.98
       },
@@ -99,7 +99,7 @@
         "name": "Tenable Holdings, Inc.",
         "pct": 8.58,
         "price": 38.09,
-        "mkt_cap": 4195232000,
+        "mkt_cap": 4200259584,
         "atr_pct": 6.8,
         "adr_pct": 6.45
       },
@@ -183,7 +183,7 @@
         "name": "Qualys, Inc.",
         "pct": 7.21,
         "price": 185.37,
-        "mkt_cap": 6412874752,
+        "mkt_cap": 6528176640,
         "atr_pct": 5.68,
         "adr_pct": 5.32
       },
@@ -231,7 +231,7 @@
         "name": "PBF Energy Inc.",
         "pct": 6.14,
         "price": 74.72,
-        "mkt_cap": 8857073664,
+        "mkt_cap": 8857072640,
         "atr_pct": 5.93,
         "adr_pct": 5.93
       },
@@ -327,7 +327,7 @@
         "name": "Murphy Oil Corporation",
         "pct": 5.76,
         "price": 40.4,
-        "mkt_cap": 5791322624,
+        "mkt_cap": 5792597504,
         "atr_pct": 3.46,
         "adr_pct": 3.41
       },
@@ -375,7 +375,7 @@
         "name": "PACS Group, Inc.",
         "pct": -5.52,
         "price": 42.09,
-        "mkt_cap": 6664346112,
+        "mkt_cap": 6661684736,
         "atr_pct": 3.77,
         "adr_pct": 3.71
       },
@@ -423,7 +423,7 @@
         "name": "Crescent Energy Company",
         "pct": 5.35,
         "price": 15.37,
-        "mkt_cap": 6046605824,
+        "mkt_cap": 5078304768,
         "atr_pct": 3.18,
         "adr_pct": 3.06
       },
