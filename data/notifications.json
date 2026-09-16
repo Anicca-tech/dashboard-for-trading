@@ -1,10 +1,10 @@
 {
   "date": "2026-09-16",
-  "updated_at": "2026-09-16T16:35:28.100843-04:00",
+  "updated_at": "2026-09-16T18:17:01.578886-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-16T16:35:28.100843-04:00",
+    "triggered_at": "2026-09-16T18:17:01.578886-04:00",
     "alert_count": 28,
     "alerts": [
       {
@@ -27,7 +27,7 @@
         "name": "Webull Corporation",
         "pct": -11.2,
         "price": 7.69,
-        "mkt_cap": 4149681152,
+        "mkt_cap": 4073888512,
         "atr_pct": 7.37,
         "adr_pct": 6.63
       },
@@ -89,7 +89,7 @@
         "price": 57.73,
         "mkt_cap": 7144330752,
         "atr_pct": 3.56,
-        "adr_pct": 3.05
+        "adr_pct": 3.07
       },
       {
         "type": "stock",
@@ -183,7 +183,7 @@
         "name": "Xometry, Inc.",
         "pct": 6.35,
         "price": 93.15,
-        "mkt_cap": 5339691008,
+        "mkt_cap": 5146151424,
         "atr_pct": 4.9,
         "adr_pct": 4.87
       },
@@ -207,7 +207,7 @@
         "name": "Crescent Energy Company",
         "pct": -6.31,
         "price": 14.4,
-        "mkt_cap": 5665004544,
+        "mkt_cap": 4757813248,
         "atr_pct": 3.67,
         "adr_pct": 3.24
       },
@@ -219,7 +219,7 @@
         "name": "Precigen, Inc.",
         "pct": 6.21,
         "price": 7.43,
-        "mkt_cap": 2661991936,
+        "mkt_cap": 2650659072,
         "atr_pct": 3.87,
         "adr_pct": 4.46
       },
@@ -255,7 +255,7 @@
         "name": "Murphy Oil Corporation",
         "pct": -5.47,
         "price": 38.19,
-        "mkt_cap": 5474519552,
+        "mkt_cap": 5475724800,
         "atr_pct": 3.85,
         "adr_pct": 3.48
       },
@@ -291,7 +291,7 @@
         "name": "Patterson-UTI Energy, Inc.",
         "pct": -5.35,
         "price": 12.03,
-        "mkt_cap": 4588059648,
+        "mkt_cap": 4566800384,
         "atr_pct": 4.97,
         "adr_pct": 4.33
       },
@@ -303,21 +303,9 @@
         "name": "TG Therapeutics, Inc.",
         "pct": 5.3,
         "price": 55.85,
-        "mkt_cap": 8549718016,
+        "mkt_cap": 8548906496,
         "atr_pct": 4.17,
         "adr_pct": 4.99
-      },
-      {
-        "type": "stock",
-        "ticker": "VIST",
-        "label": "VIST",
-        "symbol": "VIST",
-        "name": "Vista Energy S.A.B. de C.V.",
-        "pct": -5.23,
-        "price": 74.26,
-        "mkt_cap": 8214449152,
-        "atr_pct": 4.54,
-        "adr_pct": 4.0
       },
       {
         "type": "stock",
@@ -327,9 +315,21 @@
         "name": "Space Exploration Technologies ",
         "pct": 5.15,
         "price": 150.88,
-        "mkt_cap": 1988866998272,
+        "mkt_cap": 1987721428992,
         "atr_pct": 4.38,
         "adr_pct": 4.52
+      },
+      {
+        "type": "stock",
+        "ticker": "YPF",
+        "label": "YPF",
+        "symbol": "YPF",
+        "name": "YPF Sociedad Anonima",
+        "pct": -5.14,
+        "price": 54.65,
+        "mkt_cap": 21426903040,
+        "atr_pct": 3.72,
+        "adr_pct": 3.43
       },
       {
         "type": "stock",
@@ -339,7 +339,7 @@
         "name": "DigitalOcean Holdings, Inc.",
         "pct": 5.01,
         "price": 123.76,
-        "mkt_cap": 14551645184,
+        "mkt_cap": 14468546560,
         "atr_pct": 7.15,
         "adr_pct": 6.95
       }
