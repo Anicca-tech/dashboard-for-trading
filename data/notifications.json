@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "updated_at": "2026-09-18T17:48:15.235382-04:00",
+  "updated_at": "2026-09-18T19:35:32.187904-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -314,7 +314,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-18T17:48:15.235382-04:00",
+    "triggered_at": "2026-09-18T19:35:32.187904-04:00",
     "alert_count": 38,
     "alerts": [
       {
@@ -577,7 +577,7 @@
         "name": "Webull Corporation",
         "pct": 7.0,
         "price": 8.25,
-        "mkt_cap": 4451868672,
+        "mkt_cap": 4370556416,
         "atr_pct": 6.56,
         "adr_pct": 6.02
       },
@@ -649,7 +649,7 @@
         "name": "FormFactor, Inc.",
         "pct": 6.14,
         "price": 118.38,
-        "mkt_cap": 9247931392,
+        "mkt_cap": 9228284928,
         "atr_pct": 5.34,
         "adr_pct": 5.14
       },
@@ -697,7 +697,7 @@
         "name": "Entegris, Inc.",
         "pct": 5.63,
         "price": 142.25,
-        "mkt_cap": 21735800832,
+        "mkt_cap": 21664675840,
         "atr_pct": 4.27,
         "adr_pct": 3.66
       },
