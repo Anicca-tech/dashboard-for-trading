@@ -1,129 +1,155 @@
 {
-  "generated_at": "2026-09-13T09:56:33.824613-04:00",
-  "week_of": "Week of September 13, 2026",
+  "generated_at": "2026-09-20T09:45:59.213811-04:00",
+  "week_of": "Week of September 20, 2026",
   "new_filings": [
     {
-      "company": "FutureCore Acquisition Corp",
+      "company": "WESTPORT FUEL SYSTEMS INC.  (WPRT)",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Accelevation Holdings Corp.  (ACCV)",
+      "company": "VME Companies, Inc.",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "DYADIC INTERNATIONAL INC  (DYAI)",
+      "company": "FullPAC, Inc.  (GOTV)",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Gold Mountain Acquisition Corp.  (GDMT)",
+      "company": "Greenwave Technology Solutions, Inc.  (GWAV)",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Cuprina Holdings (Cayman) LTD  (CUPR)",
+      "company": "Santa Ana Global Enterprises, S.A.",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Barrel Energy Inc.  (BRLL)",
+      "company": "Skubbs Holdings Ltd  (SKUB)",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Meey Global Corp",
+      "company": "Glucotrack, Inc.  (GCTK)",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Cryptex Digital Market Cap ETF  (BAGZ)",
+      "company": "Pine Tree Acquisition Corp.",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Lixiang Education Holding Co. Ltd.  (LXEH)",
+      "company": "Lakewood-Amedex Biotherapeutics Inc.  (LABT)",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "SeeQC, Inc.  (SEQC)",
+      "company": "BioStem Technologies, Inc.  (BSEM)",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Air Water Ventures Ltd  (WATR)",
+      "company": "Retension Pharmaceuticals, Inc.",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "iOThree Ltd  (IOTR)",
+      "company": "21Shares Injective ETF",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
     },
     {
-      "company": "Eloxx Pharmaceuticals, Inc.  (ELOX)",
+      "company": "Fold Holdings, Inc.  (FLD, FLDDW)",
       "ticker": "",
       "form": "",
-      "filed": "2026-09-11"
+      "filed": "2026-09-18"
+    },
+    {
+      "company": "Polyrizon Ltd.  (PLRZ)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-09-18"
+    },
+    {
+      "company": "SPECTRAL CAPITAL Corp  (FCCN)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-09-18"
+    },
+    {
+      "company": "Live Oak Acquisition Corp. VI",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-09-18"
+    },
+    {
+      "company": "Transten Global Group Ltd",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-09-18"
+    },
+    {
+      "company": "SIYATA PTT  (PTT)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-09-18"
+    },
+    {
+      "company": "TRex Bio, Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-09-18"
+    },
+    {
+      "company": "MapLight Therapeutics, Inc.  (MPLT)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-09-18"
+    }
+  ],
+  "recently_priced": [
+    {
+      "company": "Electra Therapeutics, Inc.  (ETRA)",
+      "ticker": "",
+      "priced_date": "2026-09-18"
     },
     {
       "company": "Haymaker Acquisition Corp V  (HYAC)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-11"
+      "priced_date": "2026-09-18"
     },
     {
-      "company": "Hao Feng Group Ltd.",
+      "company": "Cuprina Holdings (Cayman) LTD  (CUPR)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-11"
+      "priced_date": "2026-09-16"
     },
     {
-      "company": "RUI Holdings Inc  (RUIH)",
+      "company": "Verdera Energy Corp.  (VUECF)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-11"
+      "priced_date": "2026-09-15"
     },
     {
-      "company": "QVC Group, Inc.  (QVCG)",
+      "company": "Laser Photonics Corp  (LASE)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-11"
-    },
-    {
-      "company": "Rent the Runway, Inc.  (RENT)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-11"
-    },
-    {
-      "company": "Elevation Acquisition Group Inc.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-10"
-    },
-    {
-      "company": "Rafex Gold Corp.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-10"
+      "priced_date": "2026-09-14"
     }
   ],
-  "recently_priced": [],
   "delayed_withdrawn": [],
   "weekly_movers": [],
   "sector_trends": []
