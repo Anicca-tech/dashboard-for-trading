@@ -1,11 +1,11 @@
 {
   "date": "2026-09-21",
-  "updated_at": "2026-09-21T18:46:40.786731-04:00",
+  "updated_at": "2026-09-21T19:35:33.880851-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-21T18:46:40.786731-04:00",
-    "alert_count": 40,
+    "triggered_at": "2026-09-21T19:35:33.880851-04:00",
+    "alert_count": 41,
     "alerts": [
       {
         "type": "stock",
@@ -111,7 +111,7 @@
         "name": "DigitalOcean Holdings, Inc.",
         "pct": 12.31,
         "price": 146.16,
-        "mkt_cap": 17087287296,
+        "mkt_cap": 17185427456,
         "atr_pct": 6.8,
         "adr_pct": 7.27
       },
@@ -219,7 +219,7 @@
         "name": "NICE Ltd",
         "pct": 9.12,
         "price": 114.54,
-        "mkt_cap": 6694060032,
+        "mkt_cap": 6711721984,
         "atr_pct": 4.02,
         "adr_pct": 3.71
       },
@@ -339,7 +339,7 @@
         "name": "Shopify Inc.",
         "pct": 7.33,
         "price": 137.92,
-        "mkt_cap": 177453940736,
+        "mkt_cap": 178972524544,
         "atr_pct": 4.56,
         "adr_pct": 4.07
       },
@@ -429,13 +429,25 @@
       },
       {
         "type": "stock",
+        "ticker": "WIX",
+        "label": "WIX",
+        "symbol": "WIX",
+        "name": "Wix.com Ltd.",
+        "pct": 6.42,
+        "price": 83.53,
+        "mkt_cap": 3495689728,
+        "atr_pct": 6.56,
+        "adr_pct": 6.02
+      },
+      {
+        "type": "stock",
         "ticker": "PBF",
         "label": "PBF",
         "symbol": "PBF",
         "name": "PBF Energy Inc.",
         "pct": -6.1,
         "price": 72.48,
-        "mkt_cap": 8591550464,
+        "mkt_cap": 8591551488,
         "atr_pct": 5.99,
         "adr_pct": 6.02
       },
@@ -483,7 +495,7 @@
         "name": "Marathon Petroleum Corporation",
         "pct": -5.3,
         "price": 402.38,
-        "mkt_cap": 117469470720,
+        "mkt_cap": 112998268928,
         "atr_pct": 3.73,
         "adr_pct": 3.42
       }
