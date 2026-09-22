@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "updated_at": "2026-09-22T16:35:33.849334-04:00",
+  "updated_at": "2026-09-22T18:23:05.232427-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -482,8 +482,8 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-22T16:35:33.849334-04:00",
-    "alert_count": 46,
+    "triggered_at": "2026-09-22T18:23:05.232427-04:00",
+    "alert_count": 45,
     "alerts": [
       {
         "type": "stock",
@@ -571,15 +571,15 @@
       },
       {
         "type": "stock",
-        "ticker": "BULL",
-        "label": "BULL",
-        "symbol": "BULL",
-        "name": "Webull Corporation",
-        "pct": -11.2,
-        "price": 7.69,
-        "mkt_cap": 4149681152,
-        "atr_pct": 6.6,
-        "adr_pct": 5.59
+        "ticker": "CLDX",
+        "label": "CLDX",
+        "symbol": "CLDX",
+        "name": "Celldex Therapeutics, Inc.",
+        "pct": -11.56,
+        "price": 33.51,
+        "mkt_cap": 2631524608,
+        "atr_pct": 6.28,
+        "adr_pct": 5.05
       },
       {
         "type": "stock",
@@ -592,18 +592,6 @@
         "mkt_cap": 9845878784,
         "atr_pct": 5.83,
         "adr_pct": 5.87
-      },
-      {
-        "type": "stock",
-        "ticker": "MTDR",
-        "label": "MTDR",
-        "symbol": "MTDR",
-        "name": "Matador Resources Company",
-        "pct": -8.61,
-        "price": 57.73,
-        "mkt_cap": 7144330752,
-        "atr_pct": 4.02,
-        "adr_pct": 3.18
       },
       {
         "type": "stock",
@@ -643,30 +631,6 @@
       },
       {
         "type": "stock",
-        "ticker": "ELVN",
-        "label": "ELVN",
-        "symbol": "ELVN",
-        "name": "Enliven Therapeutics, Inc.",
-        "pct": -7.95,
-        "price": 49.12,
-        "mkt_cap": 3599059712,
-        "atr_pct": 4.63,
-        "adr_pct": 3.96
-      },
-      {
-        "type": "stock",
-        "ticker": "SM",
-        "label": "SM",
-        "symbol": "SM",
-        "name": "SM Energy Company",
-        "pct": -7.58,
-        "price": 38.16,
-        "mkt_cap": 9076510720,
-        "atr_pct": 4.62,
-        "adr_pct": 3.53
-      },
-      {
-        "type": "stock",
         "ticker": "ERO",
         "label": "ERO",
         "symbol": "ERO",
@@ -679,6 +643,18 @@
       },
       {
         "type": "stock",
+        "ticker": "WGS",
+        "label": "WGS",
+        "symbol": "WGS",
+        "name": "GeneDx Holdings Corp.",
+        "pct": -7.19,
+        "price": 90.8,
+        "mkt_cap": 2707886848,
+        "atr_pct": 6.19,
+        "adr_pct": 5.64
+      },
+      {
+        "type": "stock",
         "ticker": "SHOP",
         "label": "SHOP",
         "symbol": "SHOP",
@@ -688,18 +664,6 @@
         "mkt_cap": 191715508224,
         "atr_pct": 4.46,
         "adr_pct": 4.11
-      },
-      {
-        "type": "stock",
-        "ticker": "CHYM",
-        "label": "CHYM",
-        "symbol": "CHYM",
-        "name": "Chime Financial, Inc.",
-        "pct": -7.02,
-        "price": 31.25,
-        "mkt_cap": 11830785024,
-        "atr_pct": 5.64,
-        "adr_pct": 4.18
       },
       {
         "type": "stock",
@@ -739,6 +703,18 @@
       },
       {
         "type": "stock",
+        "ticker": "TRMD",
+        "label": "TRMD",
+        "symbol": "TRMD",
+        "name": "TORM plc",
+        "pct": -6.71,
+        "price": 34.63,
+        "mkt_cap": 3551434240,
+        "atr_pct": 4.9,
+        "adr_pct": 3.52
+      },
+      {
+        "type": "stock",
         "ticker": "ALAB",
         "label": "ALAB",
         "symbol": "ALAB",
@@ -748,18 +724,6 @@
         "mkt_cap": 63054893056,
         "atr_pct": 6.48,
         "adr_pct": 6.13
-      },
-      {
-        "type": "stock",
-        "ticker": "NOG",
-        "label": "NOG",
-        "symbol": "NOG",
-        "name": "Northern Oil and Gas, Inc.",
-        "pct": -6.64,
-        "price": 25.32,
-        "mkt_cap": 2697824000,
-        "atr_pct": 4.12,
-        "adr_pct": 3.31
       },
       {
         "type": "stock",
@@ -787,18 +751,6 @@
       },
       {
         "type": "stock",
-        "ticker": "VAL",
-        "label": "VAL",
-        "symbol": "VAL",
-        "name": "Valaris Limited",
-        "pct": -6.47,
-        "price": 82.52,
-        "mkt_cap": 5729842688,
-        "atr_pct": 4.86,
-        "adr_pct": 4.27
-      },
-      {
-        "type": "stock",
         "ticker": "RLAY",
         "label": "RLAY",
         "symbol": "RLAY",
@@ -811,27 +763,27 @@
       },
       {
         "type": "stock",
-        "ticker": "CHRD",
-        "label": "CHRD",
-        "symbol": "CHRD",
-        "name": "Chord Energy Corporation",
-        "pct": -6.35,
-        "price": 147.03,
-        "mkt_cap": 8042228224,
-        "atr_pct": 3.46,
-        "adr_pct": 3.01
+        "ticker": "GEN",
+        "label": "GEN",
+        "symbol": "GEN",
+        "name": "Gen Digital Inc.",
+        "pct": -6.38,
+        "price": 27.29,
+        "mkt_cap": 16335439872,
+        "atr_pct": 3.61,
+        "adr_pct": 3.1
       },
       {
         "type": "stock",
-        "ticker": "CRGY",
-        "label": "CRGY",
-        "symbol": "CRGY",
-        "name": "Crescent Energy Company",
-        "pct": -6.31,
-        "price": 14.4,
-        "mkt_cap": 5665004544,
-        "atr_pct": 4.18,
-        "adr_pct": 3.28
+        "ticker": "PAY",
+        "label": "PAY",
+        "symbol": "PAY",
+        "name": "Paymentus Holdings, Inc.",
+        "pct": -6.38,
+        "price": 32.3,
+        "mkt_cap": 4067850496,
+        "atr_pct": 4.87,
+        "adr_pct": 4.49
       },
       {
         "type": "stock",
@@ -847,6 +799,42 @@
       },
       {
         "type": "stock",
+        "ticker": "GDDY",
+        "label": "GDDY",
+        "symbol": "GDDY",
+        "name": "GoDaddy Inc.",
+        "pct": -6.23,
+        "price": 98.24,
+        "mkt_cap": 12441870336,
+        "atr_pct": 4.73,
+        "adr_pct": 4.1
+      },
+      {
+        "type": "stock",
+        "ticker": "ECO",
+        "label": "ECO",
+        "symbol": "ECO",
+        "name": "Okeanis Eco Tankers Corp.",
+        "pct": -6.16,
+        "price": 77.54,
+        "mkt_cap": 3027522560,
+        "atr_pct": 4.38,
+        "adr_pct": 3.64
+      },
+      {
+        "type": "stock",
+        "ticker": "VIRT",
+        "label": "VIRT",
+        "symbol": "VIRT",
+        "name": "Virtu Financial, Inc.",
+        "pct": -5.95,
+        "price": 54.49,
+        "mkt_cap": 4811504128,
+        "atr_pct": 3.83,
+        "adr_pct": 3.47
+      },
+      {
+        "type": "stock",
         "ticker": "AYA",
         "label": "AYA",
         "symbol": "AYA",
@@ -859,6 +847,30 @@
       },
       {
         "type": "stock",
+        "ticker": "PRM",
+        "label": "PRM",
+        "symbol": "PRM",
+        "name": "Perimeter Solutions, SA",
+        "pct": -5.88,
+        "price": 29.77,
+        "mkt_cap": 4872960000,
+        "atr_pct": 3.72,
+        "adr_pct": 3.59
+      },
+      {
+        "type": "stock",
+        "ticker": "DBX",
+        "label": "DBX",
+        "symbol": "DBX",
+        "name": "Dropbox, Inc.",
+        "pct": -5.86,
+        "price": 33.9,
+        "mkt_cap": 7371305472,
+        "atr_pct": 4.07,
+        "adr_pct": 3.34
+      },
+      {
+        "type": "stock",
         "ticker": "EGO",
         "label": "EGO",
         "symbol": "EGO",
@@ -868,6 +880,18 @@
         "mkt_cap": 11697343488,
         "atr_pct": 4.38,
         "adr_pct": 3.95
+      },
+      {
+        "type": "stock",
+        "ticker": "INSP",
+        "label": "INSP",
+        "symbol": "INSP",
+        "name": "Inspire Medical Systems, Inc.",
+        "pct": -5.84,
+        "price": 71.3,
+        "mkt_cap": 2061309952,
+        "atr_pct": 5.48,
+        "adr_pct": 4.99
       },
       {
         "type": "stock",
@@ -931,6 +955,18 @@
       },
       {
         "type": "stock",
+        "ticker": "SEZL",
+        "label": "SEZL",
+        "symbol": "SEZL",
+        "name": "Sezzle Inc.",
+        "pct": -5.62,
+        "price": 110.0,
+        "mkt_cap": 3704251648,
+        "atr_pct": 4.73,
+        "adr_pct": 4.42
+      },
+      {
+        "type": "stock",
         "ticker": "OUST",
         "label": "OUST",
         "symbol": "OUST",
@@ -940,6 +976,18 @@
         "mkt_cap": 2902521600,
         "atr_pct": 5.03,
         "adr_pct": 5.13
+      },
+      {
+        "type": "stock",
+        "ticker": "VVX",
+        "label": "VVX",
+        "symbol": "VVX",
+        "name": "V2X, Inc.",
+        "pct": -5.59,
+        "price": 72.95,
+        "mkt_cap": 2286643712,
+        "atr_pct": 4.08,
+        "adr_pct": 3.7
       },
       {
         "type": "stock",
@@ -955,87 +1003,27 @@
       },
       {
         "type": "stock",
-        "ticker": "APA",
-        "label": "APA",
-        "symbol": "APA",
-        "name": "APA Corporation",
-        "pct": -5.53,
-        "price": 44.79,
-        "mkt_cap": 15692244992,
-        "atr_pct": 3.72,
-        "adr_pct": 3.11
-      },
-      {
-        "type": "stock",
-        "ticker": "ERAS",
-        "label": "ERAS",
-        "symbol": "ERAS",
-        "name": "Erasca, Inc.",
-        "pct": -5.48,
-        "price": 15.36,
-        "mkt_cap": 5372344832,
-        "atr_pct": 6.42,
-        "adr_pct": 6.79
-      },
-      {
-        "type": "stock",
-        "ticker": "MUR",
-        "label": "MUR",
-        "symbol": "MUR",
-        "name": "Murphy Oil Corporation",
-        "pct": -5.47,
-        "price": 38.19,
-        "mkt_cap": 5474519552,
-        "atr_pct": 3.94,
-        "adr_pct": 3.22
-      },
-      {
-        "type": "stock",
-        "ticker": "HOOD",
-        "label": "HOOD",
-        "symbol": "HOOD",
-        "name": "Robinhood Markets, Inc.",
-        "pct": -5.46,
-        "price": 104.42,
-        "mkt_cap": 93882171392,
-        "atr_pct": 5.86,
-        "adr_pct": 5.64
-      },
-      {
-        "type": "stock",
-        "ticker": "SSL",
-        "label": "SSL",
-        "symbol": "SSL",
-        "name": "Sasol Ltd.",
-        "pct": -5.43,
-        "price": 14.29,
-        "mkt_cap": 9160428544,
-        "atr_pct": 4.35,
-        "adr_pct": 3.12
-      },
-      {
-        "type": "stock",
-        "ticker": "PTEN",
-        "label": "PTEN",
-        "symbol": "PTEN",
-        "name": "Patterson-UTI Energy, Inc.",
-        "pct": -5.35,
-        "price": 12.03,
-        "mkt_cap": 4588059648,
-        "atr_pct": 4.85,
+        "ticker": "VG",
+        "label": "VG",
+        "symbol": "VG",
+        "name": "Venture Global, Inc.",
+        "pct": -5.49,
+        "price": 12.91,
+        "mkt_cap": 32276199424,
+        "atr_pct": 5.22,
         "adr_pct": 4.24
       },
       {
         "type": "stock",
-        "ticker": "VIST",
-        "label": "VIST",
-        "symbol": "VIST",
-        "name": "Vista Energy S.A.B. de C.V.",
-        "pct": -5.23,
-        "price": 74.26,
-        "mkt_cap": 8214449152,
-        "atr_pct": 4.6,
-        "adr_pct": 3.86
+        "ticker": "LPG",
+        "label": "LPG",
+        "symbol": "LPG",
+        "name": "Dorian LPG Ltd.",
+        "pct": -5.47,
+        "price": 53.54,
+        "mkt_cap": 2290584832,
+        "atr_pct": 3.81,
+        "adr_pct": 3.46
       }
     ],
     "etf_top5": [],
