@@ -1,27 +1,6 @@
 {
-  "generated_at": "2026-09-18T19:13:23.826740-04:00",
-  "as_of": "Sep 18, 2026 07:13 PM ET",
-  "count": 2,
-  "movers": [
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "ah_pct": 7.97,
-      "ah_price": 195.74,
-      "reg_price": 181.29,
-      "mkt_cap": 110938972160,
-      "volume": 11491192,
-      "catalyst": "Accenture (ACN) Stock Trades Down, Here Is Why"
-    },
-    {
-      "ticker": "PSKY",
-      "name": "Paramount Skydance Corporation",
-      "ah_pct": 7.84,
-      "ah_price": 11.01,
-      "reg_price": 10.21,
-      "mkt_cap": 11455066112,
-      "volume": 78574491,
-      "catalyst": "Paramount in Advanced Settlement Talks With California\u2019s Attorney General"
-    }
-  ]
+  "generated_at": "2026-09-21T20:01:28.359197-04:00",
+  "as_of": "Sep 21, 2026 08:01 PM ET",
+  "count": 0,
+  "movers": []
 }
