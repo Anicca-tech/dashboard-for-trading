@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-09-23T19:36:25.680987-04:00",
-  "as_of": "Sep 23, 2026 07:36 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-09-24T19:50:38.068422-04:00",
+  "as_of": "Sep 24, 2026 07:50 PM ET",
+  "count": 2,
+  "movers": [
+    {
+      "ticker": "AKAM",
+      "name": "Akamai Technologies, Inc.",
+      "ah_pct": 21.28,
+      "ah_price": 133.91,
+      "reg_price": 110.41,
+      "mkt_cap": 15867751424,
+      "volume": 6155855,
+      "catalyst": "Dow Jones Futures: Market Rally Resilient As Yields, Oil Prices Keep Rising; Tesla Event O"
+    },
+    {
+      "ticker": "SECZ",
+      "name": "Securitize Corp.",
+      "ah_pct": 6.29,
+      "ah_price": 17.57,
+      "reg_price": 16.53,
+      "mkt_cap": 2698781696,
+      "volume": 10352138,
+      "catalyst": "Post-market move"
+    }
+  ]
 }
