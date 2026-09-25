@@ -1,10 +1,10 @@
 {
   "date": "2026-09-25",
-  "updated_at": "2026-09-25T16:35:33.004334-04:00",
+  "updated_at": "2026-09-25T18:43:59.547999-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-25T16:35:33.004334-04:00",
+    "triggered_at": "2026-09-25T18:43:59.547999-04:00",
     "alert_count": 31,
     "alerts": [
       {
@@ -39,7 +39,7 @@
         "name": "Veeco Instruments Inc.",
         "pct": 9.28,
         "price": 49.67,
-        "mkt_cap": 3036308992,
+        "mkt_cap": 3031533056,
         "atr_pct": 4.59,
         "adr_pct": 4.7
       },
@@ -159,7 +159,7 @@
         "name": "Tenable Holdings, Inc.",
         "pct": -6.66,
         "price": 33.49,
-        "mkt_cap": 3693008640,
+        "mkt_cap": 3688588288,
         "atr_pct": 6.83,
         "adr_pct": 6.39
       },
@@ -267,7 +267,7 @@
         "name": "Qualys, Inc.",
         "pct": -5.75,
         "price": 172.43,
-        "mkt_cap": 6072468480,
+        "mkt_cap": 5965215744,
         "atr_pct": 5.93,
         "adr_pct": 5.49
       },
@@ -363,7 +363,7 @@
         "name": "Perrigo Company plc",
         "pct": 5.04,
         "price": 15.42,
-        "mkt_cap": 2139821824,
+        "mkt_cap": 2133631104,
         "atr_pct": 4.23,
         "adr_pct": 4.61
       },
