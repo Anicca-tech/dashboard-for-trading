@@ -1,153 +1,47 @@
 {
-  "generated_at": "2026-09-20T09:45:59.213811-04:00",
-  "week_of": "Week of September 20, 2026",
-  "new_filings": [
+  "generated_at": "2026-09-27T10:50:36.105699-04:00",
+  "week_of": "Week of September 27, 2026",
+  "new_filings": [],
+  "recently_priced": [
     {
-      "company": "WESTPORT FUEL SYSTEMS INC.  (WPRT)",
+      "company": "Star Fashion Culture Holdings Ltd  (STFS)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
+      "priced_date": "2026-09-25"
     },
     {
-      "company": "VME Companies, Inc.",
+      "company": "Bluerock Acquisition Corp. II  (BRRK)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
+      "priced_date": "2026-09-25"
     },
     {
-      "company": "FullPAC, Inc.  (GOTV)",
+      "company": "RUI Holdings Inc",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
+      "priced_date": "2026-09-24"
     },
     {
-      "company": "Greenwave Technology Solutions, Inc.  (GWAV)",
+      "company": "InnovAge Holding Corp.  (INNV)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "Santa Ana Global Enterprises, S.A.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "Skubbs Holdings Ltd  (SKUB)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "Glucotrack, Inc.  (GCTK)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "Pine Tree Acquisition Corp.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "Lakewood-Amedex Biotherapeutics Inc.  (LABT)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "BioStem Technologies, Inc.  (BSEM)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "Retension Pharmaceuticals, Inc.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "21Shares Injective ETF",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "Fold Holdings, Inc.  (FLD, FLDDW)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "Polyrizon Ltd.  (PLRZ)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "SPECTRAL CAPITAL Corp  (FCCN)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
+      "priced_date": "2026-09-24"
     },
     {
       "company": "Live Oak Acquisition Corp. VI",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
+      "priced_date": "2026-09-23"
     },
     {
-      "company": "Transten Global Group Ltd",
+      "company": "Black Hawk Acquisition Corp  (BKHA, BKHAR, BKHAU)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
+      "priced_date": "2026-09-22"
     },
     {
-      "company": "SIYATA PTT  (PTT)",
+      "company": "Orion180 Insurance Group Inc.  (OIG)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
+      "priced_date": "2026-09-21"
     },
     {
-      "company": "TRex Bio, Inc.",
+      "company": "Leader's Advantage Acquisition Corp.  (LEDR, LEDRU)",
       "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    },
-    {
-      "company": "MapLight Therapeutics, Inc.  (MPLT)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-09-18"
-    }
-  ],
-  "recently_priced": [
-    {
-      "company": "Electra Therapeutics, Inc.  (ETRA)",
-      "ticker": "",
-      "priced_date": "2026-09-18"
-    },
-    {
-      "company": "Haymaker Acquisition Corp V  (HYAC)",
-      "ticker": "",
-      "priced_date": "2026-09-18"
-    },
-    {
-      "company": "Cuprina Holdings (Cayman) LTD  (CUPR)",
-      "ticker": "",
-      "priced_date": "2026-09-16"
-    },
-    {
-      "company": "Verdera Energy Corp.  (VUECF)",
-      "ticker": "",
-      "priced_date": "2026-09-15"
-    },
-    {
-      "company": "Laser Photonics Corp  (LASE)",
-      "ticker": "",
-      "priced_date": "2026-09-14"
+      "priced_date": "2026-09-21"
     }
   ],
   "delayed_withdrawn": [],
