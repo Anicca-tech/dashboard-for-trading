@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "updated_at": "2026-09-29T14:05:28.137843-04:00",
+  "updated_at": "2026-09-29T15:20:24.542265-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
@@ -143,5 +143,183 @@
     "etf_top5": [],
     "etf_bottom5": [],
     "indices_range": []
+  },
+  "n1": {
+    "slot": "n1",
+    "time_label": "10:00 AM ET",
+    "triggered_at": "2026-09-29T15:20:24.542265-04:00",
+    "alert_count": 14,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "IOVA",
+        "label": "IOVA",
+        "symbol": "IOVA",
+        "name": "Iovance Biotherapeutics, Inc.",
+        "pct": 35.44,
+        "price": 14.88,
+        "mkt_cap": 6742479872,
+        "atr_pct": 5.97,
+        "adr_pct": 6.36
+      },
+      {
+        "type": "stock",
+        "ticker": "NESR",
+        "label": "NESR",
+        "symbol": "NESR",
+        "name": "National Energy Services Reunit",
+        "pct": -11.98,
+        "price": 26.24,
+        "mkt_cap": 2646349824,
+        "atr_pct": 6.11,
+        "adr_pct": 4.47
+      },
+      {
+        "type": "stock",
+        "ticker": "BE",
+        "label": "BE",
+        "symbol": "BE",
+        "name": "Bloom Energy Corporation",
+        "pct": 11.13,
+        "price": 292.12,
+        "mkt_cap": 86037331968,
+        "atr_pct": 7.13,
+        "adr_pct": 7.07
+      },
+      {
+        "type": "stock",
+        "ticker": "MGNI",
+        "label": "MGNI",
+        "symbol": "MGNI",
+        "name": "Magnite, Inc.",
+        "pct": 10.51,
+        "price": 25.86,
+        "mkt_cap": 3708948992,
+        "atr_pct": 4.33,
+        "adr_pct": 4.36
+      },
+      {
+        "type": "stock",
+        "ticker": "WRBY",
+        "label": "WRBY",
+        "symbol": "WRBY",
+        "name": "Warby Parker Inc.",
+        "pct": 10.3,
+        "price": 27.2,
+        "mkt_cap": 3362139136,
+        "atr_pct": 6.5,
+        "adr_pct": 6.36
+      },
+      {
+        "type": "stock",
+        "ticker": "ABCL",
+        "label": "ABCL",
+        "symbol": "ABCL",
+        "name": "AbCellera Biologics Inc.",
+        "pct": 7.33,
+        "price": 14.94,
+        "mkt_cap": 4841267200,
+        "atr_pct": 5.42,
+        "adr_pct": 5.96
+      },
+      {
+        "type": "stock",
+        "ticker": "SMMT",
+        "label": "SMMT",
+        "symbol": "SMMT",
+        "name": "Summit Therapeutics Inc.",
+        "pct": 7.04,
+        "price": 16.57,
+        "mkt_cap": 13218711552,
+        "atr_pct": 6.81,
+        "adr_pct": 6.38
+      },
+      {
+        "type": "stock",
+        "ticker": "AXTI",
+        "label": "AXTI",
+        "symbol": "AXTI",
+        "name": "AXT Inc",
+        "pct": 6.15,
+        "price": 78.2,
+        "mkt_cap": 5127824896,
+        "atr_pct": 8.13,
+        "adr_pct": 8.59
+      },
+      {
+        "type": "stock",
+        "ticker": "DUOL",
+        "label": "DUOL",
+        "symbol": "DUOL",
+        "name": "Duolingo, Inc.",
+        "pct": 5.72,
+        "price": 141.98,
+        "mkt_cap": 6642714112,
+        "atr_pct": 5.23,
+        "adr_pct": 5.04
+      },
+      {
+        "type": "stock",
+        "ticker": "HAFN",
+        "label": "HAFN",
+        "symbol": "HAFN",
+        "name": "Hafnia Limited",
+        "pct": 5.7,
+        "price": 9.65,
+        "mkt_cap": 5165945344,
+        "atr_pct": 3.71,
+        "adr_pct": 3.24
+      },
+      {
+        "type": "stock",
+        "ticker": "NEOG",
+        "label": "NEOG",
+        "symbol": "NEOG",
+        "name": "Neogen Corporation",
+        "pct": -5.54,
+        "price": 12.96,
+        "mkt_cap": 2826653696,
+        "atr_pct": 4.13,
+        "adr_pct": 4.05
+      },
+      {
+        "type": "stock",
+        "ticker": "FA",
+        "label": "FA",
+        "symbol": "FA",
+        "name": "First Advantage Corporation",
+        "pct": -5.21,
+        "price": 17.64,
+        "mkt_cap": 3029735168,
+        "atr_pct": 4.34,
+        "adr_pct": 3.68
+      },
+      {
+        "type": "stock",
+        "ticker": "LITE",
+        "label": "LITE",
+        "symbol": "LITE",
+        "name": "Lumentum Holdings Inc.",
+        "pct": 5.19,
+        "price": 969.17,
+        "mkt_cap": 86934544384,
+        "atr_pct": 6.25,
+        "adr_pct": 6.24
+      },
+      {
+        "type": "stock",
+        "ticker": "KMX",
+        "label": "KMX",
+        "symbol": "KMX",
+        "name": "CarMax Inc",
+        "pct": 5.06,
+        "price": 59.41,
+        "mkt_cap": 8430938624,
+        "atr_pct": 4.4,
+        "adr_pct": 3.85
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": []
   }
 }
