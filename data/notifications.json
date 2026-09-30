@@ -1,10 +1,10 @@
 {
   "date": "2026-09-30",
-  "updated_at": "2026-09-30T16:56:36.186244-04:00",
+  "updated_at": "2026-09-30T19:10:05.749663-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-09-30T16:35:29.886456-04:00",
+    "triggered_at": "2026-09-30T19:10:05.749663-04:00",
     "alert_count": 21,
     "alerts": [
       {
@@ -51,7 +51,7 @@
         "name": "FormFactor, Inc.",
         "pct": 9.59,
         "price": 149.31,
-        "mkt_cap": 11639426048,
+        "mkt_cap": 11664205824,
         "atr_pct": 4.95,
         "adr_pct": 5.06
       },
@@ -63,7 +63,7 @@
         "name": "Zeta Global Holdings Corp.",
         "pct": 9.01,
         "price": 31.57,
-        "mkt_cap": 7924499456,
+        "mkt_cap": 7869062656,
         "atr_pct": 4.64,
         "adr_pct": 4.84
       },
@@ -183,7 +183,7 @@
         "name": "Precigen, Inc.",
         "pct": 6.34,
         "price": 8.56,
-        "mkt_cap": 3051734016,
+        "mkt_cap": 3064781824,
         "atr_pct": 5.39,
         "adr_pct": 5.17
       },
@@ -255,7 +255,7 @@
         "name": "Spyre Therapeutics, Inc.",
         "pct": 5.09,
         "price": 89.03,
-        "mkt_cap": 7731476992,
+        "mkt_cap": 7850109952,
         "atr_pct": 4.54,
         "adr_pct": 4.49
       }
