@@ -1,6 +1,17 @@
 {
-  "generated_at": "2026-09-29T20:19:59.114999-04:00",
-  "as_of": "Sep 29, 2026 08:19 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-09-30T20:29:53.421357-04:00",
+  "as_of": "Sep 30, 2026 08:29 PM ET",
+  "count": 1,
+  "movers": [
+    {
+      "ticker": "NU",
+      "name": "Nu Holdings Ltd.",
+      "ah_pct": 6.08,
+      "ah_price": 13.43,
+      "reg_price": 12.66,
+      "mkt_cap": 61156519936,
+      "volume": 103479720,
+      "catalyst": "NU Stock Pops After Hours: Monzo Deal Scare Meets Company Denial"
+    }
+  ]
 }
