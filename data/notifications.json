@@ -1,10 +1,10 @@
 {
   "date": "2026-10-01",
-  "updated_at": "2026-10-01T17:12:36.447155-04:00",
+  "updated_at": "2026-10-01T19:23:17.852868-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-01T16:35:29.840855-04:00",
+    "triggered_at": "2026-10-01T19:23:17.852868-04:00",
     "alert_count": 38,
     "alerts": [
       {
@@ -147,7 +147,7 @@
         "name": "Caris Life Sciences, Inc.",
         "pct": -7.44,
         "price": 28.35,
-        "mkt_cap": 8011574272,
+        "mkt_cap": 8013998080,
         "atr_pct": 6.14,
         "adr_pct": 5.42
       },
@@ -183,7 +183,7 @@
         "name": "PBF Energy Inc.",
         "pct": 6.99,
         "price": 82.34,
-        "mkt_cap": 9760322560,
+        "mkt_cap": 9760323584,
         "atr_pct": 6.12,
         "adr_pct": 6.11
       },
@@ -279,7 +279,7 @@
         "name": "Marathon Petroleum Corporation",
         "pct": 6.25,
         "price": 420.15,
-        "mkt_cap": 122657177600,
+        "mkt_cap": 117988524032,
         "atr_pct": 4.15,
         "adr_pct": 3.97
       },
@@ -291,7 +291,7 @@
         "name": "Cadence Design Systems, Inc.",
         "pct": 6.22,
         "price": 350.73,
-        "mkt_cap": 96736952320,
+        "mkt_cap": 96588587008,
         "atr_pct": 3.29,
         "adr_pct": 3.54
       },
