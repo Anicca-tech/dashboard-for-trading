@@ -1,10 +1,10 @@
 {
   "date": "2026-10-02",
-  "updated_at": "2026-10-02T16:52:51.260935-04:00",
+  "updated_at": "2026-10-02T19:12:05.466402-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-02T16:35:31.727015-04:00",
+    "triggered_at": "2026-10-02T19:12:05.466402-04:00",
     "alert_count": 28,
     "alerts": [
       {
@@ -159,7 +159,7 @@
         "name": "Veeco Instruments Inc.",
         "pct": 7.88,
         "price": 57.38,
-        "mkt_cap": 3502101504,
+        "mkt_cap": 3507618816,
         "atr_pct": 4.64,
         "adr_pct": 4.8
       },
@@ -195,7 +195,7 @@
         "name": "Ultra Clean Holdings, Inc.",
         "pct": -7.57,
         "price": 72.69,
-        "mkt_cap": 3291187200,
+        "mkt_cap": 3258573056,
         "atr_pct": 5.5,
         "adr_pct": 5.2
       },
@@ -219,7 +219,7 @@
         "name": "Space Exploration Technologies ",
         "pct": 7.35,
         "price": 158.96,
-        "mkt_cap": 2095375843328,
+        "mkt_cap": 2094168801280,
         "atr_pct": 3.9,
         "adr_pct": 4.28
       },
