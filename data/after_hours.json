@@ -1,27 +1,6 @@
 {
-  "generated_at": "2026-10-01T20:41:03.658530-04:00",
-  "as_of": "Oct 01, 2026 08:41 PM ET",
-  "count": 2,
-  "movers": [
-    {
-      "ticker": "NKE",
-      "name": "Nike, Inc.",
-      "ah_pct": -8.71,
-      "ah_price": 32.09,
-      "reg_price": 35.15,
-      "mkt_cap": 52144984064,
-      "volume": 95217681,
-      "catalyst": "Earnings AH (Oct 01)"
-    },
-    {
-      "ticker": "FICO",
-      "name": "Fair Isaac Corporation",
-      "ah_pct": -6.35,
-      "ah_price": 619.76,
-      "reg_price": 661.75,
-      "mkt_cap": 14292235264,
-      "volume": 2968063,
-      "catalyst": "FICO stock tumbles on report of credit bureau requirement change"
-    }
-  ]
+  "generated_at": "2026-10-02T20:24:06.920446-04:00",
+  "as_of": "Oct 02, 2026 08:24 PM ET",
+  "count": 0,
+  "movers": []
 }
