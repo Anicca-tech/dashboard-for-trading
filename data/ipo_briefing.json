@@ -1,47 +1,153 @@
 {
-  "generated_at": "2026-09-27T10:50:36.105699-04:00",
-  "week_of": "Week of September 27, 2026",
-  "new_filings": [],
+  "generated_at": "2026-10-04T11:00:27.478388-04:00",
+  "week_of": "Week of October 04, 2026",
+  "new_filings": [
+    {
+      "company": "Canary PEPE ETF",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "Sunshine Biopharma Inc.  (SBFM, SBFMW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "Youmi Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "Vertical Data Inc.  (VDTA)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "HCW Biologics Inc.  (HCWB)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "Allarity Acquisition Corp.  (ALLN)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "BioStem Technologies, Inc.  (BSEM)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "LPC LTD",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "Arca Nova Acquisition Corp",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "T3 Defense Inc.  (DFNS, DFNSW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "GEORGIA BANKING CO INC",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-02"
+    },
+    {
+      "company": "CitroTech Inc.  (CITR)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    },
+    {
+      "company": "Uranium Royalty Corp.  (UROY)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    },
+    {
+      "company": "INTERPACE BIOSCIENCES, INC.  (IDXG, IDXGD)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    },
+    {
+      "company": "AKANDA CORP.  (AKAN)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    },
+    {
+      "company": "TOP Financial Group Ltd  (TOP)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    },
+    {
+      "company": "WhiteHawk Minerals Corp.  (WHK)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    },
+    {
+      "company": "VSEE HEALTH, INC.  (VSEE, VSEED, VSEEW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    },
+    {
+      "company": "POP GLOBAL ACQUISITION Ltd",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    },
+    {
+      "company": "Essential Minerals Acquisition Corp",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-01"
+    }
+  ],
   "recently_priced": [
     {
-      "company": "Star Fashion Culture Holdings Ltd  (STFS)",
+      "company": "Southport Acquisition Corp. II",
       "ticker": "",
-      "priced_date": "2026-09-25"
+      "priced_date": "2026-10-02"
     },
     {
-      "company": "Bluerock Acquisition Corp. II  (BRRK)",
+      "company": "Accelevation Holdings Corp.  (ACCV)",
       "ticker": "",
-      "priced_date": "2026-09-25"
+      "priced_date": "2026-10-01"
     },
     {
-      "company": "RUI Holdings Inc",
+      "company": "NewGenIvf Group Ltd  (NIVF, NIVFW)",
       "ticker": "",
-      "priced_date": "2026-09-24"
+      "priced_date": "2026-09-30"
     },
     {
-      "company": "InnovAge Holding Corp.  (INNV)",
+      "company": "ROZE AI INC.  (ROZE)",
       "ticker": "",
-      "priced_date": "2026-09-24"
+      "priced_date": "2026-09-28"
     },
     {
-      "company": "Live Oak Acquisition Corp. VI",
+      "company": "ADARx Pharmaceuticals, Inc.  (ADRX)",
       "ticker": "",
-      "priced_date": "2026-09-23"
-    },
-    {
-      "company": "Black Hawk Acquisition Corp  (BKHA, BKHAR, BKHAU)",
-      "ticker": "",
-      "priced_date": "2026-09-22"
-    },
-    {
-      "company": "Orion180 Insurance Group Inc.  (OIG)",
-      "ticker": "",
-      "priced_date": "2026-09-21"
-    },
-    {
-      "company": "Leader's Advantage Acquisition Corp.  (LEDR, LEDRU)",
-      "ticker": "",
-      "priced_date": "2026-09-21"
+      "priced_date": "2026-09-28"
     }
   ],
   "delayed_withdrawn": [],
