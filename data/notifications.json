@@ -1,10 +1,10 @@
 {
   "date": "2026-10-05",
-  "updated_at": "2026-10-05T18:51:36.276787-04:00",
+  "updated_at": "2026-10-05T20:55:40.531013-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-05T16:35:35.419871-04:00",
+    "triggered_at": "2026-10-05T20:55:40.531013-04:00",
     "alert_count": 27,
     "alerts": [
       {
@@ -16,8 +16,8 @@
         "pct": 33.49,
         "price": 192.26,
         "mkt_cap": 20861413376,
-        "atr_pct": 4.15,
-        "adr_pct": 3.3
+        "atr_pct": NaN,
+        "adr_pct": 3.36
       },
       {
         "type": "stock",
@@ -28,8 +28,8 @@
         "pct": 30.93,
         "price": 28.15,
         "mkt_cap": 14284519424,
-        "atr_pct": 4.62,
-        "adr_pct": 4.3
+        "atr_pct": NaN,
+        "adr_pct": 3.89
       },
       {
         "type": "stock",
@@ -40,8 +40,8 @@
         "pct": 30.7,
         "price": 73.82,
         "mkt_cap": 10984805376,
-        "atr_pct": 6.21,
-        "adr_pct": 4.78
+        "atr_pct": NaN,
+        "adr_pct": 3.63
       },
       {
         "type": "stock",
@@ -52,8 +52,8 @@
         "pct": 22.54,
         "price": 28.65,
         "mkt_cap": 4725133312,
-        "atr_pct": 5.21,
-        "adr_pct": 5.39
+        "atr_pct": NaN,
+        "adr_pct": 5.47
       },
       {
         "type": "stock",
@@ -64,8 +64,8 @@
         "pct": 21.4,
         "price": 10.95,
         "mkt_cap": 3018323712,
-        "atr_pct": 4.1,
-        "adr_pct": 3.79
+        "atr_pct": NaN,
+        "adr_pct": 3.54
       },
       {
         "type": "stock",
@@ -76,8 +76,8 @@
         "pct": 20.08,
         "price": 12.56,
         "mkt_cap": 2071718400,
-        "atr_pct": 6.06,
-        "adr_pct": 6.74
+        "atr_pct": NaN,
+        "adr_pct": 5.51
       },
       {
         "type": "stock",
@@ -88,8 +88,8 @@
         "pct": 13.03,
         "price": 15.18,
         "mkt_cap": 73329860608,
-        "atr_pct": 4.18,
-        "adr_pct": 3.34
+        "atr_pct": NaN,
+        "adr_pct": 3.3
       },
       {
         "type": "stock",
@@ -99,9 +99,9 @@
         "name": "Precigen, Inc.",
         "pct": -9.37,
         "price": 7.74,
-        "mkt_cap": 2759394816,
-        "atr_pct": 6.97,
-        "adr_pct": 5.89
+        "mkt_cap": 2771192576,
+        "atr_pct": NaN,
+        "adr_pct": 5.46
       },
       {
         "type": "stock",
@@ -112,8 +112,8 @@
         "pct": 9.03,
         "price": 83.55,
         "mkt_cap": 15075323904,
-        "atr_pct": 6.6,
-        "adr_pct": 6.84
+        "atr_pct": NaN,
+        "adr_pct": 6.66
       },
       {
         "type": "stock",
@@ -124,8 +124,8 @@
         "pct": 8.66,
         "price": 12.92,
         "mkt_cap": 3073917440,
-        "atr_pct": 8.15,
-        "adr_pct": 8.03
+        "atr_pct": NaN,
+        "adr_pct": 8.19
       },
       {
         "type": "stock",
@@ -136,8 +136,8 @@
         "pct": 8.66,
         "price": 205.0,
         "mkt_cap": 13591741440,
-        "atr_pct": 6.58,
-        "adr_pct": 7.61
+        "atr_pct": NaN,
+        "adr_pct": 7.49
       },
       {
         "type": "stock",
@@ -148,8 +148,8 @@
         "pct": -8.65,
         "price": 76.17,
         "mkt_cap": 5305179648,
-        "atr_pct": 6.35,
-        "adr_pct": 6.08
+        "atr_pct": NaN,
+        "adr_pct": 5.83
       },
       {
         "type": "stock",
@@ -160,8 +160,8 @@
         "pct": 7.82,
         "price": 34.75,
         "mkt_cap": 10497728512,
-        "atr_pct": 3.6,
-        "adr_pct": 3.53
+        "atr_pct": NaN,
+        "adr_pct": 3.37
       },
       {
         "type": "stock",
@@ -172,8 +172,8 @@
         "pct": 7.77,
         "price": 12.2,
         "mkt_cap": 6960588288,
-        "atr_pct": 5.59,
-        "adr_pct": 4.87
+        "atr_pct": NaN,
+        "adr_pct": 4.57
       },
       {
         "type": "stock",
@@ -183,9 +183,9 @@
         "name": "Space Exploration Technologies ",
         "pct": 7.63,
         "price": 171.09,
-        "mkt_cap": 2253971521536,
-        "atr_pct": 3.96,
-        "adr_pct": 4.59
+        "mkt_cap": 2255270707200,
+        "atr_pct": NaN,
+        "adr_pct": 4.37
       },
       {
         "type": "stock",
@@ -196,8 +196,8 @@
         "pct": 7.56,
         "price": 293.69,
         "mkt_cap": 44347191296,
-        "atr_pct": 4.68,
-        "adr_pct": 5.1
+        "atr_pct": NaN,
+        "adr_pct": 4.89
       },
       {
         "type": "stock",
@@ -208,8 +208,8 @@
         "pct": 7.56,
         "price": 32.6,
         "mkt_cap": 2438663424,
-        "atr_pct": 7.3,
-        "adr_pct": 8.15
+        "atr_pct": NaN,
+        "adr_pct": 7.95
       },
       {
         "type": "stock",
@@ -220,8 +220,8 @@
         "pct": 7.55,
         "price": 154.08,
         "mkt_cap": 6882172928,
-        "atr_pct": 7.36,
-        "adr_pct": 8.01
+        "atr_pct": NaN,
+        "adr_pct": 7.82
       },
       {
         "type": "stock",
@@ -231,9 +231,9 @@
         "name": "Caris Life Sciences, Inc.",
         "pct": 7.39,
         "price": 30.39,
-        "mkt_cap": 8588067840,
-        "atr_pct": 5.27,
-        "adr_pct": 5.46
+        "mkt_cap": 8590666752,
+        "atr_pct": NaN,
+        "adr_pct": 5.35
       },
       {
         "type": "stock",
@@ -244,8 +244,8 @@
         "pct": 7.28,
         "price": 163.23,
         "mkt_cap": 13383663616,
-        "atr_pct": 4.18,
-        "adr_pct": 4.69
+        "atr_pct": NaN,
+        "adr_pct": 4.55
       },
       {
         "type": "stock",
@@ -255,9 +255,9 @@
         "name": "Charles River Laboratories Inte",
         "pct": 7.09,
         "price": 310.77,
-        "mkt_cap": 14835808256,
-        "atr_pct": 3.56,
-        "adr_pct": 3.41
+        "mkt_cap": 14969083904,
+        "atr_pct": NaN,
+        "adr_pct": 3.23
       },
       {
         "type": "stock",
@@ -268,8 +268,8 @@
         "pct": 7.08,
         "price": 13.01,
         "mkt_cap": 2837559040,
-        "atr_pct": 4.86,
-        "adr_pct": 4.46
+        "atr_pct": NaN,
+        "adr_pct": 4.22
       },
       {
         "type": "stock",
@@ -280,8 +280,8 @@
         "pct": 6.96,
         "price": 62.88,
         "mkt_cap": 5552346624,
-        "atr_pct": 3.85,
-        "adr_pct": 3.9
+        "atr_pct": NaN,
+        "adr_pct": 3.83
       },
       {
         "type": "stock",
@@ -292,8 +292,8 @@
         "pct": 6.95,
         "price": 203.21,
         "mkt_cap": 81128734720,
-        "atr_pct": 7.19,
-        "adr_pct": 7.38
+        "atr_pct": NaN,
+        "adr_pct": 7.2
       },
       {
         "type": "stock",
@@ -304,8 +304,8 @@
         "pct": 6.73,
         "price": 26.48,
         "mkt_cap": 5077497856,
-        "atr_pct": 4.16,
-        "adr_pct": 4.45
+        "atr_pct": NaN,
+        "adr_pct": 4.26
       },
       {
         "type": "stock",
@@ -316,8 +316,8 @@
         "pct": 6.68,
         "price": 26.19,
         "mkt_cap": 2725658880,
-        "atr_pct": 3.9,
-        "adr_pct": 3.55
+        "atr_pct": NaN,
+        "adr_pct": 3.36
       },
       {
         "type": "stock",
@@ -328,8 +328,8 @@
         "pct": -6.63,
         "price": 20.7,
         "mkt_cap": 4842579968,
-        "atr_pct": 8.01,
-        "adr_pct": 7.4
+        "atr_pct": NaN,
+        "adr_pct": 7.16
       }
     ],
     "etf_top5": [],
