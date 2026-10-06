@@ -1,10 +1,10 @@
 {
   "date": "2026-10-06",
-  "updated_at": "2026-10-06T19:12:30.086793-04:00",
+  "updated_at": "2026-10-06T19:35:26.746299-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-06T19:12:30.086793-04:00",
+    "triggered_at": "2026-10-06T19:35:26.746299-04:00",
     "alert_count": 56,
     "alerts": [
       {
@@ -75,7 +75,7 @@
         "name": "NeoGenomics, Inc.",
         "pct": -13.72,
         "price": 16.5,
-        "mkt_cap": 2149145344,
+        "mkt_cap": 2120487040,
         "atr_pct": 6.53,
         "adr_pct": 5.44
       },
@@ -87,7 +87,7 @@
         "name": "Spyre Therapeutics, Inc.",
         "pct": -13.6,
         "price": 80.11,
-        "mkt_cap": 6956853248,
+        "mkt_cap": 7063600128,
         "atr_pct": 6.86,
         "adr_pct": 5.1
       },
@@ -183,7 +183,7 @@
         "name": "Caris Life Sciences, Inc.",
         "pct": -9.66,
         "price": 27.45,
-        "mkt_cap": 7758651392,
+        "mkt_cap": 7760998912,
         "atr_pct": 6.9,
         "adr_pct": 6.24
       },
@@ -375,7 +375,7 @@
         "name": "Nebius Group N.V.",
         "pct": 7.44,
         "price": 249.87,
-        "mkt_cap": 63441539072,
+        "mkt_cap": 67928465408,
         "atr_pct": 6.43,
         "adr_pct": 6.32
       },
@@ -579,7 +579,7 @@
         "name": "Corning Incorporated",
         "pct": 6.02,
         "price": 168.97,
-        "mkt_cap": 145253007360,
+        "mkt_cap": 145548787712,
         "atr_pct": 4.58,
         "adr_pct": 4.34
       },
