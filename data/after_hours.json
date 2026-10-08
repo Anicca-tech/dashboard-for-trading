@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-10-06T20:36:26.486080-04:00",
-  "as_of": "Oct 06, 2026 08:36 PM ET",
-  "count": 1,
-  "movers": [
-    {
-      "ticker": "NEOG",
-      "name": "Neogen Corporation",
-      "ah_pct": 10.56,
-      "ah_price": 13.22,
-      "reg_price": 11.96,
-      "mkt_cap": 2608547840,
-      "volume": 5947247,
-      "catalyst": "Earnings AH (Oct 06)"
-    }
-  ]
+  "generated_at": "2026-10-07T20:55:28.311419-04:00",
+  "as_of": "Oct 07, 2026 08:55 PM ET",
+  "count": 0,
+  "movers": []
 }
