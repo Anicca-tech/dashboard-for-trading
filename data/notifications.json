@@ -1,10 +1,10 @@
 {
   "date": "2026-10-08",
-  "updated_at": "2026-10-08T17:26:20.343061-04:00",
+  "updated_at": "2026-10-08T19:35:25.605577-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-08T16:35:24.626104-04:00",
+    "triggered_at": "2026-10-08T19:35:25.605577-04:00",
     "alert_count": 41,
     "alerts": [
       {
@@ -135,7 +135,7 @@
         "name": "Nebius Group N.V.",
         "pct": -7.35,
         "price": 219.71,
-        "mkt_cap": 59729313792,
+        "mkt_cap": 55783972864,
         "atr_pct": 7.23,
         "adr_pct": 6.42
       },
@@ -183,7 +183,7 @@
         "name": "PBF Energy Inc.",
         "pct": 6.76,
         "price": 89.34,
-        "mkt_cap": 10590082048,
+        "mkt_cap": 10590081024,
         "atr_pct": 5.4,
         "adr_pct": 6.5
       },
@@ -231,7 +231,7 @@
         "name": "Corning Incorporated",
         "pct": -6.38,
         "price": 152.83,
-        "mkt_cap": 131645980672,
+        "mkt_cap": 131378446336,
         "atr_pct": 5.16,
         "adr_pct": 4.49
       },
