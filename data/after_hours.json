@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-08T21:09:33.485120-04:00",
-  "as_of": "Oct 08, 2026 09:09 PM ET",
+  "generated_at": "2026-10-09T20:42:54.001783-04:00",
+  "as_of": "Oct 09, 2026 08:42 PM ET",
   "count": 1,
   "movers": [
     {
-      "ticker": "SECZ",
-      "name": "Securitize Corp.",
-      "ah_pct": 9.92,
-      "ah_price": 13.92,
-      "reg_price": 12.66,
-      "mkt_cap": 2066943488,
-      "volume": 7806309,
-      "catalyst": "Post-market move"
+      "ticker": "CCC",
+      "name": "CCC Intelligent Solutions Holdi",
+      "ah_pct": 13.11,
+      "ah_price": 7.94,
+      "reg_price": 7.02,
+      "mkt_cap": 4134742784,
+      "volume": 19484562,
+      "catalyst": "Market Chatter: GTCR, Elliott Near Deal to Acquire CCC"
     }
   ]
 }
