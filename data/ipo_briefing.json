@@ -1,153 +1,158 @@
 {
-  "generated_at": "2026-10-04T11:00:27.478388-04:00",
-  "week_of": "Week of October 04, 2026",
+  "generated_at": "2026-10-11T11:59:04.469894-04:00",
+  "week_of": "Week of October 11, 2026",
   "new_filings": [
     {
-      "company": "Canary PEPE ETF",
+      "company": "Bambusa Therapeutics, Inc.",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "Sunshine Biopharma Inc.  (SBFM, SBFMW)",
+      "company": "Kainan Holding Group Ltd  (KHG)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "Youmi Inc.",
+      "company": "SPECIFICITY, INC.  (SPTY)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "Vertical Data Inc.  (VDTA)",
+      "company": "GT Biopharma, Inc.  (GTBP)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "HCW Biologics Inc.  (HCWB)",
+      "company": "DataMeds AI, Inc.  (MEDS)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
+    },
+    {
+      "company": "BirchBioMed Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-09"
+    },
+    {
+      "company": "FingerMotion, Inc.  (FNGR)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-09"
     },
     {
       "company": "Allarity Acquisition Corp.  (ALLN)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "BioStem Technologies, Inc.  (BSEM)",
+      "company": "Elevation Acquisition Group Inc.  (ELEV)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "LPC LTD",
+      "company": "BIO KEY INTERNATIONAL INC  (BKYI)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "Arca Nova Acquisition Corp",
+      "company": "SeeQC, Inc.  (SEQC)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "T3 Defense Inc.  (DFNS, DFNSW)",
+      "company": "Simwon America Corp.",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "GEORGIA BANKING CO INC",
+      "company": "LORENZO DEVELOPMENTS INC.",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-02"
+      "filed": "2026-10-09"
     },
     {
-      "company": "CitroTech Inc.  (CITR)",
+      "company": "PBT Land & Minerals, Inc.",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-01"
+      "filed": "2026-10-09"
     },
     {
-      "company": "Uranium Royalty Corp.  (UROY)",
+      "company": "Aspen Neuroscience, Inc.",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-01"
+      "filed": "2026-10-09"
     },
     {
-      "company": "INTERPACE BIOSCIENCES, INC.  (IDXG, IDXGD)",
+      "company": "OPAY Ltd",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-01"
+      "filed": "2026-10-09"
     },
     {
-      "company": "AKANDA CORP.  (AKAN)",
+      "company": "vVARDIS Holding AG",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-01"
+      "filed": "2026-10-09"
     },
     {
-      "company": "TOP Financial Group Ltd  (TOP)",
+      "company": "Patriot Mobile Inc.",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-01"
+      "filed": "2026-10-09"
     },
     {
-      "company": "WhiteHawk Minerals Corp.  (WHK)",
+      "company": "CITY THERAPEUTICS, INC.  (CTY)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-01"
+      "filed": "2026-10-09"
     },
     {
-      "company": "VSEE HEALTH, INC.  (VSEE, VSEED, VSEEW)",
+      "company": "Nexalin Technology, Inc.  (NXL)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-01"
-    },
-    {
-      "company": "POP GLOBAL ACQUISITION Ltd",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-01"
-    },
-    {
-      "company": "Essential Minerals Acquisition Corp",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-01"
+      "filed": "2026-10-08"
     }
   ],
   "recently_priced": [
     {
-      "company": "Southport Acquisition Corp. II",
+      "company": "Sunshine Biopharma Inc.  (SBFM, SBFMW)",
       "ticker": "",
-      "priced_date": "2026-10-02"
+      "priced_date": "2026-10-09"
     },
     {
-      "company": "Accelevation Holdings Corp.  (ACCV)",
+      "company": "DarkIris Inc.  (DKI)",
       "ticker": "",
-      "priced_date": "2026-10-01"
+      "priced_date": "2026-10-09"
     },
     {
-      "company": "NewGenIvf Group Ltd  (NIVF, NIVFW)",
+      "company": "Retension Pharmaceuticals, Inc.",
       "ticker": "",
-      "priced_date": "2026-09-30"
+      "priced_date": "2026-10-09"
     },
     {
-      "company": "ROZE AI INC.  (ROZE)",
+      "company": "TRex Bio, Inc.",
       "ticker": "",
-      "priced_date": "2026-09-28"
+      "priced_date": "2026-10-09"
     },
     {
-      "company": "ADARx Pharmaceuticals, Inc.  (ADRX)",
+      "company": "Basel Medical Group Ltd  (BMGL)",
       "ticker": "",
-      "priced_date": "2026-09-28"
+      "priced_date": "2026-10-08"
+    },
+    {
+      "company": "Pine Tree Acquisition Corp.  (PAXG)",
+      "ticker": "",
+      "priced_date": "2026-10-06"
     }
   ],
   "delayed_withdrawn": [],
