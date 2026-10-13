@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-10-09T20:42:54.001783-04:00",
-  "as_of": "Oct 09, 2026 08:42 PM ET",
-  "count": 1,
-  "movers": [
-    {
-      "ticker": "CCC",
-      "name": "CCC Intelligent Solutions Holdi",
-      "ah_pct": 13.11,
-      "ah_price": 7.94,
-      "reg_price": 7.02,
-      "mkt_cap": 4134742784,
-      "volume": 19484562,
-      "catalyst": "Market Chatter: GTCR, Elliott Near Deal to Acquire CCC"
-    }
-  ]
+  "generated_at": "2026-10-12T22:31:49.983812-04:00",
+  "as_of": "Oct 12, 2026 10:31 PM ET",
+  "count": 0,
+  "movers": []
 }
