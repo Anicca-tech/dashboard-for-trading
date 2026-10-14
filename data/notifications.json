@@ -1,11 +1,11 @@
 {
   "date": "2026-10-14",
-  "updated_at": "2026-10-14T16:35:30.301689-04:00",
+  "updated_at": "2026-10-14T18:33:13.603394-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-14T16:35:30.301689-04:00",
-    "alert_count": 18,
+    "triggered_at": "2026-10-14T18:33:13.603394-04:00",
+    "alert_count": 17,
     "alerts": [
       {
         "type": "stock",
@@ -186,18 +186,6 @@
         "mkt_cap": 81192132608,
         "atr_pct": 8.19,
         "adr_pct": 6.45
-      },
-      {
-        "type": "stock",
-        "ticker": "BE",
-        "label": "BE",
-        "symbol": "BE",
-        "name": "Bloom Energy Corporation",
-        "pct": -9.15,
-        "price": 239.34,
-        "mkt_cap": 70492176384,
-        "atr_pct": 8.82,
-        "adr_pct": 6.77
       },
       {
         "type": "stock",
