@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "updated_at": "2026-10-14T14:05:43.779034-04:00",
+  "updated_at": "2026-10-14T14:31:33.663513-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
@@ -179,5 +179,207 @@
     "etf_top5": [],
     "etf_bottom5": [],
     "indices_range": []
+  },
+  "n1": {
+    "slot": "n1",
+    "time_label": "10:00 AM ET",
+    "triggered_at": "2026-10-14T14:31:33.663513-04:00",
+    "alert_count": 16,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "BSP",
+        "label": "BSP",
+        "symbol": "BSP",
+        "name": "Bending Spoons S.p.A.",
+        "pct": 41.44,
+        "price": 53.58,
+        "mkt_cap": 34035052544,
+        "atr_pct": 7.57,
+        "adr_pct": 8.17
+      },
+      {
+        "type": "stock",
+        "ticker": "DOCN",
+        "label": "DOCN",
+        "symbol": "DOCN",
+        "name": "DigitalOcean Holdings, Inc.",
+        "pct": -13.31,
+        "price": 111.15,
+        "mkt_cap": 13068966912,
+        "atr_pct": 8.0,
+        "adr_pct": 7.0
+      },
+      {
+        "type": "stock",
+        "ticker": "PENG",
+        "label": "PENG",
+        "symbol": "PENG",
+        "name": "Penguin Solutions, Inc.",
+        "pct": -12.03,
+        "price": 68.79,
+        "mkt_cap": 3524985344,
+        "atr_pct": 8.16,
+        "adr_pct": 7.21
+      },
+      {
+        "type": "stock",
+        "ticker": "XMTR",
+        "label": "XMTR",
+        "symbol": "XMTR",
+        "name": "Xometry, Inc.",
+        "pct": -11.64,
+        "price": 95.33,
+        "mkt_cap": 5464942592,
+        "atr_pct": 6.2,
+        "adr_pct": 5.69
+      },
+      {
+        "type": "stock",
+        "ticker": "DELL",
+        "label": "DELL",
+        "symbol": "DELL",
+        "name": "Dell Technologies Inc.",
+        "pct": -11.4,
+        "price": 507.21,
+        "mkt_cap": 322490564608,
+        "atr_pct": 5.64,
+        "adr_pct": 4.61
+      },
+      {
+        "type": "stock",
+        "ticker": "AFRM",
+        "label": "AFRM",
+        "symbol": "AFRM",
+        "name": "Affirm Holdings, Inc.",
+        "pct": -10.9,
+        "price": 69.4,
+        "mkt_cap": 23417034752,
+        "atr_pct": 4.9,
+        "adr_pct": 4.61
+      },
+      {
+        "type": "stock",
+        "ticker": "NBIS",
+        "label": "NBIS",
+        "symbol": "NBIS",
+        "name": "Nebius Group N.V.",
+        "pct": -10.78,
+        "price": 184.56,
+        "mkt_cap": 50173599744,
+        "atr_pct": 8.32,
+        "adr_pct": 6.35
+      },
+      {
+        "type": "stock",
+        "ticker": "U",
+        "label": "U",
+        "symbol": "U",
+        "name": "Unity Software Inc.",
+        "pct": -10.7,
+        "price": 41.64,
+        "mkt_cap": 18325303296,
+        "atr_pct": 5.15,
+        "adr_pct": 4.92
+      },
+      {
+        "type": "stock",
+        "ticker": "SEI",
+        "label": "SEI",
+        "symbol": "SEI",
+        "name": "Solaris Energy Infrastructure, ",
+        "pct": -10.27,
+        "price": 69.83,
+        "mkt_cap": 7027241984,
+        "atr_pct": 6.51,
+        "adr_pct": 5.61
+      },
+      {
+        "type": "stock",
+        "ticker": "BE",
+        "label": "BE",
+        "symbol": "BE",
+        "name": "Bloom Energy Corporation",
+        "pct": -10.06,
+        "price": 236.94,
+        "mkt_cap": 69783838720,
+        "atr_pct": 8.87,
+        "adr_pct": 6.74
+      },
+      {
+        "type": "stock",
+        "ticker": "ASST",
+        "label": "ASST",
+        "symbol": "ASST",
+        "name": "Strive, Inc.",
+        "pct": -10.03,
+        "price": 24.82,
+        "mkt_cap": 2505648896,
+        "atr_pct": 6.46,
+        "adr_pct": 5.71
+      },
+      {
+        "type": "stock",
+        "ticker": "MXL",
+        "label": "MXL",
+        "symbol": "MXL",
+        "name": "MaxLinear, Inc",
+        "pct": -10.0,
+        "price": 79.78,
+        "mkt_cap": 7235502592,
+        "atr_pct": 10.51,
+        "adr_pct": 8.12
+      },
+      {
+        "type": "stock",
+        "ticker": "SIMO",
+        "label": "SIMO",
+        "symbol": "SIMO",
+        "name": "Silicon Motion Technology Corpo",
+        "pct": -9.86,
+        "price": 222.3,
+        "mkt_cap": 7537801216,
+        "atr_pct": 6.27,
+        "adr_pct": 5.33
+      },
+      {
+        "type": "stock",
+        "ticker": "KOD",
+        "label": "KOD",
+        "symbol": "KOD",
+        "name": "Kodiak Sciences Inc",
+        "pct": -9.6,
+        "price": 82.83,
+        "mkt_cap": 5206134784,
+        "atr_pct": 13.89,
+        "adr_pct": 10.75
+      },
+      {
+        "type": "stock",
+        "ticker": "P",
+        "label": "P",
+        "symbol": "P",
+        "name": "Everpure, Inc.",
+        "pct": -9.42,
+        "price": 142.19,
+        "mkt_cap": 47381585920,
+        "atr_pct": 4.7,
+        "adr_pct": 5.43
+      },
+      {
+        "type": "stock",
+        "ticker": "NRIX",
+        "label": "NRIX",
+        "symbol": "NRIX",
+        "name": "Nurix Therapeutics, Inc.",
+        "pct": 7.39,
+        "price": 23.77,
+        "mkt_cap": 2596321792,
+        "atr_pct": 4.7,
+        "adr_pct": 4.74
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": []
   }
 }
