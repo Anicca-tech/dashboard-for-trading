@@ -1,11 +1,11 @@
 {
   "date": "2026-10-14",
-  "updated_at": "2026-10-14T18:33:13.603394-04:00",
+  "updated_at": "2026-10-14T19:35:26.112559-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-14T18:33:13.603394-04:00",
-    "alert_count": 17,
+    "triggered_at": "2026-10-14T19:35:26.112559-04:00",
+    "alert_count": 18,
     "alerts": [
       {
         "type": "stock",
@@ -27,7 +27,7 @@
         "name": "DigitalOcean Holdings, Inc.",
         "pct": -14.76,
         "price": 109.29,
-        "mkt_cap": 12850269184,
+        "mkt_cap": 12776886272,
         "atr_pct": 8.14,
         "adr_pct": 7.0
       },
@@ -51,7 +51,7 @@
         "name": "Xometry, Inc.",
         "pct": -11.82,
         "price": 95.15,
-        "mkt_cap": 5454338048,
+        "mkt_cap": 5256643072,
         "atr_pct": 6.21,
         "adr_pct": 5.69
       },
@@ -135,7 +135,7 @@
         "name": "Nebius Group N.V.",
         "pct": -10.08,
         "price": 186.01,
-        "mkt_cap": 50567790592,
+        "mkt_cap": 47227600896,
         "atr_pct": 8.26,
         "adr_pct": 6.35
       },
@@ -189,6 +189,18 @@
       },
       {
         "type": "stock",
+        "ticker": "BE",
+        "label": "BE",
+        "symbol": "BE",
+        "name": "Bloom Energy Corporation",
+        "pct": -9.15,
+        "price": 239.34,
+        "mkt_cap": 70492176384,
+        "atr_pct": 8.82,
+        "adr_pct": 6.77
+      },
+      {
+        "type": "stock",
         "ticker": "NRIX",
         "label": "NRIX",
         "symbol": "NRIX",
@@ -208,7 +220,7 @@
         "pct": 5.42,
         "price": 93.12,
         "mkt_cap": 5531552256,
-        "atr_pct": 3.35,
+        "atr_pct": 3.36,
         "adr_pct": 3.51
       }
     ],
