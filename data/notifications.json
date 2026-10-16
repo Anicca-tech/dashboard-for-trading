@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "updated_at": "2026-10-16T18:10:31.781015-04:00",
+  "updated_at": "2026-10-16T19:35:27.834301-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -290,7 +290,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-16T18:10:31.781015-04:00",
+    "triggered_at": "2026-10-16T19:35:27.834301-04:00",
     "alert_count": 19,
     "alerts": [
       {
@@ -385,7 +385,7 @@
         "name": "Crescent Energy Company",
         "pct": 10.07,
         "price": 13.77,
-        "mkt_cap": 4549659136,
+        "mkt_cap": 5417160704,
         "atr_pct": 3.84,
         "adr_pct": 3.74
       },
@@ -433,7 +433,7 @@
         "name": "Xometry, Inc.",
         "pct": -8.67,
         "price": 90.91,
-        "mkt_cap": 5022401024,
+        "mkt_cap": 5211286016,
         "atr_pct": 6.92,
         "adr_pct": 6.19
       },
