@@ -1,158 +1,158 @@
 {
-  "generated_at": "2026-10-11T11:59:04.469894-04:00",
-  "week_of": "Week of October 11, 2026",
+  "generated_at": "2026-10-18T09:37:48.421538-04:00",
+  "week_of": "Week of October 18, 2026",
   "new_filings": [
     {
-      "company": "Bambusa Therapeutics, Inc.",
+      "company": "Talyxor Corp",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-09"
+      "filed": "2026-10-16"
     },
     {
-      "company": "Kainan Holding Group Ltd  (KHG)",
+      "company": "Evmand Corp",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-09"
+      "filed": "2026-10-16"
     },
     {
-      "company": "SPECIFICITY, INC.  (SPTY)",
+      "company": "RZ Wellness Ltd",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-09"
+      "filed": "2026-10-16"
     },
     {
-      "company": "GT Biopharma, Inc.  (GTBP)",
+      "company": "iPower Inc.  (IPW)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-09"
+      "filed": "2026-10-16"
     },
     {
-      "company": "DataMeds AI, Inc.  (MEDS)",
+      "company": "AMAZE HOLDINGS, INC.  (AMZE)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-09"
+      "filed": "2026-10-16"
     },
     {
-      "company": "BirchBioMed Inc.",
+      "company": "CGL Logistics Holdings Ltd  (CGL)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-09"
+      "filed": "2026-10-16"
+    },
+    {
+      "company": "SOBR Safe, Inc.  (SOBR)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-16"
+    },
+    {
+      "company": "Optimal AI Ltd",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-16"
+    },
+    {
+      "company": "FG Holdings Ltd",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-16"
+    },
+    {
+      "company": "TANG CAPITAL ACQUISITION CORP.  (TCAA)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-16"
+    },
+    {
+      "company": "WhiteHawk Minerals Corp.  (WHK)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-16"
+    },
+    {
+      "company": "Robin Energy Ltd.  (RBNE)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-16"
+    },
+    {
+      "company": "NOCOPI TECHNOLOGIES INC/MD/  (NNUP)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-16"
+    },
+    {
+      "company": "Cashlin",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-15"
+    },
+    {
+      "company": "MED-X, INC.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-15"
+    },
+    {
+      "company": "KBAT Group Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-15"
+    },
+    {
+      "company": "Hao Feng Group Ltd.  (HFE)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-15"
+    },
+    {
+      "company": "ACTUATE THERAPEUTICS, INC.  (ACTU)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-14"
+    },
+    {
+      "company": "Green Circle Decarbonize Technology Ltd  (GCDT)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-14"
     },
     {
       "company": "FingerMotion, Inc.  (FNGR)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "Allarity Acquisition Corp.  (ALLN)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "Elevation Acquisition Group Inc.  (ELEV)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "BIO KEY INTERNATIONAL INC  (BKYI)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "SeeQC, Inc.  (SEQC)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "Simwon America Corp.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "LORENZO DEVELOPMENTS INC.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "PBT Land & Minerals, Inc.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "Aspen Neuroscience, Inc.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "OPAY Ltd",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "vVARDIS Holding AG",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "Patriot Mobile Inc.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "CITY THERAPEUTICS, INC.  (CTY)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-09"
-    },
-    {
-      "company": "Nexalin Technology, Inc.  (NXL)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-08"
+      "filed": "2026-10-14"
     }
   ],
   "recently_priced": [
     {
-      "company": "Sunshine Biopharma Inc.  (SBFM, SBFMW)",
+      "company": "TCGX Acquisition Corp. II  (TCXB)",
       "ticker": "",
-      "priced_date": "2026-10-09"
+      "priced_date": "2026-10-16"
     },
     {
-      "company": "DarkIris Inc.  (DKI)",
+      "company": "CITY THERAPEUTICS, INC.  (CTY)",
       "ticker": "",
-      "priced_date": "2026-10-09"
+      "priced_date": "2026-10-16"
     },
     {
-      "company": "Retension Pharmaceuticals, Inc.",
+      "company": "Iambic Therapeutics, Inc.  (IAM)",
       "ticker": "",
-      "priced_date": "2026-10-09"
+      "priced_date": "2026-10-15"
     },
     {
-      "company": "TRex Bio, Inc.",
+      "company": "Amaero Inc.  (AMRO)",
       "ticker": "",
-      "priced_date": "2026-10-09"
+      "priced_date": "2026-10-15"
     },
     {
-      "company": "Basel Medical Group Ltd  (BMGL)",
+      "company": "Frazier Life Sciences Acquisition Corp. II  (FLSC)",
       "ticker": "",
-      "priced_date": "2026-10-08"
+      "priced_date": "2026-10-14"
     },
     {
-      "company": "Pine Tree Acquisition Corp.  (PAXG)",
+      "company": "WeShop Holdings Ltd  (WSHP)",
       "ticker": "",
-      "priced_date": "2026-10-06"
+      "priced_date": "2026-10-13"
     }
   ],
   "delayed_withdrawn": [],
