@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "updated_at": "2026-10-20T18:34:42.359665-04:00",
+  "updated_at": "2026-10-20T19:35:33.444073-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -697,7 +697,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-20T18:34:42.359665-04:00",
+    "triggered_at": "2026-10-20T19:35:33.444073-04:00",
     "alert_count": 28,
     "alerts": [
       {
@@ -744,7 +744,7 @@
         "name": "Klaviyo, Inc. Series A",
         "pct": 11.93,
         "price": 19.61,
-        "mkt_cap": 5868877312,
+        "mkt_cap": 5583504896,
         "atr_pct": 5.28,
         "adr_pct": 5.52
       },
@@ -864,7 +864,7 @@
         "name": "BILL Holdings, Inc.",
         "pct": 7.44,
         "price": 49.09,
-        "mkt_cap": 4186237440,
+        "mkt_cap": 4889203200,
         "atr_pct": 3.47,
         "adr_pct": 3.68
       },
@@ -936,7 +936,7 @@
         "name": "HubSpot, Inc.",
         "pct": 6.87,
         "price": 250.76,
-        "mkt_cap": 12836581376,
+        "mkt_cap": 12504448000,
         "atr_pct": 4.7,
         "adr_pct": 5.25
       },
@@ -1020,7 +1020,7 @@
         "name": "Vertex, Inc.",
         "pct": 5.84,
         "price": 14.32,
-        "mkt_cap": 2322961408,
+        "mkt_cap": 2317218304,
         "atr_pct": 3.99,
         "adr_pct": 4.29
       },
