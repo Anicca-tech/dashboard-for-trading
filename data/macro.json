@@ -1,1 +1,1 @@
-{"updated":"2026-10-20","series":{},"errors":["CPIAUCSL: could not convert string to float: 'CPIAUCSL'","CPILFESL: could not convert string to float: 'CPILFESL'","PAYEMS: could not convert string to float: 'PAYEMS'","UNRATE: could not convert string to float: 'UNRATE'","ICSA: could not convert string to float: 'ICSA'"]}
+{"updated":"2026-10-21","series":{},"errors":["CPIAUCSL: list index out of range","CPILFESL: list index out of range","PAYEMS: list index out of range","UNRATE: list index out of range","ICSA: list index out of range"]}
