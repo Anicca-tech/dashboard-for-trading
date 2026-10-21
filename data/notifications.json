@@ -1,10 +1,10 @@
 {
   "date": "2026-10-21",
-  "updated_at": "2026-10-21T18:39:28.269402-04:00",
+  "updated_at": "2026-10-21T19:35:26.387550-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-21T18:39:28.269402-04:00",
+    "triggered_at": "2026-10-21T19:35:26.387550-04:00",
     "alert_count": 31,
     "alerts": [
       {
@@ -39,7 +39,7 @@
         "name": "Super Micro Computer, Inc.",
         "pct": 9.55,
         "price": 35.57,
-        "mkt_cap": 23009273856,
+        "mkt_cap": 23368257536,
         "atr_pct": 7.68,
         "adr_pct": 5.72
       },
@@ -75,7 +75,7 @@
         "name": "Charles River Laboratories Inte",
         "pct": 9.33,
         "price": 344.87,
-        "mkt_cap": 16463704064,
+        "mkt_cap": 16611604480,
         "atr_pct": 4.26,
         "adr_pct": 4.42
       },
@@ -99,7 +99,7 @@
         "name": "Space Exploration Technologies ",
         "pct": 7.79,
         "price": 159.31,
-        "mkt_cap": 2098779652096,
+        "mkt_cap": 2099989315584,
         "atr_pct": 5.18,
         "adr_pct": 4.15
       },
@@ -113,7 +113,7 @@
         "price": 44.22,
         "mkt_cap": 2873592320,
         "atr_pct": 5.54,
-        "adr_pct": 7.12
+        "adr_pct": 7.13
       },
       {
         "type": "stock",
@@ -172,8 +172,8 @@
         "pct": 6.85,
         "price": 26.98,
         "mkt_cap": 4549107712,
-        "atr_pct": 6.15,
-        "adr_pct": 6.88
+        "atr_pct": 6.17,
+        "adr_pct": 6.9
       },
       {
         "type": "stock",
@@ -183,7 +183,7 @@
         "name": "MongoDB, Inc.",
         "pct": 6.71,
         "price": 390.75,
-        "mkt_cap": 31477391360,
+        "mkt_cap": 31428775936,
         "atr_pct": 5.7,
         "adr_pct": 6.64
       },
@@ -280,8 +280,8 @@
         "pct": 5.78,
         "price": 75.59,
         "mkt_cap": 9848709120,
-        "atr_pct": 10.13,
-        "adr_pct": 9.39
+        "atr_pct": 10.14,
+        "adr_pct": 9.4
       },
       {
         "type": "stock",
@@ -363,7 +363,7 @@
         "name": "Expedia Group, Inc.",
         "pct": -5.03,
         "price": 285.64,
-        "mkt_cap": 34282328064,
+        "mkt_cap": 34283108352,
         "atr_pct": 3.95,
         "adr_pct": 3.84
       },
@@ -375,7 +375,7 @@
         "name": "Xometry, Inc.",
         "pct": -5.02,
         "price": 88.94,
-        "mkt_cap": 4913566720,
+        "mkt_cap": 5098358784,
         "atr_pct": 7.42,
         "adr_pct": 6.44
       }
