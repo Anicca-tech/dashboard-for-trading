@@ -1,27 +1,6 @@
 {
-  "generated_at": "2026-10-20T19:47:19.826713-04:00",
-  "as_of": "Oct 20, 2026 07:47 PM ET",
-  "count": 2,
-  "movers": [
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
-      "ah_pct": 15.74,
-      "ah_price": 37.58,
-      "reg_price": 32.47,
-      "mkt_cap": 21331666944,
-      "volume": 37015933,
-      "catalyst": "Dow Jones Futures: AI Stocks Jump On SpaceX, Supermicro; Tesla, Meta On Deck"
-    },
-    {
-      "ticker": "SPCX",
-      "name": "Space Exploration Technologies ",
-      "ah_pct": 7.69,
-      "ah_price": 159.15,
-      "reg_price": 147.79,
-      "mkt_cap": 1948135194624,
-      "volume": 99549776,
-      "catalyst": "Earnings AH (Oct 20)"
-    }
-  ]
+  "generated_at": "2026-10-21T19:58:14.938494-04:00",
+  "as_of": "Oct 21, 2026 07:58 PM ET",
+  "count": 0,
+  "movers": []
 }
