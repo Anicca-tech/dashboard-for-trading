@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "updated_at": "2026-10-22T16:35:26.053571-04:00",
+  "updated_at": "2026-10-22T18:40:48.871429-04:00",
   "n1": {
     "slot": "n1",
     "time_label": "10:00 AM ET",
@@ -493,7 +493,7 @@
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-22T16:35:26.053571-04:00",
+    "triggered_at": "2026-10-22T18:40:48.871429-04:00",
     "alert_count": 20,
     "alerts": [
       {
@@ -588,7 +588,7 @@
         "name": "Spotify Technology S.A.",
         "pct": 11.1,
         "price": 583.66,
-        "mkt_cap": 120012201984,
+        "mkt_cap": 119991271424,
         "atr_pct": 3.65,
         "adr_pct": 3.28
       },
@@ -636,7 +636,7 @@
         "name": "Robert Half Inc.",
         "pct": 8.78,
         "price": 37.68,
-        "mkt_cap": 3854422528,
+        "mkt_cap": 3856993536,
         "atr_pct": 4.08,
         "adr_pct": 4.27
       },
