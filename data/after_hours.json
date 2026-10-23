@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-10-22T19:57:01.473882-04:00",
-  "as_of": "Oct 22, 2026 07:57 PM ET",
-  "count": 1,
-  "movers": [
-    {
-      "ticker": "RHI",
-      "name": "Robert Half Inc.",
-      "ah_pct": 9.98,
-      "ah_price": 41.44,
-      "reg_price": 37.68,
-      "mkt_cap": 3854422528,
-      "volume": 2906910,
-      "catalyst": "Earnings AH (Oct 22)"
-    }
-  ]
+  "generated_at": "2026-10-23T19:49:42.694143-04:00",
+  "as_of": "Oct 23, 2026 07:49 PM ET",
+  "count": 0,
+  "movers": []
 }
