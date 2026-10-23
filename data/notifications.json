@@ -1,10 +1,10 @@
 {
   "date": "2026-10-23",
-  "updated_at": "2026-10-23T18:33:58.823694-04:00",
+  "updated_at": "2026-10-23T19:35:29.287977-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-23T18:33:58.823694-04:00",
+    "triggered_at": "2026-10-23T19:35:29.287977-04:00",
     "alert_count": 39,
     "alerts": [
       {
@@ -15,8 +15,8 @@
         "name": "Robert Half Inc.",
         "pct": 21.74,
         "price": 45.87,
-        "mkt_cap": 4692207104,
-        "atr_pct": 4.43,
+        "mkt_cap": 4695336960,
+        "atr_pct": 4.44,
         "adr_pct": 4.83
       },
       {
@@ -88,8 +88,8 @@
         "pct": 9.21,
         "price": 56.44,
         "mkt_cap": 13395097600,
-        "atr_pct": 3.51,
-        "adr_pct": 3.59
+        "atr_pct": 3.53,
+        "adr_pct": 3.6
       },
       {
         "type": "stock",
@@ -99,7 +99,7 @@
         "name": "Crown Castle Inc.",
         "pct": 9.06,
         "price": 85.97,
-        "mkt_cap": 36576403456,
+        "mkt_cap": 37568888832,
         "atr_pct": 4.48,
         "adr_pct": 3.57
       },
@@ -243,7 +243,7 @@
         "name": "Innovex International, Inc.",
         "pct": 7.09,
         "price": 29.91,
-        "mkt_cap": 2088327936,
+        "mkt_cap": 2091780480,
         "atr_pct": 3.67,
         "adr_pct": 3.9
       },
@@ -339,7 +339,7 @@
         "name": "Tenable Holdings, Inc.",
         "pct": 6.17,
         "price": 44.59,
-        "mkt_cap": 4917027328,
+        "mkt_cap": 4911141888,
         "atr_pct": 5.23,
         "adr_pct": 5.69
       },
@@ -411,7 +411,7 @@
         "name": "Patterson-UTI Energy, Inc.",
         "pct": 5.56,
         "price": 11.97,
-        "mkt_cap": 4544023552,
+        "mkt_cap": 4565176832,
         "atr_pct": 4.41,
         "adr_pct": 4.33
       },
@@ -471,9 +471,9 @@
         "name": "Kiniksa Pharmaceuticals Interna",
         "pct": -5.03,
         "price": 76.73,
-        "mkt_cap": 5903454208,
+        "mkt_cap": 5986783232,
         "atr_pct": 4.32,
-        "adr_pct": 3.79
+        "adr_pct": 3.8
       }
     ],
     "etf_top5": [],
