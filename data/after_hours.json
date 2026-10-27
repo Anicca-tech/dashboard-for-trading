@@ -1,6 +1,17 @@
 {
-  "generated_at": "2026-10-23T19:49:42.694143-04:00",
-  "as_of": "Oct 23, 2026 07:49 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-10-26T20:21:15.068963-04:00",
+  "as_of": "Oct 26, 2026 08:21 PM ET",
+  "count": 1,
+  "movers": [
+    {
+      "ticker": "CLS",
+      "name": "Celestica, Inc.",
+      "ah_pct": 16.78,
+      "ah_price": 288.05,
+      "reg_price": 246.65,
+      "mkt_cap": 31105306624,
+      "volume": 5746587,
+      "catalyst": "Earnings AH (Oct 26)"
+    }
+  ]
 }
