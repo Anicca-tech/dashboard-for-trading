@@ -1,11 +1,11 @@
 {
   "date": "2026-10-30",
-  "updated_at": "2026-10-30T16:58:49.993560-04:00",
+  "updated_at": "2026-10-30T19:08:25.455063-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-30T16:35:30.223421-04:00",
-    "alert_count": 34,
+    "triggered_at": "2026-10-30T19:08:25.455063-04:00",
+    "alert_count": 35,
     "alerts": [
       {
         "type": "stock",
@@ -37,10 +37,10 @@
         "label": "CPRI",
         "symbol": "CPRI",
         "name": "Capri Holdings Limited",
-        "pct": 16.19,
-        "price": 18.66,
-        "mkt_cap": 2142095232,
-        "atr_pct": 4.62,
+        "pct": 16.31,
+        "price": 18.68,
+        "mkt_cap": 2123012224,
+        "atr_pct": 4.61,
         "adr_pct": 4.45
       },
       {
@@ -88,8 +88,8 @@
         "pct": 12.97,
         "price": 96.84,
         "mkt_cap": 25625643008,
-        "atr_pct": 3.58,
-        "adr_pct": 3.67
+        "atr_pct": 3.6,
+        "adr_pct": 3.68
       },
       {
         "type": "stock",
@@ -337,9 +337,9 @@
         "label": "CBOE",
         "symbol": "CBOE",
         "name": "Cboe Global Markets, Inc.",
-        "pct": 6.79,
-        "price": 335.6,
-        "mkt_cap": 35047051264,
+        "pct": 6.77,
+        "price": 335.53,
+        "mkt_cap": 35039739904,
         "atr_pct": 3.69,
         "adr_pct": 3.87
       },
@@ -349,9 +349,9 @@
         "label": "SPOT",
         "symbol": "SPOT",
         "name": "Spotify Technology S.A.",
-        "pct": 6.57,
-        "price": 593.86,
-        "mkt_cap": 122088235008,
+        "pct": 6.5,
+        "price": 593.44,
+        "mkt_cap": 122023174144,
         "atr_pct": 3.99,
         "adr_pct": 3.67
       },
@@ -364,8 +364,20 @@
         "pct": 5.97,
         "price": 74.95,
         "mkt_cap": 14652198912,
-        "atr_pct": 3.11,
-        "adr_pct": 3.2
+        "atr_pct": 3.09,
+        "adr_pct": 3.18
+      },
+      {
+        "type": "stock",
+        "ticker": "IMO",
+        "label": "IMO",
+        "symbol": "IMO",
+        "name": "Imperial Oil Limited",
+        "pct": 5.52,
+        "price": 138.1,
+        "mkt_cap": 68668567552,
+        "atr_pct": 3.27,
+        "adr_pct": 3.02
       },
       {
         "type": "stock",
@@ -387,7 +399,7 @@
         "name": "TG Therapeutics, Inc.",
         "pct": 5.34,
         "price": 61.18,
-        "mkt_cap": 9365653504,
+        "mkt_cap": 9364764672,
         "atr_pct": 3.86,
         "adr_pct": 4.14
       },
