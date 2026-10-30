@@ -1,67 +1,87 @@
 {
-  "generated_at": "2026-10-28T20:47:49.353269-04:00",
-  "as_of": "Oct 28, 2026 08:47 PM ET",
-  "count": 6,
+  "generated_at": "2026-10-29T20:49:18.627384-04:00",
+  "as_of": "Oct 29, 2026 08:49 PM ET",
+  "count": 8,
   "movers": [
     {
-      "ticker": "FTNT",
-      "name": "Fortinet, Inc.",
-      "ah_pct": -25.71,
-      "ah_price": 129.33,
-      "reg_price": 174.08,
-      "mkt_cap": 127724879872,
-      "volume": 10151502,
-      "catalyst": "Earnings AH (Oct 28)"
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "ah_pct": -23.01,
+      "ah_price": 70.89,
+      "reg_price": 92.07,
+      "mkt_cap": 486691700736,
+      "volume": 112052896,
+      "catalyst": "Earnings AH (Oct 29)"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "ah_pct": -18.1,
-      "ah_price": 122.95,
-      "reg_price": 150.13,
-      "mkt_cap": 155213709312,
-      "volume": 28212824,
-      "catalyst": "Earnings AH (Oct 28)"
+      "ticker": "DXC",
+      "name": "DXC Technology Company",
+      "ah_pct": -12.24,
+      "ah_price": 13.37,
+      "reg_price": 15.23,
+      "mkt_cap": 2433429248,
+      "volume": 4993110,
+      "catalyst": "Earnings AH (Oct 29)"
     },
     {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "ah_pct": -9.97,
-      "ah_price": 292.5,
-      "reg_price": 324.89,
-      "mkt_cap": 3973383716864,
-      "volume": 54011739,
-      "catalyst": "Earnings AH (Oct 28)"
+      "ticker": "PURR",
+      "name": "Hyperliquid Strategies Inc",
+      "ah_pct": -9.05,
+      "ah_price": 11.18,
+      "reg_price": 12.29,
+      "mkt_cap": 3419954176,
+      "volume": 58982550,
+      "catalyst": "Stock Market Today, Oct. 29: Hyperliquid Strategies Stock Surges 23% as Wall Street Giant "
     },
     {
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "ah_pct": -9.75,
-      "ah_price": 290.52,
-      "reg_price": 321.89,
-      "mkt_cap": 3936694042624,
-      "volume": 29362508,
-      "catalyst": "Earnings AH (Oct 28)"
+      "ticker": "PINS",
+      "name": "Pinterest, Inc.",
+      "ah_pct": -7.58,
+      "ah_price": 18.41,
+      "reg_price": 19.92,
+      "mkt_cap": 11158333440,
+      "volume": 44776654,
+      "catalyst": "Earnings AH (Oct 29)"
     },
     {
-      "ticker": "CMG",
-      "name": "Chipotle Mexican Grill, Inc.",
-      "ah_pct": 7.0,
-      "ah_price": 30.74,
-      "reg_price": 28.73,
-      "mkt_cap": 36355457024,
-      "volume": 30761621,
-      "catalyst": "Earnings AH (Oct 28)"
+      "ticker": "ASST",
+      "name": "Strive, Inc.",
+      "ah_pct": -7.54,
+      "ah_price": 23.03,
+      "reg_price": 24.91,
+      "mkt_cap": 3171749120,
+      "volume": 6308340,
+      "catalyst": "AI Price Prediction: Bitcoin Is 35% Below ATH. ChatGPT AI Says When It Could Get Back to $"
     },
     {
-      "ticker": "TYL",
-      "name": "Tyler Technologies, Inc.",
-      "ah_pct": -6.34,
-      "ah_price": 338.01,
-      "reg_price": 360.9,
-      "mkt_cap": 14779674624,
-      "volume": 1310723,
-      "catalyst": "Earnings AH (Oct 28)"
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "ah_pct": -7.3,
+      "ah_price": 225.99,
+      "reg_price": 243.79,
+      "mkt_cap": 2629595299840,
+      "volume": 79750364,
+      "catalyst": "Earnings AH (Oct 29)"
+    },
+    {
+      "ticker": "AXTI",
+      "name": "AXT Inc",
+      "ah_pct": -6.87,
+      "ah_price": 56.7,
+      "reg_price": 60.88,
+      "mkt_cap": 3992097280,
+      "volume": 12460829,
+      "catalyst": "Earnings AH (Oct 29)"
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "ah_pct": -6.27,
+      "ah_price": 161.2,
+      "reg_price": 171.99,
+      "mkt_cap": 43667951616,
+      "volume": 17236784,
+      "catalyst": "Post-market move"
     }
   ]
 }
