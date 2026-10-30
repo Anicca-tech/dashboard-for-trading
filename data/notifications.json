@@ -1,11 +1,11 @@
 {
   "date": "2026-10-30",
-  "updated_at": "2026-10-30T19:08:25.455063-04:00",
+  "updated_at": "2026-10-30T19:35:28.281864-04:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-10-30T19:08:25.455063-04:00",
-    "alert_count": 35,
+    "triggered_at": "2026-10-30T19:35:28.281864-04:00",
+    "alert_count": 34,
     "alerts": [
       {
         "type": "stock",
@@ -39,7 +39,7 @@
         "name": "Capri Holdings Limited",
         "pct": 16.31,
         "price": 18.68,
-        "mkt_cap": 2123012224,
+        "mkt_cap": 2144391296,
         "atr_pct": 4.61,
         "adr_pct": 4.45
       },
@@ -88,8 +88,8 @@
         "pct": 12.97,
         "price": 96.84,
         "mkt_cap": 25625643008,
-        "atr_pct": 3.6,
-        "adr_pct": 3.68
+        "atr_pct": 3.58,
+        "adr_pct": 3.67
       },
       {
         "type": "stock",
@@ -351,7 +351,7 @@
         "name": "Spotify Technology S.A.",
         "pct": 6.5,
         "price": 593.44,
-        "mkt_cap": 122023174144,
+        "mkt_cap": 122001891328,
         "atr_pct": 3.99,
         "adr_pct": 3.67
       },
@@ -364,20 +364,8 @@
         "pct": 5.97,
         "price": 74.95,
         "mkt_cap": 14652198912,
-        "atr_pct": 3.09,
-        "adr_pct": 3.18
-      },
-      {
-        "type": "stock",
-        "ticker": "IMO",
-        "label": "IMO",
-        "symbol": "IMO",
-        "name": "Imperial Oil Limited",
-        "pct": 5.52,
-        "price": 138.1,
-        "mkt_cap": 68668567552,
-        "atr_pct": 3.27,
-        "adr_pct": 3.02
+        "atr_pct": 3.11,
+        "adr_pct": 3.2
       },
       {
         "type": "stock",
@@ -399,7 +387,7 @@
         "name": "TG Therapeutics, Inc.",
         "pct": 5.34,
         "price": 61.18,
-        "mkt_cap": 9364764672,
+        "mkt_cap": 9365653504,
         "atr_pct": 3.86,
         "adr_pct": 4.14
       },
