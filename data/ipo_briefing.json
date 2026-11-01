@@ -1,138 +1,158 @@
 {
-  "generated_at": "2026-10-25T09:58:57.677658-04:00",
-  "week_of": "Week of October 25, 2026",
+  "generated_at": "2026-11-01T11:28:50.361896-05:00",
+  "week_of": "Week of November 01, 2026",
   "new_filings": [
     {
-      "company": "Canary Staked INJ ETF",
+      "company": "Exascale Labs Holdings Inc.  (XLAB, XLABW)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
+    },
+    {
+      "company": "iPower Inc.  (IPW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-30"
     },
     {
       "company": "Evernorth Holdings Inc.  (XRPN, XRPNW)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "AEI CapForce II Investment Corp  (AEIB)",
+      "company": "MOBIX LABS, INC  (MOBX, MOBXW)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "Onfolio Holdings, Inc  (ONFO, ONFOP, ONFOW)",
+      "company": "Parabolic Technologies, Inc.  (PARA, PARAW)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "BHAV Acquisition Corp II  (BHAI)",
+      "company": "INTERPACE BIOSCIENCES, INC.  (IDXG)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "Unitrend Entertainment Group Ltd",
+      "company": "HomesToLife Ltd  (HTLM)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "Uptrend Holdings Ltd",
+      "company": "Capstone Holding Corp.  (CAPS)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "Cryptex Digital Market Cap ETF  (BAGZ)",
+      "company": "BIO KEY INTERNATIONAL INC  (BKYI)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "Boxlight Corp  (BOXL)",
+      "company": "Ionetix Corp / DE /",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "Grayscale Bittensor Trust (TAO)  (GTAO)",
+      "company": "UCSB Acquisition Corp.",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "Hometown Financial Group, Inc./MD  (HFG)",
+      "company": "NorthStar Earth & Space Enterprises, Inc.  (NSTR, NSTR-WT)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "OPAY Ltd",
+      "company": "Stratum Holdings Corp.  (LRHC, SRTM)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
+    },
+    {
+      "company": "Velos Acquisition I Corp.  (VLOS, VLOSU, VLOSW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-30"
+    },
+    {
+      "company": "Duke Holding Inc.",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-30"
+    },
+    {
+      "company": "VS Trust  (SVIX, UVIX)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-10-30"
     },
     {
       "company": "WINDWARD BIO GROUP AG",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "MFB Bancorp, Inc.  (MFDB)",
+      "company": "Timwood Holdings Ltd  (TIWD)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-23"
+      "filed": "2026-10-30"
     },
     {
-      "company": "Ambitious Entertainment, Inc.",
+      "company": "Abits Group Inc  (ABTS)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-22"
+      "filed": "2026-10-29"
     },
     {
-      "company": "AMC Robotics Corp  (AMCI)",
+      "company": "Ocean Power Technologies, Inc.  (OPTT)",
       "ticker": "",
       "form": "",
-      "filed": "2026-10-22"
-    },
-    {
-      "company": "Neo Aeronautics, Inc.",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-22"
-    },
-    {
-      "company": "reAlpha Tech Corp.  (AIRE)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-22"
-    },
-    {
-      "company": "Phoenix Energy One, LLC  (PHXE-P)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-22"
-    },
-    {
-      "company": "Wallbox N.V.  (WBX)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-10-22"
+      "filed": "2026-10-29"
     }
   ],
   "recently_priced": [
     {
-      "company": "Lycia Therapeutics, Inc.",
+      "company": "Bambusa Therapeutics, Inc.",
       "ticker": "",
-      "priced_date": "2026-10-23"
+      "priced_date": "2026-10-30"
     },
     {
-      "company": "CitroTech Inc.  (CITR)",
+      "company": "BHAV Acquisition Corp II  (BHAI)",
       "ticker": "",
-      "priced_date": "2026-10-22"
+      "priced_date": "2026-10-30"
+    },
+    {
+      "company": "Aspen Neuroscience, Inc.  (ASPE)",
+      "ticker": "",
+      "priced_date": "2026-10-30"
+    },
+    {
+      "company": "Megan Holdings Ltd.  (MGN)",
+      "ticker": "",
+      "priced_date": "2026-10-29"
+    },
+    {
+      "company": "GEORGIA BANKING CO INC  (GBC)",
+      "ticker": "",
+      "priced_date": "2026-10-29"
+    },
+    {
+      "company": "SPACCircle Acquisition Corp.  (SCQC)",
+      "ticker": "",
+      "priced_date": "2026-10-27"
     }
   ],
   "delayed_withdrawn": [],
