@@ -1,10 +1,10 @@
 {
   "date": "2026-11-02",
-  "updated_at": "2026-11-02T18:39:09.657392-05:00",
+  "updated_at": "2026-11-02T19:35:29.144297-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-02T16:35:41.367391-05:00",
+    "triggered_at": "2026-11-02T19:35:29.144297-05:00",
     "alert_count": 36,
     "alerts": [
       {
@@ -16,8 +16,8 @@
         "pct": -15.54,
         "price": 129.04,
         "mkt_cap": 8555503104,
-        "atr_pct": 12.13,
-        "adr_pct": 11.4
+        "atr_pct": 12.14,
+        "adr_pct": 11.41
       },
       {
         "type": "stock",
@@ -63,7 +63,7 @@
         "name": "Patterson-UTI Energy, Inc.",
         "pct": -11.41,
         "price": 11.8,
-        "mkt_cap": 4500341248,
+        "mkt_cap": 4479488512,
         "atr_pct": 5.3,
         "adr_pct": 4.66
       },
@@ -267,7 +267,7 @@
         "name": "Murphy Oil Corporation",
         "pct": -8.62,
         "price": 40.16,
-        "mkt_cap": 5756918784,
+        "mkt_cap": 5758185984,
         "atr_pct": 4.04,
         "adr_pct": 3.5
       },
@@ -327,7 +327,7 @@
         "name": "Klaviyo, Inc. Series A",
         "pct": 8.24,
         "price": 21.8,
-        "mkt_cap": 6524299776,
+        "mkt_cap": 6207057408,
         "atr_pct": 5.05,
         "adr_pct": 5.47
       },
@@ -411,7 +411,7 @@
         "name": "Choice Hotels International, In",
         "pct": 6.7,
         "price": 118.61,
-        "mkt_cap": 5396220416,
+        "mkt_cap": 5338472960,
         "atr_pct": 3.36,
         "adr_pct": 3.44
       },
