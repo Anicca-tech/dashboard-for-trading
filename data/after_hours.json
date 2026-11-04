@@ -1,6 +1,37 @@
 {
-  "generated_at": "2026-11-02T21:51:55.734528-05:00",
-  "as_of": "Nov 02, 2026 09:51 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-11-03T20:13:54.375171-05:00",
+  "as_of": "Nov 03, 2026 08:13 PM ET",
+  "count": 3,
+  "movers": [
+    {
+      "ticker": "DUOL",
+      "name": "Duolingo, Inc.",
+      "ah_pct": 11.95,
+      "ah_price": 143.29,
+      "reg_price": 128.0,
+      "mkt_cap": 5963918848,
+      "volume": 2441124,
+      "catalyst": "Earnings AH (Nov 03)"
+    },
+    {
+      "ticker": "PRIM",
+      "name": "Primoris Services Corporation",
+      "ah_pct": 9.65,
+      "ah_price": 87.25,
+      "reg_price": 79.57,
+      "mkt_cap": 4317065216,
+      "volume": 1614814,
+      "catalyst": "Earnings AH (Nov 03)"
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "ah_pct": 7.2,
+      "ah_price": 33.65,
+      "reg_price": 31.39,
+      "mkt_cap": 20622143488,
+      "volume": 58447859,
+      "catalyst": "Earnings AH (Nov 03)"
+    }
+  ]
 }
