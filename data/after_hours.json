@@ -1,37 +1,27 @@
 {
-  "generated_at": "2026-11-03T20:13:54.375171-05:00",
-  "as_of": "Nov 03, 2026 08:13 PM ET",
-  "count": 3,
+  "generated_at": "2026-11-04T20:25:27.569404-05:00",
+  "as_of": "Nov 04, 2026 08:25 PM ET",
+  "count": 2,
   "movers": [
     {
-      "ticker": "DUOL",
-      "name": "Duolingo, Inc.",
-      "ah_pct": 11.95,
-      "ah_price": 143.29,
-      "reg_price": 128.0,
-      "mkt_cap": 5963918848,
-      "volume": 2441124,
-      "catalyst": "Earnings AH (Nov 03)"
+      "ticker": "SEZL",
+      "name": "Sezzle Inc.",
+      "ah_pct": 26.93,
+      "ah_price": 173.5,
+      "reg_price": 136.69,
+      "mkt_cap": 4617852928,
+      "volume": 1030782,
+      "catalyst": "Earnings AH (Nov 04)"
     },
     {
-      "ticker": "PRIM",
-      "name": "Primoris Services Corporation",
-      "ah_pct": 9.65,
-      "ah_price": 87.25,
-      "reg_price": 79.57,
-      "mkt_cap": 4317065216,
-      "volume": 1614814,
-      "catalyst": "Earnings AH (Nov 03)"
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer, Inc.",
-      "ah_pct": 7.2,
-      "ah_price": 33.65,
-      "reg_price": 31.39,
-      "mkt_cap": 20622143488,
-      "volume": 58447859,
-      "catalyst": "Earnings AH (Nov 03)"
+      "ticker": "SEI",
+      "name": "Solaris Energy Infrastructure, ",
+      "ah_pct": 7.55,
+      "ah_price": 61.99,
+      "reg_price": 57.64,
+      "mkt_cap": 5800103424,
+      "volume": 8371493,
+      "catalyst": "Earnings AH (Nov 04)"
     }
   ]
 }
