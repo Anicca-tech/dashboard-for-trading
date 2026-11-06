@@ -1,27 +1,57 @@
 {
-  "generated_at": "2026-11-04T20:25:27.569404-05:00",
-  "as_of": "Nov 04, 2026 08:25 PM ET",
-  "count": 2,
+  "generated_at": "2026-11-05T20:29:08.887588-05:00",
+  "as_of": "Nov 05, 2026 08:29 PM ET",
+  "count": 5,
   "movers": [
     {
-      "ticker": "SEZL",
-      "name": "Sezzle Inc.",
-      "ah_pct": 26.93,
-      "ah_price": 173.5,
-      "reg_price": 136.69,
-      "mkt_cap": 4617852928,
-      "volume": 1030782,
-      "catalyst": "Earnings AH (Nov 04)"
+      "ticker": "IREN",
+      "name": "IREN LIMITED",
+      "ah_pct": 10.54,
+      "ah_price": 19.93,
+      "reg_price": 18.03,
+      "mkt_cap": 7295182336,
+      "volume": 124740207,
+      "catalyst": "Earnings AH (Nov 05)"
     },
     {
-      "ticker": "SEI",
-      "name": "Solaris Energy Infrastructure, ",
-      "ah_pct": 7.55,
-      "ah_price": 61.99,
-      "reg_price": 57.64,
-      "mkt_cap": 5800103424,
-      "volume": 8371493,
-      "catalyst": "Earnings AH (Nov 04)"
+      "ticker": "TGLS",
+      "name": "Tecnoglass Holdings Inc.",
+      "ah_pct": -9.79,
+      "ah_price": 40.71,
+      "reg_price": 45.13,
+      "mkt_cap": 2002175104,
+      "volume": 804824,
+      "catalyst": "Tecnoglass (TGLS) Q3 2026 Earnings Call Transcript"
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics, Inc.",
+      "ah_pct": -7.61,
+      "ah_price": 43.32,
+      "reg_price": 46.89,
+      "mkt_cap": 3981255680,
+      "volume": 28224050,
+      "catalyst": "Earnings AH (Nov 05)"
+    },
+    {
+      "ticker": "U",
+      "name": "Unity Software Inc.",
+      "ah_pct": 6.97,
+      "ah_price": 52.2,
+      "reg_price": 48.8,
+      "mkt_cap": 21476339712,
+      "volume": 49973128,
+      "catalyst": "Unity shares jump on report of takeover interest from Silver Lake, PIF"
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "ah_pct": 6.31,
+      "ah_price": 196.88,
+      "reg_price": 185.2,
+      "mkt_cap": 231763787776,
+      "volume": 31193724,
+      "catalyst": "The AI Trade Just Had Its Worst Day Since The Pandemic"
     }
   ]
 }
