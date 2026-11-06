@@ -1,10 +1,10 @@
 {
   "date": "2026-11-05",
-  "updated_at": "2026-11-05T19:31:03.220261-05:00",
+  "updated_at": "2026-11-05T19:35:22.767365-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-05T19:31:03.220261-05:00",
+    "triggered_at": "2026-11-05T19:35:22.767365-05:00",
     "alert_count": 26,
     "alerts": [
       {
@@ -51,7 +51,7 @@
         "name": "Caris Life Sciences, Inc.",
         "pct": -21.64,
         "price": 26.03,
-        "mkt_cap": 7355953152,
+        "mkt_cap": 7358178816,
         "atr_pct": 9.02,
         "adr_pct": 6.57
       },
@@ -195,7 +195,7 @@
         "name": "Vertex, Inc.",
         "pct": 10.49,
         "price": 17.59,
-        "mkt_cap": 2846359808,
+        "mkt_cap": 2853414400,
         "atr_pct": 4.69,
         "adr_pct": 4.52
       },
@@ -255,7 +255,7 @@
         "name": "Verisk Analytics, Inc.",
         "pct": 6.88,
         "price": 211.47,
-        "mkt_cap": 27707189248,
+        "mkt_cap": 27524091904,
         "atr_pct": 3.9,
         "adr_pct": 3.5
       },
