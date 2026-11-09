@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "updated_at": "2026-11-09T16:35:28.991003-05:00",
+  "updated_at": "2026-11-09T18:23:49.668163-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
@@ -167,5 +167,171 @@
     "etf_top5": [],
     "etf_bottom5": [],
     "indices_range": []
+  },
+  "n1": {
+    "slot": "n1",
+    "time_label": "10:00 AM ET",
+    "triggered_at": "2026-11-09T18:23:49.668163-05:00",
+    "alert_count": 13,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "WRBY",
+        "label": "WRBY",
+        "symbol": "WRBY",
+        "name": "Warby Parker Inc.",
+        "pct": 18.56,
+        "price": 30.21,
+        "mkt_cap": 3755543296,
+        "atr_pct": 7.34,
+        "adr_pct": 7.41
+      },
+      {
+        "type": "stock",
+        "ticker": "MPWR",
+        "label": "MPWR",
+        "symbol": "MPWR",
+        "name": "Monolithic Power Systems, Inc.",
+        "pct": 16.6,
+        "price": 1388.05,
+        "mkt_cap": 67692425216,
+        "atr_pct": 6.48,
+        "adr_pct": 5.74
+      },
+      {
+        "type": "stock",
+        "ticker": "VSAT",
+        "label": "VSAT",
+        "symbol": "VSAT",
+        "name": "ViaSat, Inc.",
+        "pct": 16.29,
+        "price": 74.37,
+        "mkt_cap": 10244899840,
+        "atr_pct": 9.0,
+        "adr_pct": 8.46
+      },
+      {
+        "type": "stock",
+        "ticker": "IMVT",
+        "label": "IMVT",
+        "symbol": "IMVT",
+        "name": "Immunovant, Inc.",
+        "pct": 15.13,
+        "price": 35.15,
+        "mkt_cap": 7260327424,
+        "atr_pct": 4.24,
+        "adr_pct": 4.4
+      },
+      {
+        "type": "stock",
+        "ticker": "ALMR",
+        "label": "ALMR",
+        "symbol": "ALMR",
+        "name": "Alamar Biosciences, Inc.",
+        "pct": 13.51,
+        "price": 31.84,
+        "mkt_cap": 2212295680,
+        "atr_pct": 8.62,
+        "adr_pct": 9.18
+      },
+      {
+        "type": "stock",
+        "ticker": "AMD",
+        "label": "AMD",
+        "symbol": "AMD",
+        "name": "Advanced Micro Devices, Inc.",
+        "pct": 13.26,
+        "price": 508.58,
+        "mkt_cap": 834115600384,
+        "atr_pct": 8.07,
+        "adr_pct": 5.77
+      },
+      {
+        "type": "stock",
+        "ticker": "VIA",
+        "label": "VIA",
+        "symbol": "VIA",
+        "name": "Via Transportation, Inc.",
+        "pct": 12.8,
+        "price": 42.55,
+        "mkt_cap": 3622794496,
+        "atr_pct": 5.64,
+        "adr_pct": 6.22
+      },
+      {
+        "type": "stock",
+        "ticker": "TWST",
+        "label": "TWST",
+        "symbol": "TWST",
+        "name": "Twist Bioscience Corporation",
+        "pct": 12.05,
+        "price": 135.34,
+        "mkt_cap": 8973201408,
+        "atr_pct": 12.33,
+        "adr_pct": 10.83
+      },
+      {
+        "type": "stock",
+        "ticker": "SDGR",
+        "label": "SDGR",
+        "symbol": "SDGR",
+        "name": "Schrodinger, Inc.",
+        "pct": 11.97,
+        "price": 33.39,
+        "mkt_cap": 2497760000,
+        "atr_pct": 7.28,
+        "adr_pct": 8.56
+      },
+      {
+        "type": "stock",
+        "ticker": "AUGO",
+        "label": "AUGO",
+        "symbol": "AUGO",
+        "name": "Aura Minerals Inc.",
+        "pct": 11.78,
+        "price": 86.99,
+        "mkt_cap": 7294532608,
+        "atr_pct": 7.28,
+        "adr_pct": 6.61
+      },
+      {
+        "type": "stock",
+        "ticker": "VIR",
+        "label": "VIR",
+        "symbol": "VIR",
+        "name": "Vir Biotechnology, Inc.",
+        "pct": 11.75,
+        "price": 13.64,
+        "mkt_cap": 2336989696,
+        "atr_pct": 5.95,
+        "adr_pct": 6.24
+      },
+      {
+        "type": "stock",
+        "ticker": "DBX",
+        "label": "DBX",
+        "symbol": "DBX",
+        "name": "Dropbox, Inc.",
+        "pct": -6.0,
+        "price": 32.58,
+        "mkt_cap": 7084281344,
+        "atr_pct": 3.72,
+        "adr_pct": 3.21
+      },
+      {
+        "type": "stock",
+        "ticker": "ASAN",
+        "label": "ASAN",
+        "symbol": "ASAN",
+        "name": "Asana, Inc.",
+        "pct": -5.56,
+        "price": 10.02,
+        "mkt_cap": 2294280704,
+        "atr_pct": 6.16,
+        "adr_pct": 5.66
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": []
   }
 }
