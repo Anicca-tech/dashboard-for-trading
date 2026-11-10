@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-11-06T19:51:00.961169-05:00",
-  "as_of": "Nov 06, 2026 07:51 PM ET",
-  "count": 0,
-  "movers": []
+  "generated_at": "2026-11-09T22:26:06.134265-05:00",
+  "as_of": "Nov 09, 2026 10:26 PM ET",
+  "count": 2,
+  "movers": [
+    {
+      "ticker": "LIF",
+      "name": "Life360, Inc.",
+      "ah_pct": -6.86,
+      "ah_price": 41.93,
+      "reg_price": 45.02,
+      "mkt_cap": 3668246272,
+      "volume": 3285475,
+      "catalyst": "Earnings AH (Nov 09)"
+    },
+    {
+      "ticker": "ONTO",
+      "name": "Onto Innovation Inc.",
+      "ah_pct": 6.23,
+      "ah_price": 206.13,
+      "reg_price": 194.04,
+      "mkt_cap": 9522366464,
+      "volume": 1304005,
+      "catalyst": "Earnings AH (Nov 09)"
+    }
+  ]
 }
