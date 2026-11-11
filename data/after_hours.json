@@ -1,27 +1,37 @@
 {
-  "generated_at": "2026-11-09T22:26:06.134265-05:00",
-  "as_of": "Nov 09, 2026 10:26 PM ET",
-  "count": 2,
+  "generated_at": "2026-11-10T20:11:45.971375-05:00",
+  "as_of": "Nov 10, 2026 08:11 PM ET",
+  "count": 3,
   "movers": [
     {
-      "ticker": "LIF",
-      "name": "Life360, Inc.",
-      "ah_pct": -6.86,
-      "ah_price": 41.93,
-      "reg_price": 45.02,
-      "mkt_cap": 3668246272,
-      "volume": 3285475,
-      "catalyst": "Earnings AH (Nov 09)"
+      "ticker": "ATRO",
+      "name": "Astronics Corporation",
+      "ah_pct": -10.87,
+      "ah_price": 55.26,
+      "reg_price": 62.0,
+      "mkt_cap": 2666562048,
+      "volume": 887852,
+      "catalyst": "Earnings AH (Nov 10)"
     },
     {
-      "ticker": "ONTO",
-      "name": "Onto Innovation Inc.",
-      "ah_pct": 6.23,
-      "ah_price": 206.13,
-      "reg_price": 194.04,
-      "mkt_cap": 9522366464,
-      "volume": 1304005,
-      "catalyst": "Earnings AH (Nov 09)"
+      "ticker": "CRWV",
+      "name": "CoreWeave, Inc.",
+      "ah_pct": 7.9,
+      "ah_price": 52.58,
+      "reg_price": 48.73,
+      "mkt_cap": 26876377088,
+      "volume": 87321581,
+      "catalyst": "Earnings AH (Nov 10)"
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing, Inc.",
+      "ah_pct": -6.83,
+      "ah_price": 11.32,
+      "reg_price": 12.15,
+      "mkt_cap": 4055290112,
+      "volume": 19493836,
+      "catalyst": "Earnings AH (Nov 10)"
     }
   ]
 }
