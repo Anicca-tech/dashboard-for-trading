@@ -1,11 +1,11 @@
 {
   "date": "2026-11-11",
-  "updated_at": "2026-11-11T19:35:29.033618-05:00",
+  "updated_at": "2026-11-11T20:38:16.174026-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-11T19:35:29.033618-05:00",
-    "alert_count": 17,
+    "triggered_at": "2026-11-11T20:38:16.174026-05:00",
+    "alert_count": 16,
     "alerts": [
       {
         "type": "stock",
@@ -16,8 +16,8 @@
         "pct": 20.8,
         "price": 48.9,
         "mkt_cap": 2142230400,
-        "atr_pct": 5.61,
-        "adr_pct": 6.32
+        "atr_pct": NaN,
+        "adr_pct": 5.88
       },
       {
         "type": "stock",
@@ -28,8 +28,8 @@
         "pct": 18.25,
         "price": 23.0,
         "mkt_cap": 3492489728,
-        "atr_pct": 4.45,
-        "adr_pct": 4.63
+        "atr_pct": NaN,
+        "adr_pct": 3.93
       },
       {
         "type": "stock",
@@ -40,8 +40,8 @@
         "pct": 15.21,
         "price": 58.63,
         "mkt_cap": 3502011904,
-        "atr_pct": 5.78,
-        "adr_pct": 5.45
+        "atr_pct": NaN,
+        "adr_pct": 4.79
       },
       {
         "type": "stock",
@@ -52,8 +52,8 @@
         "pct": 12.85,
         "price": 19.06,
         "mkt_cap": 2254683136,
-        "atr_pct": 4.54,
-        "adr_pct": 4.31
+        "atr_pct": NaN,
+        "adr_pct": 3.95
       },
       {
         "type": "stock",
@@ -64,8 +64,8 @@
         "pct": 11.89,
         "price": 811.3,
         "mkt_cap": 917923627008,
-        "atr_pct": 7.81,
-        "adr_pct": 6.08
+        "atr_pct": NaN,
+        "adr_pct": 5.95
       },
       {
         "type": "stock",
@@ -76,8 +76,8 @@
         "pct": 11.75,
         "price": 373.68,
         "mkt_cap": 237590495232,
-        "atr_pct": 9.11,
-        "adr_pct": 6.48
+        "atr_pct": NaN,
+        "adr_pct": 6.44
       },
       {
         "type": "stock",
@@ -88,8 +88,8 @@
         "pct": 11.29,
         "price": 154.22,
         "mkt_cap": 23564816384,
-        "atr_pct": 7.84,
-        "adr_pct": 7.27
+        "atr_pct": NaN,
+        "adr_pct": 7.22
       },
       {
         "type": "stock",
@@ -100,8 +100,8 @@
         "pct": 10.36,
         "price": 122.77,
         "mkt_cap": 17461047296,
-        "atr_pct": 6.63,
-        "adr_pct": 6.01
+        "atr_pct": NaN,
+        "adr_pct": 5.92
       },
       {
         "type": "stock",
@@ -112,8 +112,8 @@
         "pct": 10.33,
         "price": 49.25,
         "mkt_cap": 2523703040,
-        "atr_pct": 11.79,
-        "adr_pct": 9.85
+        "atr_pct": NaN,
+        "adr_pct": 9.87
       },
       {
         "type": "stock",
@@ -124,8 +124,8 @@
         "pct": 8.92,
         "price": 1478.69,
         "mkt_cap": 72112750592,
-        "atr_pct": 6.46,
-        "adr_pct": 6.17
+        "atr_pct": NaN,
+        "adr_pct": 6.03
       },
       {
         "type": "stock",
@@ -136,20 +136,8 @@
         "pct": -7.6,
         "price": 29.07,
         "mkt_cap": 2022387840,
-        "atr_pct": 4.79,
-        "adr_pct": 4.52
-      },
-      {
-        "type": "stock",
-        "ticker": "TTEK",
-        "label": "TTEK",
-        "symbol": "TTEK",
-        "name": "Tetra Tech, Inc.",
-        "pct": -7.48,
-        "price": 37.61,
-        "mkt_cap": 9629831168,
-        "atr_pct": 3.51,
-        "adr_pct": 3.05
+        "atr_pct": NaN,
+        "adr_pct": 4.21
       },
       {
         "type": "stock",
@@ -160,8 +148,8 @@
         "pct": -7.22,
         "price": 122.59,
         "mkt_cap": 8127860736,
-        "atr_pct": 14.12,
-        "adr_pct": 11.89
+        "atr_pct": NaN,
+        "adr_pct": 11.25
       },
       {
         "type": "stock",
@@ -172,8 +160,8 @@
         "pct": -6.67,
         "price": 16.64,
         "mkt_cap": 13308070912,
-        "atr_pct": 7.56,
-        "adr_pct": 7.15
+        "atr_pct": NaN,
+        "adr_pct": 7.1
       },
       {
         "type": "stock",
@@ -184,8 +172,8 @@
         "pct": -6.44,
         "price": 21.78,
         "mkt_cap": 2064752768,
-        "atr_pct": 7.38,
-        "adr_pct": 8.56
+        "atr_pct": NaN,
+        "adr_pct": 8.61
       },
       {
         "type": "stock",
@@ -196,8 +184,8 @@
         "pct": -6.4,
         "price": 180.7,
         "mkt_cap": 39084019712,
-        "atr_pct": 5.67,
-        "adr_pct": 5.5
+        "atr_pct": NaN,
+        "adr_pct": 5.42
       },
       {
         "type": "stock",
@@ -208,8 +196,8 @@
         "pct": -5.06,
         "price": 46.34,
         "mkt_cap": 2000940672,
-        "atr_pct": 5.19,
-        "adr_pct": 4.91
+        "atr_pct": NaN,
+        "adr_pct": 4.99
       }
     ],
     "etf_top5": [],
