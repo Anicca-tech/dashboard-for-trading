@@ -1,37 +1,17 @@
 {
-  "generated_at": "2026-11-11T21:12:11.777628-05:00",
-  "as_of": "Nov 11, 2026 09:12 PM ET",
-  "count": 3,
+  "generated_at": "2026-11-12T20:45:55.284365-05:00",
+  "as_of": "Nov 12, 2026 08:45 PM ET",
+  "count": 1,
   "movers": [
     {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "ah_pct": -8.61,
-      "ah_price": 158.78,
-      "reg_price": 173.73,
-      "mkt_cap": 4195058188288,
-      "volume": 281514030,
-      "catalyst": "Nvidia live updates: Stock tanks after new affair allegations, board reportedly preparing "
-    },
-    {
-      "ticker": "TTEK",
-      "name": "Tetra Tech, Inc.",
-      "ah_pct": 8.48,
-      "ah_price": 40.8,
-      "reg_price": 37.61,
-      "mkt_cap": 9629831168,
-      "volume": 11836358,
-      "catalyst": "Earnings AH (Nov 11)"
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "ah_pct": -6.37,
-      "ah_price": 56.9,
-      "reg_price": 60.77,
-      "mkt_cap": 33516877824,
-      "volume": 158080488,
-      "catalyst": "Dow Jones Futures: Techs Tumble As Nvidia May Oust CEO Huang; AI Stocks Slide, But Not AMD"
+      "ticker": "VIR",
+      "name": "Vir Biotechnology, Inc.",
+      "ah_pct": -12.86,
+      "ah_price": 10.56,
+      "reg_price": 12.12,
+      "mkt_cap": 2075801728,
+      "volume": 1945044,
+      "catalyst": "Vir Biotechnology Announces Pricing of Public Offering of Common Stock"
     }
   ]
 }
