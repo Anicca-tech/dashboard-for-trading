@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-11-12T20:45:55.284365-05:00",
-  "as_of": "Nov 12, 2026 08:45 PM ET",
-  "count": 1,
-  "movers": [
-    {
-      "ticker": "VIR",
-      "name": "Vir Biotechnology, Inc.",
-      "ah_pct": -12.86,
-      "ah_price": 10.56,
-      "reg_price": 12.12,
-      "mkt_cap": 2075801728,
-      "volume": 1945044,
-      "catalyst": "Vir Biotechnology Announces Pricing of Public Offering of Common Stock"
-    }
-  ]
+  "generated_at": "2026-11-13T20:24:17.123979-05:00",
+  "as_of": "Nov 13, 2026 08:24 PM ET",
+  "count": 0,
+  "movers": []
 }
