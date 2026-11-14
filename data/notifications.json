@@ -1,10 +1,10 @@
 {
   "date": "2026-11-13",
-  "updated_at": "2026-11-13T19:26:00.042662-05:00",
+  "updated_at": "2026-11-13T19:35:22.673855-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-13T19:26:00.042662-05:00",
+    "triggered_at": "2026-11-13T19:35:22.673855-05:00",
     "alert_count": 18,
     "alerts": [
       {
@@ -159,9 +159,9 @@
         "name": "Zai Lab Limited",
         "pct": -5.53,
         "price": 24.6,
-        "mkt_cap": 3071144192,
+        "mkt_cap": 3044797440,
         "atr_pct": 6.09,
-        "adr_pct": 5.61
+        "adr_pct": 5.6
       },
       {
         "type": "stock",
