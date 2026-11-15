@@ -1,148 +1,143 @@
 {
-  "generated_at": "2026-11-08T11:23:31.096528-05:00",
-  "week_of": "Week of November 08, 2026",
+  "generated_at": "2026-11-15T11:39:21.759353-05:00",
+  "week_of": "Week of November 15, 2026",
   "new_filings": [
     {
-      "company": "EXOZYMES INC.  (EXOZ)",
+      "company": "ELT Design Holdings Ltd",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-13"
     },
     {
-      "company": "HomesToLife Ltd  (HTLM)",
+      "company": "Wella Co  (WELA)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-13"
     },
     {
-      "company": "Simwon America Corp.  (SWA)",
+      "company": "SHF Holdings, Inc.  (SHFS, SHFSW)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-13"
     },
     {
-      "company": "Alopexx, Inc.",
+      "company": "Compute AI Acquisition Corp.",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-13"
     },
     {
-      "company": "UC Automotive Holdings Inc.",
+      "company": "CloudDepots Holdings Inc.",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-13"
     },
     {
-      "company": "AParadise III Acquisition Corp.",
+      "company": "Creative Global Technology Holdings Ltd  (CGTL)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-13"
     },
     {
-      "company": "SeeQC, Inc.  (SEQC)",
+      "company": "Tattvance Corp",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-13"
     },
     {
-      "company": "BEHNEH Ltd",
+      "company": "WESTWATER RESOURCES, INC.  (WWR)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-13"
     },
     {
-      "company": "Bogd FT Ltd  (BOGD)",
+      "company": "Rothe Development, Inc.",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-12"
+    },
+    {
+      "company": "FireFly Robotics, Inc.  (FFLY)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-11-12"
+    },
+    {
+      "company": "Cycurion, Inc.  (CYCU, CYCUW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-11-12"
+    },
+    {
+      "company": "Nauticus Robotics, Inc.  (KITT, KITTW)",
+      "ticker": "",
+      "form": "",
+      "filed": "2026-11-12"
     },
     {
       "company": "LORENZO DEVELOPMENTS INC.",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-12"
     },
     {
-      "company": "AKANDA CORP.  (AKAN)",
+      "company": "Harbour Island Acquisition Corp. I  (HRIA)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-12"
     },
     {
-      "company": "Hometown Financial Group, Inc./MD  (HFG)",
+      "company": "Uptrend Holdings Ltd",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-12"
     },
     {
-      "company": "Hifortune Holdings Inc",
+      "company": "Nscale plc",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-12"
     },
     {
-      "company": "Neo-Concept International Group Holdings Ltd  (NCI)",
+      "company": "vVARDIS Holding AG  (VVVV)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-12"
     },
     {
-      "company": "vVARDIS Holding AG",
+      "company": "Aggreko Inc.  (AGKO)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-12"
     },
     {
-      "company": "MFB Bancorp, Inc.  (MFDB)",
+      "company": "Jingrui Wang Pu Holdings Group Ltd.  (JRWP)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-06"
+      "filed": "2026-11-12"
     },
     {
-      "company": "Holvek Technologies Corp",
+      "company": "Anthropic, PBC  (ANT)",
       "ticker": "",
       "form": "",
-      "filed": "2026-11-05"
-    },
-    {
-      "company": "LIS Technologies Inc  (LIS)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-11-05"
-    },
-    {
-      "company": "Ocean Power Technologies, Inc.  (OPTT)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-11-05"
-    },
-    {
-      "company": "707 Cayman Holdings Ltd.  (JEM)",
-      "ticker": "",
-      "form": "",
-      "filed": "2026-11-05"
+      "filed": "2026-11-10"
     }
   ],
   "recently_priced": [
     {
-      "company": "Parabolic Technologies, Inc.  (PARA, PARAW)",
+      "company": "HomesToLife Ltd  (HTLM)",
       "ticker": "",
-      "priced_date": "2026-11-06"
+      "priced_date": "2026-11-13"
     },
     {
-      "company": "Janus Living, Inc.  (JAN)",
+      "company": "707 Cayman Holdings Ltd.  (JEM)",
       "ticker": "",
-      "priced_date": "2026-11-05"
+      "priced_date": "2026-11-13"
     },
     {
-      "company": "reAlpha Tech Corp.  (AIRE)",
+      "company": "ABVC BIOPHARMA, INC.  (ABVC, ECOC)",
       "ticker": "",
-      "priced_date": "2026-11-04"
-    },
-    {
-      "company": "Research Alliance Corp III  (RACC)",
-      "ticker": "",
-      "priced_date": "2026-11-04"
+      "priced_date": "2026-11-13"
     }
   ],
   "delayed_withdrawn": [],
