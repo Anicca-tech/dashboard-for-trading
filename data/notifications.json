@@ -1,11 +1,11 @@
 {
   "date": "2026-11-16",
-  "updated_at": "2026-11-16T14:05:26.174591-05:00",
+  "updated_at": "2026-11-16T16:35:30.203356-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-16T14:05:26.174591-05:00",
-    "alert_count": 14,
+    "triggered_at": "2026-11-16T16:35:30.203356-05:00",
+    "alert_count": 13,
     "alerts": [
       {
         "type": "stock",
@@ -13,10 +13,10 @@
         "label": "CGON",
         "symbol": "CGON",
         "name": "CG Oncology, Inc.",
-        "pct": 15.2,
-        "price": 85.72,
-        "mkt_cap": 7656417280,
-        "atr_pct": 7.12,
+        "pct": 13.95,
+        "price": 84.78,
+        "mkt_cap": 7572457472,
+        "atr_pct": 7.2,
         "adr_pct": 7.08
       },
       {
@@ -25,10 +25,10 @@
         "label": "ASST",
         "symbol": "ASST",
         "name": "Strive, Inc.",
-        "pct": -10.91,
-        "price": 19.03,
-        "mkt_cap": 2423111168,
-        "atr_pct": 11.89,
+        "pct": -11.94,
+        "price": 18.81,
+        "mkt_cap": 2395098112,
+        "atr_pct": 12.03,
         "adr_pct": 8.96
       },
       {
@@ -37,11 +37,11 @@
         "label": "MOH",
         "symbol": "MOH",
         "name": "Molina Healthcare Inc",
-        "pct": 8.7,
-        "price": 227.72,
-        "mkt_cap": 11886984192,
-        "atr_pct": 4.68,
-        "adr_pct": 5.17
+        "pct": 11.27,
+        "price": 233.09,
+        "mkt_cap": 12167298048,
+        "atr_pct": 4.7,
+        "adr_pct": 5.27
       },
       {
         "type": "stock",
@@ -49,35 +49,11 @@
         "label": "NTRA",
         "symbol": "NTRA",
         "name": "Natera, Inc.",
-        "pct": -8.25,
-        "price": 292.76,
-        "mkt_cap": 42452254720,
-        "atr_pct": 8.87,
-        "adr_pct": 5.59
-      },
-      {
-        "type": "stock",
-        "ticker": "GRAL",
-        "label": "GRAL",
-        "symbol": "GRAL",
-        "name": "GRAIL, Inc.",
-        "pct": -7.81,
-        "price": 106.84,
-        "mkt_cap": 4803758080,
-        "atr_pct": 11.4,
-        "adr_pct": 8.26
-      },
-      {
-        "type": "stock",
-        "ticker": "KOD",
-        "label": "KOD",
-        "symbol": "KOD",
-        "name": "Kodiak Sciences Inc",
-        "pct": -7.73,
-        "price": 102.59,
-        "mkt_cap": 6709256704,
-        "atr_pct": 6.66,
-        "adr_pct": 6.75
+        "pct": -9.59,
+        "price": 288.48,
+        "mkt_cap": 41830907904,
+        "atr_pct": 9.05,
+        "adr_pct": 5.63
       },
       {
         "type": "stock",
@@ -85,11 +61,47 @@
         "label": "TEM",
         "symbol": "TEM",
         "name": "Tempus AI, Inc.",
-        "pct": -7.53,
-        "price": 66.21,
-        "mkt_cap": 12076812288,
-        "atr_pct": 11.37,
-        "adr_pct": 9.1
+        "pct": -9.55,
+        "price": 64.76,
+        "mkt_cap": 11812330496,
+        "atr_pct": 11.71,
+        "adr_pct": 9.16
+      },
+      {
+        "type": "stock",
+        "ticker": "KOD",
+        "label": "KOD",
+        "symbol": "KOD",
+        "name": "Kodiak Sciences Inc",
+        "pct": -9.41,
+        "price": 100.73,
+        "mkt_cap": 6587294208,
+        "atr_pct": 6.83,
+        "adr_pct": 6.79
+      },
+      {
+        "type": "stock",
+        "ticker": "GRAL",
+        "label": "GRAL",
+        "symbol": "GRAL",
+        "name": "GRAIL, Inc.",
+        "pct": -8.88,
+        "price": 105.6,
+        "mkt_cap": 4748005376,
+        "atr_pct": 11.61,
+        "adr_pct": 8.32
+      },
+      {
+        "type": "stock",
+        "ticker": "AMLX",
+        "label": "AMLX",
+        "symbol": "AMLX",
+        "name": "Amylyx Pharmaceuticals, Inc.",
+        "pct": -8.22,
+        "price": 27.8,
+        "mkt_cap": 3574048512,
+        "atr_pct": 6.7,
+        "adr_pct": 6.22
       },
       {
         "type": "stock",
@@ -97,11 +109,11 @@
         "label": "PLSE",
         "symbol": "PLSE",
         "name": "Pulse Biosciences, Inc",
-        "pct": -7.41,
-        "price": 46.7,
-        "mkt_cap": 3434735104,
-        "atr_pct": 9.8,
-        "adr_pct": 7.79
+        "pct": -8.09,
+        "price": 46.36,
+        "mkt_cap": 3409728256,
+        "atr_pct": 9.87,
+        "adr_pct": 7.8
       },
       {
         "type": "stock",
@@ -117,39 +129,27 @@
       },
       {
         "type": "stock",
-        "ticker": "KVYO",
-        "label": "KVYO",
-        "symbol": "KVYO",
-        "name": "Klaviyo, Inc. Series A",
-        "pct": 5.67,
-        "price": 23.39,
-        "mkt_cap": 6584335872,
-        "atr_pct": 5.21,
-        "adr_pct": 5.48
+        "ticker": "BILL",
+        "label": "BILL",
+        "symbol": "BILL",
+        "name": "BILL Holdings, Inc.",
+        "pct": 5.78,
+        "price": 57.63,
+        "mkt_cap": 4949439488,
+        "atr_pct": 3.86,
+        "adr_pct": 4.04
       },
       {
         "type": "stock",
-        "ticker": "FRSH",
-        "label": "FRSH",
-        "symbol": "FRSH",
-        "name": "Freshworks Inc.",
-        "pct": 5.47,
-        "price": 13.36,
-        "mkt_cap": 3505566464,
-        "atr_pct": 5.28,
-        "adr_pct": 4.69
-      },
-      {
-        "type": "stock",
-        "ticker": "MBGL",
-        "label": "MBGL",
-        "symbol": "MBGL",
-        "name": "Mobility Global Inc.",
-        "pct": 5.43,
-        "price": 24.55,
-        "mkt_cap": 7236869632,
-        "atr_pct": 3.64,
-        "adr_pct": 3.67
+        "ticker": "QLYS",
+        "label": "QLYS",
+        "symbol": "QLYS",
+        "name": "Qualys, Inc.",
+        "pct": 5.24,
+        "price": 182.01,
+        "mkt_cap": 6353862656,
+        "atr_pct": 8.42,
+        "adr_pct": 6.65
       },
       {
         "type": "stock",
@@ -157,23 +157,11 @@
         "label": "HNGE",
         "symbol": "HNGE",
         "name": "Hinge Health, Inc.",
-        "pct": 5.37,
-        "price": 121.59,
-        "mkt_cap": 9881777152,
-        "atr_pct": 4.99,
+        "pct": 5.11,
+        "price": 121.29,
+        "mkt_cap": 9857396736,
+        "atr_pct": 5.0,
         "adr_pct": 4.75
-      },
-      {
-        "type": "stock",
-        "ticker": "SEZL",
-        "label": "SEZL",
-        "symbol": "SEZL",
-        "name": "Sezzle Inc.",
-        "pct": 5.15,
-        "price": 162.56,
-        "mkt_cap": 5491829248,
-        "atr_pct": 7.69,
-        "adr_pct": 7.52
       }
     ],
     "etf_top5": [],
