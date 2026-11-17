@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "updated_at": "2026-11-16T18:20:37.703761-05:00",
+  "updated_at": "2026-11-16T19:23:43.070089-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
@@ -333,5 +333,172 @@
     ],
     "etf_top5": [],
     "etf_bottom5": []
+  },
+  "n2": {
+    "slot": "n2",
+    "time_label": "12:30 PM ET",
+    "triggered_at": "2026-11-16T19:23:43.070089-05:00",
+    "alert_count": 13,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "CGON",
+        "label": "CGON",
+        "symbol": "CGON",
+        "name": "CG Oncology, Inc.",
+        "pct": 13.95,
+        "price": 84.78,
+        "mkt_cap": 7572457472,
+        "atr_pct": 7.2,
+        "adr_pct": 7.08
+      },
+      {
+        "type": "stock",
+        "ticker": "ASST",
+        "label": "ASST",
+        "symbol": "ASST",
+        "name": "Strive, Inc.",
+        "pct": -11.94,
+        "price": 18.81,
+        "mkt_cap": 2395098112,
+        "atr_pct": 12.03,
+        "adr_pct": 8.96
+      },
+      {
+        "type": "stock",
+        "ticker": "MOH",
+        "label": "MOH",
+        "symbol": "MOH",
+        "name": "Molina Healthcare Inc",
+        "pct": 11.27,
+        "price": 233.09,
+        "mkt_cap": 12167298048,
+        "atr_pct": 4.7,
+        "adr_pct": 5.27
+      },
+      {
+        "type": "stock",
+        "ticker": "NTRA",
+        "label": "NTRA",
+        "symbol": "NTRA",
+        "name": "Natera, Inc.",
+        "pct": -9.59,
+        "price": 288.48,
+        "mkt_cap": 41830907904,
+        "atr_pct": 9.05,
+        "adr_pct": 5.63
+      },
+      {
+        "type": "stock",
+        "ticker": "TEM",
+        "label": "TEM",
+        "symbol": "TEM",
+        "name": "Tempus AI, Inc.",
+        "pct": -9.55,
+        "price": 64.76,
+        "mkt_cap": 11812330496,
+        "atr_pct": 11.71,
+        "adr_pct": 9.16
+      },
+      {
+        "type": "stock",
+        "ticker": "KOD",
+        "label": "KOD",
+        "symbol": "KOD",
+        "name": "Kodiak Sciences Inc",
+        "pct": -9.41,
+        "price": 100.73,
+        "mkt_cap": 6587294208,
+        "atr_pct": 6.83,
+        "adr_pct": 6.79
+      },
+      {
+        "type": "stock",
+        "ticker": "GRAL",
+        "label": "GRAL",
+        "symbol": "GRAL",
+        "name": "GRAIL, Inc.",
+        "pct": -8.88,
+        "price": 105.6,
+        "mkt_cap": 4748005376,
+        "atr_pct": 11.61,
+        "adr_pct": 8.32
+      },
+      {
+        "type": "stock",
+        "ticker": "AMLX",
+        "label": "AMLX",
+        "symbol": "AMLX",
+        "name": "Amylyx Pharmaceuticals, Inc.",
+        "pct": -8.22,
+        "price": 27.8,
+        "mkt_cap": 3574048512,
+        "atr_pct": 6.7,
+        "adr_pct": 6.22
+      },
+      {
+        "type": "stock",
+        "ticker": "PLSE",
+        "label": "PLSE",
+        "symbol": "PLSE",
+        "name": "Pulse Biosciences, Inc",
+        "pct": -8.09,
+        "price": 46.36,
+        "mkt_cap": 3409728256,
+        "atr_pct": 9.87,
+        "adr_pct": 7.8
+      },
+      {
+        "type": "stock",
+        "ticker": "HUBS",
+        "label": "HUBS",
+        "symbol": "HUBS",
+        "name": "HubSpot, Inc.",
+        "pct": 6.78,
+        "price": 231.98,
+        "mkt_cap": 11329081344,
+        "atr_pct": 6.34,
+        "adr_pct": 6.01
+      },
+      {
+        "type": "stock",
+        "ticker": "BILL",
+        "label": "BILL",
+        "symbol": "BILL",
+        "name": "BILL Holdings, Inc.",
+        "pct": 5.78,
+        "price": 57.63,
+        "mkt_cap": 4949439488,
+        "atr_pct": 3.86,
+        "adr_pct": 4.04
+      },
+      {
+        "type": "stock",
+        "ticker": "QLYS",
+        "label": "QLYS",
+        "symbol": "QLYS",
+        "name": "Qualys, Inc.",
+        "pct": 5.24,
+        "price": 182.01,
+        "mkt_cap": 6353862656,
+        "atr_pct": 8.42,
+        "adr_pct": 6.65
+      },
+      {
+        "type": "stock",
+        "ticker": "HNGE",
+        "label": "HNGE",
+        "symbol": "HNGE",
+        "name": "Hinge Health, Inc.",
+        "pct": 5.11,
+        "price": 121.29,
+        "mkt_cap": 9857396736,
+        "atr_pct": 5.0,
+        "adr_pct": 4.75
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": [],
+    "sector_rotation": []
   }
 }
