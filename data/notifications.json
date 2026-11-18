@@ -1,11 +1,11 @@
 {
   "date": "2026-11-17",
-  "updated_at": "2026-11-17T19:35:34.501789-05:00",
+  "updated_at": "2026-11-17T20:49:41.990058-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-17T19:35:34.501789-05:00",
-    "alert_count": 23,
+    "triggered_at": "2026-11-17T20:49:41.990058-05:00",
+    "alert_count": 22,
     "alerts": [
       {
         "type": "stock",
@@ -16,8 +16,8 @@
         "pct": 156.36,
         "price": 19.15,
         "mkt_cap": 3903902720,
-        "atr_pct": 11.13,
-        "adr_pct": 12.99
+        "atr_pct": NaN,
+        "adr_pct": 11.1
       },
       {
         "type": "stock",
@@ -28,8 +28,8 @@
         "pct": 12.58,
         "price": 64.88,
         "mkt_cap": 5572091392,
-        "atr_pct": 4.3,
-        "adr_pct": 4.64
+        "atr_pct": NaN,
+        "adr_pct": 3.9
       },
       {
         "type": "stock",
@@ -40,8 +40,8 @@
         "pct": 11.08,
         "price": 80.53,
         "mkt_cap": 10363922432,
-        "atr_pct": 3.66,
-        "adr_pct": 3.31
+        "atr_pct": NaN,
+        "adr_pct": 3.13
       },
       {
         "type": "stock",
@@ -52,20 +52,8 @@
         "pct": 8.49,
         "price": 116.61,
         "mkt_cap": 8084676608,
-        "atr_pct": 6.67,
-        "adr_pct": 6.32
-      },
-      {
-        "type": "stock",
-        "ticker": "WCN",
-        "label": "WCN",
-        "symbol": "WCN",
-        "name": "Waste Connections, Inc.",
-        "pct": -8.01,
-        "price": 181.5,
-        "mkt_cap": 45406855168,
-        "atr_pct": 3.0,
-        "adr_pct": 3.06
+        "atr_pct": NaN,
+        "adr_pct": 5.93
       },
       {
         "type": "stock",
@@ -76,8 +64,8 @@
         "pct": 7.44,
         "price": 51.99,
         "mkt_cap": 3122163456,
-        "atr_pct": 4.15,
-        "adr_pct": 3.71
+        "atr_pct": NaN,
+        "adr_pct": 3.68
       },
       {
         "type": "stock",
@@ -88,8 +76,8 @@
         "pct": -7.28,
         "price": 22.68,
         "mkt_cap": 3842996224,
-        "atr_pct": 7.82,
-        "adr_pct": 7.5
+        "atr_pct": NaN,
+        "adr_pct": 7.22
       },
       {
         "type": "stock",
@@ -100,8 +88,8 @@
         "pct": -6.97,
         "price": 12.95,
         "mkt_cap": 8301437952,
-        "atr_pct": 5.13,
-        "adr_pct": 3.19
+        "atr_pct": NaN,
+        "adr_pct": 3.17
       },
       {
         "type": "stock",
@@ -112,8 +100,8 @@
         "pct": -6.96,
         "price": 8.16,
         "mkt_cap": 4790182912,
-        "atr_pct": 7.53,
-        "adr_pct": 6.49
+        "atr_pct": NaN,
+        "adr_pct": 6.3
       },
       {
         "type": "stock",
@@ -124,8 +112,8 @@
         "pct": -6.89,
         "price": 78.94,
         "mkt_cap": 7050834944,
-        "atr_pct": 8.63,
-        "adr_pct": 7.62
+        "atr_pct": NaN,
+        "adr_pct": 7.23
       },
       {
         "type": "stock",
@@ -136,8 +124,8 @@
         "pct": -6.67,
         "price": 9.23,
         "mkt_cap": 2113394048,
-        "atr_pct": 6.62,
-        "adr_pct": 5.24
+        "atr_pct": NaN,
+        "adr_pct": 5.16
       },
       {
         "type": "stock",
@@ -148,8 +136,8 @@
         "pct": 6.63,
         "price": 112.0,
         "mkt_cap": 7425731584,
-        "atr_pct": 15.27,
-        "adr_pct": 12.07
+        "atr_pct": NaN,
+        "adr_pct": 12.22
       },
       {
         "type": "stock",
@@ -160,8 +148,8 @@
         "pct": -6.44,
         "price": 33.54,
         "mkt_cap": 8568094208,
-        "atr_pct": 6.67,
-        "adr_pct": 5.5
+        "atr_pct": NaN,
+        "adr_pct": 5.43
       },
       {
         "type": "stock",
@@ -172,8 +160,8 @@
         "pct": -6.33,
         "price": 76.33,
         "mkt_cap": 14556131328,
-        "atr_pct": 4.08,
-        "adr_pct": 4.24
+        "atr_pct": NaN,
+        "adr_pct": 4.08
       },
       {
         "type": "stock",
@@ -184,8 +172,8 @@
         "pct": -6.29,
         "price": 80.39,
         "mkt_cap": 8519746048,
-        "atr_pct": 6.36,
-        "adr_pct": 4.92
+        "atr_pct": NaN,
+        "adr_pct": 4.83
       },
       {
         "type": "stock",
@@ -196,8 +184,8 @@
         "pct": -5.98,
         "price": 140.98,
         "mkt_cap": 35506233344,
-        "atr_pct": 8.19,
-        "adr_pct": 4.95
+        "atr_pct": NaN,
+        "adr_pct": 4.85
       },
       {
         "type": "stock",
@@ -208,8 +196,8 @@
         "pct": -5.95,
         "price": 66.4,
         "mkt_cap": 4811745792,
-        "atr_pct": 5.37,
-        "adr_pct": 4.92
+        "atr_pct": NaN,
+        "adr_pct": 4.82
       },
       {
         "type": "stock",
@@ -220,8 +208,8 @@
         "pct": -5.92,
         "price": 38.6,
         "mkt_cap": 4033994240,
-        "atr_pct": 8.5,
-        "adr_pct": 6.79
+        "atr_pct": NaN,
+        "adr_pct": 6.69
       },
       {
         "type": "stock",
@@ -232,8 +220,8 @@
         "pct": -5.88,
         "price": 114.95,
         "mkt_cap": 6625477632,
-        "atr_pct": 8.81,
-        "adr_pct": 8.42
+        "atr_pct": NaN,
+        "adr_pct": 8.49
       },
       {
         "type": "stock",
@@ -244,8 +232,8 @@
         "pct": -5.82,
         "price": 84.16,
         "mkt_cap": 35808497664,
-        "atr_pct": 3.14,
-        "adr_pct": 3.44
+        "atr_pct": NaN,
+        "adr_pct": 3.27
       },
       {
         "type": "stock",
@@ -256,8 +244,8 @@
         "pct": -5.81,
         "price": 44.58,
         "mkt_cap": 7427697152,
-        "atr_pct": 6.23,
-        "adr_pct": 4.97
+        "atr_pct": NaN,
+        "adr_pct": 4.86
       },
       {
         "type": "stock",
@@ -268,8 +256,8 @@
         "pct": -5.8,
         "price": 182.8,
         "mkt_cap": 44054802432,
-        "atr_pct": 4.32,
-        "adr_pct": 3.37
+        "atr_pct": NaN,
+        "adr_pct": 3.31
       },
       {
         "type": "stock",
@@ -280,8 +268,8 @@
         "pct": -5.71,
         "price": 12.39,
         "mkt_cap": 6457115648,
-        "atr_pct": 4.36,
-        "adr_pct": 3.68
+        "atr_pct": NaN,
+        "adr_pct": 3.58
       }
     ],
     "etf_top5": [],
