@@ -1,87 +1,17 @@
 {
-  "generated_at": "2026-11-17T21:50:18.605091-05:00",
-  "as_of": "Nov 17, 2026 09:50 PM ET",
-  "count": 8,
+  "generated_at": "2026-11-18T21:28:51.827342-05:00",
+  "as_of": "Nov 18, 2026 09:28 PM ET",
+  "count": 1,
   "movers": [
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "ah_pct": 11.2,
-      "ah_price": 117.91,
-      "reg_price": 106.03,
-      "mkt_cap": 31057907712,
-      "volume": 28543121,
-      "catalyst": "Nvidia earnings spark after-hours rally in chipmakers, neocloud stocks"
-    },
-    {
-      "ticker": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc",
-      "ah_pct": -10.57,
-      "ah_price": 17.13,
-      "reg_price": 19.15,
-      "mkt_cap": 3903902720,
-      "volume": 119486326,
-      "catalyst": "SELLAS Stock In Focus After Phase 3 AML Trial Win"
-    },
-    {
-      "ticker": "WULF",
-      "name": "TeraWulf Inc.",
-      "ah_pct": 10.41,
-      "ah_price": 12.88,
-      "reg_price": 11.67,
-      "mkt_cap": 5852756992,
-      "volume": 31976734,
-      "catalyst": "Post-market move"
-    },
-    {
-      "ticker": "IREN",
-      "name": "IREN LIMITED",
-      "ah_pct": 10.14,
-      "ah_price": 17.41,
-      "reg_price": 15.8,
-      "mkt_cap": 6706968576,
-      "volume": 78355679,
-      "catalyst": "Post-market move"
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave, Inc.",
-      "ah_pct": 9.02,
-      "ah_price": 54.39,
-      "reg_price": 49.89,
-      "mkt_cap": 27745110016,
-      "volume": 51909753,
-      "catalyst": "Nvidia says 'no' to rehiring Huang and WSJ reports SEC is probing the chipmaker"
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "ah_pct": 7.16,
-      "ah_price": 225.95,
-      "reg_price": 210.86,
-      "mkt_cap": 41530703872,
-      "volume": 10492716,
-      "catalyst": "Post-market move"
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs, Inc.",
-      "ah_pct": 6.45,
-      "ah_price": 225.25,
-      "reg_price": 211.6,
-      "mkt_cap": 36983889920,
-      "volume": 5040994,
-      "catalyst": "Hyve Partnership Might Change The Case For Investing In Astera Labs Stock (ALAB)"
-    },
-    {
-      "ticker": "FPS",
-      "name": "Forgent Power Solutions, Inc.",
-      "ah_pct": 6.37,
-      "ah_price": 22.55,
-      "reg_price": 21.2,
-      "mkt_cap": 6453892608,
-      "volume": 11148706,
-      "catalyst": "Post-market move"
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "ah_pct": 9.08,
+      "ah_price": 370.78,
+      "reg_price": 339.92,
+      "mkt_cap": 278316875776,
+      "volume": 16467556,
+      "catalyst": "Earnings AH (Nov 18)"
     }
   ]
 }
