@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-18T21:28:51.827342-05:00",
-  "as_of": "Nov 18, 2026 09:28 PM ET",
+  "generated_at": "2026-11-19T21:13:38.370722-05:00",
+  "as_of": "Nov 19, 2026 09:13 PM ET",
   "count": 1,
   "movers": [
     {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc.",
-      "ah_pct": 9.08,
-      "ah_price": 370.78,
-      "reg_price": 339.92,
-      "mkt_cap": 278316875776,
-      "volume": 16467556,
-      "catalyst": "Earnings AH (Nov 18)"
+      "ticker": "PLBL",
+      "name": "Polibeli Group Ltd",
+      "ah_pct": -24.47,
+      "ah_price": 7.1,
+      "reg_price": 9.4,
+      "mkt_cap": 3444041984,
+      "volume": 129850,
+      "catalyst": "Post-market move"
     }
   ]
 }
