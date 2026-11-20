@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "updated_at": "2026-11-20T16:45:51.498679-05:00",
+  "updated_at": "2026-11-20T17:46:09.381833-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
@@ -69,5 +69,40 @@
     ],
     "etf_top5": [],
     "etf_bottom5": []
+  },
+  "n2": {
+    "slot": "n2",
+    "time_label": "12:30 PM ET",
+    "triggered_at": "2026-11-20T17:46:09.381833-05:00",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "P",
+        "label": "P",
+        "symbol": "P",
+        "name": "Everpure, Inc.",
+        "pct": -12.75,
+        "price": 92.05,
+        "mkt_cap": 30673569792,
+        "atr_pct": 10.87,
+        "adr_pct": 8.21
+      },
+      {
+        "type": "stock",
+        "ticker": "GPN",
+        "label": "GPN",
+        "symbol": "GPN",
+        "name": "Global Payments Inc.",
+        "pct": 9.95,
+        "price": 91.83,
+        "mkt_cap": 24301506560,
+        "atr_pct": 5.45,
+        "adr_pct": 5.66
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": [],
+    "sector_rotation": []
   }
 }
