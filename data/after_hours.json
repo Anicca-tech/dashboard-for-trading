@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-19T21:13:38.370722-05:00",
-  "as_of": "Nov 19, 2026 09:13 PM ET",
+  "generated_at": "2026-11-20T21:06:56.604293-05:00",
+  "as_of": "Nov 20, 2026 09:06 PM ET",
   "count": 1,
   "movers": [
     {
-      "ticker": "PLBL",
-      "name": "Polibeli Group Ltd",
-      "ah_pct": -24.47,
-      "ah_price": 7.1,
-      "reg_price": 9.4,
-      "mkt_cap": 3444041984,
-      "volume": 129850,
+      "ticker": "ACMR",
+      "name": "ACM Research, Inc.",
+      "ah_pct": 6.76,
+      "ah_price": 42.49,
+      "reg_price": 39.8,
+      "mkt_cap": 2786444032,
+      "volume": 1825092,
       "catalyst": "Post-market move"
     }
   ]
