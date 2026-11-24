@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "updated_at": "2026-11-23T19:35:26.171842-05:00",
+  "updated_at": "2026-11-23T20:37:22.114389-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
@@ -107,5 +107,111 @@
     "etf_top5": [],
     "etf_bottom5": [],
     "indices_range": []
+  },
+  "n1": {
+    "slot": "n1",
+    "time_label": "10:00 AM ET",
+    "triggered_at": "2026-11-23T20:37:22.114389-05:00",
+    "alert_count": 8,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "KYMR",
+        "label": "KYMR",
+        "symbol": "KYMR",
+        "name": "Kymera Therapeutics, Inc.",
+        "pct": 30.41,
+        "price": 150.37,
+        "mkt_cap": 12837297152,
+        "atr_pct": NaN,
+        "adr_pct": 6.07
+      },
+      {
+        "type": "stock",
+        "ticker": "ZS",
+        "label": "ZS",
+        "symbol": "ZS",
+        "name": "Zscaler, Inc.",
+        "pct": 17.67,
+        "price": 229.24,
+        "mkt_cap": 37378662400,
+        "atr_pct": NaN,
+        "adr_pct": 6.11
+      },
+      {
+        "type": "stock",
+        "ticker": "HPE",
+        "label": "HPE",
+        "symbol": "HPE",
+        "name": "Hewlett Packard Enterprise Comp",
+        "pct": 17.38,
+        "price": 48.02,
+        "mkt_cap": 63744860160,
+        "atr_pct": NaN,
+        "adr_pct": 6.27
+      },
+      {
+        "type": "stock",
+        "ticker": "MPWR",
+        "label": "MPWR",
+        "symbol": "MPWR",
+        "name": "Monolithic Power Systems, Inc.",
+        "pct": 16.8,
+        "price": 1333.88,
+        "mkt_cap": 65050660864,
+        "atr_pct": NaN,
+        "adr_pct": 6.97
+      },
+      {
+        "type": "stock",
+        "ticker": "BSP",
+        "label": "BSP",
+        "symbol": "BSP",
+        "name": "Bending Spoons S.p.A.",
+        "pct": 15.15,
+        "price": 47.27,
+        "mkt_cap": 31044059136,
+        "atr_pct": NaN,
+        "adr_pct": 7.05
+      },
+      {
+        "type": "stock",
+        "ticker": "GCT",
+        "label": "GCT",
+        "symbol": "GCT",
+        "name": "GigaCloud Technology Inc",
+        "pct": 14.42,
+        "price": 66.16,
+        "mkt_cap": 2356885504,
+        "atr_pct": NaN,
+        "adr_pct": 5.83
+      },
+      {
+        "type": "stock",
+        "ticker": "ENTG",
+        "label": "ENTG",
+        "symbol": "ENTG",
+        "name": "Entegris, Inc.",
+        "pct": 14.08,
+        "price": 142.06,
+        "mkt_cap": 21635737600,
+        "atr_pct": NaN,
+        "adr_pct": 7.98
+      },
+      {
+        "type": "stock",
+        "ticker": "CRWD",
+        "label": "CRWD",
+        "symbol": "CRWD",
+        "name": "CrowdStrike Holdings, Inc.",
+        "pct": -8.92,
+        "price": 208.97,
+        "mkt_cap": 213971664896,
+        "atr_pct": NaN,
+        "adr_pct": 6.13
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": []
   }
 }
