@@ -1,10 +1,10 @@
 {
   "date": "2026-11-23",
-  "updated_at": "2026-11-23T21:59:38.272232-05:00",
+  "updated_at": "2026-11-23T23:24:11.513283-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-23T19:35:26.171842-05:00",
+    "triggered_at": "2026-11-23T23:24:11.513283-05:00",
     "alert_count": 8,
     "alerts": [
       {
@@ -13,7 +13,7 @@
         "label": "KYMR",
         "symbol": "KYMR",
         "name": "Kymera Therapeutics, Inc.",
-        "pct": 30.4,
+        "pct": 30.41,
         "price": 150.37,
         "mkt_cap": 12837297152,
         "atr_pct": 6.62,
@@ -77,7 +77,7 @@
         "price": 66.16,
         "mkt_cap": 2356885504,
         "atr_pct": 6.96,
-        "adr_pct": 6.02
+        "adr_pct": 6.06
       },
       {
         "type": "stock",
