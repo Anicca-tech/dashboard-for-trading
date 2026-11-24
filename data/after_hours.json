@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-20T21:06:56.604293-05:00",
-  "as_of": "Nov 20, 2026 09:06 PM ET",
+  "generated_at": "2026-11-24T00:15:43.010400-05:00",
+  "as_of": "Nov 24, 2026 12:15 AM ET",
   "count": 1,
   "movers": [
     {
-      "ticker": "ACMR",
-      "name": "ACM Research, Inc.",
-      "ah_pct": 6.76,
-      "ah_price": 42.49,
-      "reg_price": 39.8,
-      "mkt_cap": 2786444032,
-      "volume": 1825092,
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Comp",
+      "ah_pct": -6.91,
+      "ah_price": 44.7,
+      "reg_price": 48.02,
+      "mkt_cap": 63744860160,
+      "volume": 43378538,
       "catalyst": "Post-market move"
     }
   ]
