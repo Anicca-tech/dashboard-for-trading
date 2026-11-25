@@ -1,10 +1,10 @@
 {
   "date": "2026-11-24",
-  "updated_at": "2026-11-24T19:59:08.997815-05:00",
+  "updated_at": "2026-11-24T22:07:56.973627-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-24T19:35:21.743354-05:00",
+    "triggered_at": "2026-11-24T22:07:56.973627-05:00",
     "alert_count": 30,
     "alerts": [
       {
@@ -40,8 +40,8 @@
         "pct": 19.48,
         "price": 25.33,
         "mkt_cap": 2871825408,
-        "atr_pct": 6.17,
-        "adr_pct": 5.8
+        "atr_pct": 6.18,
+        "adr_pct": 5.82
       },
       {
         "type": "stock",
@@ -64,8 +64,8 @@
         "pct": 15.66,
         "price": 173.92,
         "mkt_cap": 14847794176,
-        "atr_pct": 6.5,
-        "adr_pct": 6.91
+        "atr_pct": 6.51,
+        "adr_pct": 6.93
       },
       {
         "type": "stock",
@@ -124,7 +124,7 @@
         "pct": 12.48,
         "price": 49.13,
         "mkt_cap": 2064339456,
-        "atr_pct": 7.34,
+        "atr_pct": 7.35,
         "adr_pct": 7.32
       },
       {
@@ -137,7 +137,7 @@
         "price": 15.34,
         "mkt_cap": 2186861056,
         "atr_pct": 7.09,
-        "adr_pct": 6.7
+        "adr_pct": 6.71
       },
       {
         "type": "stock",
@@ -149,7 +149,7 @@
         "price": 35.7,
         "mkt_cap": 4054036736,
         "atr_pct": 4.57,
-        "adr_pct": 5.84
+        "adr_pct": 5.89
       },
       {
         "type": "stock",
@@ -160,8 +160,8 @@
         "pct": 11.7,
         "price": 33.14,
         "mkt_cap": 4151044096,
-        "atr_pct": 6.47,
-        "adr_pct": 7.44
+        "atr_pct": 6.49,
+        "adr_pct": 7.45
       },
       {
         "type": "stock",
@@ -173,7 +173,7 @@
         "price": 109.71,
         "mkt_cap": 7162093056,
         "atr_pct": 3.73,
-        "adr_pct": 4.74
+        "adr_pct": 4.75
       },
       {
         "type": "stock",
@@ -184,8 +184,8 @@
         "pct": 11.18,
         "price": 154.65,
         "mkt_cap": 29017024512,
-        "atr_pct": 4.1,
-        "adr_pct": 4.18
+        "atr_pct": 4.11,
+        "adr_pct": 4.19
       },
       {
         "type": "stock",
@@ -232,8 +232,8 @@
         "pct": 9.91,
         "price": 46.73,
         "mkt_cap": 5116129280,
-        "atr_pct": 7.43,
-        "adr_pct": 7.52
+        "atr_pct": 7.59,
+        "adr_pct": 7.7
       },
       {
         "type": "stock",
