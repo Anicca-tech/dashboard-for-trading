@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "updated_at": "2026-11-27T17:39:02.768028-05:00",
+  "updated_at": "2026-11-27T19:10:24.654527-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
@@ -189,5 +189,100 @@
     ],
     "etf_top5": [],
     "etf_bottom5": []
+  },
+  "n2": {
+    "slot": "n2",
+    "time_label": "12:30 PM ET",
+    "triggered_at": "2026-11-27T19:10:24.654527-05:00",
+    "alert_count": 7,
+    "alerts": [
+      {
+        "type": "stock",
+        "ticker": "AYA",
+        "label": "AYA",
+        "symbol": "AYA",
+        "name": "Aya Gold & Silver Inc.",
+        "pct": 15.01,
+        "price": 22.84,
+        "mkt_cap": 3293422080,
+        "atr_pct": 7.5,
+        "adr_pct": 6.1
+      },
+      {
+        "type": "stock",
+        "ticker": "LFTO",
+        "label": "LFTO",
+        "symbol": "LFTO",
+        "name": "Liftoff Mobile, Inc.",
+        "pct": 9.88,
+        "price": 26.14,
+        "mkt_cap": 4429273088,
+        "atr_pct": 7.56,
+        "adr_pct": 8.33
+      },
+      {
+        "type": "stock",
+        "ticker": "KNTK",
+        "label": "KNTK",
+        "symbol": "KNTK",
+        "name": "Kinetik Holdings Inc.",
+        "pct": 9.25,
+        "price": 59.76,
+        "mkt_cap": 10232260608,
+        "atr_pct": 3.36,
+        "adr_pct": 3.77
+      },
+      {
+        "type": "stock",
+        "ticker": "FIGS",
+        "label": "FIGS",
+        "symbol": "FIGS",
+        "name": "FIGS, Inc.",
+        "pct": 8.19,
+        "price": 22.59,
+        "mkt_cap": 3744780800,
+        "atr_pct": 5.7,
+        "adr_pct": 6.22
+      },
+      {
+        "type": "stock",
+        "ticker": "GRND",
+        "label": "GRND",
+        "symbol": "GRND",
+        "name": "Grindr Inc.",
+        "pct": 7.84,
+        "price": 14.86,
+        "mkt_cap": 2626200832,
+        "atr_pct": 5.24,
+        "adr_pct": 5.58
+      },
+      {
+        "type": "stock",
+        "ticker": "NTSK",
+        "label": "NTSK",
+        "symbol": "NTSK",
+        "name": "Netskope, Inc.",
+        "pct": 7.79,
+        "price": 28.5,
+        "mkt_cap": 11644750848,
+        "atr_pct": 7.35,
+        "adr_pct": 8.77
+      },
+      {
+        "type": "stock",
+        "ticker": "VRTX",
+        "label": "VRTX",
+        "symbol": "VRTX",
+        "name": "Vertex Pharmaceuticals Incorpor",
+        "pct": -5.24,
+        "price": 534.57,
+        "mkt_cap": 135533641728,
+        "atr_pct": 3.53,
+        "adr_pct": 3.41
+      }
+    ],
+    "etf_top5": [],
+    "etf_bottom5": [],
+    "sector_rotation": []
   }
 }
