@@ -1,10 +1,10 @@
 {
   "date": "2026-11-27",
-  "updated_at": "2026-11-27T19:35:22.889611-05:00",
+  "updated_at": "2026-11-27T21:07:12.984801-05:00",
   "n3": {
     "slot": "n3",
     "time_label": "3:30 PM ET",
-    "triggered_at": "2026-11-27T19:35:22.889611-05:00",
+    "triggered_at": "2026-11-27T21:07:12.984801-05:00",
     "alert_count": 7,
     "alerts": [
       {
@@ -16,8 +16,8 @@
         "pct": 15.01,
         "price": 22.84,
         "mkt_cap": 3293422080,
-        "atr_pct": 7.5,
-        "adr_pct": 6.1
+        "atr_pct": NaN,
+        "adr_pct": 6.04
       },
       {
         "type": "stock",
@@ -28,8 +28,8 @@
         "pct": 9.88,
         "price": 26.14,
         "mkt_cap": 4429273088,
-        "atr_pct": 7.56,
-        "adr_pct": 8.33
+        "atr_pct": NaN,
+        "adr_pct": 8.14
       },
       {
         "type": "stock",
@@ -40,8 +40,8 @@
         "pct": 9.25,
         "price": 59.76,
         "mkt_cap": 10232260608,
-        "atr_pct": 3.36,
-        "adr_pct": 3.77
+        "atr_pct": NaN,
+        "adr_pct": 3.81
       },
       {
         "type": "stock",
@@ -52,8 +52,8 @@
         "pct": 8.19,
         "price": 22.59,
         "mkt_cap": 3744780800,
-        "atr_pct": 5.7,
-        "adr_pct": 6.22
+        "atr_pct": NaN,
+        "adr_pct": 6.11
       },
       {
         "type": "stock",
@@ -64,8 +64,8 @@
         "pct": 7.84,
         "price": 14.86,
         "mkt_cap": 2626200832,
-        "atr_pct": 5.24,
-        "adr_pct": 5.58
+        "atr_pct": NaN,
+        "adr_pct": 5.53
       },
       {
         "type": "stock",
@@ -76,8 +76,8 @@
         "pct": 7.79,
         "price": 28.5,
         "mkt_cap": 11644750848,
-        "atr_pct": 7.35,
-        "adr_pct": 8.77
+        "atr_pct": NaN,
+        "adr_pct": 8.74
       },
       {
         "type": "stock",
@@ -88,8 +88,8 @@
         "pct": -5.24,
         "price": 534.57,
         "mkt_cap": 135533641728,
-        "atr_pct": 3.53,
-        "adr_pct": 3.41
+        "atr_pct": NaN,
+        "adr_pct": 3.25
       }
     ],
     "etf_top5": [],
